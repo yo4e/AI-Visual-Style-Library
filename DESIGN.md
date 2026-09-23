@@ -1,112 +1,169 @@
-# AI Visual Style Library — Product & Technical Design
+# AI Visual Style Library - Product & Technical Design
 
-## 1. Project Summary
+Status: research-informed v2
 
-**AI Visual Style Library** is an English-language visual reference site for discovering, comparing, and understanding visual styles for AI image generation.
+See also: [`RESEARCH.md`](./RESEARCH.md)
 
-The site should help users answer a practical question:
+## 1. Product summary
 
-> “What visual style do I want, and how do I describe it clearly enough to reproduce it?”
+**AI Visual Style Library** is an English-language visual reference site for discovering, comparing, understanding, and describing visual styles for AI image generation.
 
-The product is not intended to be merely a gallery of attractive AI images. Its long-term value should come from being a structured, searchable visual vocabulary for creators.
+The core user problem is:
 
-The site should be designed from the beginning for:
+> “I know roughly what I want it to look like, but I do not know what the style is called or how to describe it.”
 
-- international organic search traffic
-- fast static delivery through Cloudflare
-- easy expansion to hundreds or thousands of style pages
-- side-by-side visual comparison
-- reusable prompt language and style descriptors
-- future advertising revenue without making the site unpleasant to use
+The site should solve that problem visually first, then provide the vocabulary needed to reproduce the look.
 
----
+This is not primarily a prompt gallery. It is a **searchable visual dictionary and comparison instrument** for creators.
 
-## 2. Core Product Principles
+Long-term goals:
 
-### 2.1 Visual first
+- become a bookmark-worthy visual reference, not a one-visit prompt list
+- attract international organic search traffic
+- scale to hundreds or thousands of high-quality style pages without semantic chaos
+- make style differences easy to compare under controlled conditions
+- provide model-agnostic visual vocabulary with optional model-specific notes
+- support future advertising without degrading trust or usability
 
-A visitor should be able to understand the difference between styles before reading a long explanation.
+## 2. Product position
 
-### 2.2 One style, one canonical page
+Positioning statement:
 
-Every style should have its own indexable URL and enough original text to be useful independently.
+> **AI Visual Style Library is a structured visual vocabulary for people who can recognize a look before they know its name, with controlled examples for comparing styles and reusable language for reproducing them.**
 
-Example:
+A useful quality test:
+
+> If the copy-prompt button disappeared, would the page still be worth bookmarking?
+
+If the answer is no, the page is too thin.
+
+## 3. Core product principles
+
+### 3.1 Visual first
+
+A visitor should understand the difference between styles before reading a long explanation.
+
+### 3.2 Controlled comparison is core infrastructure
+
+Every canonical style should include a benchmark image created from a controlled reference subject and repeatable generation brief.
+
+For MVP:
+
+- use one fictional human benchmark subject across all compatible styles
+- keep identity, framing, and base composition as stable as practical
+- allow style requirements to override clothing/material details when necessary
+- record the benchmark subject ID and generation metadata
+
+Post-MVP:
+
+Add additional benchmark tracks, especially:
+
+- environment / landscape
+- object / product
+- optional poster / graphic composition
+
+A portrait-only atlas is visually clear but can bias the library toward character transformation, so the data model must support multiple benchmark subjects from day one.
+
+### 3.3 One canonical style, one canonical page
+
+Every true style gets an indexable URL:
 
 ```text
 /styles/watercolor
 /styles/risograph
-/styles/90s-anime
-/styles/editorial-illustration
-/styles/retro-futurism
+/styles/art-deco
+/styles/film-noir
 ```
 
-### 2.3 Consistent comparison
+Do not inflate the style count by treating output formats, camera angles, or use cases as styles.
 
-Where practical, styles should be demonstrated with a controlled or recurring reference subject so that users compare the style rather than the subject matter.
+### 3.4 Search by desired result, not only terminology
 
-Additional examples may later show how the same style behaves across portraits, landscapes, products, fantasy scenes, typography, and other categories.
+The library must work for people who do not know art-history or design vocabulary.
 
-### 2.4 Search by desired result, not only by art terminology
+Useful discovery language includes:
 
-Many users do not know the name of the style they want. The site should support discovery through plain-language goals such as:
-
-- children’s book
-- cinematic
-- retro advertising
-- soft and dreamy
+- soft paper texture
 - bold outlines
-- handmade texture
+- limited colors
+- rough handmade print
+- glossy 3D
+- dreamy pastel
+- hard-flash photo
+- geometric poster
 - luxury editorial
 - vintage sci-fi
-- clean product photography
-- low-budget zine
 
-### 2.5 Useful beyond one model
+### 3.5 Prompt vocabulary before magic prompts
 
-The library should describe visual ideas in a model-agnostic way whenever possible. Model-specific prompt notes may be added separately.
+Each page should explain the visible building blocks of the style:
 
----
+- medium / process
+- line / edge behavior
+- palette
+- texture / surface
+- lighting
+- composition
+- era cues
 
-## 3. Target Audience
+A full example prompt is useful, but it should demonstrate the vocabulary rather than replace it.
 
-Primary audiences:
+### 3.6 Model-agnostic core
 
-1. AI image-generation users looking for prompt vocabulary
-2. designers and illustrators exploring visual directions
+The durable layer is visual language, not syntax for one generator.
+
+Model-specific tips can be added when they materially improve results, but a style page should remain useful when a model version changes.
+
+### 3.7 Related styles form a graph
+
+Every style should link to 3 to 6 related styles with a short relationship explanation, such as:
+
+- same medium, cleaner geometry
+- similar texture, more saturated palette
+- same era, different printing process
+- similar mood, more photographic treatment
+
+This supports both discovery and internal linking.
+
+## 4. Target audiences
+
+Primary:
+
+1. AI image-generation users looking for visual vocabulary
+2. designers and illustrators exploring directions
 3. writers, game developers, and video creators building moodboards
-4. marketers and content creators looking for reference styles
-5. beginners who know the look they want but not the terminology
+4. marketers and content creators selecting a look
+5. beginners who know the desired result but not its name
 
-Secondary audiences:
+Secondary:
 
 - educators and students learning visual language
-- developers building prompt tools or creative interfaces
-- researchers comparing image-generation behavior across styles
+- developers building prompt / creative interfaces
+- researchers comparing model behavior across styles
 
----
-
-## 4. Initial Information Architecture
+## 5. Information architecture
 
 ### Home
 
 Purpose:
 
-- explain the site in one sentence
-- provide visual search/discovery immediately
-- surface major categories
-- feature popular and newly added styles
+- explain the product in one sentence
+- make visual discovery immediate
+- surface major style families and use cases
+- demonstrate the controlled benchmark concept
 
 Suggested sections:
 
-- hero search
-- Browse by Category
-- Browse by Mood / Use Case
-- Popular Styles
-- Recently Added
-- Compare Styles
+1. hero search / reverse-discovery entry
+2. benchmark comparison strip
+3. Browse by Medium / Movement / Aesthetic
+4. Browse by Mood / Visual Trait
+5. Browse by Use Case
+6. Popular Styles
+7. Recently Added
+8. Compare Styles
 
-### Style Index
+### Style index
 
 Route:
 
@@ -116,15 +173,24 @@ Route:
 
 Features:
 
-- grid of style cards
+- dense visual grid
 - text search
-- category filters
-- medium filters
-- mood filters
-- use-case filters
-- sorting by alphabetical / popular / newest
+- faceted filtering
+- URL-persisted filter state
+- alphabetical / popular / newest sorting
 
-### Individual Style Page
+Primary filter dimensions:
+
+- style family
+- medium / process
+- era / cultural context
+- visual attributes
+- mood
+- compatible use cases
+
+Do not mix output formats and modifiers into the same “style category” filter.
+
+### Individual style page
 
 Route:
 
@@ -132,19 +198,23 @@ Route:
 /styles/{slug}
 ```
 
-Each page should contain:
+Recommended order:
 
 1. style name
-2. primary visual example
-3. concise definition
-4. key visual characteristics
-5. prompt vocabulary
-6. example prompt
-7. suitable subjects / use cases
-8. common failure modes
-9. related styles
-10. comparison links
-11. optional model-specific notes
+2. one-sentence definition
+3. controlled benchmark image
+4. before/after or benchmark comparison control
+5. visible-characteristic chips
+6. copyable prompt vocabulary
+7. what defines this style
+8. line / color / texture / light / composition breakdown
+9. suitable subjects / use cases
+10. example prompt
+11. common failure modes / “watch for” notes
+12. optional model-specific notes
+13. related styles
+14. compare-with links
+15. provenance / generation metadata
 
 ### Compare
 
@@ -154,78 +224,95 @@ Route:
 /compare/
 ```
 
-Initial goal:
+MVP or first post-launch goal:
 
-Allow users to compare 2–4 styles side by side using the same subject.
+- compare 2 styles side by side using the same benchmark subject
+- preserve selection in the URL
+- make useful comparison states shareable
 
-Later possibilities:
+Growth version:
 
-- shareable comparison URLs
-- prompt-difference highlighting
-- model comparison
+- compare 2 to 4 styles
+- index selected editorial comparison pages such as `/compare/watercolor-vs-gouache`
+- highlight differences in prompt vocabulary
+- switch benchmark subjects
 
-### Categories
+### Categories / style families
+
+Category pages must be indexable landing pages, not JavaScript-only filters.
 
 Examples:
 
 ```text
-/categories/illustration
-/categories/painting
+/categories/painting-and-drawing
 /categories/printmaking
 /categories/photography
-/categories/3d
-/categories/pixel-art
-/categories/comics
 /categories/graphic-design
-/categories/textile-and-paper
+/categories/illustration
+/categories/comics-and-animation
+/categories/digital-and-3d
+/categories/historical-movements
 ```
 
-Category pages should be indexable landing pages, not merely JavaScript filters.
+### Use cases
 
-### Use Cases
+Use-case pages should appear relatively early because search intent is strong and practical.
+
+Initial candidates:
+
+```text
+/use-cases/childrens-book-illustration
+/use-cases/editorial-illustration
+/use-cases/poster-design
+/use-cases/game-concept-art
+/use-cases/product-advertising
+/use-cases/album-cover
+```
+
+A use-case page should recommend multiple compatible styles rather than pretending the use case itself is one style.
+
+### Glossary / modifiers
+
+Later, create a separate vocabulary layer for framing, lighting, camera, and process terms.
 
 Examples:
 
 ```text
-/use-cases/childrens-book
-/use-cases/editorial
-/use-cases/game-concept-art
-/use-cases/product-advertising
-/use-cases/music-cover
-/use-cases/social-media
+/glossary/halftone
+/glossary/chiaroscuro
+/glossary/low-angle
+/glossary/hard-flash
 ```
 
-This layer may become important for long-tail SEO because users often search for outcomes rather than formal style names.
+These terms can be reusable across many style pages without polluting the style taxonomy.
 
----
+## 6. Taxonomy
 
-## 5. Style Taxonomy
+The system should separate different semantic dimensions.
 
-Each style may belong to multiple dimensions.
+### 6.1 Style identity
 
-### Medium
+The canonical thing that can receive a style page:
+
+- recognized movement or tradition
+- medium or visual process
+- durable, recognizable aesthetic
 
 Examples:
 
 - watercolor
-- oil painting
-- gouache
-- ink
-- colored pencil
-- collage
 - risograph
-- screen print
-- photography
-- 3D render
+- Art Nouveau
+- Swiss International Style
+- film noir
 - pixel art
 
-### Visual treatment
+### 6.2 Visual attributes
 
 Examples:
 
 - flat
 - painterly
-- textured
 - geometric
 - photorealistic
 - minimal
@@ -233,20 +320,20 @@ Examples:
 - grainy
 - glossy
 - hand-drawn
+- high-contrast
+- limited-palette
 
-### Era / cultural reference
+### 6.3 Era / cultural context
 
 Examples:
 
-- Art Nouveau
-- Art Deco
-- mid-century modern
-- 1960s poster
-- 1980s airbrush
-- 1990s anime
+- 1920s
+- mid-century
+- 1970s
+- 1990s
 - Y2K
 
-### Mood
+### 6.4 Mood
 
 Examples:
 
@@ -257,14 +344,14 @@ Examples:
 - nostalgic
 - dramatic
 - whimsical
-- brutal
+- severe
 
-### Use case
+### 6.5 Use case
 
 Examples:
 
 - editorial
-- children’s book
+- children's book
 - fashion
 - product advertising
 - concept art
@@ -272,61 +359,239 @@ Examples:
 - poster
 - album cover
 
-The taxonomy should remain flexible. Do not force styles into a single hierarchy if tags describe them better.
+### 6.6 Output format
 
----
+Examples:
 
-## 6. Proposed Content Model
+- portrait
+- poster
+- card
+- icon
+- sprite
+- album cover
+- magazine cover
 
-A style entry should be stored as structured content rather than hard-coded page markup.
+### 6.7 Modifiers
 
-Example shape:
+Examples:
+
+- framing
+- camera angle
+- aspect ratio
+- lens / film cues
+- lighting treatment
+- viewpoint
+
+The library should allow combinations across these dimensions rather than flattening all of them into one giant style list.
+
+## 7. Content model
+
+Use structured content rather than hard-coded page markup.
+
+Suggested shape:
 
 ```ts
 interface VisualStyle {
   slug: string;
   name: string;
+  aliases?: string[];
   shortDescription: string;
   definition: string;
-  categories: string[];
+
+  family: string;
   mediums: string[];
+  visualAttributes: string[];
+  eras: string[];
   moods: string[];
   useCases: string[];
-  keywords: string[];
-  visualCharacteristics: string[];
+  compatibleFormats?: string[];
+
+  visualCharacteristics: {
+    line?: string[];
+    color?: string[];
+    texture?: string[];
+    lighting?: string[];
+    composition?: string[];
+  };
+
   promptVocabulary: string[];
   examplePrompt: string;
   avoidOrWatchFor?: string[];
-  relatedStyles: string[];
+
+  relatedStyles: {
+    slug: string;
+    relation: string;
+  }[];
+
   images: {
     src: string;
     alt: string;
-    subjectId?: string;
+    benchmarkSubjectId?: string;
     model?: string;
+    modelVersion?: string;
+    promptVersion?: string;
+    seed?: string;
     generationNotes?: string;
+    provenance?: string;
   }[];
+
+  editorialStatus?: "draft" | "reviewed" | "published";
   publishedAt: string;
   updatedAt?: string;
 }
 ```
 
-For the MVP, content can live in Markdown/MDX or structured JSON/YAML. The system should make it easy to add new entries without changing application logic.
+Content can live in Astro content collections using Markdown/MDX plus schema-validated front matter, or structured JSON/YAML. Choose the format that makes bulk editorial work easiest without changing application logic.
 
----
+## 8. Search and discovery
 
-## 7. Technical Direction
+MVP search should support:
+
+- style name and aliases
+- medium
+- visible attributes
+- mood
+- use case
+- keywords
+
+Do not require semantic/vector search for launch.
+
+Later, add a natural-language reverse lookup such as:
+
+> “rough two-color indie print with bad registration”
+
+Expected matches could include risograph, screen print, halftone duotone, zine collage, etc.
+
+Reverse lookup is strategically valuable, but only after the taxonomy and content are clean enough to support it.
+
+## 9. Image strategy
+
+### MVP
+
+- one controlled benchmark subject
+- one primary benchmark image per style
+- consistent aspect ratio
+- responsive formats and sizes
+- pre-optimized images
+- lazy loading below the fold
+- explicit alt text
+- provenance metadata stored with each image
+
+### Benchmark protocol
+
+Maintain a versioned benchmark brief containing:
+
+- subject identity / description
+- framing
+- background constraints
+- aspect ratio
+- content that should remain fixed
+- which fields a style may intentionally override
+
+If the benchmark prompt changes materially, increment the version rather than silently regenerating inconsistent images.
+
+### Later benchmark tracks
+
+1. human / character
+2. environment / landscape
+3. object / product
+4. optional graphic composition
+
+## 10. SEO strategy
+
+SEO is a product requirement from the first public release.
+
+### Technical SEO
+
+Required:
+
+- semantic HTML
+- unique title and meta description for every canonical page
+- canonical URLs
+- XML sitemap
+- robots.txt
+- Open Graph metadata
+- social card metadata
+- image alt text
+- breadcrumb structured data
+- appropriate schema markup where useful
+- fast Core Web Vitals
+- minimal client-side rendering for indexable content
+- stable canonical domain before serious indexing begins
+
+### Content SEO
+
+Each style page should answer a query cluster:
+
+- What is `{style}`?
+- What does `{style}` look like?
+- What visual characteristics define `{style}`?
+- What words describe `{style}`?
+- How do I prompt `{style}` in AI image generators?
+- What is similar to `{style}`?
+- What is the difference between `{style}` and `{related style}`?
+
+### Page families
+
+Priority order:
+
+1. canonical style pages
+2. category/style-family hubs
+3. strong use-case landing pages
+4. curated comparison pages
+5. glossary/modifier pages
+6. editorial guides driven by real search-query data
+
+Generic “AI art styles” terms are crowded by large brands and listicles, so growth should not depend on the homepage ranking for one head term.
+
+## 11. Editorial and quality rules
+
+1. Every style page contains original explanatory text.
+2. The page must describe visible properties, not only provide a style label.
+3. Prompt vocabulary must be separable into reusable components.
+4. Generated images must have clear provenance metadata.
+5. Historical claims should be checked against reliable sources.
+6. Historically recognized movements must be distinguished from informal AI-era aesthetics.
+7. Naming must be consistent across slugs, page titles, tags, and related links.
+8. Avoid turning output formats or use cases into fake “styles.”
+9. Do not make living artists' names canonical style entries.
+10. Prefer descriptive techniques, periods, materials, and visual properties over artist-name imitation.
+11. Avoid franchise/studio names when a durable descriptive term works.
+12. Publish a provenance / rights / takedown policy before public launch.
+
+Examples of durable naming:
+
+- `feature-animation-3d` rather than a studio trademark
+- `mid-century-editorial-illustration` rather than a living illustrator's name
+
+## 12. Legal / provenance stance
+
+This is an editorial/product policy, not legal advice.
+
+The library should assume that “style” and “specific copyrighted expression” are different questions and design conservatively around the distinction.
+
+Required practices:
+
+- generated or clearly licensed images only
+- store generator/model metadata when available
+- record whether a benchmark image is AI-generated
+- do not imply endorsement by artists, studios, or brands
+- provide a contact / takedown route
+- review trademark/franchise-specific terminology before publication
+
+## 13. Technical direction
 
 ### Hosting
 
-Use the **Cloudflare ecosystem**.
+Use the Cloudflare ecosystem.
 
-Recommended initial architecture:
+Initial architecture:
 
-- Cloudflare Pages for deployment
+- Cloudflare Pages
 - static-first rendering
-- Cloudflare CDN for global delivery
+- Cloudflare CDN
 - Cloudflare Web Analytics initially
-- Cloudflare R2 later if the image library becomes large enough to justify separating media storage
+- Cloudflare R2 later if image scale justifies separate media storage
 
 ### Framework
 
@@ -334,281 +599,269 @@ Recommended: **Astro**.
 
 Reasons:
 
-- excellent static-generation model for SEO-heavy content sites
+- strong static generation for SEO-heavy content
 - very low JavaScript by default
-- strong content-collection workflow
+- content collections suit structured editorial pages
 - easy componentization for cards, filters, comparison UI, and related-style modules
 - straightforward Cloudflare deployment
 
-Alternative: a lightweight React/Next stack may be considered if interactive requirements become dominant, but the initial product should prioritize static content and page speed.
+A React-heavy stack is unnecessary unless future interaction requirements materially exceed Astro islands/components.
 
 ### Styling
 
-Prefer a simple design system rather than a large UI framework.
-
-Possible approach:
+Prefer a small design system:
 
 - CSS variables / design tokens
 - modern CSS
-- optional Tailwind if implementation speed clearly benefits
+- optional Tailwind only if it clearly improves implementation speed
 
-The visual identity should feel like a contemporary design reference library, not an “AI tools” landing page.
+Visual direction:
 
----
+- contemporary reference library / field guide
+- image-led, typographically disciplined
+- neutral enough that the content's styles remain the visual focus
+- avoid generic “AI startup” gradients, glowing blobs, and tool-dashboard chrome
 
-## 8. SEO Strategy
+## 14. Recommended MVP scope
 
-SEO is a core product requirement, not a later optimization.
+Launch target: **40 curated styles**.
 
-### Technical SEO
-
-Required from the first public release:
-
-- semantic HTML
-- unique `<title>` and meta description for every style page
-- canonical URLs
-- XML sitemap
-- robots.txt
-- Open Graph metadata
-- Twitter/X card metadata
-- image alt text
-- breadcrumb structured data
-- Article or appropriate schema where useful
-- fast Core Web Vitals
-- minimal client-side rendering for indexable content
-
-### Content SEO
-
-Each style page should answer several search intents:
-
-- What is `{style}`?
-- What does `{style}` look like?
-- How do I prompt `{style}` in AI image generators?
-- What words describe `{style}`?
-- What styles are similar to `{style}`?
-
-Avoid thin pages that contain only a generated image and a copied prompt.
-
-### Long-tail expansion
-
-Potential page families:
-
-- “AI watercolor style prompt”
-- “AI children’s book illustration styles”
-- “retro poster styles for AI image generation”
-- “editorial illustration style examples”
-- “risograph vs screen print style”
-
-Comparison and use-case pages may eventually generate more search traffic than the main gallery.
-
----
-
-## 9. Monetization Strategy
-
-The initial priority is traffic, usefulness, and index quality. Monetization should not distort the product before there is meaningful audience volume.
-
-### Phase 1 — No ads or minimal monetization
-
-Focus on:
-
-- content depth
-- SEO
-- repeat use
-- backlinks
-- indexing
-
-### Phase 2 — Display advertising
-
-Potential options:
-
-- Google AdSense
-- other display networks if traffic later qualifies
-
-Design constraints:
-
-- no aggressive interstitials
-- no ads that visually imitate style cards
-- preserve fast page load
-- reserve stable ad slots to avoid layout shift
-
-Likely placements:
-
-- one slot after introductory content on long style pages
-- one slot within long index pages
-- optional desktop sidebar on editorial/reference pages
-
-### Phase 3 — Additional revenue
-
-Possible future extensions:
-
-- affiliate links to relevant creative tools where appropriate
-- downloadable prompt/reference packs
-- sponsored but clearly labeled tool comparisons
-- premium comparison/export features
-
-Advertising revenue should remain compatible with the site’s role as a trustworthy reference library.
-
----
-
-## 10. Editorial and Quality Rules
-
-1. Every style page should contain original explanatory text.
-2. Images should be generated or licensed with clear provenance.
-3. Prefer descriptive techniques, periods, media, and visual properties over dependence on the names of living artists.
-4. Avoid presenting generated text as art-historical fact without verification.
-5. Distinguish historically recognized movements from informal AI-prompt labels.
-6. Keep naming consistent across URLs, page titles, tags, and related-style links.
-7. Prompt examples should be useful but should not be the only value on a page.
-
----
-
-## 11. Image Strategy
-
-The image system is central to both user experience and performance.
-
-### MVP
-
-- use one recurring benchmark subject for cross-style comparison
-- generate one primary image per style
-- optimize images before publishing
-- provide responsive image sizes
-- use lazy loading below the fold
-
-### Later
-
-Add multiple benchmark subjects, for example:
-
-- character / portrait
-- landscape / environment
-- object / product
-- architecture / interior
-- graphic poster
-
-This allows users to see whether a style transfers well across subject types.
-
----
-
-## 12. MVP Scope
-
-The first public version should stay intentionally small enough to launch quickly.
-
-### Suggested MVP
+MVP features:
 
 - English only
-- 30–50 curated styles
 - homepage
 - `/styles/` index
-- individual style pages
-- category filtering
-- basic search
+- 40 canonical style pages
+- one controlled benchmark image per style
+- text search
+- faceted filtering
+- prompt vocabulary
+- example prompt
+- common failure modes
 - related styles
+- provenance metadata
 - responsive layout
 - Cloudflare deployment
 - sitemap and metadata
 - analytics
 
-The compare tool can be included in the MVP if implementation remains simple. Otherwise it becomes the first post-launch feature.
+Compare can ship in MVP if the 2-style version remains simple. Otherwise it is the first post-launch feature.
 
----
+Do not trade page quality for hitting 100 styles at launch.
 
-## 13. Development Phases
+## 15. Candidate launch styles
 
-### Phase 0 — Research
+### Painting / drawing / print
 
-Before implementation:
+1. Watercolor
+2. Gouache
+3. Oil Painting
+4. Acrylic Painting
+5. Ink Wash
+6. Graphite Pencil
+7. Charcoal Drawing
+8. Colored Pencil
+9. Risograph
+10. Screen Print
+11. Linocut / Woodcut
+12. Collage
 
-- competitor research
-- keyword research
+### Historical movements / graphic languages
+
+13. Impressionism
+14. Post-Impressionism
+15. Art Nouveau
+16. Art Deco
+17. Bauhaus
+18. Swiss / International Typographic Style
+19. Constructivism
+20. Pop Art
+21. Surrealism
+22. Ukiyo-e
+
+### Illustration / comics / animation
+
+23. Flat Vector Illustration
+24. Editorial Illustration
+25. Storybook Illustration
+26. Ligne Claire
+27. Halftone Comic
+28. 1990s Cel Animation
+29. Modern Anime / Cel-shaded Illustration
+30. Minimal Line Art
+
+### Photography / cinema
+
+31. 35mm Color Film
+32. Black-and-White Street Photography
+33. Film Noir
+34. Fashion Editorial Photography
+35. Instant Film
+
+### Digital / 3D / contemporary
+
+36. Pixel Art
+37. Low-poly 3D
+38. Clay / Stop-motion Look
+39. Synthwave
+40. Y2K Chrome / Glossy 3D
+
+Notes:
+
+- Cyberpunk is useful but partly a genre/content label, so classify it carefully if added.
+- Children's book is a use case, not one style.
+- Magazine cover, album cover, game sprite, and professional headshot are output/use-case dimensions, not style entries.
+
+## 16. Monetization strategy
+
+### Phase 1
+
+No ads or minimal monetization.
+
+Optimize for:
+
+- content quality
+- indexing
+- repeat use
+- backlinks
+- internal discovery
+
+### Phase 2
+
+Restrained display advertising after meaningful traffic exists.
+
+Design rules:
+
+- no aggressive interstitials
+- no ad that visually imitates a style card
+- stable reserved slots to avoid layout shift
+- no interruption of the main benchmark comparison interaction
+
+Possible placements:
+
+- after introductory/reference content on long style pages
+- within long index pages at clearly separated boundaries
+- optional desktop sidebar on editorial guides
+
+### Phase 3
+
+Possible extensions:
+
+- selective affiliate links to relevant creative tools
+- downloadable reference packs
+- clearly labeled sponsorships
+- premium export / comparison features if real user demand appears
+
+Monetization must not compromise neutral reference credibility.
+
+## 17. Development phases
+
+### Phase 0 - Research
+
+Completed in `RESEARCH.md`:
+
+- competitor landscape
+- SERP/search-intent patterns
 - taxonomy review
-- monetization landscape review
-- legal / licensing considerations
-- identify opportunities competitors are not serving well
+- monetization patterns
+- legal/editorial considerations
+- differentiation choices
 
-### Phase 1 — Foundation
+### Phase 1 - Foundation
 
-- finalize information architecture
-- choose content format
 - create Astro project
 - configure Cloudflare deployment
+- define content schema
+- define benchmark protocol
 - define design tokens and base components
-- define style schema
+- create 3 to 5 representative style entries before scaling content
 
-### Phase 2 — Content MVP
+### Phase 2 - MVP content and UI
 
-- create first 30–50 entries
+- create the 40 launch entries
 - generate benchmark images
-- build index, detail pages, filters, and search
+- build index and faceted filters
+- build individual style pages
+- implement related-style graph
 - implement SEO requirements
+- implement simple search
 
-### Phase 3 — Launch
+### Phase 3 - Launch
 
-- production deployment
+- production custom domain
 - Cloudflare analytics
 - Search Console / webmaster setup
 - submit sitemap
-- test metadata, performance, accessibility, and crawlability
+- validate metadata, accessibility, crawlability, and Core Web Vitals
+- publish provenance / rights / takedown page
 
-### Phase 4 — Growth
+### Phase 4 - Growth
 
-- expand style coverage
-- add comparison pages
-- add use-case landing pages
-- publish editorial guides
-- build internal linking clusters
-- monitor search queries and create pages around real demand
+- 2-style comparison pages
+- 4 to 6 use-case landing pages
+- second benchmark subject
+- editorial comparisons
+- query-driven content expansion based on Search Console data
+- reverse lookup prototype
 
-### Phase 5 — Monetization
+### Phase 5 - Monetization
 
-- evaluate traffic thresholds
-- add restrained advertising
-- test placements without degrading UX or Core Web Vitals
+- evaluate traffic and session behavior
+- test restrained advertising
+- monitor Core Web Vitals and user engagement after ads
 
----
+## 18. Success metrics
 
-## 14. Initial Success Metrics
+Early:
 
-Do not optimize for vanity metrics alone.
-
-Useful early indicators:
-
-- number of indexed pages
-- organic impressions
-- organic clicks
-- number of ranking keywords
-- search traffic per style page
+- indexed canonical pages
+- organic impressions and clicks
+- ranking queries per style page
+- style-page to style-page navigation
 - internal search usage
-- compare-tool usage
+- filter usage
+- compare usage when launched
 - return visitors
-- backlinks / references
+- backlinks / citations
 
-Later monetization metrics:
+Content quality signals:
+
+- time spent on style pages
+- related-style clickthrough
+- prompt-vocabulary copy actions
+- comparison-page engagement
+
+Later monetization:
 
 - RPM
 - revenue per 1,000 sessions
 - ad viewability
 - Core Web Vitals after ads
 
----
+## 19. Domain decision
 
-## 15. Open Questions
+Use a custom domain for the indexed public launch, but do not let domain acquisition block prototype work.
 
-These should be resolved during competitor and keyword research:
+Guidelines:
 
-1. Which style terms have meaningful English-language search demand?
-2. Are users searching more for `AI art styles`, `AI image styles`, `prompt styles`, or specific style names?
-3. Which competitors already dominate generic style-gallery queries?
-4. What information do existing style libraries omit?
-5. Should the benchmark subject be identical for every style or vary by category?
-6. How many styles are needed at launch to feel useful without producing thin content?
-7. Which ad formats are realistic for a visual-reference site without damaging UX?
-8. Is a custom domain worth acquiring immediately, and which naming variants are available?
+- choose a short, brandable name rather than an awkward exact-match keyword domain
+- acquire it once the final public brand is chosen
+- set stable canonical URLs before serious indexing
+- do not treat the current prototype host as the permanent SEO origin
 
----
+Domain availability must be verified separately before purchase.
 
-## 16. Product Positioning
+## 20. Implementation brief for Codex
 
-A concise positioning statement:
+When implementation begins, Codex should treat these as non-negotiable product constraints:
 
-> **AI Visual Style Library is a searchable visual dictionary for discovering AI image styles, understanding their characteristics, and learning the vocabulary needed to reproduce them.**
-
-The site should aim to become useful even when a visitor is not currently generating an image. If creators bookmark it as a visual reference, the project has moved beyond “prompt gallery” territory and become a durable resource.
+1. Astro + Cloudflare, static-first.
+2. Content-driven architecture. Adding a style must not require application-logic edits.
+3. Keep style, use case, output format, and modifiers as separate concepts.
+4. Build the benchmark image system into the schema from the start.
+5. Do not hard-code the first benchmark subject into component logic.
+6. Every style page must be fully indexable without client-side rendering.
+7. Filters may be interactive, but canonical category/use-case/style content must exist as normal URLs.
+8. Preserve room for a future second benchmark subject and 2-style comparison route.
+9. Keep visual design quiet enough that the example images remain the star.
+10. No ad implementation in the initial build, only layout choices that do not make future restrained placements impossible.
