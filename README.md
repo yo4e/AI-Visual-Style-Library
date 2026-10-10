@@ -22,19 +22,19 @@ To update a benchmark, edit the two prompt parts in `site/src/style-data.js`, ge
 
 ## Scope and next phase
 
-This is a visual and interaction prototype with six representative entries. The product specification in [`DESIGN.md`](DESIGN.md) calls for a larger, editorially reviewed catalog, canonical style pages, and static SEO routes. The current Vite app uses shareable query URLs for its detail and comparison overlays, but those overlays are not canonical pages. Before public launch, move the content model into the planned static site architecture and add the remaining reviewed styles, metadata, and benchmark tracks.
+This is a visual and interaction prototype with 46 styles. The product specification in [`DESIGN.md`](DESIGN.md) calls for a larger, editorially reviewed catalog, canonical style pages, and static SEO routes. The current Vite app uses shareable query URLs for its detail and comparison overlays, but those overlays are not canonical pages. Future work can move the content model into the planned static site architecture and add reviewed metadata and benchmark tracks.
 
 The benchmark images were regenerated after writing the two-part prompts and compressed to 960-pixel-wide WebP assets in `site/public/images/`. [`site/benchmark-manifest.json`](site/benchmark-manifest.json) records the submitted prompt and checksums for every selected image. The image tool did not expose its model version or seed, and the prompts aim to reproduce a visual treatment rather than exact pixels on every run.
 
 Research, information architecture, visual reference notes, application formats, and growth direction remain in the existing root documents.
 
-## Fiction and cover library: 46 styles
+## Visual style prompt library: 46 styles
 
 Public Cloudflare Pages site: https://ai-visual-style-library.pages.dev/
 
-The six original styles remain, with forty additional styles: ten anime/manga, ten light-novel covers, ten quiet literary treatments, five photographic looks, and five general-fiction illustrations. English and Japanese explanations distinguish line, shading, and surface technique. Copy-ready style prompts and fixed composition instructions are always English. The density filter offers seventeen styles with intentional breathing room and nine rich treatments.
+The six original styles remain, with forty additional styles: ten anime/manga, ten light-novel illustration styles, ten quiet literary treatments, five photographic looks, and five general-fiction illustrations. English and Japanese explanations distinguish line, shading, and surface technique. Copy-ready style prompts and fixed composition instructions are always English. The density filter offers seventeen styles with intentional breathing room and nine rich treatments.
 
-Open a style, enter your own character and scene, and copy the combined prompt. The optional cover layout requests a portrait 2:3 image with low-detail space in the upper quarter. Input stays in this browser's local storage; the site does not send it to an image service. Add title and author text afterward in your layout software.
+Open a style to see two always-visible instruction blocks: the visual style and the benchmark subject, scene, and composition. Copy the style alone, the scene alone, or both. Paste the instructions into your own image-generation AI and adapt the subject, scene, or composition there. This site is a prompt library; it does not generate images or accept custom subject input. The samples let you compare rendering techniques on a shared scene, rather than limiting how you use the styles.
 
 ### Build and publish
 
@@ -54,4 +54,4 @@ All forty added samples were independently generated using built-in Codex ImageG
 
 Use EN / 日本語 in the header, detail view, or comparison. A saved language choice wins over browser preferences; otherwise Japanese browsers start in Japanese and other browsers start in English. An explicit `?lang=en` or `?lang=ja` link takes precedence. The selected locale persists in localStorage.
 
-All copied style prompts, vocabulary, sample combinations, and cover-layout instructions are English in either display language. User-entered subject text is preserved verbatim, including Japanese or mixed-language text. The original six image records stay unchanged; the forty additions now use exact English copy text and new output hashes.
+All copied style prompts, vocabulary, scene instructions, and combined sample instructions are English in either display language. Switching languages changes the explanation, not the copied instructions. The original six image records stay unchanged; the forty additions now use exact English copy text and new output hashes.

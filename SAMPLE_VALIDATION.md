@@ -8,7 +8,7 @@ The original six English generation instructions already matched the current sam
 
 For the thirty replacements, the full-sample prompt was read from the actual public clipboard. For the ten unpublished additions, it was read from the final local UI clipboard. Each string was checked against `combinedPrompt(style)` before submission. The built-in Codex ImageGen call received that exact string and `transparent_background: false`, with no reference image and no extra style instruction. The import script checks the submitted string against the final copied text before writing any asset.
 
-The shared subject block specifies the woman, red coat, map, train platform, wide 16:9 shape, and composition. The separate visual-style block specifies rendering technique. The optional custom-subject/portrait-cover composer is separate from the wide benchmark; its cover instructions were not added to sample generation. The complete benchmark conditions remain readable and copyable in each style detail.
+The shared subject block specifies the woman, red coat, map, train platform, wide 16:9 shape, and composition. The separate visual-style block specifies rendering technique. The former custom-subject/portrait-cover composer was separate from the wide benchmark and has been removed for the general-purpose library; its instructions were never added to sample generation. The complete benchmark conditions remain readable and copyable in each style detail.
 
 ## Evidence and scope
 
@@ -16,7 +16,7 @@ The shared subject block specifies the woman, red coat, map, train platform, wid
 
 Selected outputs are screened for obvious category/technique failures: photographic vs. drawn forms; line and paint treatment; rough print/collage/pencil surfaces; intentional open areas vs. rich detail. The technique families are distinguishable in the selected outputs. This is a check of one real output per instruction set, not a statistical test of repeated generation. Fine negative constraints, such as absolutely no shadows in flat anime, can be only partly obeyed.
 
-The UI checks separately cover both display languages, exact English clipboard text, user text preserved verbatim, cover instructions, filters, four-style comparison, locale persistence, reload, and mobile layout. Those checks establish software behavior, not cross-model style reproducibility.
+The current local UI checks separately cover both display languages, always-visible style and scene blocks, all three exact English copy actions, absence of custom input/cover controls, filters, four-style comparison, locale persistence, reload, and mobile layout. Those checks establish software behavior, not cross-model style reproducibility.
 
 ## Limits
 

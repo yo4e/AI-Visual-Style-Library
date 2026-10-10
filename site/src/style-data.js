@@ -219,9 +219,6 @@ export const filterDefinitions = [
  {key:'family',label:'用途・系統',values:['anime','light-novel','literary','photographic','fiction','original']},
 ];
 export const quickTraits = ['フラット','ラノベ','純文学','線画','版画'];
-export function composePrompt(style, subject, cover = false) {
- return 'Create one image using these independent instructions.\n\nSUBJECT AND SCENE\n'+subject+'\n\nVISUAL STYLE\n'+style.stylePrompt+(cover ? '\n\nCOVER LAYOUT\nCreate a portrait 2:3 book-cover illustration. Keep the upper 25% low in detail, with no important faces or objects, to leave space for typeset lettering. Place the main subject below the center. Do not render the title, author name, logos, or watermarks; these will be added afterward.' : '');
-}
 // Keep the exact submitted text separate from the current English copy-ready version.
 export function generationPrompt(style) {
  return combinedPrompt({...style,stylePrompt:style.generationStylePrompt || style.stylePrompt});

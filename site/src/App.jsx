@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, ArrowsDownUp, BookOpen, CaretDown, Check, Copy, MagnifyingGlass, Plus, SlidersHorizontal, X } from "@phosphor-icons/react";
-import { benchmark, combinedPrompt, composePrompt, filterDefinitions, findStyles, quickTraits, styles, getStyles } from "./style-data";
+import { benchmark, combinedPrompt, filterDefinitions, findStyles, quickTraits, styles, getStyles } from "./style-data";
 import { LanguageToggle, useLanguage, languageLabels } from "./i18n.jsx";
 const knownSlugs = new Set(styles.map(style => style.slug));
 const initialParams = new URLSearchParams(window.location.search);
@@ -25,30 +25,6 @@ function StyleImage({
   } = useLanguage();
   if (style.imageStatus === 'pending') return <div className="sample-pending" role="img" aria-label={`${style.name}: ${t("画像生成準備中")}`}><span>{t("画像生成準備中")}</span><small>{t("説明とプロンプトは利用できます")}</small></div>;
   return <img src={style.image} {...props} />;
-}
-function PromptComposer({
-  style,
-  onCopy
-}) {
-  const {
-    locale,
-    t
-  } = useLanguage();
-  const [subject, setSubject] = useState(() => {
-    try {
-      return localStorage.getItem('noveljam-subject') || '';
-    } catch {
-      return '';
-    }
-  });
-  const [cover, setCover] = useState(true);
-  function update(value) {
-    setSubject(value);
-    try {
-      localStorage.setItem('noveljam-subject', value);
-    } catch {}
-  }
-  return <section className="subject-composer" aria-label={t("自分の場面と合成")}><h3>{t("自分の人物・場面と合成")}</h3><label htmlFor="own-subject">{t("人物・場面（この端末に保存）")}</label><textarea id="own-subject" rows={4} value={subject} onChange={e => update(e.target.value)} placeholder={t("例：帰省した主人公が、誰もいない実家の台所で古い手紙を読む。")} /><label className="cover-toggle"><input type="checkbox" checked={cover} onChange={e => setCover(e.target.checked)} />{t("表紙用：縦長2:3・上部25％に文字用の余白")}</label><button className="primary-button" type="button" disabled={!subject.trim()} onClick={() => onCopy(composePrompt(style, subject, cover), "自分の場面と合成してコピーしました")}><Copy size={16} />{t("自分の場面と合成してコピー")}</button></section>;
 }
 function FilterSelect({
   definition,
@@ -167,18 +143,17 @@ function DetailModal({
           <h2>{style.name}</h2>
           <p className="detail-definition">{style.definition}</p>
           <section className="prompt-recipes" aria-label={t("コピーできる画像プロンプト")}>
-            <h3>{t("絵柄を、自分の物語へ。")}</h3>
-            <p className="prompt-intro">{t("コピーする指示は常に英語です。自分の人物・場面は入力した言語のまま合成できます。")}</p>
+            <h3>{t("絵柄と場面を、別々に。")}</h3>
+            <p className="prompt-intro">{t("絵柄だけ、見本の場面だけ、または両方をコピーできます。指示は英語です。コピーして自分の画像生成AIで使ってください。")}</p>
             <div className="prompt-recipe prompt-recipe--style">
               <div className="prompt-recipe-head"><span>{t("絵柄 · 被写体を自由に")}</span><button type="button" onClick={() => onCopy(style.stylePrompt, "絵柄プロンプトをコピーしました")}><Copy size={16} />{t("絵柄をコピー")}</button></div>
               <p lang="en">{style.stylePrompt}</p>
             </div>
-            <PromptComposer style={style} onCopy={onCopy} /><p className="cover-advice">{style.coverAdvice}</p>
-            <details className="benchmark-recipe"><summary>{t("見本の人物・場面を使う（任意）")}</summary><div className="prompt-recipe">
-              <div className="prompt-recipe-head"><span>{t("比較用の人物・場面")}</span><button type="button" onClick={() => onCopy(benchmark.characterPrompt, "場面をコピーしました")}><Copy size={16} />{t("場面をコピー")}</button></div>
+            <div className="prompt-recipe prompt-recipe--scene">
+              <div className="prompt-recipe-head"><span>{t("見本の人物・場面・構図")}</span><button type="button" onClick={() => onCopy(benchmark.characterPrompt, "場面をコピーしました")}><Copy size={16} />{t("場面をコピー")}</button></div>
               <p lang="en">{benchmark.characterPrompt}</p>
             </div>
-            <button className="combined-copy" type="button" onClick={() => onCopy(combinedPrompt(style), "合成プロンプトをコピーしました")}><Copy size={17} />{t("見本の場面と合成してコピー")}</button></details>
+            <button className="combined-copy" type="button" onClick={() => onCopy(combinedPrompt(style), "合成プロンプトをコピーしました")}><Copy size={17} />{t("絵柄と場面を両方コピー")}</button>
           </section>
           <div className="trait-list" aria-label={t("絵柄の特徴")}>
             {Object.entries(style.characteristics).map(([label, value]) => <div className="trait-row" key={label}><span>{label}</span><p>{value}</p></div>)}
@@ -322,7 +297,7 @@ export function App() {
   return <>
       <a className="skip-link" href="#explore">{t("絵柄一覧へ")}</a>
       <header className="site-header"><div className="header-inner">
-        <a className="brand" href="/" aria-label="AI Visual Style Library home"><BookOpen size={42} weight="light" aria-hidden="true" /><span><strong>AI Visual Style Library</strong><small>{t("物語のための絵柄とプロンプト")}</small></span></a>
+        <a className="brand" href="/" aria-label="AI Visual Style Library home"><BookOpen size={42} weight="light" aria-hidden="true" /><span><strong>AI Visual Style Library</strong><small>{t("画像生成の絵柄とプロンプト")}</small></span></a>
         <nav className="primary-nav" aria-label={t("メインナビゲーション")}><a className="is-active" href="#explore">{t("絵柄一覧")}</a><a href="#field-guide">{t("使い方")}</a><a href="#about">{t("このサイト")}</a></nav>
         <div className="header-actions"><LanguageToggle /><button className="header-search" type="button" onClick={() => {
             searchRef.current?.focus();
@@ -341,10 +316,10 @@ export function App() {
 
       <main>
         <section className="hero page-shell" aria-labelledby="page-title"><div className="hero-main">
-          <h1 id="page-title">{t("あなたの物語に、合う絵柄を。")}</h1>
-          <p>{t("アニメ・ラノベ・純文学から、実写寄り・大衆文学まで。抜け感と描き込みの密度から選べる46種類。")}</p>
+          <h1 id="page-title">{t("作りたい画像に、合う絵柄を。")}</h1>
+          <p>{t("アニメ、イラスト、版画、絵画、写真表現など46種類。線・塗り・質感や、描き込みの密度から選べます。")}</p>
           <form className="search-form" onSubmit={submitSearch} role="search"><MagnifyingGlass size={24} aria-hidden="true" /><label className="sr-only" htmlFor="style-search">{t("名前・特徴で絵柄を検索")}</label><input id="style-search" ref={searchRef} value={searchText} onChange={event => setSearchText(event.target.value)} placeholder={t("例：フラット、純文学、抜け感")} /><button type="submit">{t("検索")}</button></form>
-        </div><aside className="benchmark-note" aria-label={t("共通の見本について")}><span className="eyebrow">{t("同じ場面で比較")}</span><p>{t("同じ人物と駅の場面を描き分けています。被写体は自分の物語に置き換えられます。")}</p><div>{t("赤いコートの女性が駅で地図を広げる場面")}.</div></aside></section>
+        </div><aside className="benchmark-note" aria-label={t("共通の見本について")}><span className="eyebrow">{t("同じ場面で比較")}</span><p>{t("同じ人物と駅の場面を、異なる絵柄で描いた見本です。絵柄の指示をコピーして、好きな被写体に使えます。")}</p><div>{t("赤いコートの女性が駅で地図を広げる場面")}.</div></aside></section>
 
         <section className="explore-section page-shell" id="explore" aria-label={t("絵柄一覧")}><div className="filters-bar">
           <div className="filter-group"><span className="filters-label">{t("絵柄を絞り込む")}</span>{filterDefinitions.map(definition => <FilterSelect key={definition.key} definition={definition} value={filters[definition.key]} onChange={changeFilter} />)}<button className={`more-filters ${moreOpen ? "is-open" : ""}`} type="button" onClick={() => setMoreOpen(open => !open)} aria-expanded={moreOpen}><SlidersHorizontal size={19} />{t("キーワード")}</button></div>
@@ -355,9 +330,9 @@ export function App() {
           <div id="results" className="styles-grid">{results.map((style, index) => <StyleCard key={style.slug} style={style} eager={index < 3} selected={compareIds.includes(style.slug)} onOpen={setDetailSlug} onCompare={toggleCompare} />)}</div>
           {results.length === 0 && <div className="empty-state"><h2>{t("該当する絵柄がありません")}</h2><p>{t("別の言葉や用途を試すか、条件をリセットしてください。")}</p><button className="primary-button" type="button" onClick={resetSearch}>{t("すべての絵柄を表示")}</button></div>}
         </section>
-        <section className="guide-section page-shell" id="field-guide"><span className="eyebrow">{t("装丁での使い方")}</span><div><h2>{t("描くところと、抜くところ。")}</h2><p>{t("気になる絵柄を開き、自分の人物・場面を入力して合成。表紙用の余白を指定できます。タイトルや著者名は生成後に組版してください。抜け感は低品質ではなく、焦点以外を意図的に省く設計です。")}</p></div><a href="#explore">{t("絵柄を探す")}<ArrowRight size={18} /></a></section>
+        <section className="guide-section page-shell" id="field-guide"><span className="eyebrow">{t("プロンプトの使い方")}</span><div><h2>{t("選んで、コピーして、生成する。")}</h2><p>{t("気になる絵柄を開き、絵柄だけ・見本の場面だけ・両方からコピーする内容を選びます。自分の画像生成AIに貼り付け、人物・場面・構図を自由に書き換えて使ってください。このサイトでは画像を生成しません。")}</p></div><a href="#explore">{t("絵柄を探す")}<ArrowRight size={18} /></a></section>
       </main>
-      <footer className="site-footer" id="about"><div className="page-shell footer-inner"><span>AI Visual Style Library</span><p>{t("物語や装丁のための絵柄ライブラリ。画像はAI生成の見本です。作家名に頼らず、線・塗り・質感で指定しています。")}</p><span>{t("絵柄ライブラリ ·")} {styles.length} {t("種類")}</span></div></footer>
+      <footer className="site-footer" id="about"><div className="page-shell footer-inner"><span>AI Visual Style Library</span><p>{t("画像生成に使える絵柄と英語プロンプトのライブラリ。画像はAI生成の見本です。作家名に頼らず、線・塗り・質感で指定しています。")}</p><span>{t("絵柄ライブラリ ·")} {styles.length} {t("種類")}</span></div></footer>
 
       {compareIds.length > 0 && !compareOpen && !detail && <div className="compare-tray" aria-label={t("比較に選んだ絵柄")}><div className="tray-thumbs">{selected.map(style => <StyleImage style={style} alt="" key={style.slug} />)}</div><span>{compareIds.length} / 4 {t("選択中")} <small>{compareIds.length < 2 ? t("あと1種類選択") : t("比較できます")}</small></span><button className="tray-compare" type="button" disabled={compareIds.length < 2} onClick={() => setCompareOpen(true)}>{t("選んだ絵柄を比較")}<ArrowRight size={18} /></button><button className="tray-clear" type="button" onClick={() => setCompareIds([])} aria-label={t("比較をクリア")}><X size={20} /></button></div>}
       {detail && <DetailModal style={detail} onClose={() => setDetailSlug(null)} onCompare={toggleCompare} isCompared={compareIds.includes(detail.slug)} onCopy={copyText} onNavigate={setDetailSlug} />}

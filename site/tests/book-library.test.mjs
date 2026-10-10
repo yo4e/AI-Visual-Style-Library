@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import {styles,getStyles,composePrompt,combinedPrompt,generationPrompt,findStyles} from '../src/style-data.js';
+import {styles,getStyles,benchmark,combinedPrompt,generationPrompt,findStyles} from '../src/style-data.js';
 const japanese=/[\u3040-\u9fff]/;
 test('46 distinct styles retain the original six and three ten-entry book groups',()=>{
  assert.equal(styles.length,46);assert.equal(new Set(styles.map(s=>s.slug )).size,46);
@@ -23,12 +23,13 @@ test('both display languages copy English techniques, vocabulary, and sample ins
  for(const style of getStyles('en'))assert.ok(!japanese.test([style.name,style.short,style.definition,style.familyLabel,style.densityLabel,...Object.values(style.characteristics),style.watchFor,style.coverAdvice].join(' ')),style.slug+' English metadata');
  for(const style of getStyles('ja'))assert.ok(japanese.test(style.name+style.definition+style.watchFor),style.slug+' Japanese metadata');
 });
-test('custom composition preserves user text verbatim and adds only English cover instructions',()=>{
- const subject='  無人の台所に置かれた一通の手紙。\nA quiet memory.\n';
+test('the combined sample keeps style and scene independent and matches generation',()=>{
  for(const style of styles){
-  const plain=composePrompt(style,subject,false);assert.ok(plain.includes(subject));assert.ok(plain.includes(style.stylePrompt));assert.ok(!plain.includes('rust-red hooded coat'));assert.ok(!plain.includes('COVER LAYOUT'));
-  const cover=composePrompt(style,subject,true);assert.ok(cover.includes('upper 25%'));assert.ok(cover.includes('portrait 2:3'));assert.ok(cover.includes('Do not render the title, author name'));
-  assert.ok(!japanese.test(cover.replace(subject,'')),style.slug+' fixed instructions');
+  const combined=combinedPrompt(style);
+  assert.ok(combined.includes(benchmark.characterPrompt));
+  assert.ok(combined.includes(style.stylePrompt));
+  assert.equal(combined,generationPrompt(style));
+  assert.ok(!combined.includes('COVER LAYOUT'));
  }
 });
 test('filters survive locale changes and search accepts both languages',()=>{
