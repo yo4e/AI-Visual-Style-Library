@@ -19,7 +19,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 ## NovelJam cover library (2026-10-11)
 
-- Preserve the original six techniques and add thirty distinct cover-oriented styles: ten anime/manga, ten light-novel, and ten quiet literary treatments.
+- Preserve the original six techniques and add forty distinct cover-oriented styles: ten anime/manga, ten light-novel, ten quiet literary, five photographic, and five general-fiction illustration treatments.
 - Provide natural English and Japanese labels and explanations, with a persistent language toggle. Keep all copy-ready style prompts and fixed composition instructions in English, independent of display language. Specify line, paint/shading, texture, and selective detail rather than artist names or a fixed subject.
 - The user finds AI illustrations too uniformly dense. Offer broken outlines, untouched paper, omitted shadows, simplified backgrounds, and a finished focal area. Do not substitute low resolution, general blur, or reduced quality. Keep rich styles too.
 - Allow independent custom character/scene input and optional portrait-cover layout with upper title space. Typeset titles and author names afterward.
@@ -29,5 +29,12 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Keep the 36 styles, images, density choices, comparison, custom subject composition, and cover-space option in both display languages.
 - Never translate, trim, or discard user-entered subject text when switching languages or composing. Preserve it verbatim.
-- Separate current English copy-ready prompts from the original Japanese instructions used to generate the thirty added images. Keep generation history and image hashes accurate; language translation alone does not require regenerating images.
+- Current samples must be generated with the exact English full-sample copy text. The user authorized replacing the thirty Japanese-generated samples with English-generated outputs instead of trying to match the old images. Archive previous generation records rather than rewriting their history.
 - Default to the stored choice, then Japanese for Japanese browsers and English otherwise. Explicit lang query parameters override the stored choice.
+
+## Final scope and honest samples (2026-10-11)
+
+- Stop at 46 styles for this iteration, including five photographic looks and five general-fiction illustrations.
+- Keep subject instructions separate from rendering instructions. The complete conditions used for each sample must be readable and copyable.
+- Submit the exact English sample-copy string with no extra style instructions or image references, then record the returned asset and checksums. Preserve the original six images when their English prompts already match.
+- Inspect outputs for obvious failures relative to technique names. Do not claim repeated-generation, alternate-subject, or cross-model reproducibility from a single selected output.

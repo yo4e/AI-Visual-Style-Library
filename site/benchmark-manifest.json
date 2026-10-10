@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "benchmarkId": "station-map-v3",
   "benchmarkVersion": "3.0",
-  "generatedOn": "2026-09-23",
+  "generatedOn": "2026-10-10",
   "tool": "Codex ImageGen",
   "model": null,
   "seed": null,
@@ -89,452 +89,763 @@
     {
       "slug": "flat-anime",
       "imagePath": "/images/flat-anime.webp",
-      "sourceFile": "exec-054b26d5-6dba-4ab1-ab01-089e18a19a96.png",
-      "sourceSha256": "7202bdc1c4dc1440edc1582724216d406bd5b5b2ef6bff63975e78e6bda6c17f",
-      "imageSha256": "e7367d4aea181c753c54b0a70e8c3df44f2b953d22aba41d3c9e6138d298c2c0",
+      "sourceFile": "exec-4a33ba43-2542-4932-b15c-a7056e1349dd.png",
+      "sourceSha256": "2ec181e3e5c2333b713dd6f4ffa9bc90eb1c9c93b59d134183749069037996da",
+      "imageSha256": "7426dd76ec7253655038be620556d023dce41d32bfdfc12dde71607c442c6a61",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 41186,
+      "imageBytes": 49776,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。細い均一な輪郭で閉じた形を作り、全画面を合計8色以内の完全なベタ塗りだけで構成する。肌、髪、服、地図、列車のどこにも影色、ハイライト、グラデーションを置かない。髪は一つの色面、服も一つの色面とする。地図は無地の紙と数本の線だけ。背景は列車の輪郭と帯、屋根のシルエットだけに簡略化し、窓の反射、床の影、遠景の小物は省く。奥行きは形の重なりだけで示す。人物がいる場合は日本アニメの簡潔な目鼻と自然な体型にする。平面的な人間の手描きイラストとして、描かない場所を残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：グラデーション、立体的な肌、細密な背景。",
-      "submittedPromptSha256": "ed4c2b57a9dd1e5f98455bcd1dca1d5f341f5dd3fcbb3f62b144dc30320c481b"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Use fine, even outlines around closed shapes and no more than eight flat colors across the image. Do not add shadow colors, highlights, or gradients to any material. Treat hair and clothing, when present, as single color shapes. Simplify objects to a silhouette and a few identifying lines. Reduce the background to its essential shapes, omitting reflections, cast shadows, and distant small details. Show depth only through overlaps. When people appear, use concise Japanese anime features and natural proportions. Leave areas deliberately undescribed, as in a flat hand-drawn illustration. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid gradients, modeled skin, and intricate backgrounds.",
+      "submittedPromptSha256": "1760784b93730aaf338d275f4aae29bf9865025e94796ddb7900ea9412941694"
     },
     {
       "slug": "two-tone-cel",
       "imagePath": "/images/two-tone-cel.webp",
-      "sourceFile": "exec-d6ba1f16-f7fe-4f0f-8f16-c81ed54cd13d.png",
-      "sourceSha256": "d050826f0e8efe0c892e99d8eaf9a8a772cb53da520cc3a4bd2c6f3db21bd55b",
-      "imageSha256": "abe8175fc206c213bd1894638e439a14980de8f9a49e6185c9aecba176b07f13",
+      "sourceFile": "exec-3c484c8b-eca8-4c83-8acf-d70bae36ac04.png",
+      "sourceSha256": "ded926a6a601d2c3462ece7997e9dbb97958da434443c85032840f3f7fbe3748",
+      "imageSha256": "59b95f338dc4acf0bacfae62e0d6663c478c1d8e35a018d9f313a992158a796e",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 67376,
+      "imageBytes": 83294,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。各素材を基本色と単一の影色だけで描く。影の境界は硬く、光源方向を統一する。顔と手は簡略化した日本アニメの造形で、影を小さく整理する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：エアブラシのぼかし、反射の多重塗り。",
-      "submittedPromptSha256": "88f74198270f26179e4747240cb6af69c342b484c94e89d69e2971b17f615b8f"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Paint each material using its base color and a single shadow color. Keep shadow boundaries hard and the light direction consistent. When people appear, simplify the face and hands in a Japanese anime drawing language, with small, clearly organized shadows. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid airbrushed blur and multiple layers of reflected light.",
+      "submittedPromptSha256": "4f83ae658f9c90cead06eefe651dd6c52cd0d0e98c431b5b44d331bb05cdb96b"
     },
     {
       "slug": "line-free-anime",
       "imagePath": "/images/line-free-anime.webp",
-      "sourceFile": "exec-c40f06f1-f00f-401f-ab07-b5e828fdbb7c.png",
-      "sourceSha256": "747fae3287b2449b27854986ef66748c3817509eb175e05f8aeb9f820defaf00",
-      "imageSha256": "8bfc58d2fd4273c1c64fe9a0a6f16088bcd7cdc77d0209a94f58d0d42fd0d854",
+      "sourceFile": "exec-eec8dd27-31d2-4895-ac05-616d00e1955f.png",
+      "sourceSha256": "b54f9d6a8da300810d710667135d2fcc053312835effc0db237afb2e7ce4aa73",
+      "imageSha256": "bd7d40c9dab457ed26c2a7200ab4cd3748bd82a1035d43a69a564ed6c1447721",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 48926,
+      "imageBytes": 58456,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。外輪郭線を省き、形の境界は隣り合う色面と明度差で示す。人物の目鼻など必要最小限の内側の線のみ細く残す。単純化したアニメ造形で、髪と衣服を大きな形に分ける。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：黒い縁取り、写実的な陰影。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "81154086723ac251d21b6587c05af16ec6e920880e0ff5dbaef9ef46e0d1149c"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Omit exterior contour lines and define boundaries with adjacent color shapes and value differences. Keep only a few fine internal lines for essential features such as eyes and noses. Use simplified anime forms, dividing hair and clothing into broad shapes when present. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid black edging and photorealistic shading. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "514df4e2e09d15eed1d5898aeb24de81fa5d9b924716253c4aeec4f0fcbd63fc"
     },
     {
       "slug": "thick-line-pop",
       "imagePath": "/images/thick-line-pop.webp",
-      "sourceFile": "exec-631172e7-d970-4b83-acea-052f97992c8d.png",
-      "sourceSha256": "081165222eceec9aa5f7e57307f315ff5c307f1f3be2bf7652b9a8f199d5ce43",
-      "imageSha256": "dc2ea5b561fdd8a553458c6dc88a83dbb7af66dfb6339ac489fbfcab97beac09",
+      "sourceFile": "exec-8ed9ad54-2a1c-42ce-8c44-b0ac94687c6a.png",
+      "sourceSha256": "04b2e943d3891acb70c896a9d2dc1a3d4c4ae8227eb4c913d4615afebbef0f0e",
+      "imageSha256": "393c72660a1597c9f763d16dfe652070387a63258ea233ee458fd8b49389759a",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 58714,
+      "imageBytes": 60746,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。丸い終端の太い輪郭でシルエットを囲み、内側の線は少なくする。大きな色面と一段の影で塗る。表情を明快にし、背景は幾何学的に整理する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：繊細な線の密集、写真的な質感。",
-      "submittedPromptSha256": "bea17339a87be3d0498d7ec58d9a302c83185cc88a74778009675b7b83c1977d"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Enclose silhouettes with thick outlines and rounded line endings; use fewer interior lines. Paint broad color fields with a single shadow step. Make expressions clear when people appear and organize the background into simple geometric shapes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid crowded fine lines and photographic surfaces.",
+      "submittedPromptSha256": "13118dc25fc8ed1bc95899a62e38526473ced0ef58bb167f794f005c72070097"
     },
     {
       "slug": "retro-cel",
       "imagePath": "/images/retro-cel.webp",
-      "sourceFile": "exec-fb704c00-8ebc-4486-a67a-8f32817f364b.png",
-      "sourceSha256": "d826b55a704c38031473a60661b96aea7b044d25a787e04695c25f39656765a0",
-      "imageSha256": "9981bd99c6479ebf221e98e0fec0ae02dfca5e695f400ea1df90c694fe2aadd6",
+      "sourceFile": "exec-f0b5215c-ab80-44a3-907a-303c6ecb038d.png",
+      "sourceSha256": "f1f6368670579a555791269280b134358420a1dffc512fe83d9e14642525f152",
+      "imageSha256": "2fd618fb3f76137adf1f1797c0aeae69da436f3801a3cbe31a0c2b557bc67685",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 112926,
+      "imageBytes": 97826,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。手描きのわずかな線幅の揺れを残す。セル画の不透明な平塗りと硬い影を使い、背景は柔らかいポスターカラーの筆致で描く。微かな塗膜むらを残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：VHSの大きな走査線、単なるノイズフィルタ。",
-      "submittedPromptSha256": "61b72e50d6253befc89a8b2ee8d66e3975e5cd8e3d6aab9f5548dc9d470582a9"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Retain small changes in hand-drawn line width. Use opaque cel-style flat fills and hard shadows, paired with softer poster-paint brushwork in the background. Leave faint irregularities in the painted surface. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid large VHS scan lines and noise-filter imitations.",
+      "submittedPromptSha256": "ceefe7f5fff009eb4d2a65f9ec02874298c07f4b505aceaa6e3a0350360e5724"
     },
     {
       "slug": "manga-screentone",
       "imagePath": "/images/manga-screentone.webp",
-      "sourceFile": "exec-ac819094-1a58-42aa-b04d-d3147ddfe39c.png",
-      "sourceSha256": "cd07de3cd74001daddb47fbabc47ca50d2c8d10191b0a1b0f4f0d74fb58d35f4",
-      "imageSha256": "e52162960552cb19ba764a751377fb7dc0a1069e8fff58cddd170d8938fadba5",
+      "sourceFile": "exec-dcaeae62-1ec9-42b3-a7d0-beb347cf1308.png",
+      "sourceSha256": "7b91bc73ed094c3114811e4b62d7a562ef0dc947b487151d9e2892459650bd16",
+      "imageSha256": "81ab2915ba54fae9f6195c6128e9225acc433f6bc88ff0e3722fd74629e08d48",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 132632,
+      "imageBytes": 163314,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。黒インクと白紙のみで描く。輪郭はペンの強弱をつけ、影は規則的なスクリーントーンの網点と黒ベタで分ける。焦点の顔と手は白を多く残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：連続グレーの写真階調、全体の一様な粒子。",
-      "submittedPromptSha256": "0abccd93ed78d9b160905fe13d1a0af497bd591c2f146be25cf90d46aecdd942"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Use black ink and white paper only. Vary the pen pressure around contours and build shadows with regular screentone dots and solid black shapes. Preserve more white around the focal face and hands when people appear. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid continuous photographic grayscale and uniform grain.",
+      "submittedPromptSha256": "2ab96c328c9654ff13f6bf3276cdf9cbe95f7783f950b299d8f42e1ac998c504"
     },
     {
       "slug": "shojo-delicate",
       "imagePath": "/images/shojo-delicate.webp",
-      "sourceFile": "exec-981079ab-a214-461d-bca8-07fa995b9fb7.png",
-      "sourceSha256": "b50bddce7c809df42ded2b22179fbb7b5983305a242df3619470ba48096fe63e",
-      "imageSha256": "42612694b24fc0678471d8c143a16a3ee9de2fae7377eba854f050b667d77a5f",
+      "sourceFile": "exec-108848cc-dd7a-4942-bd1d-960f76b511a4.png",
+      "sourceSha256": "46c490444ffe5d4b69cad637589dfc4b81ef692364f646634357f9145acdd5bd",
+      "imageSha256": "805d89220753d0c8083583a4c37674102d37b492791a084cf17b71d9b5029a66",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 86496,
+      "imageBytes": 99946,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。極細の強弱線で髪を流れに沿って描き、目元に線の密度を集める。色は薄い透明な層に留め、背景の輪郭は部分的に消す。人物がいない場合も同じ繊細な線と白の余韻を保つ。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：必須の花や星、過剰なまつ毛、厚い影。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "7615d0657bfbb3f415a6d86ef7134574bdbba10e239ab6c3096cd2eb923821ff"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Draw flowing forms with extremely fine tapered lines, concentrating line density near the focal features. Keep color in pale transparent layers and partially omit background contours. When people appear, emphasize delicate hair and eye lines; use the same fine linework and open white space for other subjects. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid mandatory flowers or stars, excessive eyelashes, and heavy shadows. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "219bf3f8000fac8411718b6c2c5f5a18085f3df7e4348b914d5c9780eca88ab6"
     },
     {
       "slug": "chibi-editorial",
       "imagePath": "/images/chibi-editorial.webp",
-      "sourceFile": "exec-abf67ea4-cdd5-4081-9f87-17b99e07fda1.png",
-      "sourceSha256": "e6c097063269673d81eee2f6d12ee9b666c215c157fe694ee80a4c5c2e5e2abd",
-      "imageSha256": "f7cbac6631319ca25aeae92e68853c8c37143950f357df8d2ced4c782ba795b5",
+      "sourceFile": "exec-bd3721b9-0b78-47b9-ba59-6969af9cf3ab.png",
+      "sourceSha256": "7f8173d58d5235d98f133d85652e31b7dfee280e3c63cfb71074ae7decec529e",
+      "imageSha256": "aa5044ab0e73a70833f5b3dabece3a76caba9ecbbceaba70b85c7f2e59d09ec0",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 44908,
+      "imageBytes": 53652,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。人物がいる場合は頭を大きめ、手足を短めにした三〜四頭身の造形にする。物や背景も丸い簡潔な形へ整理する。二〜三段階の平塗りで、表情と動作を読みやすくする。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：写実頭身、細かな筋肉、過剰な装飾。",
-      "submittedPromptSha256": "db0ab3734c18953d4828174cdf666bd5084e287af75de4a419c73d960082a427"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. When people appear, use a larger head and short limbs with roughly three- to four-head-tall proportions. Simplify objects and backgrounds into rounded shapes too. Use two or three flat shade steps, keeping expressions and actions easy to read. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid realistic proportions, detailed muscles, and excessive ornament.",
+      "submittedPromptSha256": "f99a856a704001f47c5678e283e3ff5ead75654bc812fbfb1b3cd58233fcdef0"
     },
     {
       "slug": "anime-pencil",
       "imagePath": "/images/anime-pencil.webp",
-      "sourceFile": "exec-3abd8edf-285e-4390-93f2-a3709bd18868.png",
-      "sourceSha256": "f144070a7c12711c8eb577b1dfe2524f283abd161c918dfca70337f464b75212",
-      "imageSha256": "a5dc96805108a0ebf2d16792edc8650ce26d93a67fa764c42bf1b23210dd6ef9",
+      "sourceFile": "exec-661a99ea-880b-4b5c-b2fd-76c7005602b5.png",
+      "sourceSha256": "43de8ee1148b1b7e4de9e91486a1a1ba80d74ebfc26ba93cbdcf1740bccd8e41",
+      "imageSha256": "758e1b16559019fea9d1b5497f7d60cedab4e4777940b2c77bfa5558663a14b1",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 107478,
+      "imageBytes": 108562,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。アニメの原画のような鉛筆の輪郭、薄い補助的な描き直し線、短いハッチングで描く。重要な輪郭を濃く、背景を薄くする。淡い色面は最小限に留め、紙の地を広く見せる。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：カラー指定記号や制作メモ、完成セルの平滑さ。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "59380d5a1aae758992754649f4981fb81b3d175a59a5f01390753975ce8136e3"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Use animation-layout pencil contours, faint exploratory redrawn lines, and short hatching. Darken important edges while leaving the background pale. Keep light color fields to a minimum and expose plenty of bare paper. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid production notes or color codes and polished cel surfaces. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "d99b9263a416cc7d329e30fbc808801fc8aaae56739dc8800792c02b8e092245"
     },
     {
       "slug": "anime-background",
       "imagePath": "/images/anime-background.webp",
-      "sourceFile": "exec-c823a148-3f35-4a85-94ad-1a958730da4c.png",
-      "sourceSha256": "f778acbd011444716706808f1c4f31c56c585ceeb4ee21db5f3c949e6e630b42",
-      "imageSha256": "85c813e9b64c99cec3637a7ce507b2d91bb18e59e3e6cfe34ced7ff767f9d2c0",
+      "sourceFile": "exec-9178521b-c7c3-4591-aa41-6dd80af71827.png",
+      "sourceSha256": "d64ed2076a1bc007a81c27bd38ee26ab13806711a1dd4c33b3faefaad03b5417",
+      "imageSha256": "b59407f301cd1d6bb938917340c70456923e2974383d600407a1fd054883dd2e",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 96140,
+      "imageBytes": 81736,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。日本アニメの背景美術のように、建物や自然を不透明な細い筆致で描く。近景は鮮明に、遠景は明度差と彩度を下げる。人物がいる場合は簡潔なセル塗りで背景から区別する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：写真の貼り付け、全面同じ細密さ。",
-      "submittedPromptSha256": "88e90d1ed2f0da1c06054cab8ce24178a10160b239e2be915525a3b69917b307"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Paint architecture and nature with fine opaque brushwork in the language of Japanese animation backgrounds. Keep the foreground clear and lower value contrast and saturation in the distance. If people appear, distinguish them from the setting with simple cel shading. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid pasted photographs and equal detail everywhere.",
+      "submittedPromptSha256": "00f4a886bf67578e914ea59502499a1e8b9d693ada7f95260464ae052c7132da"
     },
     {
       "slug": "ln-clean",
       "imagePath": "/images/ln-clean.webp",
-      "sourceFile": "exec-5516f0d5-0f00-403a-8309-4a5908c9dd33.png",
-      "sourceSha256": "2790df78cf7456d9fac0ec079cb65e2a15e23fba193baed9d03f968d9f3b8253",
-      "imageSha256": "2a5315f8ef387f7a094daaf4d2c5ea8265d3b25e987256efbf54a8f6c982ec89",
+      "sourceFile": "exec-e9ecddcf-ac67-4aab-8bfd-2bcbb8316fa1.png",
+      "sourceSha256": "b3ac7a170f282c9ce96dc547ef8770908da101e1abc3588a0b63b4dd3ca4dbb6",
+      "imageSha256": "97a481f328c1bc21213c0702076e0668af5a2ded9b9f5c00f40fc6f0d921969e",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 61930,
+      "imageBytes": 76434,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。細い端正な線と日本アニメの造形を用い、肌の陰影は薄く、髪には束ごとの透明な明暗をつける。小さな反射光を焦点に絞り、背景は低コントラストへ整理する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：全面の強い光沢、肌の写真質感。",
-      "submittedPromptSha256": "db449531ea1fa345284849c79dec7b41cf2f19dad6b0d5c8386ebbab55f3d865"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Use precise fine lines and Japanese anime forms. Keep skin shading light when people appear and build transparent light and dark layers along groups of hair. Limit small reflected highlights to the focal area and simplify the background to low-contrast shapes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid strong gloss everywhere and photographic skin.",
+      "submittedPromptSha256": "ef859460f74af932bdeccede5d07d936d28a640f43142831d0c6f7da7fa17f1d"
     },
     {
       "slug": "ln-romantic",
       "imagePath": "/images/ln-romantic.webp",
-      "sourceFile": "exec-2e1afc6e-f659-485f-99ed-e28fafe007f4.png",
-      "sourceSha256": "1c8820e13e6a43b1afa11d6c94bdf133fdda9ae1b6255b4ff46efccd07468e8a",
-      "imageSha256": "c71a40cea816d346f8d3b398191e2114136f06c75129a82e1abe83d2627f9967",
+      "sourceFile": "exec-f8e2f7a3-cd96-48bc-8328-0d5f855bae16.png",
+      "sourceSha256": "9a35d88c2308e26c3b34c66ffb35c43a4e041ea69f697aecfa521896ab34eafb",
+      "imageSha256": "23425a669ddf69d8a47c77a2c88cfa8732c62fcc28048a23684c0501d9a2cd2c",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 58438,
+      "imageBytes": 57886,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。輪郭を局所色に近い細線にし、柔らかな逆光で輪郭の一部を明るく抜く。アニメ造形と淡いグラデーションを使い、顔の陰影を浅くする。焦点以外は大きな柔らかい面へ省略する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：必須の花びら、ハート、過剰なぼけ玉。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "e412439fa98958ba45c498ed9a6667d7f2ac29bd7939b41ac4d4a230e65ea66d"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Draw fine contours close to each local color and let soft backlight brighten or lose selected edges. Use anime forms and pale gradients, with shallow facial shadows when people appear. Simplify everything away from the focal area into large gentle shapes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid mandatory petals or hearts and excessive bokeh circles. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "575f89478a831ec580b46ac222e6c45be503f94da873d00959f529cb5149b630"
     },
     {
       "slug": "ln-action",
       "imagePath": "/images/ln-action.webp",
-      "sourceFile": "exec-c9d885f2-12ec-4020-98de-f777079ee13e.png",
-      "sourceSha256": "f0a5d6530112f8c97fecf5894772397b81a3a45aac5769340a3fe01f1440fb06",
-      "imageSha256": "45e318b265b94f1f418f78d0454cf687f4e7a3039d56c31bb7765d97f4c251bd",
+      "sourceFile": "exec-fb5b65e9-a310-4b07-bd32-5c98c9c1248e.png",
+      "sourceSha256": "aea86ba33f69e0bcf31886f0d6245a994600948b2e62287d4048dd98f984e690",
+      "imageSha256": "99164d02d4c2d57a06c612daff549d86ef09916f4e941b014e5ab5b62d89f17e",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 90260,
+      "imageBytes": 83406,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。輪郭に鋭い角と強弱をつけ、布や髪を方向性のある形に分ける。明部と暗部を大きく分割し、焦点に強いコントラストを置く。元の場面を保ち、対角線の流れで緊張を作る。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：指定されていない武器や爆発、無意味な速度線。",
-      "submittedPromptSha256": "e8cda7d96a5bd7591822e652c3f23bad8e66fe7ae31f93d88efc5fab09e2cf4d"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Give contours sharp corners and varied weight. Organize fabric and hair into directional shapes when present. Divide light and dark into large groups and concentrate contrast at the focal area. Preserve the supplied scene while using diagonal rhythms to create tension. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid unrequested weapons or explosions and meaningless speed lines.",
+      "submittedPromptSha256": "b40f3f042d7a4b9b5a05d0ac35ef634bc858528e5289d06def75b65d65e205e8"
     },
     {
       "slug": "ln-fantasy-paint",
       "imagePath": "/images/ln-fantasy-paint.webp",
-      "sourceFile": "exec-9744e3f5-dcc1-49c5-8e42-00aba3e92dc7.png",
-      "sourceSha256": "33b945b03c056987836bfe8b18793b55b4bb4156a0ed4e1c5351e68eb115235e",
-      "imageSha256": "d69bfab40ce998c7de357a7acf65d63f7283ecd383ef7750167b8ec0adc699df",
+      "sourceFile": "exec-47267c39-b9a9-46f8-9e92-c52bdc65269f.png",
+      "sourceSha256": "86bd2b60b6a35042dd2223f9b7fbfc4704a606bbb56d4f0a28077904de77255f",
+      "imageSha256": "a5e63c1ae5d0a80be879192320206887673c9740b4571fa3bf13f2d95e6379c2",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 97832,
+      "imageBytes": 101454,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。アニメ寄りの人物造形を保ちつつ、衣服や背景を薄い不透明な筆の層で立体的に描く。素材ごとに反射と筆跡を変え、焦点に細部を集める。背景は大きな明暗の塊で整理する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：指定されていない魔法陣、宝石、衣装変更。",
-      "submittedPromptSha256": "70b70e8f4923542075b0dc429f37652e530eaef80e30553e0d853bdcdb4c30d9"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Retain anime-influenced character forms when people appear, while modeling clothing and the setting with thin layers of opaque brushwork. Vary reflection and brush marks by material, concentrating detail at the focal area. Group the background into broad light and dark masses. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid unrequested magic circles, gems, or costume changes.",
+      "submittedPromptSha256": "8dc1e706b6b038dd13d6e74fef4c6381f3057ab49926ad46b11d49b0de849d5b"
     },
     {
       "slug": "ln-mystery",
       "imagePath": "/images/ln-mystery.webp",
-      "sourceFile": "exec-a9e497d4-676c-4e0b-be5a-e1623145627b.png",
-      "sourceSha256": "e7bab0d376b4051a9708e834a68ffd00d1f96c4edc59b328e2b20ddbfa636e8c",
-      "imageSha256": "685480a96ed8dca0b11137b4c3dd6dfe1a2e78b9c60ee07008a463ca33e14213",
+      "sourceFile": "exec-51e40631-ff73-4701-939b-a8253fa44103.png",
+      "sourceSha256": "82386af73099b50190b1ac19bb64e13e7b8baaea85b3b982ad2c3f45abe109fd",
+      "imageSha256": "c68c1908e16461d33858fac86899bb24d85b301e0f556a0919f9e5114eaee7a9",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 51738,
+      "imageBytes": 38578,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。日本アニメの造形で、大きい影の面を画面の半分程度にまとめる。焦点の輪郭だけ明瞭にし、他の輪郭は暗部へ溶かす。小さな局所光と低彩度の塗りで静かな緊張を作る。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：血や恐怖物の追加、すべての細部の黒潰れ。",
-      "submittedPromptSha256": "babe370b8074cd1f222041467ee06b2afaf3dac8a649cbd9aea8cc15a7a45a7e"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Use Japanese anime forms with a large shadow group covering roughly half the image. Clarify only the focal contours and let other edges merge into darkness. Use a small local light source and low-saturation color to create quiet tension. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid added blood or horror objects and crushed detail everywhere.",
+      "submittedPromptSha256": "63b227182bfcb5faba2c24c7475fc3a8b7c87543bcb94eb8a53fcc387ffdf36d"
     },
     {
       "slug": "ln-scifi",
       "imagePath": "/images/ln-scifi.webp",
-      "sourceFile": "exec-53772d31-f4d3-432b-ba7c-a5808273d255.png",
-      "sourceSha256": "cbeb83dc57ce2035869e23b1ed184f9f073bb36945e1680ea166d136abd0aa21",
-      "imageSha256": "d09f035396b762d1f22fcf0faa3f64772ae31598d9d113ca23cdc31d661cbab2",
+      "sourceFile": "exec-ff5e639d-22a8-4e7b-ae4d-c625bcfcc9fe.png",
+      "sourceSha256": "3a8c4360e13b42129490fad06e553045b6dcaf83f5a85a830e5e64f0582a4bfd",
+      "imageSha256": "0373c289ba08564140480e8d6051d53ea86f57bc8d4bbbab31806e13904e9311",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 94186,
+      "imageBytes": 93048,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。細く正確なアニメ線で形を描き、金属、ガラス、布の反射を区別する。影は硬い面を基本に、反射は小さく整理する。直線的な背景構造を明確にし、人物の表情を柔らかく保つ。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：場面にない機械やHUD、全面のネオン。",
-      "submittedPromptSha256": "97d6c06d53abf4e9256e8c15836142fa96e230acb9c4a8a5c6fc3b51ea64c1d3"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Draw forms with fine precise anime linework and distinguish reflections on metal, glass, and cloth when those materials are specified. Base shading on hard planes and keep reflected highlights small. Clarify straight structural lines in the background while preserving gentle character expressions. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid unrequested machinery or HUD overlays and neon everywhere.",
+      "submittedPromptSha256": "473f9e7bda8fbfa1e8255369dd86f13375a97ec9bf752c7af62b980b9de9fef0"
     },
     {
       "slug": "ln-ink-color",
       "imagePath": "/images/ln-ink-color.webp",
-      "sourceFile": "exec-bf2d5506-629f-4c44-9ccb-399f1a1111b4.png",
-      "sourceSha256": "68f90a9186094011690c8940db4f181a30579d61aef0b8c98c5f6a7bfe91c381",
-      "imageSha256": "a6a1cfed6b5b4304a19aae3c0c69deb2402dec9e0048ade46ae597c45a47c355",
+      "sourceFile": "exec-74d797b4-f9d5-46f0-9602-140504fe9d90.png",
+      "sourceSha256": "b5ab330ddce83c0b86112df905cf2c8ec3a9cb18a55c59f1a12ecdfb14a156fd",
+      "imageSha256": "c30c95726f123e11274e18c86ab638ee10d18061edce6b3bb470e6f337ba5d8a",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 152532,
+      "imageBytes": 166238,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。筆ペンの速度と強弱を感じる輪郭を主役にする。内側は淡い色の層で塗り、影は線の密度と限られた墨の面で表す。黒の量を焦点に集中させ、かすれを部分的に残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：墨だけの全面洗い、必須の和服や桜。",
-      "submittedPromptSha256": "adb829dcbe0f931ae4cdbba0e4dad9b6b2be83573bf4b952be8a49f9417544dd"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Make the speed and pressure of brush-pen contours the main visual language. Fill interiors with pale color layers and form shadows through line density and a few ink shapes. Concentrate black at the focal area and retain occasional dry-brush breaks. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid an all-over ink wash and mandatory traditional clothing or blossoms.",
+      "submittedPromptSha256": "cf64c8dbb35d9b3aa99272c1c0d6ebe0e94d7dabe5f05aa2051545705173aff4"
     },
     {
       "slug": "ln-soft-pastel",
       "imagePath": "/images/ln-soft-pastel.webp",
-      "sourceFile": "exec-aee16b3f-2c33-4b6e-8726-ac600f5566bc.png",
-      "sourceSha256": "5a5af1e4d9abcb66d91dc7b193f79302f3aeb86a3fb47089d4125ba4b26ccad0",
-      "imageSha256": "36a59411252b8400c8a4ef7b3d95e1c6632890f23693579fc47409b52ef952fb",
+      "sourceFile": "exec-4fdd7e7e-1217-4bbe-9cb0-3f7ddceca931.png",
+      "sourceSha256": "f1089c9c04ed103d97d094a001ef9add4f51a113c3edc06183971173309fd50f",
+      "imageSha256": "4bdf20af5f9bf9982cf676b4e60505de8f453fb34e638e1cfb02e1afc80f6caf",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 107072,
+      "imageBytes": 109914,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。人物がいれば穏やかなアニメ造形にし、色鉛筆のような柔らかい輪郭を使う。塗りはパステルの粉が紙に乗る微細な粒で、重ねた色の境界を軽くこする。影は浅く、白を多く残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：写実的なパステル肖像、強い黒線。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "15e6807f234cc2fdff4293b06f14ef821a2cd265c1a3638f339df32c96dac598"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Use calm anime forms when people appear and soft contours resembling colored pencil. Apply color as fine pastel powder on paper, lightly rubbing boundaries between overlapping layers. Keep shadows shallow and leave plenty of white visible. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid photorealistic pastel portraits and strong black outlines. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "fa39df35aab7b2e15fb69bf6725ce3d477c9417adc580a4e02e0df45132946a6"
     },
     {
       "slug": "ln-jewel-light",
       "imagePath": "/images/ln-jewel-light.webp",
-      "sourceFile": "exec-b9273e0b-5970-41df-b0fe-94edb163e218.png",
-      "sourceSha256": "8d68f7b198d6100198605c39429ac8d75b668fa9797bcfb0bdba24b2f245c1b6",
-      "imageSha256": "213bd56b728d132c3f2d0e36968bdd4b4cfcd6e359a29dd4dd3156b34a78ee49",
+      "sourceFile": "exec-b42dbb32-bd95-41e5-9ad3-3533d9fda394.png",
+      "sourceSha256": "7afbc580023c2d8bf15b1b1e6ffbfa3f84391c6a93cc59490013ed000abb46f1",
+      "imageSha256": "47110ecd8156dd52c7a08c7f5eb3048e80524fc7cc287f5196023cc08baafd96",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 75124,
+      "imageBytes": 81340,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。アニメの細い輪郭と、透明な色の層で描く。髪や瞳、指定された硬い素材には小さく鋭いハイライトを置き、柔らかい素材はマットにする。反射は焦点に集中させる。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：宝石の追加、全身のプラスチック光沢、過飽和。",
-      "submittedPromptSha256": "dd65460074d66cc772929a1052a2c8a976de118a1837d4d8a813229644ac41cb"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Use fine anime outlines and transparent color layers. Place small sharp highlights in hair, eyes, or specified hard materials when present; keep soft materials matte. Concentrate reflected light at the focal point. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid added gems, plastic gloss over the whole subject, and oversaturation.",
+      "submittedPromptSha256": "45b96d1778191e47258fe432f968d08780f456ecf0612a65dfaa9678f5436315"
     },
     {
       "slug": "ln-graphic-cover",
       "imagePath": "/images/ln-graphic-cover.webp",
-      "sourceFile": "exec-163ec63a-c5a5-4861-b497-4d74bc18e91f.png",
-      "sourceSha256": "dc3422532dd3ac5acdbfd64a3abce5d803aace9b78edc41589efead18d64b8e8",
-      "imageSha256": "efd4ba532332ce6285fe416e7d563132081a70617f72a938582b4859d021d971",
+      "sourceFile": "exec-557e9a28-89bb-4adc-9fc4-febae2f123c4.png",
+      "sourceSha256": "fd2846a760b2d308bae8810bf2d8136ebcad5211240a9291798b5da1b4ed2889",
+      "imageSha256": "7a60d136377d3dbbb1e2a29688f3fd099859af5283861f7f0bcc4e93253526e7",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 64186,
+      "imageBytes": 49848,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。人物や主題は明瞭なアニメ輪郭と二〜三段の塗りで描く。背景の具体物は必要な形だけに整理し、大きな平面と対角線で構成する。焦点の周囲に低密度の空間を作る。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：文字の生成、装飾図形の詰め込み。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "a4a499ea6bfb5ffb49697482f56d4708b473a04e270bc9bfe518fd68c6e45c23"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render the main subject with clear anime contours and two or three shade steps. Reduce concrete background objects to their necessary shapes and compose with broad planes and diagonal rhythms. Leave low-detail space around the focal area. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid generated lettering and crowded decorative shapes. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "aad85a298d1f9962b9c44517c0e33bc04edd2bf88d31f93f56b15267700f5be2"
     },
     {
       "slug": "literary-line",
       "imagePath": "/images/literary-line.webp",
-      "sourceFile": "exec-75253191-21e7-489a-bd60-9a4edb379d64.png",
-      "sourceSha256": "677a07280bb3d48ae65dabeb12c4b38a46be63e32c228429a6392f19c333b309",
-      "imageSha256": "b4eeb06a982fddb1a5f6accb9d08cfb073882f42b6c6295f9216390d24178496",
+      "sourceFile": "exec-d5016ccd-5112-4251-9410-0f3ff1da97a1.png",
+      "sourceSha256": "52a5df128a80161de91f038be7a6d79e33dc23bd43168dbc29335f35abe3aa32",
+      "imageSha256": "bd13ba88a566590caeb21eef578e6a7f4d55c8dece06363b44ce1200a58d725c",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 98222,
+      "imageBytes": 91876,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。少数の細いインク線で主題の特徴だけを描く。輪郭は部分的に途切れ、陰影はごく少ない短い線に留める。背景は必要な輪郭だけを残し、広い白い紙の地で呼吸を作る。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：全面の細密ハッチング、巨大な黒ベタ。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "2115908436f0fd9ee78f933709cb328ecc4c11b62f3be2b8e14d1ab2cc0161c2"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Draw only the identifying features of the subject with a few fine ink lines. Break contours in selected places and restrict shading to very few short strokes. Keep only essential background edges and use broad bare-paper areas to create breathing room. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid dense all-over hatching and enormous solid-black areas. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "5c63718ad99c31be731b58ac2a864ecf91cc0101d41c46ac7f96d6562d157e58"
     },
     {
       "slug": "literary-graphite",
       "imagePath": "/images/literary-graphite.webp",
-      "sourceFile": "exec-bda4dc3a-ed37-44d1-9327-91a4a37c6f4a.png",
-      "sourceSha256": "dc55ac3775b90ee946ed1822c8828c0174f436d58b1245215e214643e1192c07",
-      "imageSha256": "9465153814f8eb99e493f3cbc8238321cd88870f109e19a703e291ddb66439c4",
+      "sourceFile": "exec-d53e32eb-c4dd-492c-883c-3baf3f6181b4.png",
+      "sourceSha256": "f21a0a470aaa53897b47e31d66c0b54acb16064dc72acfb4542b0de4fce6852f",
+      "imageSha256": "d730a11686723276e88acbd52a6bf6b44291dc243710759e79eb67fa9dcb20a5",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 119982,
+      "imageBytes": 124092,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。黒鉛鉛筆のみで描く。輪郭は細く、形は短いハッチングと擦った淡いグレーで作る。焦点は線を重ね、背景は描きかけのように薄く残す。紙の粒に黒鉛が不均一に乗る質感を保つ。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：写真の白黒変換、完全に滑らかな階調。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "2641bbe86e9b659c6c656b2546095c6289744d22fbe6c0aa076e1caeb0f52fea"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Draw with graphite pencil only. Use fine contours, short hatching, and lightly rubbed gray to model forms. Build up lines at the focal point and leave the background faint, as if still being sketched. Preserve uneven graphite catching on the paper tooth. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid black-and-white photo conversion and perfectly smooth tonal gradients. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "a3863e017b5ceee036bfe746d015afaa3c21a79ec0c8f5abb9b9249002c70a60"
     },
     {
       "slug": "literary-etching",
       "imagePath": "/images/literary-etching.webp",
-      "sourceFile": "exec-88d44ec0-0ccb-438b-84a3-af4d273d3dfa.png",
-      "sourceSha256": "4a3b7617ff5816b48dd744c2c5e9211c709534807ff9ef28c61186f17522fa1d",
-      "imageSha256": "453ea89c35fc4decd8b54d54ff17b56da19a05b29f27be30fb3511f2b545b910",
+      "sourceFile": "exec-78b8d097-45fc-4ac0-8972-f0dc05931721.png",
+      "sourceSha256": "cea0bc52535e6b02f9153aabedfa88209e10190fefde3b652b081221d5a04370",
+      "imageSha256": "e5c32774409428d342711d0ebfbed693bc65585ddabcf840b5d6daf1cda7aacc",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 208116,
+      "imageBytes": 181066,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。単色の銅版画として、形を細い彫り線と交差ハッチングで描く。輪郭だけでなく面の方向に沿って線を刻み、暗部は線の密度で作る。紙の地と微かな拭き残しを残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：網点トーン、写真階調、版の飾り枠。",
-      "submittedPromptSha256": "36853459dfbe2561e77d19e5bd80aac9f0dea306c14cd401c1e40cc82e94db87"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a single-ink copperplate etching. Describe forms with fine engraved lines and crosshatching, following the direction of surfaces rather than merely outlining them. Build darkness with line density and preserve the paper ground with faint ink left from wiping. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid screentone dots, photographic values, and ornamental plate borders.",
+      "submittedPromptSha256": "044441e5110deb01a3e9c3c3b096f7bed54ea667cfa47c1c0b8ee2ede515c559"
     },
     {
       "slug": "literary-woodcut",
       "imagePath": "/images/literary-woodcut.webp",
-      "sourceFile": "exec-2a3de413-3d77-4318-a5e0-dee372ab518f.png",
-      "sourceSha256": "173391ed158277ab902f56c9bc1e638bb60cb94b3494574aa479d6793a506de0",
-      "imageSha256": "6a8f72f48351d7add39575bdf70fe6a57dc38c960bd93d0f850ee659a610e2f0",
+      "sourceFile": "exec-d483b703-65b4-488d-a1eb-25c3e485d9f5.png",
+      "sourceSha256": "6400481a5c88dc47e298ec9af123e1a9fc12cff30190f5eb3bb54668f917e0b6",
+      "imageSha256": "35a6aef018bef89b278eee3ea67637b23db9150d3ef786d9d0285fd96c3cca56",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 218828,
+      "imageBytes": 239022,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。一色刷りの木版画として、白く彫り抜いた線と黒い版の面を組み合わせる。形の方向へ短い彫り跡を走らせ、黒白の大きな塊で構成する。木目とインクの欠けを局所的に残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：なめらかなベクター面、細い銅版ハッチング。",
-      "submittedPromptSha256": "6de361fa5ee6e144573065c02c086cc98576c06bdc85f2a37bb13f73413a7bab"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a single-ink woodcut, combining white carved lines with black printing areas. Run short cut marks in the direction of forms and compose with broad black-and-white masses. Keep wood grain and ink breaks in selected areas. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid smooth vector shapes and fine copperplate crosshatching.",
+      "submittedPromptSha256": "3f1318ca385453c5fb59954f36f1f53c88a057fb9ce732de814941b97a769f49"
     },
     {
       "slug": "literary-linocut",
       "imagePath": "/images/literary-linocut.webp",
-      "sourceFile": "exec-c3315966-4dc8-4ee2-a331-f5018964961f.png",
-      "sourceSha256": "c50cca1193b59348c8871b38bb443f7809fb1c7ded9f9561eecd6a929db2eadf",
-      "imageSha256": "8f02c04f20e2fedf9cd957ceee0cf056488205f5d734837dd0a168fc82b0bed8",
+      "sourceFile": "exec-6579326b-7a69-4e3a-97f3-b667916f8d30.png",
+      "sourceSha256": "55eb495199b9146c813c97ee714d6dbd90dddedafd78be52770eac8cac3cdf72",
+      "imageSha256": "ec96ef9f29f2460a83744bf8fc50f43015b68f25946e9245b5da8db449731bdf",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 180414,
+      "imageBytes": 180122,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。リノリウム版画の丸く滑らかな彫り跡で描く。輪郭は太い切り抜き線に整理し、二〜三色の版を重ねる。曲線の反復と大きな面で陰影を表し、わずかなインクむらを残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：木目、点状の網版、写真の陰影。",
-      "submittedPromptSha256": "1604c576b126baffbab1f4895408c1c3e3db3307d5ee2a2ce061efc37f22f8a8"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render with the rounded, flowing cut marks of a linoleum print. Organize contours into broad cut lines and overlap two or three color plates. Build shading through repeated curves and large planes, retaining slight unevenness in the ink. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid wood grain, dotted screen tones, and photographic shading.",
+      "submittedPromptSha256": "b0d4ca65df9b5182c5066f72b86d52db241c3d69abe0f4f683aa59b141519b0d"
     },
     {
       "slug": "literary-monotype",
       "imagePath": "/images/literary-monotype.webp",
-      "sourceFile": "exec-b77bb652-3879-4533-a49d-8b585760295f.png",
-      "sourceSha256": "42a2494200ac779afed47a258e0291da5f97d0f0a4e69b90d9fa15ca56771c28",
-      "imageSha256": "1cd5d8692b3d34ee4dec1949c73b5cd92d35667df26497cf07433e394e500af9",
+      "sourceFile": "exec-9d49ed97-14a4-4b72-b2d7-14f122a5aecc.png",
+      "sourceSha256": "5ca10fd2bae741d51f8756df8ce88f34fd7e0aca4870fdb26f8924aecbaab470",
+      "imageSha256": "adf96d5f298f1c41e168be9634906f31d837db2530472da54b6c845105b0ebd7",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 151110,
+      "imageBytes": 159458,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。一回刷りのモノタイプとして、版上で拭き取ったインクの明暗と柔らかい転写の縁で形を作る。主題は読める程度に残し、背景は擦れや薄いインクの膜へ溶かす。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：水彩の鮮やかな花状にじみ、規則的な網点。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "28d4283ffc22a2e97f3e38080fb723d381c8cb5ddf0b7c3fe6e5e129d0f0cfce"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a one-off monotype, building forms from ink wiped on a plate and soft transferred edges. Keep the main subject readable while allowing the background to dissolve into rubbed marks and thin ink films. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid bright watercolor blooms and regular halftone dots. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "c5f4f4ce4e93a4948fcddcf196b614c57294886b26d8c6e3ee6eee2ca5ed32b1"
     },
     {
       "slug": "literary-paper-collage",
       "imagePath": "/images/literary-paper-collage.webp",
-      "sourceFile": "exec-ac501ac0-6da5-4269-9361-5c3297a6173e.png",
-      "sourceSha256": "aeb6e8f0c0aee9fdeabae42c600cd2e99882737a9066bae02fe206c854630d80",
-      "imageSha256": "58bef8235c38aa58e73f6fa20f0d9320652d6cce7a09acfdc30b437c6b92a24a",
+      "sourceFile": "exec-f9535fd7-8184-438c-a2bd-136c91e744d2.png",
+      "sourceSha256": "17fe9607171366ddad57095f389660ac6625a73bbced2ecdbc9178318b8b0e36",
+      "imageSha256": "c7870c242b5cc89a63e99e07b5a65fc5157c68792647a9bc726529dbe346954f",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 90864,
+      "imageBytes": 93076,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。無地の色紙を切り貼りしたコラージュとして描く。形は大きな紙片へ省略し、切断面のわずかな揺れと紙の繊維を残す。紙が重なる部分だけに小さな物理的影をつける。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：雑誌の文字、写真の切り抜き、CGの厚い立体。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "41c4010d0957aa6d3a518bb66c2c58eb4330b829ccf1b0fc0acef2a5167267eb"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a collage of plain colored papers. Reduce forms to large paper pieces and retain slightly irregular cut boundaries and paper fibers. Add small physical shadows only where paper layers overlap. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid magazine lettering, photographic cutouts, and thick CGI volume. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "90e9d3add74e27ad8771da143cdbcb427f4f6792f1ded8a16e3039bdb40de5d8"
     },
     {
       "slug": "literary-oil",
       "imagePath": "/images/literary-oil.webp",
-      "sourceFile": "exec-9c5b960f-7319-4dcb-b99c-ff3174213654.png",
-      "sourceSha256": "806e4c2ce0a3e2d7f81b4f4f6b50c49ac2a108c99bd2faad3ac9a7b1676d6040",
-      "imageSha256": "a3b326c57ad29a9202192d66cfe34b313c18bb364099cf4e285dc0df3c18caf9",
+      "sourceFile": "exec-b745572d-97f5-4377-803f-2f2225b86be1.png",
+      "sourceSha256": "8ee7be81595e3aa04f6be55b40281b555247545930800be924c654519537b2c8",
+      "imageSha256": "86a78165ed4fd17a85c65da21d414c8d06b4a29cc5d47060a8f46c130a98c081",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 122482,
+      "imageBytes": 130208,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。薄塗りの油彩として、落ち着いた色を何層も重ねる。輪郭は明暗の境界から立ち上げ、暗部では消す。焦点には小さな不透明な筆触を残し、背景は布目が透ける薄い層にする。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：厚い盛り上げ全面、光沢の強いCG。",
-      "submittedPromptSha256": "e9083a322135cba31361da73a43c5d9040ec2a008e31bf760129f011d15646e5"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as thinly layered oil painting with calm colors built up in several layers. Let contours emerge from light-dark boundaries and lose them in shadow. Place small opaque brush touches at the focal point and let the canvas weave show through thin background layers. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid heavy impasto everywhere and glossy CGI surfaces.",
+      "submittedPromptSha256": "6f19f41999b44e56f9da77916e9c8acc18cc19dd477135804abcb6b99716ea1f"
     },
     {
       "slug": "literary-charcoal",
       "imagePath": "/images/literary-charcoal.webp",
-      "sourceFile": "exec-051c6531-d070-4539-bece-b170d102d424.png",
-      "sourceSha256": "63928a40815935ba64e4319874c54dd3e191ee99b2fb62d921ebe593e325c2d8",
-      "imageSha256": "647b3f8df0d8dc5a684fafed5a8bd923cdd27e5fb4a461c3904227e64b44e6f3",
+      "sourceFile": "exec-25b424e1-4925-4544-97c6-5d1b6a0476bf.png",
+      "sourceSha256": "ad373db76951a7f459cf85bda3e6097d5d7edec6c73e122e14ec19a9ca18ab98",
+      "imageSha256": "326e73338de833be37b10052f3979cbdc996073b684f1cdb7eba85658d8fbb1f",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 141094,
+      "imageBytes": 132012,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。木炭で大きな明暗の塊を描き、指で擦った柔らかい灰色と練り消しで抜いた光を使う。焦点の特徴だけ鋭い木炭線で示し、他の縁は途切れさせる。紙の粒と粉の痕を残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：精密なペン輪郭、全体が均一なぼかし。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "ae0b6d78b6a7c491f8ae44a2ad7357d8e382ec665573d32db432d7d055a24eb3"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Draw broad light-dark masses with charcoal, using soft finger-rubbed grays and light lifted with a kneaded eraser. Indicate only the focal features with sharp charcoal lines and interrupt other edges. Preserve paper tooth and traces of powder. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid precise pen contours and uniformly blurred surfaces. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "3793dfdcb92d722769f58f6af46c48a927404f17f41d9cd8562a879a0982eb20"
     },
     {
       "slug": "literary-drypoint",
       "imagePath": "/images/literary-drypoint.webp",
-      "sourceFile": "exec-d12af5ba-a131-43d6-89e4-5732d430e634.png",
-      "sourceSha256": "280d03e71ad7fe81be28f40bc1116c2b1beffeb4c136b4c6058ded2717094604",
-      "imageSha256": "f223b17cdc04933c6d0829e5149bf3d74fee495de6d1d27656092163b706252f",
+      "sourceFile": "exec-7e161d0e-6d6a-4a2b-85af-397bc559c914.png",
+      "sourceSha256": "89f5afeb0546c3573b58897409bffa0720b8cd8e5dc3c06650657c52040e2f9a",
+      "imageSha256": "9bcdad383c668c9faddb3b61a5c931f54dec2a88bde7f8012a69f95571c4db7c",
       "imageWidth": 960,
       "imageHeight": 540,
-      "imageBytes": 148232,
+      "imageBytes": 165542,
       "webpQuality": 86,
       "generatedOn": "2026-10-10",
       "tool": "Codex ImageGen (built-in)",
-      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\n指定された被写体と場面を次の絵柄で描いてください。ドライポイント版画として、直接引っかいた細い線と、その周囲に残るバリの柔らかなインクにじみで描く。線を少しずつ重ねて明暗を作り、余白は拭き上げた紙色にする。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：完全に均一な銅版線、筆による広い洗い。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
-      "submittedPromptSha256": "29366428faf845dc684e4a0df7b3d62124f2a35d24796b878b5fe51a731797b4"
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a drypoint print, using fine directly scratched lines and the soft ink fringe held by their burr. Build values with successive lines and leave wiped paper color in open areas. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid perfectly uniform copperplate lines and broad brushed washes. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "a3c2593c31187f755d85fb15f1e20d12a21ffe0bddb3bfaae8a22254da45bd78"
+    },
+    {
+      "slug": "photo-natural-daylight",
+      "imagePath": "/images/photo-natural-daylight.webp",
+      "sourceFile": "exec-b0ca5e0f-3ea7-4345-9246-d38882ef6f6d.png",
+      "sourceSha256": "ab33950ed50a570654609a46e0f9d659db4a4063ecd523e41f2edb974b02f1d2",
+      "imageSha256": "558400215a70c65c8f71f0c9a4a5653e523041b066e9d91dabe7f5abe4a57ddf",
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "imageBytes": 65980,
+      "webpQuality": 86,
+      "generatedOn": "2026-10-10",
+      "tool": "Codex ImageGen (built-in)",
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a natural digital editorial photograph, not an illustration. Use an ordinary 50mm viewpoint and the available light described in the scene. Preserve natural anatomy, subtle skin texture, and the actual surface of objects. Keep the focal subject clear and the setting readable, with gentle depth separation and restrained color. Favor an unposed everyday moment. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid airbrushed skin, artificial film-grain overlays, exaggerated bokeh, and glossy advertising staging.",
+      "submittedPromptSha256": "037dd377d2f6060c00876125368e14d48893a276f1d8fd2618357654c8f310b2"
+    },
+    {
+      "slug": "photo-cinematic",
+      "imagePath": "/images/photo-cinematic.webp",
+      "sourceFile": "exec-682cba0a-d963-4c36-9eb4-a1ec4183147c.png",
+      "sourceSha256": "b830da9a8e490686afc8bb1314ac461e01c9211c8a2af9b989d425fd07865c9c",
+      "imageSha256": "9ae647e2f471463ad5b6839cd615dda5c38cde8861e5ba20642ac1e4195ff82d",
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "imageBytes": 67738,
+      "webpQuality": 86,
+      "generatedOn": "2026-10-10",
+      "tool": "Codex ImageGen (built-in)",
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a live-action film still. Use a natural 35mm viewpoint, physically motivated light, broad shadow groups, and a controlled warm-cool color relationship. Preserve the supplied time of day and scene; do not turn daylight into night. Keep the focal subject readable and the background organized into larger masses. Preserve realistic anatomy and materials. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid unrequested fog, neon, lens-flare effects, crushed shadows, and dramatic costume changes.",
+      "submittedPromptSha256": "72275897ca645f1dcfd20629ada1d8983df16b5671bac85f415f8d0619fcc2d3"
+    },
+    {
+      "slug": "photo-medium-format",
+      "imagePath": "/images/photo-medium-format.webp",
+      "sourceFile": "exec-05f40930-e4c6-4aa6-ae07-b25361235bb8.png",
+      "sourceSha256": "3ee847f07705c6c0cbd9a2df923141547897dcafadd0bb05af696cfc7519b6ff",
+      "imageSha256": "d60474474264d68db6fab506b373f440a0eb6d64e1662a70ecf21e2bfddc0f45",
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "imageBytes": 67658,
+      "webpQuality": 86,
+      "generatedOn": "2026-10-10",
+      "tool": "Codex ImageGen (built-in)",
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a medium-format editorial photograph with a normal portrait lens perspective. Preserve smooth tonal transitions, detailed natural skin and fabric when present, and believable reflected light. Use a calm observational pose already specified by the scene. Keep the focal area crisp and the background gently separated without extreme blur. Use restrained, true-to-material color. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid plastic skin, excessive sharpening, artificial glow, and shallow focus that hides the setting.",
+      "submittedPromptSha256": "182a1374c8850afe894e3b37a81bd43559cba2a189114f5ee956a2bd28d5fdd0"
+    },
+    {
+      "slug": "photo-high-key",
+      "imagePath": "/images/photo-high-key.webp",
+      "sourceFile": "exec-4ff4bdae-ae0a-4b0d-8375-88e64b5590c8.png",
+      "sourceSha256": "8d7160a87dcc78a00bff8bcd39a8691caa0956bd915121a431b07eb65a0f9cd1",
+      "imageSha256": "25596e5e79b09a461262e74660a3e35d15be808017bc0e8aee037e3cdeaa10b9",
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "imageBytes": 49910,
+      "webpQuality": 86,
+      "generatedOn": "2026-10-10",
+      "tool": "Codex ImageGen (built-in)",
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a bright high-key natural photograph. Use soft available light, lifted shadow values, and restrained contrast while retaining texture in highlights. Give the focal subject clear edges and natural material detail; simplify the background through low contrast and uncluttered tonal grouping. Preserve the scene and do not add props. Leave quiet light areas deliberately open. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid blown-out faces, global blur, fake white cutout backgrounds, and commercial beauty retouching. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "00f76caabe95487f587241f4ceddad105433bbf4fe0b47ba2f795931c0636e1c"
+    },
+    {
+      "slug": "photo-monochrome-documentary",
+      "imagePath": "/images/photo-monochrome-documentary.webp",
+      "sourceFile": "exec-dad2e726-c608-4a37-af3f-196776154739.png",
+      "sourceSha256": "31007a598d03edded0dac1bfef9a83cd5cbbedbf0538413c47189ca566f596a3",
+      "imageSha256": "166ccc461448838751118dd5cd096dc7db3399ac812527ce215d25913e22a1e5",
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "imageBytes": 58520,
+      "webpQuality": 86,
+      "generatedOn": "2026-10-10",
+      "tool": "Codex ImageGen (built-in)",
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as an observed black-and-white documentary photograph. Use a natural 40mm perspective and available light. Preserve realistic anatomy and unposed gestures. Translate the scene into well-separated charcoal, gray, and luminous light values with natural surface texture and fine organic photographic grain. Keep the setting legible rather than dissolving it into extreme bokeh. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid color accents, illustration outlines, high-fashion staging, and aggressive grain overlays.",
+      "submittedPromptSha256": "00e12ded3a035d633a578d307df517a103db20e286745f813666eeef58748d1b"
+    },
+    {
+      "slug": "fiction-soft-realism",
+      "imagePath": "/images/fiction-soft-realism.webp",
+      "sourceFile": "exec-5914c9d9-42ab-4ead-8e54-29201e2a780f.png",
+      "sourceSha256": "f97a064bdbe5bb0b2e08172b52109699415fd9523e44f9ae5fe7a90d55321586",
+      "imageSha256": "c8810a6246b1c4708392299d5e78654897fbfd40d12a0c6968aad52ef2c5be96",
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "imageBytes": 77526,
+      "webpQuality": 86,
+      "generatedOn": "2026-10-10",
+      "tool": "Codex ImageGen (built-in)",
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a hand-painted editorial illustration for general fiction, using natural human proportions rather than large anime eyes. Use soft drawn contours, broad matte color planes, and a few gently modeled shadows. Keep expressions and gestures readable when people appear. Concentrate detail around the focal subject and simplify the setting into welcoming, coherent shapes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid photorealistic skin, glossy game rendering, oversized anime features, and overly cute proportions.",
+      "submittedPromptSha256": "64b678fca873b5f5d37c988e38a020b4436187a04f53e153572dd78d865ae614"
+    },
+    {
+      "slug": "fiction-travel-poster",
+      "imagePath": "/images/fiction-travel-poster.webp",
+      "sourceFile": "exec-8c38370a-e6c8-444f-905e-c05802e9a0da.png",
+      "sourceSha256": "b89769c8623308b1a07a29df31bbcef31dab2cf78cdc32d6e34a7d8c94ac5d9e",
+      "imageSha256": "b9ba5e11b1cd4ce59a53678d077d8682bf1ebfde68eecced508c6ba701ae821b",
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "imageBytes": 59360,
+      "webpQuality": 86,
+      "generatedOn": "2026-10-10",
+      "tool": "Codex ImageGen (built-in)",
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a narrative travel-poster illustration without lettering. Simplify architecture, landscape, and the main subject into broad graphic silhouettes and five to seven color families. Show distance through overlaps and reduced contrast, not tiny background details. Keep human proportions natural when people appear. Compose a clear focal area with generous low-detail surroundings. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid tourist lettering, ornate borders, microscopic architecture, and realistic skin shading. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "6e8242f40c6fd9237ef18c10a1bc48ceac39a3a3da93c493b48438550106571c"
+    },
+    {
+      "slug": "fiction-colored-pencil",
+      "imagePath": "/images/fiction-colored-pencil.webp",
+      "sourceFile": "exec-1da2430a-f049-422e-83e3-033621cd6d01.png",
+      "sourceSha256": "26e3216b523c989db5eef8d624ecda8468e9e6d8cf8fff6ddfe3dfda5b7ed6ee",
+      "imageSha256": "506447661f6417e8d1e1f56f7cb05c8c0b6a3367730305dc7629da0edf8b34b8",
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "imageBytes": 169446,
+      "webpQuality": 86,
+      "generatedOn": "2026-10-10",
+      "tool": "Codex ImageGen (built-in)",
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a colored-pencil illustration with natural proportions. Build color through layered short strokes and small changes in pencil pressure, allowing paper tooth to remain visible. Describe the focal face, hands, or object carefully, then use incomplete contours and sparse marks in the setting. Keep gestures and material character readable without filling every area. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid anime caricatures, smooth digital airbrush, uniform scratch textures, and fully shaded backgrounds. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "12690669d37202441534dc137951c2e12f6e7c0863949e341eccabd66c103f9c"
+    },
+    {
+      "slug": "fiction-editorial-acrylic",
+      "imagePath": "/images/fiction-editorial-acrylic.webp",
+      "sourceFile": "exec-8ad192e2-583f-472b-9cc6-7a675ba878a2.png",
+      "sourceSha256": "2fa4b9a1a57ad6957daf66084075005dcee455715c9f162799e4f21d207a6df9",
+      "imageSha256": "243bfd9b22be5fc0e0047dda92c3acf5ea8d06799e9909d9a0a88e08ac48377a",
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "imageBytes": 123430,
+      "webpQuality": 86,
+      "generatedOn": "2026-10-10",
+      "tool": "Codex ImageGen (built-in)",
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a narrative acrylic illustration with natural human proportions and believable environmental shapes. Use layered opaque paint, broad visible brushstrokes, and small sharper touches at the focal subject. Distinguish sunlight and shade with large value groups. Let background brushwork remain loose while keeping the story action clear. Use controlled material texture instead of uniform detail. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid anime facial conventions, polished photographic rendering, thick paint everywhere, and equal detail in every corner.",
+      "submittedPromptSha256": "b004445c9fa07c4aaac7cb3679faebbffcf221b6270044361ecc5a0323d43ecb"
+    },
+    {
+      "slug": "fiction-geometric-editorial",
+      "imagePath": "/images/fiction-geometric-editorial.webp",
+      "sourceFile": "exec-9450a4c5-64da-4d17-a1a4-a259ec91db9e.png",
+      "sourceSha256": "fbda86699906a4d011c26da0e0c6ecc34d48017d62aeddf5a0b4a931ac79969c",
+      "imageSha256": "ba8b5acbd63b8588e06e3431a837e2e4bffe99fae128f760dfc17e1103691829",
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "imageBytes": 41680,
+      "webpQuality": 86,
+      "generatedOn": "2026-10-10",
+      "tool": "Codex ImageGen (built-in)",
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "promptLanguage": "en",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a geometric editorial illustration. Reduce the subject and setting to a small vocabulary of curved and angular shapes, with a limited matte palette and very few shadow planes. Keep human proportions recognizable but faces minimally indicated when people appear. Use overlaps and spatial rhythm to suggest the story, leaving broad areas open without adding symbolic props. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid anime eye detail, realistic volume, ornamental patterns, and unrelated symbols. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
+      "submittedPromptSha256": "988f9d56511cd79bc0fc63addd526f8631455ed39eebded4893bcd89b206b6bc"
     }
-  ]
+  ],
+  "promptLanguage": "en"
 }

@@ -2,7 +2,7 @@
 
 Use these as two independent pieces: a character and scene prompt for the gallery example, and a visual style prompt for the rendering treatment. To make your own image in a style, write your own subject description and paste only that style's prompt after it. To approach a gallery example, paste the shared character and scene prompt followed by its style prompt.
 
-Copy-ready prompts are English in both display languages. The original sample generation instructions, including the Japanese instructions used for the thirty added samples, are preserved separately. The exact submitted text and each image checksum are recorded in [`site/benchmark-manifest.json`](site/benchmark-manifest.json). The image tool did not expose a seed or underlying model version, so the same prompt can produce a different composition on another run.
+Copy-ready prompts are English in both display languages. Every current sample was generated with the same English technique and shared subject instructions available from its full-sample copy action. Earlier Japanese-generated samples have been replaced, and their records are archived in site/provenance/. The exact submitted text and each current image checksum are recorded in [`site/benchmark-manifest.json`](site/benchmark-manifest.json). The image tool did not expose a seed or underlying model version, so the same prompt can produce a different composition on another run.
 
 Text prompts target the visible technique, not an identical image. For a closer match to a gallery image, attach that image in ChatGPT as a visual reference and say to preserve its medium, mark making, palette, and texture while following your subject description. Keep the same image model and output shape when comparing results, then inspect repeated generations. [OpenAI's image prompting guide](https://developers.openai.com/api/docs/guides/image-prompting) describes reference-based edits and consistency checks.
 
@@ -554,4 +554,154 @@ Render the supplied subject and scene in the following visual style. Render as a
 ```
 
 **Watch for:** Avoid perfectly uniform copperplate lines and broad brushed washes; these can obscure the technique.
+**Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.
+
+### Natural-Light Everyday Photo
+
+![Natural-Light Everyday Photo benchmark](site/public/images/photo-natural-daylight.webp)
+
+A quietly observed everyday photograph with believable light and tactile detail.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a natural digital editorial photograph, not an illustration. Use an ordinary 50mm viewpoint and the available light described in the scene. Preserve natural anatomy, subtle skin texture, and the actual surface of objects. Keep the focal subject clear and the setting readable, with gentle depth separation and restrained color. Favor an unposed everyday moment. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid airbrushed skin, artificial film-grain overlays, exaggerated bokeh, and glossy advertising staging.
+```
+
+**Watch for:** Avoid airbrushed skin, artificial film-grain overlays, exaggerated bokeh, and glossy advertising staging; these can obscure the technique.
+**Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.
+
+### Cinematic Still Photograph
+
+![Cinematic Still Photograph benchmark](site/public/images/photo-cinematic.webp)
+
+A measured cinematic frame with strong value grouping rather than excessive effects.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a live-action film still. Use a natural 35mm viewpoint, physically motivated light, broad shadow groups, and a controlled warm-cool color relationship. Preserve the supplied time of day and scene; do not turn daylight into night. Keep the focal subject readable and the background organized into larger masses. Preserve realistic anatomy and materials. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid unrequested fog, neon, lens-flare effects, crushed shadows, and dramatic costume changes.
+```
+
+**Watch for:** Avoid unrequested fog, neon, lens-flare effects, crushed shadows, and dramatic costume changes; these can obscure the technique.
+**Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.
+
+### Medium-Format Editorial Photo
+
+![Medium-Format Editorial Photo benchmark](site/public/images/photo-medium-format.webp)
+
+Subtle material detail and broad tonal range for a refined photographic cover.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a medium-format editorial photograph with a normal portrait lens perspective. Preserve smooth tonal transitions, detailed natural skin and fabric when present, and believable reflected light. Use a calm observational pose already specified by the scene. Keep the focal area crisp and the background gently separated without extreme blur. Use restrained, true-to-material color. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid plastic skin, excessive sharpening, artificial glow, and shallow focus that hides the setting.
+```
+
+**Watch for:** Avoid plastic skin, excessive sharpening, artificial glow, and shallow focus that hides the setting; these can obscure the technique.
+**Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.
+
+### High-Key Quiet Photograph
+
+![High-Key Quiet Photograph benchmark](site/public/images/photo-high-key.webp)
+
+Bright, spacious photography with a few carefully defined forms.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a bright high-key natural photograph. Use soft available light, lifted shadow values, and restrained contrast while retaining texture in highlights. Give the focal subject clear edges and natural material detail; simplify the background through low contrast and uncluttered tonal grouping. Preserve the scene and do not add props. Leave quiet light areas deliberately open. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid blown-out faces, global blur, fake white cutout backgrounds, and commercial beauty retouching. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.
+```
+
+**Watch for:** Avoid blown-out faces, global blur, fake white cutout backgrounds, and commercial beauty retouching; these can obscure the technique.
+**Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.
+
+### Monochrome Documentary Photo
+
+![Monochrome Documentary Photo benchmark](site/public/images/photo-monochrome-documentary.webp)
+
+Everyday narrative expressed through light, gesture, and black-and-white value.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as an observed black-and-white documentary photograph. Use a natural 40mm perspective and available light. Preserve realistic anatomy and unposed gestures. Translate the scene into well-separated charcoal, gray, and luminous light values with natural surface texture and fine organic photographic grain. Keep the setting legible rather than dissolving it into extreme bokeh. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid color accents, illustration outlines, high-fashion staging, and aggressive grain overlays.
+```
+
+**Watch for:** Avoid color accents, illustration outlines, high-fashion staging, and aggressive grain overlays; these can obscure the technique.
+**Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.
+
+### Fiction: Warm Editorial Realism
+
+![Fiction: Warm Editorial Realism benchmark](site/public/images/fiction-soft-realism.webp)
+
+Approachable people and places drawn with the warmth of a general-fiction cover.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a hand-painted editorial illustration for general fiction, using natural human proportions rather than large anime eyes. Use soft drawn contours, broad matte color planes, and a few gently modeled shadows. Keep expressions and gestures readable when people appear. Concentrate detail around the focal subject and simplify the setting into welcoming, coherent shapes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid photorealistic skin, glossy game rendering, oversized anime features, and overly cute proportions.
+```
+
+**Watch for:** Avoid photorealistic skin, glossy game rendering, oversized anime features, and overly cute proportions; these can obscure the technique.
+**Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.
+
+### Fiction: Storytelling Travel Poster
+
+![Fiction: Storytelling Travel Poster benchmark](site/public/images/fiction-travel-poster.webp)
+
+A sense of place and journey conveyed by broad shapes with generous breathing room. Selective detail leaves intentional breathing room.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a narrative travel-poster illustration without lettering. Simplify architecture, landscape, and the main subject into broad graphic silhouettes and five to seven color families. Show distance through overlaps and reduced contrast, not tiny background details. Keep human proportions natural when people appear. Compose a clear focal area with generous low-detail surroundings. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid tourist lettering, ornate borders, microscopic architecture, and realistic skin shading. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.
+```
+
+**Watch for:** Avoid tourist lettering, ornate borders, microscopic architecture, and realistic skin shading; these can obscure the technique.
+**Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.
+
+### Fiction: Colored-Pencil Narrative
+
+![Fiction: Colored-Pencil Narrative benchmark](site/public/images/fiction-colored-pencil.webp)
+
+A familiar, intimate drawing language with selective detail and open paper. Selective detail leaves intentional breathing room.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a colored-pencil illustration with natural proportions. Build color through layered short strokes and small changes in pencil pressure, allowing paper tooth to remain visible. Describe the focal face, hands, or object carefully, then use incomplete contours and sparse marks in the setting. Keep gestures and material character readable without filling every area. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid anime caricatures, smooth digital airbrush, uniform scratch textures, and fully shaded backgrounds. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.
+```
+
+**Watch for:** Avoid anime caricatures, smooth digital airbrush, uniform scratch textures, and fully shaded backgrounds; these can obscure the technique.
+**Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.
+
+### Fiction: Narrative Acrylic
+
+![Fiction: Narrative Acrylic benchmark](site/public/images/fiction-editorial-acrylic.webp)
+
+A lively painted scene with tactile marks and focused narrative detail.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a narrative acrylic illustration with natural human proportions and believable environmental shapes. Use layered opaque paint, broad visible brushstrokes, and small sharper touches at the focal subject. Distinguish sunlight and shade with large value groups. Let background brushwork remain loose while keeping the story action clear. Use controlled material texture instead of uniform detail. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid anime facial conventions, polished photographic rendering, thick paint everywhere, and equal detail in every corner.
+```
+
+**Watch for:** Avoid anime facial conventions, polished photographic rendering, thick paint everywhere, and equal detail in every corner; these can obscure the technique.
+**Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.
+
+### Fiction: Geometric Editorial
+
+![Fiction: Geometric Editorial benchmark](site/public/images/fiction-geometric-editorial.webp)
+
+Quiet visual storytelling through simplified human forms and spatial rhythm. Selective detail leaves intentional breathing room.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a geometric editorial illustration. Reduce the subject and setting to a small vocabulary of curved and angular shapes, with a limited matte palette and very few shadow planes. Keep human proportions recognizable but faces minimally indicated when people appear. Use overlaps and spatial rhythm to suggest the story, leaving broad areas open without adding symbolic props. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid anime eye detail, realistic volume, ornamental patterns, and unrelated symbols. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.
+```
+
+**Watch for:** Avoid anime eye detail, realistic volume, ornamental patterns, and unrelated symbols; these can obscure the technique.
 **Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.

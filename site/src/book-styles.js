@@ -22,7 +22,7 @@ export const bookStyles = [
       "影なしのベタ塗り",
       "マットな無地"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。細い均一な輪郭で閉じた形を作り、全画面を合計8色以内の完全なベタ塗りだけで構成する。肌、髪、服、地図、列車のどこにも影色、ハイライト、グラデーションを置かない。髪は一つの色面、服も一つの色面とする。地図は無地の紙と数本の線だけ。背景は列車の輪郭と帯、屋根のシルエットだけに簡略化し、窓の反射、床の影、遠景の小物は省く。奥行きは形の重なりだけで示す。人物がいる場合は日本アニメの簡潔な目鼻と自然な体型にする。平面的な人間の手描きイラストとして、描かない場所を残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：グラデーション、立体的な肌、細密な背景。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Use fine, even outlines around closed shapes and no more than eight flat colors across the image. Do not add shadow colors, highlights, or gradients to any material. Treat hair and clothing, when present, as single color shapes. Simplify objects to a silhouette and a few identifying lines. Reduce the background to its essential shapes, omitting reflections, cast shadows, and distant small details. Show depth only through overlaps. When people appear, use concise Japanese anime features and natural proportions. Leave areas deliberately undescribed, as in a flat hand-drawn illustration. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid gradients, modeled skin, and intricate backgrounds.",
     "watchFor": "グラデーション、立体的な肌、細密な背景に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -62,7 +62,7 @@ export const bookStyles = [
       "明部と影の二段階",
       "平滑な色面"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。各素材を基本色と単一の影色だけで描く。影の境界は硬く、光源方向を統一する。顔と手は簡略化した日本アニメの造形で、影を小さく整理する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：エアブラシのぼかし、反射の多重塗り。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Paint each material using its base color and a single shadow color. Keep shadow boundaries hard and the light direction consistent. When people appear, simplify the face and hands in a Japanese anime drawing language, with small, clearly organized shadows. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid airbrushed blur and multiple layers of reflected light.",
     "watchFor": "エアブラシのぼかし、反射の多重塗りに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -102,7 +102,7 @@ export const bookStyles = [
       "隣接する色面",
       "さらりとした平面"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。外輪郭線を省き、形の境界は隣り合う色面と明度差で示す。人物の目鼻など必要最小限の内側の線のみ細く残す。単純化したアニメ造形で、髪と衣服を大きな形に分ける。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：黒い縁取り、写実的な陰影。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Omit exterior contour lines and define boundaries with adjacent color shapes and value differences. Keep only a few fine internal lines for essential features such as eyes and noses. Use simplified anime forms, dividing hair and clothing into broad shapes when present. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid black edging and photorealistic shading. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "黒い縁取り、写実的な陰影に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -142,7 +142,7 @@ export const bookStyles = [
       "大きなベタ面",
       "清潔なインク"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。丸い終端の太い輪郭でシルエットを囲み、内側の線は少なくする。大きな色面と一段の影で塗る。表情を明快にし、背景は幾何学的に整理する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：繊細な線の密集、写真的な質感。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Enclose silhouettes with thick outlines and rounded line endings; use fewer interior lines. Paint broad color fields with a single shadow step. Make expressions clear when people appear and organize the background into simple geometric shapes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid crowded fine lines and photographic surfaces.",
     "watchFor": "繊細な線の密集、写真的な質感に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -182,7 +182,7 @@ export const bookStyles = [
       "硬いセル影",
       "微細な塗膜むら"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。手描きのわずかな線幅の揺れを残す。セル画の不透明な平塗りと硬い影を使い、背景は柔らかいポスターカラーの筆致で描く。微かな塗膜むらを残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：VHSの大きな走査線、単なるノイズフィルタ。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Retain small changes in hand-drawn line width. Use opaque cel-style flat fills and hard shadows, paired with softer poster-paint brushwork in the background. Leave faint irregularities in the painted surface. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid large VHS scan lines and noise-filter imitations.",
     "watchFor": "VHSの大きな走査線、単なるノイズフィルタに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -222,7 +222,7 @@ export const bookStyles = [
       "網点で階調",
       "印刷の点と白紙"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。黒インクと白紙のみで描く。輪郭はペンの強弱をつけ、影は規則的なスクリーントーンの網点と黒ベタで分ける。焦点の顔と手は白を多く残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：連続グレーの写真階調、全体の一様な粒子。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Use black ink and white paper only. Vary the pen pressure around contours and build shadows with regular screentone dots and solid black shapes. Preserve more white around the focal face and hands when people appear. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid continuous photographic grayscale and uniform grain.",
     "watchFor": "連続グレーの写真階調、全体の一様な粒子に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -262,7 +262,7 @@ export const bookStyles = [
       "淡い透過色",
       "白く抜ける紙面"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。極細の強弱線で髪を流れに沿って描き、目元に線の密度を集める。色は薄い透明な層に留め、背景の輪郭は部分的に消す。人物がいない場合も同じ繊細な線と白の余韻を保つ。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：必須の花や星、過剰なまつ毛、厚い影。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Draw flowing forms with extremely fine tapered lines, concentrating line density near the focal features. Keep color in pale transparent layers and partially omit background contours. When people appear, emphasize delicate hair and eye lines; use the same fine linework and open white space for other subjects. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid mandatory flowers or stars, excessive eyelashes, and heavy shadows. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "必須の花や星、過剰なまつ毛、厚い影に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -302,7 +302,7 @@ export const bookStyles = [
       "二〜三段の平塗り",
       "なめらかな面"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。人物がいる場合は頭を大きめ、手足を短めにした三〜四頭身の造形にする。物や背景も丸い簡潔な形へ整理する。二〜三段階の平塗りで、表情と動作を読みやすくする。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：写実頭身、細かな筋肉、過剰な装飾。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. When people appear, use a larger head and short limbs with roughly three- to four-head-tall proportions. Simplify objects and backgrounds into rounded shapes too. Use two or three flat shade steps, keeping expressions and actions easy to read. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid realistic proportions, detailed muscles, and excessive ornament.",
     "watchFor": "写実頭身、細かな筋肉、過剰な装飾に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -342,7 +342,7 @@ export const bookStyles = [
       "薄い線の陰影",
       "ざらついた紙"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。アニメの原画のような鉛筆の輪郭、薄い補助的な描き直し線、短いハッチングで描く。重要な輪郭を濃く、背景を薄くする。淡い色面は最小限に留め、紙の地を広く見せる。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：カラー指定記号や制作メモ、完成セルの平滑さ。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Use animation-layout pencil contours, faint exploratory redrawn lines, and short hatching. Darken important edges while leaving the background pale. Keep light color fields to a minimum and expose plenty of bare paper. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid production notes or color codes and polished cel surfaces. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "カラー指定記号や制作メモ、完成セルの平滑さに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -382,7 +382,7 @@ export const bookStyles = [
       "光の面を重ねる",
       "細かな背景筆致"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。日本アニメの背景美術のように、建物や自然を不透明な細い筆致で描く。近景は鮮明に、遠景は明度差と彩度を下げる。人物がいる場合は簡潔なセル塗りで背景から区別する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：写真の貼り付け、全面同じ細密さ。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Paint architecture and nature with fine opaque brushwork in the language of Japanese animation backgrounds. Keep the foreground clear and lower value contrast and saturation in the distance. If people appear, distinguish them from the setting with simple cel shading. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid pasted photographs and equal detail everywhere.",
     "watchFor": "写真の貼り付け、全面同じ細密さに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -422,7 +422,7 @@ export const bookStyles = [
       "薄い多層グラデーション",
       "透明な光沢"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。細い端正な線と日本アニメの造形を用い、肌の陰影は薄く、髪には束ごとの透明な明暗をつける。小さな反射光を焦点に絞り、背景は低コントラストへ整理する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：全面の強い光沢、肌の写真質感。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Use precise fine lines and Japanese anime forms. Keep skin shading light when people appear and build transparent light and dark layers along groups of hair. Limit small reflected highlights to the focal area and simplify the background to low-contrast shapes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid strong gloss everywhere and photographic skin.",
     "watchFor": "全面の強い光沢、肌の写真質感に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -462,7 +462,7 @@ export const bookStyles = [
       "柔らかな逆光",
       "控えめな光のにじみ"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。輪郭を局所色に近い細線にし、柔らかな逆光で輪郭の一部を明るく抜く。アニメ造形と淡いグラデーションを使い、顔の陰影を浅くする。焦点以外は大きな柔らかい面へ省略する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：必須の花びら、ハート、過剰なぼけ玉。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Draw fine contours close to each local color and let soft backlight brighten or lose selected edges. Use anime forms and pale gradients, with shallow facial shadows when people appear. Simplify everything away from the focal area into large gentle shapes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid mandatory petals or hearts and excessive bokeh circles. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "必須の花びら、ハート、過剰なぼけ玉に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -502,7 +502,7 @@ export const bookStyles = [
       "硬い高明暗差",
       "切れのよい色面"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。輪郭に鋭い角と強弱をつけ、布や髪を方向性のある形に分ける。明部と暗部を大きく分割し、焦点に強いコントラストを置く。元の場面を保ち、対角線の流れで緊張を作る。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：指定されていない武器や爆発、無意味な速度線。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Give contours sharp corners and varied weight. Organize fabric and hair into directional shapes when present. Divide light and dark into large groups and concentrate contrast at the focal area. Preserve the supplied scene while using diagonal rhythms to create tension. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid unrequested weapons or explosions and meaningless speed lines.",
     "watchFor": "指定されていない武器や爆発、無意味な速度線に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -542,7 +542,7 @@ export const bookStyles = [
       "層を重ねる立体塗り",
       "細かな筆跡"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。アニメ寄りの人物造形を保ちつつ、衣服や背景を薄い不透明な筆の層で立体的に描く。素材ごとに反射と筆跡を変え、焦点に細部を集める。背景は大きな明暗の塊で整理する。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：指定されていない魔法陣、宝石、衣装変更。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Retain anime-influenced character forms when people appear, while modeling clothing and the setting with thin layers of opaque brushwork. Vary reflection and brush marks by material, concentrating detail at the focal area. Group the background into broad light and dark masses. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid unrequested magic circles, gems, or costume changes.",
     "watchFor": "指定されていない魔法陣、宝石、衣装変更に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -582,7 +582,7 @@ export const bookStyles = [
       "大きな暗部",
       "マットな影"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。日本アニメの造形で、大きい影の面を画面の半分程度にまとめる。焦点の輪郭だけ明瞭にし、他の輪郭は暗部へ溶かす。小さな局所光と低彩度の塗りで静かな緊張を作る。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：血や恐怖物の追加、すべての細部の黒潰れ。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Use Japanese anime forms with a large shadow group covering roughly half the image. Clarify only the focal contours and let other edges merge into darkness. Use a small local light source and low-saturation color to create quiet tension. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid added blood or horror objects and crushed detail everywhere.",
     "watchFor": "血や恐怖物の追加、すべての細部の黒潰れに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -622,7 +622,7 @@ export const bookStyles = [
       "硬い反射面",
       "清潔なデジタル塗り"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。細く正確なアニメ線で形を描き、金属、ガラス、布の反射を区別する。影は硬い面を基本に、反射は小さく整理する。直線的な背景構造を明確にし、人物の表情を柔らかく保つ。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：場面にない機械やHUD、全面のネオン。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Draw forms with fine precise anime linework and distinguish reflections on metal, glass, and cloth when those materials are specified. Base shading on hard planes and keep reflected highlights small. Clarify straight structural lines in the background while preserving gentle character expressions. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid unrequested machinery or HUD overlays and neon everywhere.",
     "watchFor": "場面にない機械やHUD、全面のネオンに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -662,7 +662,7 @@ export const bookStyles = [
       "薄い色の重なり",
       "乾いた筆のかすれ"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。筆ペンの速度と強弱を感じる輪郭を主役にする。内側は淡い色の層で塗り、影は線の密度と限られた墨の面で表す。黒の量を焦点に集中させ、かすれを部分的に残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：墨だけの全面洗い、必須の和服や桜。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Make the speed and pressure of brush-pen contours the main visual language. Fill interiors with pale color layers and form shadows through line density and a few ink shapes. Concentrate black at the focal area and retain occasional dry-brush breaks. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid an all-over ink wash and mandatory traditional clothing or blossoms.",
     "watchFor": "墨だけの全面洗い、必須の和服や桜に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -702,7 +702,7 @@ export const bookStyles = [
       "浅い陰影",
       "微細な粉の粒"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。人物がいれば穏やかなアニメ造形にし、色鉛筆のような柔らかい輪郭を使う。塗りはパステルの粉が紙に乗る微細な粒で、重ねた色の境界を軽くこする。影は浅く、白を多く残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：写実的なパステル肖像、強い黒線。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Use calm anime forms when people appear and soft contours resembling colored pencil. Apply color as fine pastel powder on paper, lightly rubbing boundaries between overlapping layers. Keep shadows shallow and leave plenty of white visible. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid photorealistic pastel portraits and strong black outlines. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "写実的なパステル肖像、強い黒線に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -742,7 +742,7 @@ export const bookStyles = [
       "局所的な強い反射",
       "透明な色の層"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。アニメの細い輪郭と、透明な色の層で描く。髪や瞳、指定された硬い素材には小さく鋭いハイライトを置き、柔らかい素材はマットにする。反射は焦点に集中させる。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：宝石の追加、全身のプラスチック光沢、過飽和。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Use fine anime outlines and transparent color layers. Place small sharp highlights in hair, eyes, or specified hard materials when present; keep soft materials matte. Concentrate reflected light at the focal point. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid added gems, plastic gloss over the whole subject, and oversaturation.",
     "watchFor": "宝石の追加、全身のプラスチック光沢、過飽和に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -782,7 +782,7 @@ export const bookStyles = [
       "二〜三色の色面",
       "平面図形とアニメ線"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。人物や主題は明瞭なアニメ輪郭と二〜三段の塗りで描く。背景の具体物は必要な形だけに整理し、大きな平面と対角線で構成する。焦点の周囲に低密度の空間を作る。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：文字の生成、装飾図形の詰め込み。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render the main subject with clear anime contours and two or three shade steps. Reduce concrete background objects to their necessary shapes and compose with broad planes and diagonal rhythms. Leave low-detail space around the focal area. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid generated lettering and crowded decorative shapes. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "文字の生成、装飾図形の詰め込みに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -822,7 +822,7 @@ export const bookStyles = [
       "陰影をほぼ省略",
       "白紙の余韻"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。少数の細いインク線で主題の特徴だけを描く。輪郭は部分的に途切れ、陰影はごく少ない短い線に留める。背景は必要な輪郭だけを残し、広い白い紙の地で呼吸を作る。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：全面の細密ハッチング、巨大な黒ベタ。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Draw only the identifying features of the subject with a few fine ink lines. Break contours in selected places and restrict shading to very few short strokes. Keep only essential background edges and use broad bare-paper areas to create breathing room. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid dense all-over hatching and enormous solid-black areas. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "全面の細密ハッチング、巨大な黒ベタに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -862,7 +862,7 @@ export const bookStyles = [
       "擦りとハッチング",
       "黒鉛と紙の粒"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。黒鉛鉛筆のみで描く。輪郭は細く、形は短いハッチングと擦った淡いグレーで作る。焦点は線を重ね、背景は描きかけのように薄く残す。紙の粒に黒鉛が不均一に乗る質感を保つ。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：写真の白黒変換、完全に滑らかな階調。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Draw with graphite pencil only. Use fine contours, short hatching, and lightly rubbed gray to model forms. Build up lines at the focal point and leave the background faint, as if still being sketched. Preserve uneven graphite catching on the paper tooth. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid black-and-white photo conversion and perfectly smooth tonal gradients. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "写真の白黒変換、完全に滑らかな階調に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -902,7 +902,7 @@ export const bookStyles = [
       "交差ハッチング",
       "凹版のインク"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。単色の銅版画として、形を細い彫り線と交差ハッチングで描く。輪郭だけでなく面の方向に沿って線を刻み、暗部は線の密度で作る。紙の地と微かな拭き残しを残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：網点トーン、写真階調、版の飾り枠。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a single-ink copperplate etching. Describe forms with fine engraved lines and crosshatching, following the direction of surfaces rather than merely outlining them. Build darkness with line density and preserve the paper ground with faint ink left from wiping. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid screentone dots, photographic values, and ornamental plate borders.",
     "watchFor": "網点トーン、写真階調、版の飾り枠に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -942,7 +942,7 @@ export const bookStyles = [
       "黒白の大きな分割",
       "木目と欠け"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。一色刷りの木版画として、白く彫り抜いた線と黒い版の面を組み合わせる。形の方向へ短い彫り跡を走らせ、黒白の大きな塊で構成する。木目とインクの欠けを局所的に残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：なめらかなベクター面、細い銅版ハッチング。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a single-ink woodcut, combining white carved lines with black printing areas. Run short cut marks in the direction of forms and compose with broad black-and-white masses. Keep wood grain and ink breaks in selected areas. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid smooth vector shapes and fine copperplate crosshatching.",
     "watchFor": "なめらかなベクター面、細い銅版ハッチングに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -982,7 +982,7 @@ export const bookStyles = [
       "二〜三版の重なり",
       "均質な彫り跡"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。リノリウム版画の丸く滑らかな彫り跡で描く。輪郭は太い切り抜き線に整理し、二〜三色の版を重ねる。曲線の反復と大きな面で陰影を表し、わずかなインクむらを残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：木目、点状の網版、写真の陰影。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render with the rounded, flowing cut marks of a linoleum print. Organize contours into broad cut lines and overlap two or three color plates. Build shading through repeated curves and large planes, retaining slight unevenness in the ink. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid wood grain, dotted screen tones, and photographic shading.",
     "watchFor": "木目、点状の網版、写真の陰影に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -1022,7 +1022,7 @@ export const bookStyles = [
       "版上の薄いにじみ",
       "一回刷りの痕跡"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。一回刷りのモノタイプとして、版上で拭き取ったインクの明暗と柔らかい転写の縁で形を作る。主題は読める程度に残し、背景は擦れや薄いインクの膜へ溶かす。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：水彩の鮮やかな花状にじみ、規則的な網点。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a one-off monotype, building forms from ink wiped on a plate and soft transferred edges. Keep the main subject readable while allowing the background to dissolve into rubbed marks and thin ink films. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid bright watercolor blooms and regular halftone dots. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "水彩の鮮やかな花状にじみ、規則的な網点に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -1062,7 +1062,7 @@ export const bookStyles = [
       "重なりの薄い影",
       "繊維と切り口"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。無地の色紙を切り貼りしたコラージュとして描く。形は大きな紙片へ省略し、切断面のわずかな揺れと紙の繊維を残す。紙が重なる部分だけに小さな物理的影をつける。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：雑誌の文字、写真の切り抜き、CGの厚い立体。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a collage of plain colored papers. Reduce forms to large paper pieces and retain slightly irregular cut boundaries and paper fibers. Add small physical shadows only where paper layers overlap. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid magazine lettering, photographic cutouts, and thick CGI volume. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "雑誌の文字、写真の切り抜き、CGの厚い立体に寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -1102,7 +1102,7 @@ export const bookStyles = [
       "くすんだ層の明暗",
       "布目と控えめな筆跡"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。薄塗りの油彩として、落ち着いた色を何層も重ねる。輪郭は明暗の境界から立ち上げ、暗部では消す。焦点には小さな不透明な筆触を残し、背景は布目が透ける薄い層にする。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：厚い盛り上げ全面、光沢の強いCG。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as thinly layered oil painting with calm colors built up in several layers. Let contours emerge from light-dark boundaries and lose them in shadow. Place small opaque brush touches at the focal point and let the canvas weave show through thin background layers. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid heavy impasto everywhere and glossy CGI surfaces.",
     "watchFor": "厚い盛り上げ全面、光沢の強いCGに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -1142,7 +1142,7 @@ export const bookStyles = [
       "大きな灰色の塊",
       "木炭粉と紙"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。木炭で大きな明暗の塊を描き、指で擦った柔らかい灰色と練り消しで抜いた光を使う。焦点の特徴だけ鋭い木炭線で示し、他の縁は途切れさせる。紙の粒と粉の痕を残す。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：精密なペン輪郭、全体が均一なぼかし。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Draw broad light-dark masses with charcoal, using soft finger-rubbed grays and light lifted with a kneaded eraser. Indicate only the focal features with sharp charcoal lines and interrupt other edges. Preserve paper tooth and traces of powder. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid precise pen contours and uniformly blurred surfaces. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "精密なペン輪郭、全体が均一なぼかしに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -1182,7 +1182,7 @@ export const bookStyles = [
       "にじむ線の密度",
       "版のバリの柔らかさ"
     ],
-    "stylePrompt": "指定された被写体と場面を次の絵柄で描いてください。ドライポイント版画として、直接引っかいた細い線と、その周囲に残るバリの柔らかなインクにじみで描く。線を少しずつ重ねて明暗を作り、余白は拭き上げた紙色にする。 被写体、服装、持ち物、場所は別の人物・場面プロンプトに従い、絵柄指定から追加しない。文字、ロゴ、透かしは描かない。避けるもの：完全に均一な銅版線、筆による広い洗い。 描き込みの密度を均等にしない。焦点の形と表情を丁寧に仕上げ、それ以外は線を途切れさせる、影を省く、紙や地色をそのまま残すなど、この技法に合う省略を使う。背景の小物や装飾を増やさない。余白にも構成上の意図を持たせ、低解像度や全面ぼかしで代用しない。",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a drypoint print, using fine directly scratched lines and the soft ink fringe held by their burr. Build values with successive lines and leave wiped paper color in open areas. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid perfectly uniform copperplate lines and broad brushed washes. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur.",
     "watchFor": "完全に均一な銅版線、筆による広い洗いに寄ると、この絵柄の差が薄れます。",
     "related": [],
     "keywords": [
@@ -1198,5 +1198,385 @@ export const bookStyles = [
     "coverAdvice": "縦長の表紙では上部25％を低密度にし、主題と顔を中央より下へ。タイトルと著者名は生成後に組版してください。",
     "imageStatus": "ready",
     "density": "抜け感"
+  },
+  {
+    "slug": "photo-natural-daylight",
+    "name": "自然光の生活写真",
+    "family": "写真・実写寄り",
+    "image": "/images/photo-natural-daylight.webp",
+    "short": "自然なレンズの縁 · 穏やかな環境光 · 肌や素材を残す",
+    "definition": "飾らない日常を、自然光と手触りで写す。",
+    "medium": "Photo",
+    "color": "Natural",
+    "texture": "肌や素材を残す",
+    "era": "Contemporary",
+    "mood": "Quiet",
+    "lineStyle": "自然なレンズの縁",
+    "characteristics": {
+      "線": "自然なレンズの縁",
+      "塗り・陰影": "穏やかな環境光",
+      "質感": "肌や素材を残す"
+    },
+    "vocabulary": [
+      "自然なレンズの縁",
+      "穏やかな環境光",
+      "肌や素材を残す"
+    ],
+    "watchFor": "過剰な美肌処理や不自然なぼかしを避け、素材と場面の自然さを保ちます。",
+    "related": [],
+    "keywords": [
+      "自然光の生活写真",
+      "実写",
+      "一般文芸",
+      "ほどよい",
+      "表紙",
+      "装丁"
+    ],
+    "coverAdvice": "表紙に使うときは、タイトル用の低密度な余白を別途指定し、文字は後から組版してください。",
+    "imageStatus": "ready",
+    "density": "ほどよい",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a natural digital editorial photograph, not an illustration. Use an ordinary 50mm viewpoint and the available light described in the scene. Preserve natural anatomy, subtle skin texture, and the actual surface of objects. Keep the focal subject clear and the setting readable, with gentle depth separation and restrained color. Favor an unposed everyday moment. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid airbrushed skin, artificial film-grain overlays, exaggerated bokeh, and glossy advertising staging."
+  },
+  {
+    "slug": "photo-cinematic",
+    "name": "映画のワンシーン",
+    "family": "写真・実写寄り",
+    "image": "/images/photo-cinematic.webp",
+    "short": "焦点で形を分ける · 大きな明暗の塊 · 細やかな実写の材質",
+    "definition": "場面の光を生かし、映画の一瞬のように物語を感じさせる。",
+    "medium": "Photo",
+    "color": "Natural",
+    "texture": "細やかな実写の材質",
+    "era": "Contemporary",
+    "mood": "Quiet",
+    "lineStyle": "焦点で形を分ける",
+    "characteristics": {
+      "線": "焦点で形を分ける",
+      "塗り・陰影": "大きな明暗の塊",
+      "質感": "細やかな実写の材質"
+    },
+    "vocabulary": [
+      "焦点で形を分ける",
+      "大きな明暗の塊",
+      "細やかな実写の材質"
+    ],
+    "watchFor": "過剰な美肌処理や不自然なぼかしを避け、素材と場面の自然さを保ちます。",
+    "related": [],
+    "keywords": [
+      "映画のワンシーン",
+      "実写",
+      "一般文芸",
+      "リッチ",
+      "表紙",
+      "装丁"
+    ],
+    "coverAdvice": "表紙に使うときは、タイトル用の低密度な余白を別途指定し、文字は後から組版してください。",
+    "imageStatus": "ready",
+    "density": "リッチ",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a live-action film still. Use a natural 35mm viewpoint, physically motivated light, broad shadow groups, and a controlled warm-cool color relationship. Preserve the supplied time of day and scene; do not turn daylight into night. Keep the focal subject readable and the background organized into larger masses. Preserve realistic anatomy and materials. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid unrequested fog, neon, lens-flare effects, crushed shadows, and dramatic costume changes."
+  },
+  {
+    "slug": "photo-medium-format",
+    "name": "中判エディトリアル写真",
+    "family": "写真・実写寄り",
+    "image": "/images/photo-medium-format.webp",
+    "short": "自然で精密な焦点 · 豊かな階調 · 肌・布の微細な質感",
+    "definition": "穏やかな姿と素材の細部で、上質な写真表紙に。",
+    "medium": "Photo",
+    "color": "Natural",
+    "texture": "肌・布の微細な質感",
+    "era": "Contemporary",
+    "mood": "Quiet",
+    "lineStyle": "自然で精密な焦点",
+    "characteristics": {
+      "線": "自然で精密な焦点",
+      "塗り・陰影": "豊かな階調",
+      "質感": "肌・布の微細な質感"
+    },
+    "vocabulary": [
+      "自然で精密な焦点",
+      "豊かな階調",
+      "肌・布の微細な質感"
+    ],
+    "watchFor": "過剰な美肌処理や不自然なぼかしを避け、素材と場面の自然さを保ちます。",
+    "related": [],
+    "keywords": [
+      "中判エディトリアル写真",
+      "実写",
+      "一般文芸",
+      "リッチ",
+      "表紙",
+      "装丁"
+    ],
+    "coverAdvice": "表紙に使うときは、タイトル用の低密度な余白を別途指定し、文字は後から組版してください。",
+    "imageStatus": "ready",
+    "density": "リッチ",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a medium-format editorial photograph with a normal portrait lens perspective. Preserve smooth tonal transitions, detailed natural skin and fabric when present, and believable reflected light. Use a calm observational pose already specified by the scene. Keep the focal area crisp and the background gently separated without extreme blur. Use restrained, true-to-material color. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid plastic skin, excessive sharpening, artificial glow, and shallow focus that hides the setting."
+  },
+  {
+    "slug": "photo-high-key",
+    "name": "明るい余白の写真",
+    "family": "写真・実写寄り",
+    "image": "/images/photo-high-key.webp",
+    "short": "焦点の縁を明瞭に · 明るく浅い陰影 · 自然な柔らかい質感",
+    "definition": "白飛びではなく、明るい空間と少ない明暗で抜け感を作る。",
+    "medium": "Photo",
+    "color": "Natural",
+    "texture": "自然な柔らかい質感",
+    "era": "Contemporary",
+    "mood": "Quiet",
+    "lineStyle": "焦点の縁を明瞭に",
+    "characteristics": {
+      "線": "焦点の縁を明瞭に",
+      "塗り・陰影": "明るく浅い陰影",
+      "質感": "自然な柔らかい質感"
+    },
+    "vocabulary": [
+      "焦点の縁を明瞭に",
+      "明るく浅い陰影",
+      "自然な柔らかい質感"
+    ],
+    "watchFor": "過剰な美肌処理や不自然なぼかしを避け、素材と場面の自然さを保ちます。",
+    "related": [],
+    "keywords": [
+      "明るい余白の写真",
+      "実写",
+      "一般文芸",
+      "抜け感",
+      "表紙",
+      "装丁"
+    ],
+    "coverAdvice": "表紙に使うときは、タイトル用の低密度な余白を別途指定し、文字は後から組版してください。",
+    "imageStatus": "ready",
+    "density": "抜け感",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a bright high-key natural photograph. Use soft available light, lifted shadow values, and restrained contrast while retaining texture in highlights. Give the focal subject clear edges and natural material detail; simplify the background through low contrast and uncluttered tonal grouping. Preserve the scene and do not add props. Leave quiet light areas deliberately open. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid blown-out faces, global blur, fake white cutout backgrounds, and commercial beauty retouching. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur."
+  },
+  {
+    "slug": "photo-monochrome-documentary",
+    "name": "モノクロ・ドキュメンタリー",
+    "family": "写真・実写寄り",
+    "image": "/images/photo-monochrome-documentary.webp",
+    "short": "観察した自然な縁 · 白黒の階調 · 細かな写真の粒子",
+    "definition": "光としぐさ、白黒の明暗で日常の物語を写す。",
+    "medium": "Photo",
+    "color": "Natural",
+    "texture": "細かな写真の粒子",
+    "era": "Contemporary",
+    "mood": "Quiet",
+    "lineStyle": "観察した自然な縁",
+    "characteristics": {
+      "線": "観察した自然な縁",
+      "塗り・陰影": "白黒の階調",
+      "質感": "細かな写真の粒子"
+    },
+    "vocabulary": [
+      "観察した自然な縁",
+      "白黒の階調",
+      "細かな写真の粒子"
+    ],
+    "watchFor": "過剰な美肌処理や不自然なぼかしを避け、素材と場面の自然さを保ちます。",
+    "related": [],
+    "keywords": [
+      "モノクロ・ドキュメンタリー",
+      "実写",
+      "一般文芸",
+      "ほどよい",
+      "表紙",
+      "装丁"
+    ],
+    "coverAdvice": "表紙に使うときは、タイトル用の低密度な余白を別途指定し、文字は後から組版してください。",
+    "imageStatus": "ready",
+    "density": "ほどよい",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as an observed black-and-white documentary photograph. Use a natural 40mm perspective and available light. Preserve realistic anatomy and unposed gestures. Translate the scene into well-separated charcoal, gray, and luminous light values with natural surface texture and fine organic photographic grain. Keep the setting legible rather than dissolving it into extreme bokeh. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid color accents, illustration outlines, high-fashion staging, and aggressive grain overlays."
+  },
+  {
+    "slug": "fiction-soft-realism",
+    "name": "一般文芸・温かな写実イラスト",
+    "family": "一般文芸・大衆文学",
+    "image": "/images/fiction-soft-realism.webp",
+    "short": "柔らかい描線 · 大きな穏やかな塗り · マットな描画面",
+    "definition": "自然な人物と場所を、親しみのある挿絵調で描く。",
+    "medium": "Illustration",
+    "color": "Natural",
+    "texture": "マットな描画面",
+    "era": "Contemporary",
+    "mood": "Quiet",
+    "lineStyle": "柔らかい描線",
+    "characteristics": {
+      "線": "柔らかい描線",
+      "塗り・陰影": "大きな穏やかな塗り",
+      "質感": "マットな描画面"
+    },
+    "vocabulary": [
+      "柔らかい描線",
+      "大きな穏やかな塗り",
+      "マットな描画面"
+    ],
+    "watchFor": "描き込みを焦点に絞り、人物と場所の物語性を保ちます。",
+    "related": [],
+    "keywords": [
+      "一般文芸・温かな写実イラスト",
+      "大衆文学",
+      "一般文芸",
+      "ほどよい",
+      "表紙",
+      "装丁"
+    ],
+    "coverAdvice": "表紙に使うときは、タイトル用の低密度な余白を別途指定し、文字は後から組版してください。",
+    "imageStatus": "ready",
+    "density": "ほどよい",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a hand-painted editorial illustration for general fiction, using natural human proportions rather than large anime eyes. Use soft drawn contours, broad matte color planes, and a few gently modeled shadows. Keep expressions and gestures readable when people appear. Concentrate detail around the focal subject and simplify the setting into welcoming, coherent shapes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid photorealistic skin, glossy game rendering, oversized anime features, and overly cute proportions."
+  },
+  {
+    "slug": "fiction-travel-poster",
+    "name": "大衆文学・旅のポスター",
+    "family": "一般文芸・大衆文学",
+    "image": "/images/fiction-travel-poster.webp",
+    "short": "大きなシルエット · 重なる平面色 · 印刷物のような色面",
+    "definition": "場所や旅の気配を大きな形へ整理し、余白で物語を残す。",
+    "medium": "Illustration",
+    "color": "Natural",
+    "texture": "印刷物のような色面",
+    "era": "Contemporary",
+    "mood": "Quiet",
+    "lineStyle": "大きなシルエット",
+    "characteristics": {
+      "線": "大きなシルエット",
+      "塗り・陰影": "重なる平面色",
+      "質感": "印刷物のような色面"
+    },
+    "vocabulary": [
+      "大きなシルエット",
+      "重なる平面色",
+      "印刷物のような色面"
+    ],
+    "watchFor": "描き込みを焦点に絞り、人物と場所の物語性を保ちます。",
+    "related": [],
+    "keywords": [
+      "大衆文学・旅のポスター",
+      "大衆文学",
+      "一般文芸",
+      "抜け感",
+      "表紙",
+      "装丁"
+    ],
+    "coverAdvice": "表紙に使うときは、タイトル用の低密度な余白を別途指定し、文字は後から組版してください。",
+    "imageStatus": "ready",
+    "density": "抜け感",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a narrative travel-poster illustration without lettering. Simplify architecture, landscape, and the main subject into broad graphic silhouettes and five to seven color families. Show distance through overlaps and reduced contrast, not tiny background details. Keep human proportions natural when people appear. Compose a clear focal area with generous low-detail surroundings. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid tourist lettering, ornate borders, microscopic architecture, and realistic skin shading. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur."
+  },
+  {
+    "slug": "fiction-colored-pencil",
+    "name": "一般文芸・色鉛筆の物語",
+    "family": "一般文芸・大衆文学",
+    "image": "/images/fiction-colored-pencil.webp",
+    "short": "細い色鉛筆の輪郭 · 短い筆線を重ねる · 紙と顔料の粒",
+    "definition": "人物や大切な物だけ描き込み、周囲は描き残した色鉛筆の絵。",
+    "medium": "Illustration",
+    "color": "Natural",
+    "texture": "紙と顔料の粒",
+    "era": "Contemporary",
+    "mood": "Quiet",
+    "lineStyle": "細い色鉛筆の輪郭",
+    "characteristics": {
+      "線": "細い色鉛筆の輪郭",
+      "塗り・陰影": "短い筆線を重ねる",
+      "質感": "紙と顔料の粒"
+    },
+    "vocabulary": [
+      "細い色鉛筆の輪郭",
+      "短い筆線を重ねる",
+      "紙と顔料の粒"
+    ],
+    "watchFor": "描き込みを焦点に絞り、人物と場所の物語性を保ちます。",
+    "related": [],
+    "keywords": [
+      "一般文芸・色鉛筆の物語",
+      "大衆文学",
+      "一般文芸",
+      "抜け感",
+      "表紙",
+      "装丁"
+    ],
+    "coverAdvice": "表紙に使うときは、タイトル用の低密度な余白を別途指定し、文字は後から組版してください。",
+    "imageStatus": "ready",
+    "density": "抜け感",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a colored-pencil illustration with natural proportions. Build color through layered short strokes and small changes in pencil pressure, allowing paper tooth to remain visible. Describe the focal face, hands, or object carefully, then use incomplete contours and sparse marks in the setting. Keep gestures and material character readable without filling every area. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid anime caricatures, smooth digital airbrush, uniform scratch textures, and fully shaded backgrounds. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur."
+  },
+  {
+    "slug": "fiction-editorial-acrylic",
+    "name": "大衆文学・アクリルの情景",
+    "family": "一般文芸・大衆文学",
+    "image": "/images/fiction-editorial-acrylic.webp",
+    "short": "筆で作る境界 · 不透明な明暗の層 · 大きな筆跡を選択的に",
+    "definition": "行動や場所の物語性を、力強い筆と焦点の細部で描く。",
+    "medium": "Illustration",
+    "color": "Natural",
+    "texture": "大きな筆跡を選択的に",
+    "era": "Contemporary",
+    "mood": "Quiet",
+    "lineStyle": "筆で作る境界",
+    "characteristics": {
+      "線": "筆で作る境界",
+      "塗り・陰影": "不透明な明暗の層",
+      "質感": "大きな筆跡を選択的に"
+    },
+    "vocabulary": [
+      "筆で作る境界",
+      "不透明な明暗の層",
+      "大きな筆跡を選択的に"
+    ],
+    "watchFor": "描き込みを焦点に絞り、人物と場所の物語性を保ちます。",
+    "related": [],
+    "keywords": [
+      "大衆文学・アクリルの情景",
+      "大衆文学",
+      "一般文芸",
+      "リッチ",
+      "表紙",
+      "装丁"
+    ],
+    "coverAdvice": "表紙に使うときは、タイトル用の低密度な余白を別途指定し、文字は後から組版してください。",
+    "imageStatus": "ready",
+    "density": "リッチ",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a narrative acrylic illustration with natural human proportions and believable environmental shapes. Use layered opaque paint, broad visible brushstrokes, and small sharper touches at the focal subject. Distinguish sunlight and shade with large value groups. Let background brushwork remain loose while keeping the story action clear. Use controlled material texture instead of uniform detail. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid anime facial conventions, polished photographic rendering, thick paint everywhere, and equal detail in every corner."
+  },
+  {
+    "slug": "fiction-geometric-editorial",
+    "name": "一般文芸・幾何学イラスト",
+    "family": "一般文芸・大衆文学",
+    "image": "/images/fiction-geometric-editorial.webp",
+    "short": "曲線と角の省略形 · ごく少ない影の面 · 平らなマット色",
+    "definition": "人物と空間を簡潔な図形にし、静かなリズムと余白を作る。",
+    "medium": "Illustration",
+    "color": "Natural",
+    "texture": "平らなマット色",
+    "era": "Contemporary",
+    "mood": "Quiet",
+    "lineStyle": "曲線と角の省略形",
+    "characteristics": {
+      "線": "曲線と角の省略形",
+      "塗り・陰影": "ごく少ない影の面",
+      "質感": "平らなマット色"
+    },
+    "vocabulary": [
+      "曲線と角の省略形",
+      "ごく少ない影の面",
+      "平らなマット色"
+    ],
+    "watchFor": "描き込みを焦点に絞り、人物と場所の物語性を保ちます。",
+    "related": [],
+    "keywords": [
+      "一般文芸・幾何学イラスト",
+      "大衆文学",
+      "一般文芸",
+      "抜け感",
+      "表紙",
+      "装丁"
+    ],
+    "coverAdvice": "表紙に使うときは、タイトル用の低密度な余白を別途指定し、文字は後から組版してください。",
+    "imageStatus": "ready",
+    "density": "抜け感",
+    "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a geometric editorial illustration. Reduce the subject and setting to a small vocabulary of curved and angular shapes, with a limited matte palette and very few shadow planes. Keep human proportions recognizable but faces minimally indicated when people appear. Use overlaps and spatial rhythm to suggest the story, leaving broad areas open without adding symbolic props. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid anime eye detail, realistic volume, ornamental patterns, and unrelated symbols. Do not distribute detail evenly. Finish the focal shape and expression carefully, then use technique-appropriate omissions elsewhere: broken contours, fewer shadows, or untouched paper and ground color. Do not add background objects or ornaments. Give empty areas a deliberate compositional role; do not substitute low resolution or all-over blur."
   }
 ];

@@ -2,6 +2,8 @@ import {createContext, useContext, useEffect, useState} from 'react';
 import {languageLabels} from "./locale-labels.js";
 export {languageLabels};
 const english = {
+ '共通の見本':'BENCHMARK',
+ '絵柄ガイド':'STYLE FIELD GUIDE',
  '画像生成準備中':'Sample image pending',
  '説明とプロンプトは利用できます':'Description and prompt are available',
  '自分の場面と合成':'Combine with your scene',
@@ -32,7 +34,7 @@ const english = {
  '比較に追加済み':'Added to compare',
  '比較に追加':'Add to compare',
  '一覧へ戻る':'Back to styles',
- '生成時の原文は記録済み。コピーするプロンプトは英語版です。':'Original generation instructions are recorded. Copy-ready prompts are English versions.',
+ '見本は表示した2つの英語プロンプトで生成しています。':'This sample was generated using the two English prompts shown above.',
  '絵柄を比較':'Compare visual styles',
  '同じ場面で絵柄を比較':'CONTROLLED COMPARISON',
  '線・塗り・質感を見比べる。':'Compare lines, shading, and texture.',
@@ -50,7 +52,7 @@ const english = {
  '比較する絵柄を2種類以上選んでください':'Choose at least two styles to compare',
  '絵柄を探す':'Explore styles',
  'あなたの物語に、合う絵柄を。':'Find the look for your story.',
- 'フラットなアニメからラノベ、静かな純文学まで。抜け感と描き込みの密度から選べる36種類。':'36 styles for anime, light novels, and literary fiction. Choose intentional breathing room or richer detail.',
+ 'アニメ・ラノベ・純文学から、実写寄り・大衆文学まで。抜け感と描き込みの密度から選べる46種類。':'46 styles for anime, fiction, literary covers, and photographic storytelling. Choose breathing room or richer detail.',
  '名前・特徴で絵柄を検索':'Search styles by name or visual quality',
  '例：フラット、純文学、抜け感':'Try flat, literary, or breathing room',
  '検索':'Search',
@@ -113,7 +115,7 @@ export function LanguageProvider({children}) {
   document.documentElement.lang=locale;
   document.title=locale==='ja'?'物語の絵柄を探す | AI Visual Style Library':'Find Your Visual Style | AI Visual Style Library';
   const description=document.querySelector('meta[name="description"]');
-  if(description)description.content=locale==='ja'?'物語や装丁に使える36種類の絵柄。コピー用プロンプトは英語、説明は日本語と英語で切替。':'Explore 36 visual styles for stories and book covers. Compare samples and copy English prompts, with English and Japanese descriptions.';
+  if(description)description.content=locale==='ja'?'物語や装丁に使える46種類の絵柄。コピー用プロンプトは英語、説明は日本語と英語で切替。':'Explore 46 visual styles for stories and book covers. Compare samples and copy English prompts, with English and Japanese descriptions.';
   try{localStorage.setItem('visual-style-language',locale)}catch{}
  },[locale]);
  function changeLanguage(next){setLocale(next);const url=new URL(window.location.href);if(url.searchParams.has('lang')){url.searchParams.set('lang',next);window.history.replaceState({},'',url.pathname+url.search+url.hash)}}

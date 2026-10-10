@@ -28,11 +28,11 @@ The benchmark images were regenerated after writing the two-part prompts and com
 
 Research, information architecture, visual reference notes, application formats, and growth direction remain in the existing root documents.
 
-## NovelJam: 36 styles
+## Fiction and cover library: 46 styles
 
 Public Cloudflare Pages site: https://ai-visual-style-library.pages.dev/
 
-The six original styles remain, with thirty additional styles grouped into Japanese anime/manga, light-novel covers, and quiet literary covers. English and Japanese explanations distinguish line, shading, and surface technique. Copy-ready style prompts and fixed composition instructions are always English. The density filter offers thirteen new styles with intentional breathing room and six rich treatments.
+The six original styles remain, with forty additional styles: ten anime/manga, ten light-novel covers, ten quiet literary treatments, five photographic looks, and five general-fiction illustrations. English and Japanese explanations distinguish line, shading, and surface technique. Copy-ready style prompts and fixed composition instructions are always English. The density filter offers seventeen styles with intentional breathing room and nine rich treatments.
 
 Open a style, enter your own character and scene, and copy the combined prompt. The optional cover layout requests a portrait 2:3 image with low-detail space in the upper quarter. Input stays in this browser's local storage; the site does not send it to an image service. Add title and author text afterward in your layout software.
 
@@ -48,10 +48,10 @@ This project uses direct uploads. GitHub commits do not trigger deployment autom
 
 ### Image provenance
 
-Each added sample was independently generated using built-in Codex ImageGen. The original submitted instructions are preserved by `generationPrompt` and the manifest; current copy-ready prompts are English translations and subject-independent refinements, not rewritten generation history. `site/benchmark-manifest.json` records input/output hashes and exact submitted prompts. Model version and seed are not exposed; repeated generations can vary. To import a reviewed set of new sources, run `node scripts/import-book-images.mjs /path/to/slug-to-path.json` from `site/`. This converts thirty PNGs to WebP, preserves the original six records, and updates the manifest. Source PNGs and private workspace files are not uploaded.
+All forty added samples were independently generated using built-in Codex ImageGen with the exact English full-sample copy. `generationPrompt`, `combinedPrompt`, and each current manifest entry agree. The earlier Japanese-generated image records are retained in `site/provenance/benchmark-manifest-before-english-samples.json`; those images have been replaced. `site/benchmark-manifest.json` records input/output hashes and exact submitted prompts. Model version and seed are not exposed; repeated generations can vary. To import a reviewed set of new sources, run `node scripts/import-book-images.mjs /path/to/slug-to-path.json /path/to/submitted-jobs.json` from `site/`. This checks submitted instructions against the current copy text before converting forty PNGs to WebP, preserves the original six records, and updates the manifest. Source PNGs and private workspace files are not uploaded.
 
 ### Display language and prompt language
 
 Use EN / 日本語 in the header, detail view, or comparison. A saved language choice wins over browser preferences; otherwise Japanese browsers start in Japanese and other browsers start in English. An explicit `?lang=en` or `?lang=ja` link takes precedence. The selected locale persists in localStorage.
 
-All copied style prompts, vocabulary, sample combinations, and cover-layout instructions are English in either display language. User-entered subject text is preserved verbatim, including Japanese or mixed-language text. Original image-generation instructions and image hashes remain unchanged.
+All copied style prompts, vocabulary, sample combinations, and cover-layout instructions are English in either display language. User-entered subject text is preserved verbatim, including Japanese or mixed-language text. The original six image records stay unchanged; the forty additions now use exact English copy text and new output hashes.

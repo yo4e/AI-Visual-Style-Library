@@ -154,7 +154,7 @@ function DetailModal({
         <div className="detail-visual">
           <StyleImage style={style} alt={locale === "ja" ? `${style.name}で描いた駅の比較用見本` : `${style.name} benchmark example at a train platform`} />
           <div className="detail-image-foot">
-            <span>BENCHMARK / {benchmark.id.toUpperCase()}</span>
+            <span>{t("共通の見本")} / {benchmark.id.toUpperCase()}</span>
             <div className="detail-steps">
               <button type="button" onClick={() => onNavigate(previous.slug)} aria-label={`${t("前の絵柄")}: ${previous.name}`}><ArrowLeft size={20} /></button>
               <span>{String(index + 1).padStart(2, "0")} / {String(styles.length).padStart(2, "0")}</span>
@@ -163,7 +163,7 @@ function DetailModal({
           </div>
         </div>
         <div className="detail-copy">
-          <div className="modal-topline"><LanguageToggle /><span>STYLE FIELD GUIDE / {style.familyLabel.toUpperCase()}</span><button type="button" onClick={onClose} data-modal-close aria-label={t("詳細を閉じる")}><X size={22} /></button></div>
+          <div className="modal-topline"><LanguageToggle /><span>{t("絵柄ガイド")} / {style.familyLabel.toUpperCase()}</span><button type="button" onClick={onClose} data-modal-close aria-label={t("詳細を閉じる")}><X size={22} /></button></div>
           <h2>{style.name}</h2>
           <p className="detail-definition">{style.definition}</p>
           <section className="prompt-recipes" aria-label={t("コピーできる画像プロンプト")}>
@@ -190,7 +190,7 @@ function DetailModal({
             <button className="primary-button" type="button" onClick={() => onCompare(style.slug)}>{isCompared ? <Check size={18} /> : <Plus size={18} />}{isCompared ? t("比較に追加済み") : t("比較に追加")}</button>
             <button className="text-button" type="button" onClick={onClose}>{t("一覧へ戻る")}<ArrowRight size={17} /></button>
           </div>
-          <p className="provenance">{t("生成時の原文は記録済み。コピーするプロンプトは英語版です。")}</p>
+          <p className="provenance">{t("見本は表示した2つの英語プロンプトで生成しています。")}</p>
         </div>
       </div>
     </ModalFrame>;
@@ -342,7 +342,7 @@ export function App() {
       <main>
         <section className="hero page-shell" aria-labelledby="page-title"><div className="hero-main">
           <h1 id="page-title">{t("あなたの物語に、合う絵柄を。")}</h1>
-          <p>{t("フラットなアニメからラノベ、静かな純文学まで。抜け感と描き込みの密度から選べる36種類。")}</p>
+          <p>{t("アニメ・ラノベ・純文学から、実写寄り・大衆文学まで。抜け感と描き込みの密度から選べる46種類。")}</p>
           <form className="search-form" onSubmit={submitSearch} role="search"><MagnifyingGlass size={24} aria-hidden="true" /><label className="sr-only" htmlFor="style-search">{t("名前・特徴で絵柄を検索")}</label><input id="style-search" ref={searchRef} value={searchText} onChange={event => setSearchText(event.target.value)} placeholder={t("例：フラット、純文学、抜け感")} /><button type="submit">{t("検索")}</button></form>
         </div><aside className="benchmark-note" aria-label={t("共通の見本について")}><span className="eyebrow">{t("同じ場面で比較")}</span><p>{t("同じ人物と駅の場面を描き分けています。被写体は自分の物語に置き換えられます。")}</p><div>{t("赤いコートの女性が駅で地図を広げる場面")}.</div></aside></section>
 

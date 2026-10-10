@@ -193,7 +193,7 @@ const originalWatchJa = [
  'ぼやけた低解像度画像ではなく、意図的に配置したピクセルの塊が重要です。',
  '粒子の追加だけでは、レンズ・光・フィルムの色のふるまいは再現できません。',
 ];
-const familyIds={'アニメ・漫画':'anime','ライトノベル':'light-novel','純文学・静かな装丁':'literary'};
+const familyIds={'アニメ・漫画':'anime','ライトノベル':'light-novel','純文学・静かな装丁':'literary','写真・実写寄り':'photographic','一般文芸・大衆文学':'fiction'};
 const densityIds={'抜け感':'airy','ほどよい':'balanced','リッチ':'rich'};
 export const styles = [
  ...originalStyles.map((style,i)=>({
@@ -216,7 +216,7 @@ export function getStyles(locale='en') {
 }
 export const filterDefinitions = [
  {key:'density',label:'描き込みの密度',values:['airy','balanced','rich']},
- {key:'family',label:'用途・系統',values:['anime','light-novel','literary','original']},
+ {key:'family',label:'用途・系統',values:['anime','light-novel','literary','photographic','fiction','original']},
 ];
 export const quickTraits = ['フラット','ラノベ','純文学','線画','版画'];
 export function composePrompt(style, subject, cover = false) {
