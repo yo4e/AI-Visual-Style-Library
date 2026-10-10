@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { benchmark, combinedPrompt, styles } from "../src/style-data.js";
+import { benchmark, generationPrompt, styles } from "../src/style-data.js";
 
 const hash = (value) => createHash("sha256").update(value).digest("hex");
 const manifest = JSON.parse(await readFile(new URL("../benchmark-manifest.json", import.meta.url), "utf8"));
@@ -14,11 +14,11 @@ test("gallery images remain tied to the published prompt version", async () => {
 
   for (const [index, style] of styles.entries()) {
     const entry = manifest.images[index];
-    const prompt = combinedPrompt(style);
+    const prompt = generationPrompt(style);
     const image = await readFile(new URL(`../public${style.image}`, import.meta.url));
 
     assert.equal(entry.imagePath, style.image, `${style.slug}: image path changed`);
-    assert.equal(entry.submittedPrompt, prompt, `${style.slug}: regenerate the image after editing its prompt`);
+    assert.equal(entry.submittedPrompt, prompt, `${style.slug}: original image-generation instructions changed`);
     assert.equal(entry.submittedPromptSha256, hash(prompt), `${style.slug}: prompt checksum changed`);
     assert.equal(entry.imageSha256, hash(image), `${style.slug}: image differs from the recorded output`);
   }

@@ -3,7 +3,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
-import { benchmark, combinedPrompt, styles } from "../src/style-data.js";
+import { benchmark, generationPrompt, styles } from "../src/style-data.js";
 
 const sourceDirectory = process.argv[2];
 if (!sourceDirectory) {
@@ -38,7 +38,7 @@ for (const style of styles) {
   if (!outputBytes) throw new Error(`${style.slug}: could not meet the 300 KB image budget`);
   await writeFile(outputPath, outputBytes);
   const dimensions = await sharp(outputBytes).metadata();
-  const submittedPrompt = combinedPrompt(style);
+  const submittedPrompt = generationPrompt(style);
   images.push({
     slug: style.slug,
     imagePath: style.image,

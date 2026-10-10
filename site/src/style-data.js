@@ -1,4 +1,6 @@
 import { bookStyles } from "./book-styles.js";
+import {englishBookStyle} from "./book-style-english.js";
+import {languageLabels} from "./locale-labels.js";
 export const benchmark = {
   id: "station-map-v3",
   label: "The station map",
@@ -182,34 +184,58 @@ const existingDescriptions = [
  ['低解像度・限られた色・四角い粒','意図的に配置したピクセルの塊で、物語ゲームのように描きます。','階段状の輪郭','離散的な色段階','鮮明なピクセル'],
  ['自然な粒子・淡い色・レンズ','自然光、レンズの焦点、フィルムの粒子で、観察した日常を写します。','レンズの焦点','自然光の明暗','細かいフィルム粒子'],
 ];
-export const styles = [...originalStyles.map((style,i)=>({...style, englishName:style.name,name:existingNames[i],family:'既存6種類',density:'ほどよい',short:existingDescriptions[i][0],definition:existingDescriptions[i][1],characteristics:{'線':existingDescriptions[i][2],'塗り・陰影':existingDescriptions[i][3],'質感':existingDescriptions[i][4]},keywords:[...style.keywords,existingNames[i],'既存','装丁','表紙'],coverAdvice:'縦長の表紙ではタイトル用の余白を別途指定してください。文字は生成後に組版します。'})),...bookStyles];
 
+const originalWatchJa = [
+ 'すべての輪郭が硬く不透明だと、水彩よりデジタル塗りに見えます。',
+ '均一なノイズを重ねるだけでは、インクのむらや二版の重なりを表せません。',
+ '強い光沢や透明な洗いは、アクリルや水彩に近く見えることがあります。',
+ '写真を白黒にするだけでは、筆の動きと残した紙の役割を表せません。',
+ 'ぼやけた低解像度画像ではなく、意図的に配置したピクセルの塊が重要です。',
+ '粒子の追加だけでは、レンズ・光・フィルムの色のふるまいは再現できません。',
+];
+const familyIds={'アニメ・漫画':'anime','ライトノベル':'light-novel','純文学・静かな装丁':'literary'};
+const densityIds={'抜け感':'airy','ほどよい':'balanced','リッチ':'rich'};
+export const styles = [
+ ...originalStyles.map((style,i)=>({
+  ...style, family:'original', density:'balanced',
+  generationStylePrompt:style.stylePrompt,
+  coverAdvice:'For a portrait cover, request separate space for the title. Typeset the lettering afterward.',
+  translations:{ja:{name:existingNames[i],short:existingDescriptions[i][0],definition:existingDescriptions[i][1],characteristics:{'線':existingDescriptions[i][2],'塗り・陰影':existingDescriptions[i][3],'質感':existingDescriptions[i][4]},watchFor:originalWatchJa[i],coverAdvice:'縦長の表紙ではタイトル用の余白を別途指定してください。文字は生成後に組版します。',vocabularyLabels:[existingDescriptions[i][2],existingDescriptions[i][3],existingDescriptions[i][4]]}},
+  keywords:[...style.keywords,existingNames[i],'original','既存','装丁','表紙'],
+ })),
+ ...bookStyles.map(style=>({
+  ...style,...englishBookStyle(style),family:familyIds[style.family],density:densityIds[style.density],
+  generationStylePrompt:style.stylePrompt,
+  translations:{ja:{name:style.name,short:style.short,definition:style.definition,characteristics:style.characteristics,watchFor:style.watchFor,coverAdvice:style.coverAdvice,vocabularyLabels:style.vocabulary}},
+  keywords:[...style.keywords,englishBookStyle(style).name,...englishBookStyle(style).vocabulary,languageLabels.en.family[familyIds[style.family]],languageLabels.en.density[densityIds[style.density]]],
+ })),
+];
+
+export function getStyles(locale='en') {
+ return styles.map(style=>({...style,...(style.translations[locale]||{}),familyLabel:languageLabels[locale].family[style.family],densityLabel:languageLabels[locale].density[style.density],vocabularyLabels:style.translations[locale]?.vocabularyLabels||style.vocabulary}));
+}
 export const filterDefinitions = [
- {key:'density',label:'描き込みの密度',values:['抜け感','ほどよい','リッチ']},
- {key:'family',label:'用途・系統',values:['アニメ・漫画','ライトノベル','純文学・静かな装丁','既存6種類']},
+ {key:'density',label:'描き込みの密度',values:['airy','balanced','rich']},
+ {key:'family',label:'用途・系統',values:['anime','light-novel','literary','original']},
 ];
 export const quickTraits = ['フラット','ラノベ','純文学','線画','版画'];
 export function composePrompt(style, subject, cover = false) {
- return '人物・場面\n'+subject.trim()+'\n\n絵柄\n'+style.stylePrompt+(cover ? '\n\n装丁レイアウト\n縦長2:3の表紙用イラスト。上部25％は低密度の余白とし、重要な顔や物を置かない。主題は中央より下に配置。タイトル、著者名、ロゴ、透かしは描かず、後から組版できるようにする。' : '');
+ return 'Create one image using these independent instructions.\n\nSUBJECT AND SCENE\n'+subject+'\n\nVISUAL STYLE\n'+style.stylePrompt+(cover ? '\n\nCOVER LAYOUT\nCreate a portrait 2:3 book-cover illustration. Keep the upper 25% low in detail, with no important faces or objects, to leave space for typeset lettering. Place the main subject below the center. Do not render the title, author name, logos, or watermarks; these will be added afterward.' : '');
 }
-
-export function findStyles({ query = "", filters = {}, sort = "relevant" }) {
-  const words = query.toLowerCase().replace(/[-–]/g, " ").trim().split(/\s+/).filter(Boolean);
-  const result = styles.filter((style) => {
-    if (Object.entries(filters).some(([key, value]) => value && style[key] !== value)) return false;
-    const haystack = [
-      style.name,
-      style.englishName || "",
-      style.family,
-      style.short,
-      style.definition,
-      ...Object.values(style.characteristics),
-      ...style.vocabulary,
-      ...style.keywords,
-    ].join(" ").toLowerCase().replace(/[-–]/g, " ");
-    return words.every((word) => haystack.includes(word));
-  });
-  if (sort === "name-asc") result.sort((a, b) => a.name.localeCompare(b.name));
-  if (sort === "name-desc") result.sort((a, b) => b.name.localeCompare(a.name));
-  return result;
+// Keep the exact submitted text separate from the current English copy-ready version.
+export function generationPrompt(style) {
+ return combinedPrompt({...style,stylePrompt:style.generationStylePrompt || style.stylePrompt});
+}
+export function findStyles({ query = "", filters = {}, sort = "relevant",locale='en' }) {
+ const words=query.toLowerCase().replace(/[-–]/g,' ').trim().split(/\s+/).filter(Boolean);
+ const result=getStyles(locale).filter(style=>{
+  if(Object.entries(filters).some(([key,value])=>value&&style[key]!==value))return false;
+  const ja=style.translations.ja;
+  const canonical=styles.find(s=>s.slug===style.slug);
+  const haystack=[style.name,style.familyLabel,style.densityLabel,style.short,style.definition,...Object.values(style.characteristics),...style.vocabulary,...style.keywords,canonical.name,canonical.short,canonical.definition,ja.name,ja.short,ja.definition,...Object.values(ja.characteristics)].join(' ').toLowerCase().replace(/[-–]/g,' ');
+  return words.every(word=>haystack.includes(word));
+ });
+ if(sort==='name-asc')result.sort((a,b)=>a.name.localeCompare(b.name,locale));
+ if(sort==='name-desc')result.sort((a,b)=>b.name.localeCompare(a.name,locale));
+ return result;
 }

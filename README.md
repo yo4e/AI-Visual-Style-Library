@@ -1,6 +1,6 @@
 # AI Visual Style Library
 
-An English-language field guide for finding a visual look, understanding its traits, and comparing styles against a shared subject.
+An English/Japanese field guide for finding a visual look, understanding its traits, and comparing styles against a shared subject.
 
 ## Interactive prototype
 
@@ -32,7 +32,7 @@ Research, information architecture, visual reference notes, application formats,
 
 Public Cloudflare Pages site: https://ai-visual-style-library.pages.dev/
 
-The six original styles remain, with thirty additional styles grouped into Japanese anime/manga, light-novel covers, and quiet literary covers. Japanese explanations distinguish line, shading, and surface technique. The density filter offers thirteen new styles with intentional breathing room and six rich treatments.
+The six original styles remain, with thirty additional styles grouped into Japanese anime/manga, light-novel covers, and quiet literary covers. English and Japanese explanations distinguish line, shading, and surface technique. Copy-ready style prompts and fixed composition instructions are always English. The density filter offers thirteen new styles with intentional breathing room and six rich treatments.
 
 Open a style, enter your own character and scene, and copy the combined prompt. The optional cover layout requests a portrait 2:3 image with low-detail space in the upper quarter. Input stays in this browser's local storage; the site does not send it to an image service. Add title and author text afterward in your layout software.
 
@@ -48,4 +48,10 @@ This project uses direct uploads. GitHub commits do not trigger deployment autom
 
 ### Image provenance
 
-Each added sample is independently generated using built-in Codex ImageGen and its published `combinedPrompt`. `site/benchmark-manifest.json` records input/output hashes and exact submitted prompts. Model version and seed are not exposed; repeated generations can vary. To import a reviewed set of new sources, run `node scripts/import-book-images.mjs /path/to/slug-to-path.json` from `site/`. This converts thirty PNGs to WebP, preserves the original six records, and updates the manifest. Source PNGs and private workspace files are not uploaded.
+Each added sample was independently generated using built-in Codex ImageGen. The original submitted instructions are preserved by `generationPrompt` and the manifest; current copy-ready prompts are English translations and subject-independent refinements, not rewritten generation history. `site/benchmark-manifest.json` records input/output hashes and exact submitted prompts. Model version and seed are not exposed; repeated generations can vary. To import a reviewed set of new sources, run `node scripts/import-book-images.mjs /path/to/slug-to-path.json` from `site/`. This converts thirty PNGs to WebP, preserves the original six records, and updates the manifest. Source PNGs and private workspace files are not uploaded.
+
+### Display language and prompt language
+
+Use EN / 日本語 in the header, detail view, or comparison. A saved language choice wins over browser preferences; otherwise Japanese browsers start in Japanese and other browsers start in English. An explicit `?lang=en` or `?lang=ja` link takes precedence. The selected locale persists in localStorage.
+
+All copied style prompts, vocabulary, sample combinations, and cover-layout instructions are English in either display language. User-entered subject text is preserved verbatim, including Japanese or mixed-language text. Original image-generation instructions and image hashes remain unchanged.

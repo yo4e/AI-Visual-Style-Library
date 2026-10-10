@@ -20,7 +20,14 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 ## NovelJam cover library (2026-10-11)
 
 - Preserve the original six techniques and add thirty distinct cover-oriented styles: ten anime/manga, ten light-novel, and ten quiet literary treatments.
-- Use Japanese labels, explanations, and new style prompts. Specify line, paint/shading, texture, and selective detail rather than artist names or a fixed subject.
+- Provide natural English and Japanese labels and explanations, with a persistent language toggle. Keep all copy-ready style prompts and fixed composition instructions in English, independent of display language. Specify line, paint/shading, texture, and selective detail rather than artist names or a fixed subject.
 - The user finds AI illustrations too uniformly dense. Offer broken outlines, untouched paper, omitted shadows, simplified backgrounds, and a finished focal area. Do not substitute low resolution, general blur, or reduced quality. Keep rich styles too.
 - Allow independent custom character/scene input and optional portrait-cover layout with upper title space. Typeset titles and author names afterward.
 - Generate one real benchmark per style and record submitted prompts and input/output checksums. Do not reuse another style's image as a new sample. Keep original six prompts and image provenance unchanged.
+
+## International release language (2026-10-11)
+
+- Keep the 36 styles, images, density choices, comparison, custom subject composition, and cover-space option in both display languages.
+- Never translate, trim, or discard user-entered subject text when switching languages or composing. Preserve it verbatim.
+- Separate current English copy-ready prompts from the original Japanese instructions used to generate the thirty added images. Keep generation history and image hashes accurate; language translation alone does not require regenerating images.
+- Default to the stored choice, then Japanese for Japanese browsers and English otherwise. Explicit lang query parameters override the stored choice.
