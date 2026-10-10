@@ -27,3 +27,25 @@ This is a visual and interaction prototype with six representative entries. The 
 The benchmark images were regenerated after writing the two-part prompts and compressed to 960-pixel-wide WebP assets in `site/public/images/`. [`site/benchmark-manifest.json`](site/benchmark-manifest.json) records the submitted prompt and checksums for every selected image. The image tool did not expose its model version or seed, and the prompts aim to reproduce a visual treatment rather than exact pixels on every run.
 
 Research, information architecture, visual reference notes, application formats, and growth direction remain in the existing root documents.
+
+## NovelJam: 36 styles
+
+Public Cloudflare Pages site: https://ai-visual-style-library.pages.dev/
+
+The six original styles remain, with thirty additional styles grouped into Japanese anime/manga, light-novel covers, and quiet literary covers. Japanese explanations distinguish line, shading, and surface technique. The density filter offers thirteen new styles with intentional breathing room and six rich treatments.
+
+Open a style, enter your own character and scene, and copy the combined prompt. The optional cover layout requests a portrait 2:3 image with low-detail space in the upper quarter. Input stays in this browser's local storage; the site does not send it to an image service. Add title and author text afterward in your layout software.
+
+### Build and publish
+
+From `site/`, run `npm ci`, `npm run build`, `npm run test:prompts`, `npm run test:library`, and `npm run test:sites`. Deploy **only** `dist/client`:
+
+```sh
+wrangler pages deploy dist/client --project-name ai-visual-style-library --branch main
+```
+
+This project uses direct uploads. GitHub commits do not trigger deployment automatically. The existing Sites build packaging remains intact and separate from the static Pages directory.
+
+### Image provenance
+
+Each added sample is independently generated using built-in Codex ImageGen and its published `combinedPrompt`. `site/benchmark-manifest.json` records input/output hashes and exact submitted prompts. Model version and seed are not exposed; repeated generations can vary. To import a reviewed set of new sources, run `node scripts/import-book-images.mjs /path/to/slug-to-path.json` from `site/`. This converts thirty PNGs to WebP, preserves the original six records, and updates the manifest. Source PNGs and private workspace files are not uploaded.

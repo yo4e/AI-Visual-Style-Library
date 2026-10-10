@@ -1,3 +1,4 @@
+import { bookStyles } from "./book-styles.js";
 export const benchmark = {
   id: "station-map-v3",
   label: "The station map",
@@ -9,7 +10,7 @@ export const benchmark = {
     "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
 };
 
-export const styles = [
+const originalStyles = [
   {
     slug: "watercolor",
     name: "Watercolor",
@@ -172,16 +173,25 @@ export function combinedPrompt(style) {
   return `Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\n${benchmark.characterPrompt}\n\nVISUAL STYLE\n${style.stylePrompt}`;
 }
 
-export const filterDefinitions = [
-  { key: "medium", label: "Medium", values: ["Paint", "Print", "Ink", "Digital", "Photo"] },
-  { key: "color", label: "Color", values: ["Muted", "Limited", "Monochrome", "Natural"] },
-  { key: "texture", label: "Texture", values: ["Paper grain", "Brushstrokes", "Pixels", "Film grain"] },
-  { key: "era", label: "Era", values: ["Timeless", "Contemporary", "Retro"] },
-  { key: "mood", label: "Mood", values: ["Dreamy", "Bold", "Quiet", "Nostalgic"] },
-  { key: "lineStyle", label: "Line style", values: ["Soft", "Bold", "Expressive", "Pixelated", "Natural"] },
+const existingNames = ['水彩','リソグラフ','ガッシュ','墨絵','ピクセルアート','35mm フィルム'];
+const existingDescriptions = [
+ ['透明な絵具・にじむ縁・紙の粒','紙の白を透かす水彩。柔らかな境界と絵具の溜まりが、軽やかな空気を作ります。','鉛筆のような細線','透明色を重ねる','にじみと紙の粒'],
+ ['二色の版・網点・版ずれ','少数の特色と不均一なインクで、手刷りのポスターのように描きます。','大胆な輪郭','二色の重なり','粗い網点と版ずれ'],
+ ['不透明な色・マット・筆跡','不透明な絵具の面と控えめな筆跡で、温かな手描きの形を作ります。','筆で作る縁','不透明な色面','マットな筆跡'],
+ ['墨の筆・灰色の洗い・余白','薄めた墨と残した白紙で、形と余韻を表します。','筆の強弱','濃淡の墨の洗い','吸水紙の縁'],
+ ['低解像度・限られた色・四角い粒','意図的に配置したピクセルの塊で、物語ゲームのように描きます。','階段状の輪郭','離散的な色段階','鮮明なピクセル'],
+ ['自然な粒子・淡い色・レンズ','自然光、レンズの焦点、フィルムの粒子で、観察した日常を写します。','レンズの焦点','自然光の明暗','細かいフィルム粒子'],
 ];
+export const styles = [...originalStyles.map((style,i)=>({...style, englishName:style.name,name:existingNames[i],family:'既存6種類',density:'ほどよい',short:existingDescriptions[i][0],definition:existingDescriptions[i][1],characteristics:{'線':existingDescriptions[i][2],'塗り・陰影':existingDescriptions[i][3],'質感':existingDescriptions[i][4]},keywords:[...style.keywords,existingNames[i],'既存','装丁','表紙'],coverAdvice:'縦長の表紙ではタイトル用の余白を別途指定してください。文字は生成後に組版します。'})),...bookStyles];
 
-export const quickTraits = ["grainy", "soft", "limited colors", "handmade", "retro"];
+export const filterDefinitions = [
+ {key:'density',label:'描き込みの密度',values:['抜け感','ほどよい','リッチ']},
+ {key:'family',label:'用途・系統',values:['アニメ・漫画','ライトノベル','純文学・静かな装丁','既存6種類']},
+];
+export const quickTraits = ['フラット','ラノベ','純文学','線画','版画'];
+export function composePrompt(style, subject, cover = false) {
+ return '人物・場面\n'+subject.trim()+'\n\n絵柄\n'+style.stylePrompt+(cover ? '\n\n装丁レイアウト\n縦長2:3の表紙用イラスト。上部25％は低密度の余白とし、重要な顔や物を置かない。主題は中央より下に配置。タイトル、著者名、ロゴ、透かしは描かず、後から組版できるようにする。' : '');
+}
 
 export function findStyles({ query = "", filters = {}, sort = "relevant" }) {
   const words = query.toLowerCase().replace(/[-–]/g, " ").trim().split(/\s+/).filter(Boolean);
@@ -189,6 +199,7 @@ export function findStyles({ query = "", filters = {}, sort = "relevant" }) {
     if (Object.entries(filters).some(([key, value]) => value && style[key] !== value)) return false;
     const haystack = [
       style.name,
+      style.englishName || "",
       style.family,
       style.short,
       style.definition,

@@ -12,7 +12,7 @@ import {
   SlidersHorizontal,
   X,
 } from "@phosphor-icons/react";
-import { benchmark, combinedPrompt, filterDefinitions, findStyles, quickTraits, styles } from "./style-data";
+import { benchmark, combinedPrompt, composePrompt, filterDefinitions, findStyles, quickTraits, styles } from "./style-data";
 
 const knownSlugs = new Set(styles.map((style) => style.slug));
 const initialParams = new URLSearchParams(window.location.search);
@@ -31,6 +31,18 @@ function syncUrl({ detail, compare }) {
   window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
 }
 
+
+function StyleImage({style, ...props}) {
+ if (style.imageStatus === 'pending') return <div className="sample-pending" role="img" aria-label={style.name+'の画像は生成準備中'}><span>画像生成準備中</span><small>説明とプロンプトは利用できます</small></div>;
+ return <img src={style.image} {...props} />;
+}
+function PromptComposer({style,onCopy}) {
+ const [subject,setSubject]=useState(()=>{try{return localStorage.getItem('noveljam-subject')||''}catch{return ''}});
+ const [cover,setCover]=useState(true);
+ function update(value){setSubject(value);try{localStorage.setItem('noveljam-subject',value)}catch{}}
+ return <section className="subject-composer" aria-label="自分の場面と合成"><h3>自分の人物・場面と合成</h3><label htmlFor="own-subject">人物・場面（この端末に保存）</label><textarea id="own-subject" rows={4} value={subject} onChange={e=>update(e.target.value)} placeholder="例：帰省した主人公が、誰もいない実家の台所で古い手紙を読む。" /><label className="cover-toggle"><input type="checkbox" checked={cover} onChange={e=>setCover(e.target.checked)} />表紙用：縦長2:3・上部25％に文字用の余白</label><button className="primary-button" type="button" disabled={!subject.trim()} onClick={()=>onCopy(composePrompt(style,subject,cover),'自分の場面と合成してコピーしました')}><Copy size={16} />自分の場面と合成してコピー</button></section>;
+}
+
 function FilterSelect({ definition, value, onChange }) {
   return (
     <label className="filter-select">
@@ -47,18 +59,18 @@ function FilterSelect({ definition, value, onChange }) {
 function StyleCard({ style, selected, onOpen, onCompare, eager }) {
   return (
     <article className="style-card">
-      <button className="style-image-button" type="button" onClick={() => onOpen(style.slug)} aria-label={`Explore ${style.name}`}>
-        <img src={style.image} alt={`${style.name} interpretation of ${benchmark.alt}`} loading={eager ? "eager" : "lazy"} />
-        <span className="image-open-label">Explore style <ArrowRight size={16} aria-hidden="true" /></span>
+      <button className="style-image-button" type="button" onClick={() => onOpen(style.slug)} aria-label={`${style.name}を詳しく見る`}>
+        <StyleImage style={style} alt={`${style.name} interpretation of ${benchmark.alt}`} loading={eager ? "eager" : "lazy"} />
+        <span className="image-open-label">詳しく見る <ArrowRight size={16} aria-hidden="true" /></span>
       </button>
       <div className="card-heading-row">
         <button className="card-title" type="button" onClick={() => onOpen(style.slug)}>{style.name}</button>
         <button className={`card-compare ${selected ? "is-selected" : ""}`} type="button" aria-pressed={selected} onClick={() => onCompare(style.slug)} aria-label={`${selected ? "Remove" : "Add"} ${style.name} ${selected ? "from" : "to"} comparison`}>
           {selected ? <Check size={16} weight="bold" aria-hidden="true" /> : <Plus size={16} aria-hidden="true" />}
-          <span>{selected ? "Added" : "Compare"}</span>
+          <span>{selected ? "選択済み" : "比較"}</span>
         </button>
       </div>
-      <p className="card-short">{style.short}</p>
+      <p className="card-short">{style.short}</p><div className="style-tags"><span>{style.family}</span><span>{style.density || "ほどよい"}</span></div>
     </article>
   );
 }
@@ -69,7 +81,7 @@ function ModalFrame({ children, label, onClose, wide = false }) {
   useEffect(() => {
     const previouslyFocused = document.activeElement;
     const panel = panelRef.current;
-    panel?.querySelector('button[aria-label^="Close"]')?.focus();
+    panel?.querySelector('button[aria-label$="閉じる"]')?.focus();
 
     function keepFocusInside(event) {
       if (event.key !== "Tab" || !panel) return;
@@ -108,10 +120,10 @@ function DetailModal({ style, onClose, onCompare, isCompared, onCopy, onNavigate
   const previous = styles[(index - 1 + styles.length) % styles.length];
   const next = styles[(index + 1) % styles.length];
   return (
-    <ModalFrame label={`${style.name} style details`} onClose={onClose} wide>
+    <ModalFrame label={`${style.name}の詳細`} onClose={onClose} wide>
       <div className="detail-layout">
         <div className="detail-visual">
-          <img src={style.image} alt={`${style.name} benchmark example at a train platform`} />
+          <StyleImage style={style} alt={`${style.name} benchmark example at a train platform`} />
           <div className="detail-image-foot">
             <span>BENCHMARK / {benchmark.id.toUpperCase()}</span>
             <div className="detail-steps">
@@ -122,33 +134,34 @@ function DetailModal({ style, onClose, onCompare, isCompared, onCopy, onNavigate
           </div>
         </div>
         <div className="detail-copy">
-          <div className="modal-topline"><span>STYLE FIELD GUIDE / {style.family.toUpperCase()}</span><button type="button" onClick={onClose} aria-label="Close details"><X size={22} /></button></div>
+          <div className="modal-topline"><span>STYLE FIELD GUIDE / {style.family.toUpperCase()}</span><button type="button" onClick={onClose} aria-label="詳細を閉じる"><X size={22} /></button></div>
           <h2>{style.name}</h2>
           <p className="detail-definition">{style.definition}</p>
           <section className="prompt-recipes" aria-label="Copyable image prompts">
-            <h3>Two parts. Your choice.</h3>
-            <p className="prompt-intro">Copy the style alone for your own subject, or combine it with this scene to approach the example.</p>
+            <h3>絵柄を、自分の物語へ。</h3>
+            <p className="prompt-intro">絵柄だけをコピーするか、自分の人物・場面と合成して使えます。</p>
             <div className="prompt-recipe prompt-recipe--style">
-              <div className="prompt-recipe-head"><span>VISUAL STYLE · USE WITH ANY SUBJECT</span><button type="button" onClick={() => onCopy(style.stylePrompt, "Style prompt copied")}><Copy size={16} /> Copy style prompt</button></div>
+              <div className="prompt-recipe-head"><span>絵柄 · 被写体を自由に</span><button type="button" onClick={() => onCopy(style.stylePrompt, "絵柄プロンプトをコピーしました")}><Copy size={16} /> 絵柄をコピー</button></div>
               <p>{style.stylePrompt}</p>
             </div>
-            <div className="prompt-recipe">
-              <div className="prompt-recipe-head"><span>EXAMPLE SUBJECT · CHARACTER &amp; SCENE</span><button type="button" onClick={() => onCopy(benchmark.characterPrompt, "Character prompt copied")}><Copy size={16} /> Copy scene prompt</button></div>
+            <PromptComposer style={style} onCopy={onCopy} /><p className="cover-advice">{style.coverAdvice}</p>
+            <details className="benchmark-recipe"><summary>見本の人物・場面を使う（任意）</summary><div className="prompt-recipe">
+              <div className="prompt-recipe-head"><span>比較用の人物・場面</span><button type="button" onClick={() => onCopy(benchmark.characterPrompt, "場面をコピーしました")}><Copy size={16} /> 場面をコピー</button></div>
               <p>{benchmark.characterPrompt}</p>
             </div>
-            <button className="combined-copy" type="button" onClick={() => onCopy(combinedPrompt(style), "Combined prompt copied")}><Copy size={17} /> Copy both for this example</button>
+            <button className="combined-copy" type="button" onClick={() => onCopy(combinedPrompt(style), "合成プロンプトをコピーしました")}><Copy size={17} /> 見本の場面と合成してコピー</button></details>
           </section>
           <div className="trait-list" aria-label="Visual characteristics">
             {Object.entries(style.characteristics).map(([label, value]) => <div className="trait-row" key={label}><span>{label}</span><p>{value}</p></div>)}
           </div>
-          <div className="vocab-heading"><h3>Prompt vocabulary</h3><button type="button" onClick={() => onCopy(style.vocabulary.join(", "), "Vocabulary copied")}><Copy size={17} /> Copy terms</button></div>
+          <div className="vocab-heading"><h3>絵柄のキーワード</h3><button type="button" onClick={() => onCopy(style.vocabulary.join(", "), "キーワードをコピーしました")}><Copy size={17} /> キーワードをコピー</button></div>
           <div className="vocab-chips">{style.vocabulary.map((term) => <span key={term}>{term}</span>)}</div>
-          <p className="watch-for"><strong>Watch for</strong> {style.watchFor}</p>
+          <p className="watch-for"><strong>注意点</strong> {style.watchFor}</p>
           <div className="detail-actions">
-            <button className="primary-button" type="button" onClick={() => onCompare(style.slug)}>{isCompared ? <Check size={18} /> : <Plus size={18} />}{isCompared ? "Added to compare" : "Add to compare"}</button>
-            <button className="text-button" type="button" onClick={onClose}>Back to styles <ArrowRight size={17} /></button>
+            <button className="primary-button" type="button" onClick={() => onCompare(style.slug)}>{isCompared ? <Check size={18} /> : <Plus size={18} />}{isCompared ? "比較に追加済み" : "比較に追加"}</button>
+            <button className="text-button" type="button" onClick={onClose}>一覧へ戻る <ArrowRight size={17} /></button>
           </div>
-          <p className="provenance">AI-generated from the two prompt parts above · Subject brief {benchmark.version}</p>
+          <p className="provenance">表示した2つのプロンプトからAI生成 · 共通場面 {benchmark.version}</p>
         </div>
       </div>
     </ModalFrame>
@@ -157,22 +170,22 @@ function DetailModal({ style, onClose, onCompare, isCompared, onCopy, onNavigate
 
 function CompareModal({ selected, onClose, onRemove, onCopy }) {
   return (
-    <ModalFrame label="Compare visual styles" onClose={onClose} wide>
+    <ModalFrame label="絵柄を比較" onClose={onClose} wide>
       <div className="compare-modal">
         <div className="compare-modal-header">
-          <div><span className="eyebrow">CONTROLLED COMPARISON</span><h2>See what the style changes.</h2><p>Same subject and composition. A clearer creative vocabulary.</p></div>
-          <button className="modal-close" type="button" onClick={onClose} aria-label="Close comparison"><X size={22} /></button>
+          <div><span className="eyebrow">同じ場面で絵柄を比較</span><h2>線・塗り・質感を見比べる。</h2><p>同じ人物と場面を、異なる描き方で。</p></div>
+          <button className="modal-close" type="button" onClick={onClose} aria-label="比較を閉じる"><X size={22} /></button>
         </div>
         <div className={`compare-columns count-${selected.length}`}>
           {selected.map((style) => <article className="compare-column" key={style.slug}>
-            <img src={style.image} alt={`${style.name} interpretation of the shared benchmark subject`} />
+            <StyleImage style={style} alt={`${style.name} interpretation of the shared benchmark subject`} />
             <div className="compare-column-title"><h3>{style.name}</h3><button type="button" onClick={() => onRemove(style.slug)} aria-label={`Remove ${style.name} from comparison`}><X size={17} /></button></div>
             <p>{style.definition}</p>
             <dl>{Object.entries(style.characteristics).map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
-            <button className="copy-vocab" type="button" onClick={() => onCopy(style.vocabulary.join(", "), `${style.name} vocabulary copied`)}><Copy size={18} /> Copy style vocabulary</button>
+            <button className="copy-vocab" type="button" onClick={() => onCopy(style.stylePrompt, "絵柄プロンプトをコピーしました")}><Copy size={18} /> 絵柄をコピー</button>
           </article>)}
         </div>
-        <p className="comparison-note">These are AI-generated interpretations of one versioned brief, not an identity-locking test. Results vary across models and runs.</p>
+        <p className="comparison-note">同じ場面から生成した見本です。顔や構図の完全一致は保証されず、モデルや生成ごとに変わります。</p>
       </div>
     </ModalFrame>
   );
@@ -220,45 +233,45 @@ export function App() {
   function toggleCompare(slug) {
     setCompareIds((current) => {
       if (current.includes(slug)) return current.filter((item) => item !== slug);
-      if (current.length >= 4) { setToast("Compare up to four styles at a time"); return current; }
+      if (current.length >= 4) { setToast("比較は一度に4種類までです"); return current; }
       return [...current, slug];
     });
   }
   async function copyText(value, successText) {
     try { await navigator.clipboard.writeText(value); setToast(successText); }
-    catch { setToast("Could not copy. Please try again."); }
+    catch { setToast("コピーできませんでした。もう一度お試しください。"); }
   }
 
   return (
     <>
-      <a className="skip-link" href="#explore">Skip to styles</a>
+      <a className="skip-link" href="#explore">絵柄一覧へ</a>
       <header className="site-header"><div className="header-inner">
-        <a className="brand" href="/" aria-label="AI Visual Style Library home"><BookOpen size={42} weight="light" aria-hidden="true" /><span><strong>AI Visual Style Library</strong><small>A FIELD GUIDE TO VISUAL LANGUAGES</small></span></a>
-        <nav className="primary-nav" aria-label="Primary navigation"><a className="is-active" href="#explore">Explore</a><a href="#field-guide">Field Guide</a><a href="#about">About</a></nav>
-        <div className="header-actions"><button className="header-search" type="button" onClick={() => { searchRef.current?.focus(); window.scrollTo({ top: 0, behavior: "smooth" }); }} aria-label="Focus style search"><MagnifyingGlass size={21} /></button><button className="header-compare" type="button" onClick={() => compareIds.length >= 2 ? setCompareOpen(true) : setToast("Choose at least two styles to compare")}>Compare{compareIds.length ? ` (${compareIds.length})` : ""}</button><button className="header-cta" type="button" onClick={() => { searchRef.current?.focus(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Get Started</button></div>
+        <a className="brand" href="/" aria-label="AI Visual Style Library home"><BookOpen size={42} weight="light" aria-hidden="true" /><span><strong>AI Visual Style Library</strong><small>物語のための絵柄とプロンプト</small></span></a>
+        <nav className="primary-nav" aria-label="Primary navigation"><a className="is-active" href="#explore">絵柄一覧</a><a href="#field-guide">使い方</a><a href="#about">このサイト</a></nav>
+        <div className="header-actions"><button className="header-search" type="button" onClick={() => { searchRef.current?.focus(); window.scrollTo({ top: 0, behavior: "smooth" }); }} aria-label="Focus style search"><MagnifyingGlass size={21} /></button><button className="header-compare" type="button" onClick={() => compareIds.length >= 2 ? setCompareOpen(true) : setToast("比較する絵柄を2種類以上選んでください")}>比較{compareIds.length ? ` (${compareIds.length})` : ""}</button><button className="header-cta" type="button" onClick={() => { searchRef.current?.focus(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>絵柄を探す</button></div>
       </div></header>
 
       <main>
         <section className="hero page-shell" aria-labelledby="page-title"><div className="hero-main">
-          <h1 id="page-title">Find the look you can picture</h1>
-          <p>Describe what you see. Discover visual styles, compare examples, and learn their distinct traits.</p>
-          <form className="search-form" onSubmit={submitSearch} role="search"><MagnifyingGlass size={24} aria-hidden="true" /><label className="sr-only" htmlFor="style-search">Search styles by name or visual quality</label><input id="style-search" ref={searchRef} value={searchText} onChange={(event) => setSearchText(event.target.value)} placeholder="Try “grainy two-color print”" /><button type="submit">Search</button></form>
-        </div><aside className="benchmark-note" aria-label="About the shared example"><span className="eyebrow">A SHARED SUBJECT</span><p>All examples show the same scene so you can focus on the style differences, not the subject.</p><div>{benchmark.description.split(". ")[0]}.</div></aside></section>
+          <h1 id="page-title">あなたの物語に、合う絵柄を。</h1>
+          <p>フラットなアニメからラノベ、静かな純文学まで。抜け感と描き込みの密度から選べる36種類。</p>
+          <form className="search-form" onSubmit={submitSearch} role="search"><MagnifyingGlass size={24} aria-hidden="true" /><label className="sr-only" htmlFor="style-search">名前・特徴で絵柄を検索</label><input id="style-search" ref={searchRef} value={searchText} onChange={(event) => setSearchText(event.target.value)} placeholder="例：フラット、純文学、抜け感" /><button type="submit">検索</button></form>
+        </div><aside className="benchmark-note" aria-label="About the shared example"><span className="eyebrow">同じ場面で比較</span><p>同じ人物と駅の場面を描き分けています。被写体は自分の物語に置き換えられます。</p><div>{"赤いコートの女性が駅で地図を広げる場面"}.</div></aside></section>
 
-        <section className="explore-section page-shell" id="explore" aria-label="Explore visual styles"><div className="filters-bar">
-          <div className="filter-group"><span className="filters-label">VISUAL TRAITS</span>{filterDefinitions.map((definition) => <FilterSelect key={definition.key} definition={definition} value={filters[definition.key]} onChange={changeFilter} />)}<button className={`more-filters ${moreOpen ? "is-open" : ""}`} type="button" onClick={() => setMoreOpen((open) => !open)} aria-expanded={moreOpen}><SlidersHorizontal size={19} /> More Filters</button></div>
-          <div className="results-controls"><span aria-live="polite">{results.length} {results.length === 1 ? "result" : "results"}</span><span className="control-separator" aria-hidden="true" /><ArrowsDownUp size={17} aria-hidden="true" /><label className="sr-only" htmlFor="style-sort">Sort styles</label><select id="style-sort" value={sort} onChange={(event) => setSort(event.target.value)}><option value="relevant">Most relevant</option><option value="name-asc">Name A–Z</option><option value="name-desc">Name Z–A</option></select><CaretDown size={14} aria-hidden="true" /></div>
+        <section className="explore-section page-shell" id="explore" aria-label="絵柄一覧"><div className="filters-bar">
+          <div className="filter-group"><span className="filters-label">絵柄を絞り込む</span>{filterDefinitions.map((definition) => <FilterSelect key={definition.key} definition={definition} value={filters[definition.key]} onChange={changeFilter} />)}<button className={`more-filters ${moreOpen ? "is-open" : ""}`} type="button" onClick={() => setMoreOpen((open) => !open)} aria-expanded={moreOpen}><SlidersHorizontal size={19} /> キーワード</button></div>
+          <div className="results-controls"><span aria-live="polite">{results.length} 種類</span><span className="control-separator" aria-hidden="true" /><ArrowsDownUp size={17} aria-hidden="true" /><label className="sr-only" htmlFor="style-sort">絵柄の並び順</label><select id="style-sort" value={sort} onChange={(event) => setSort(event.target.value)}><option value="relevant">おすすめ順</option><option value="name-asc">名前順</option><option value="name-desc">名前の逆順</option></select><CaretDown size={14} aria-hidden="true" /></div>
         </div>
-          {moreOpen && <div className="more-panel"><div><strong>Start with a visible quality</strong><p>Choose a description even if you do not know the style name.</p></div><div className="quick-traits">{quickTraits.map((trait) => <button className={submittedQuery === trait ? "active" : ""} key={trait} type="button" onClick={() => selectTrait(trait)}>{trait}</button>)}</div></div>}
-          {activeFilters > 0 && <div className="active-search"><span>Showing styles for {submittedQuery && <strong>“{submittedQuery}”</strong>}{submittedQuery && activeFilters > 1 ? " and selected traits" : !submittedQuery ? "selected traits" : ""}</span><button type="button" onClick={resetSearch}>Clear all <X size={15} /></button></div>}
+          {moreOpen && <div className="more-panel"><div><strong>見た目の特徴から探す</strong><p>絵柄の名前を知らなくても、特徴や用途から選べます。</p></div><div className="quick-traits">{quickTraits.map((trait) => <button className={submittedQuery === trait ? "active" : ""} key={trait} type="button" onClick={() => selectTrait(trait)}>{trait}</button>)}</div></div>}
+          {activeFilters > 0 && <div className="active-search"><span>絞り込み： {submittedQuery && <strong>“{submittedQuery}”</strong>}{submittedQuery && activeFilters > 1 ? "・選択した条件" : !submittedQuery ? "選択した条件" : ""}</span><button type="button" onClick={resetSearch}>条件をリセット <X size={15} /></button></div>}
           <div id="results" className="styles-grid">{results.map((style, index) => <StyleCard key={style.slug} style={style} eager={index < 3} selected={compareIds.includes(style.slug)} onOpen={setDetailSlug} onCompare={toggleCompare} />)}</div>
-          {results.length === 0 && <div className="empty-state"><h2>No styles found</h2><p>Try a simpler visual quality, such as “grainy”, “soft”, or “retro”.</p><button className="primary-button" type="button" onClick={resetSearch}>Show all styles</button></div>}
+          {results.length === 0 && <div className="empty-state"><h2>該当する絵柄がありません</h2><p>別の言葉や用途を試すか、条件をリセットしてください。</p><button className="primary-button" type="button" onClick={resetSearch}>すべての絵柄を表示</button></div>}
         </section>
-        <section className="guide-section page-shell" id="field-guide"><span className="eyebrow">HOW TO USE THE FIELD GUIDE</span><div><h2>Look first. Name it second.</h2><p>Each sample starts from the same scene. Browse by appearance, inspect the line, color, and texture that define a style, then compare close alternatives before writing your next image brief.</p></div><a href="#explore">Explore the library <ArrowRight size={18} /></a></section>
+        <section className="guide-section page-shell" id="field-guide"><span className="eyebrow">装丁での使い方</span><div><h2>描くところと、抜くところ。</h2><p>気になる絵柄を開き、自分の人物・場面を入力して合成。表紙用の余白を指定できます。タイトルや著者名は生成後に組版してください。抜け感は低品質ではなく、焦点以外を意図的に省く設計です。</p></div><a href="#explore">絵柄を探す <ArrowRight size={18} /></a></section>
       </main>
-      <footer className="site-footer" id="about"><div className="page-shell footer-inner"><span>AI Visual Style Library</span><p>A visual vocabulary for makers. The benchmark images shown here are AI-generated interpretations, not historical source artworks.</p><span>Prototype · {styles.length} styles</span></div></footer>
+      <footer className="site-footer" id="about"><div className="page-shell footer-inner"><span>AI Visual Style Library</span><p>NovelJamの装丁に。画像は掲載プロンプトからAIで生成した見本です。特定作家の名前に頼らず、線・塗り・質感で指定しています。</p><span>絵柄ライブラリ · {styles.length} 種類</span></div></footer>
 
-      {compareIds.length > 0 && !compareOpen && !detail && <div className="compare-tray" aria-label="Selected styles for comparison"><div className="tray-thumbs">{selected.map((style) => <img src={style.image} alt="" key={style.slug} />)}</div><span>{compareIds.length} / 4 selected <small>{compareIds.length < 2 ? "Choose one more style" : "Ready to compare"}</small></span><button className="tray-compare" type="button" disabled={compareIds.length < 2} onClick={() => setCompareOpen(true)}>Compare styles <ArrowRight size={18} /></button><button className="tray-clear" type="button" onClick={() => setCompareIds([])} aria-label="Clear comparison"><X size={20} /></button></div>}
+      {compareIds.length > 0 && !compareOpen && !detail && <div className="compare-tray" aria-label="比較に選んだ絵柄"><div className="tray-thumbs">{selected.map((style) => <StyleImage style={style} alt="" key={style.slug} />)}</div><span>{compareIds.length} / 4 選択中 <small>{compareIds.length < 2 ? "あと1種類選択" : "比較できます"}</small></span><button className="tray-compare" type="button" disabled={compareIds.length < 2} onClick={() => setCompareOpen(true)}>選んだ絵柄を比較 <ArrowRight size={18} /></button><button className="tray-clear" type="button" onClick={() => setCompareIds([])} aria-label="Clear comparison"><X size={20} /></button></div>}
       {detail && <DetailModal style={detail} onClose={() => setDetailSlug(null)} onCompare={toggleCompare} isCompared={compareIds.includes(detail.slug)} onCopy={copyText} onNavigate={setDetailSlug} />}
       {compareOpen && selected.length >= 2 && <CompareModal selected={selected} onClose={() => setCompareOpen(false)} onRemove={(slug) => { setCompareIds((current) => current.filter((item) => item !== slug)); if (compareIds.length <= 2) setCompareOpen(false); }} onCopy={copyText} />}
       {toast && <div className="toast" role="status"><Check size={17} /> {toast}</div>}

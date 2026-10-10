@@ -16,3 +16,11 @@ Before making substantial visual changes, use the Product Design plugin's `get-c
 When implementing from a selected generated mock, treat that image as the source of truth for layout, component anatomy, density, spacing, color, typography, visible content, and hierarchy.
 
 Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
+
+## NovelJam cover library (2026-10-11)
+
+- Preserve the original six techniques and add thirty distinct cover-oriented styles: ten anime/manga, ten light-novel, and ten quiet literary treatments.
+- Use Japanese labels, explanations, and new style prompts. Specify line, paint/shading, texture, and selective detail rather than artist names or a fixed subject.
+- The user finds AI illustrations too uniformly dense. Offer broken outlines, untouched paper, omitted shadows, simplified backgrounds, and a finished focal area. Do not substitute low resolution, general blur, or reduced quality. Keep rich styles too.
+- Allow independent custom character/scene input and optional portrait-cover layout with upper title space. Typeset titles and author names afterward.
+- Generate one real benchmark per style and record submitted prompts and input/output checksums. Do not reuse another style's image as a new sample. Keep original six prompts and image provenance unchanged.

@@ -29,13 +29,16 @@ for (const style of styles) {
     "",
     `![${style.name} benchmark](site/public${style.image})`,
     "",
+    style.definition,
+    "",
     "Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.",
     "",
     "```text",
     style.stylePrompt,
     "```",
     "",
-    `**Watch for:** ${style.watchFor}`,
+    `**注意点:** ${style.watchFor}`,
+    `**装丁:** ${style.coverAdvice}`,
     "",
   );
 }
