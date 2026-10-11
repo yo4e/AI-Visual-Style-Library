@@ -1,3 +1,4 @@
+import {adultFictionStyles} from './adult-fiction-styles.js';
 import {mangaVariantOptions} from './manga-variant-options.js';
 import {photoSuspenseStyles} from './photo-suspense-styles.js';
 import {mangaVariations} from './manga-variations.js';
@@ -217,6 +218,7 @@ export const styles = [
  ...mangaVariations,
  ...photoSuspenseStyles,
  ...mangaVariantOptions,
+ ...adultFictionStyles,
 ];
 
 export function getStyles(locale='en') {

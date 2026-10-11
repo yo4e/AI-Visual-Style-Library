@@ -957,3 +957,73 @@ Render as a crisp contemporary Japanese manga color illustration with precise gr
 ```
 
 **Watch for:** Ordinary reflections should carry the brightness; avoid signature eye symbols and all-over gloss.
+
+### Reportage Ink & Spot Color
+
+![Reportage Ink & Spot Color benchmark](site/public/images/fiction-reportage-spot-ink.webp)
+
+A restrained documentary illustration for everyday human drama, with an adult figure and readable architecture rather than manga construction.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render a hand-drawn documentary editorial illustration. When people appear, use natural adult proportions, small anatomically plausible eyes, an understated mouth, and an individual readable expression rather than anime or manga facial construction. Draw with a dry steel nib: fine slightly broken contours, a few uneven short marks, and selective near-black solid shapes at overlaps. Make most surfaces unshaded ivory paper; use a restrained rust-red accent from the supplied subject and very pale cool gray only where needed to separate planes. Describe architecture with economical straight pen lines, omitting repeated distant detail. Keep the focal face and hands legible, with broad open paper areas elsewhere. The drawing should feel observed, serious, and humane. Avoid all-over crosshatching, engraved line density, woodcut carving, screen-tone dots, photographic modeling, and decorative poster silhouettes. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
+```
+
+**Watch for:** The selected sample leaves pale surfaces and sky open, but background architecture and map markings are more detailed, and the warm accent larger, than the sparse prompt requests. This is one illustration result, not a guaranteed density level.
+
+### Loose Contours & Flat Color
+
+![Loose Contours & Flat Color benchmark](site/public/images/fiction-looping-flat.webp)
+
+An approachable everyday illustration with mature faces, irregular contours, and lively flat paint; a different construction from rounded manga eyes.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render a lively hand-drawn everyday editorial illustration for an adult audience. Use a loose medium-fine dark brown contour that meanders gently, occasionally loops, and sometimes doubles back around hair, cuffs, and existing objects. Keep adult faces naturally proportioned with small eyes, a clearly drawn nose, modest mouth, and subtle asymmetry; do not use anime eyes or chibi bodies. Fill existing forms with bright but restrained opaque matte color patches: rust red, muted teal, buttery cream, and slate blue, while retaining supplied local colors. Paint slightly uneven edges and allow tiny paper gaps between line and color. Use almost no volume shading: a few small flat shadows at overlaps, no gradients or polished skin. Simplify distant structures into broad readable planes. Keep hair and cloth as casually outlined shapes, not decorative strands or hatching. Leave quiet sky and surface areas free of repeated detail. Avoid geometrically perfect vector shapes, glossy cel highlights, thick comic outlines, and dense decorative collage. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
+```
+
+**Watch for:** This selected sample shows flat color and hand-drawn edges, but its contours are more controlled and its background shadows stronger than the loosely looping, minimally shaded prompt requests.
+
+### Broad Oil-Pastel Narrative
+
+![Broad Oil-Pastel Narrative benchmark](site/public/images/fiction-oil-pastel.webp)
+
+Broad oil-pastel marks convey human presence through warm and cool planes; the coarse waxy strokes differ from fine colored-pencil or powder pastel.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render an original narrative illustration made with broad oil-pastel sticks on lightly textured cream paper. Keep people recognizably adult with natural facial proportions and a restrained expression, without anime construction or photographic skin. Build the image from chunky waxy strokes and flattened blocks of local color; show broken heavy pigment deposits, blunt stroke ends, and cream paper peeking through scumbled overlaps. Use warm rust, ochre, slate blue, muted teal, and soft cream in adjacent warm and cool planes. Model the focal face and hands with a few deliberate smaller pastel strokes, not smooth blending. Let hair, clothing, architecture, and the train remain broad simplified masses with visible stroke direction. Omit ink outlines, fine pencil hatching, thin translucent washes, fuzzy powder shading, and oil-paint canvas impasto. Keep large areas quiet and lightly marked, with concentrated pigment at the subject. Preserve scene legibility without filling every surface with texture. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
+```
+
+**Watch for:** Small fingers and map markings are simplified; waxy pigment should remain visible rather than becoming smooth paint.
+
+### Blue Ballpoint & Warm Accent
+
+![Blue Ballpoint & Warm Accent benchmark](site/public/images/fiction-ballpoint.webp)
+
+A notebook-like observational treatment with cobalt ballpoint marks and a small warm color accent, suited to intimate everyday narratives.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render an observational adult editorial illustration drawn with a blue ballpoint pen on clean cream paper, with a small rust-red flat accent on the supplied warm-colored clothing. Use fine consistent cobalt-blue lines that overlap, loop, and accumulate at selected hair and cloth edges; show tiny pen-darkened nodes, not black flexible-nib pressure strokes. When people appear, retain adult natural facial proportions, small eyes, an articulated nose, and a quiet individual expression, avoiding manga anatomy. Build a few midtones from sparse short blue parallel strokes while leaving most skin, sky, and broad surfaces untouched paper. Keep the focal face and hands complete enough to read, but omit distant repeated architecture and train detail with deliberate gaps in the drawing. Warm color occupies only a limited area and is unshaded. Do not use graphite rubs, engraved crosshatching, ink wash, soft gradients, photorealistic skin, full-color rendering, or general blur. The result should feel intimate, precise in observation, and lightly unfinished. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
+```
+
+**Watch for:** The selected sample leaves pale surfaces and sky open, but background architecture and map markings are more detailed, and the warm accent larger, than the sparse prompt requests. This is one illustration result, not a guaranteed density level.
+
+### Stippled Duotone Illustration
+
+![Stippled Duotone Illustration benchmark](site/public/images/fiction-stipple-duotone.webp)
+
+A sober graphic illustration for social drama, using hand-stippled value rather than mechanical risograph screens or manga hatching.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render a carefully hand-stippled adult editorial illustration in deep navy and restrained rust red on warm cream paper. Describe people with natural adult proportions and small realistic drawn eyes, without anime simplification or photographic skin. Use clean economical navy contours and many tiny irregular hand-placed dots to build selected cheek, hair, fabric, and structural shadows; vary dot density rather than using crosshatching or airbrush gradients. Keep the dots visibly individual, nonuniform, and clustered along form rather than a mechanical halftone grid. Introduce restrained flat rust-red planes in the supplied warm-colored subject; use pale teal sparingly to preserve the supplied train stripe. Leave highlights and broad sky regions as clear cream paper. Concentrate fine dots at the figure and a few architectural overlaps, with simpler background planes to avoid uniform density. Avoid risograph registration drift, coarse screen-tone patterns, engraving lines, wood grain, decorative typography, and added motifs. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
+```
+
+**Watch for:** The sample shows fine navy dot values and rust color, but dots extend into the background more widely than requested. At small sizes, dense dots in hair merge into dark masses.
