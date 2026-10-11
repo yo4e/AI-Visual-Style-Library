@@ -69,3 +69,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 ## Favicon (2026-10-11)
 
 - Reuse the header’s Phosphor BookOpen light vector and accent color for the favicon. Keep the same book design, with balanced square padding, SVG and 16/32px ICO fallbacks, and an Apple touch icon. The user authorized publishing this to the existing Pages project and Draft PR #4.
+
+## Browser tab title (2026-10-11)
+
+- Keep the HTML title and runtime document.title exactly “AI Visual Style Library” in both languages, including after language changes and reloads. Preserve page text and SEO description. Publish to the existing Pages project and Draft PR #4 as authorized.

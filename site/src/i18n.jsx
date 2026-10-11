@@ -108,7 +108,7 @@ export function LanguageProvider({children}) {
  const [locale,setLocale]=useState(initialLanguage);
  useEffect(()=>{
   document.documentElement.lang=locale;
-  document.title=locale==='ja'?'画像の絵柄を探す | AI Visual Style Library':'Find Your Visual Style | AI Visual Style Library';
+  document.title='AI Visual Style Library';
   const description=document.querySelector('meta[name="description"]');
   if(description)description.content=locale==='ja'?'画像生成に使える58種類の絵柄。コピー用プロンプトは英語、説明は日本語と英語で切替。':'Explore 58 visual styles for image generation. Compare samples and copy English prompts, with English and Japanese descriptions.';
   try{localStorage.setItem('visual-style-language',locale)}catch{}
