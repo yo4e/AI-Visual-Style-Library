@@ -87,3 +87,9 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Keep GitHub About in English, homepage https://avsl.4roz.com/, and relevant topics. README is English first with purpose, copy/compare usage, local development, deployment, sample provenance/variation, and a clickable Ko-fi coffee button.
 - The user selected MIT for project-owned code and prompt documentation. Preserve third-party notices, including copied Phosphor vectors and React runtime licenses. Do not claim that MIT establishes copyright, exclusive rights, or suitability of generated images. Keep README/LICENSE changes on Draft PR #4 until merge is separately requested.
+
+## Approved manga variation options (2026-10-11)
+
+- The user approved all four reviewed manga candidates as additional options, not replacements. Preserve the existing 60 records and images and append four clearly named variants, bringing the catalog to 64.
+- Reuse the exact English instructions frozen at 2026-10-11T03:11:17.234Z and the actual generated outputs. Catalog aliases and display names may change after review; preserve generationSlug and hashes to make the correspondence explicit. Do not change the prompts after generation.
+- PR #4 is merged. Create a new Draft PR from current main, push and publish the approved 64-style build. Do not merge the new PR without another request. Keep About description free of a catalog count.

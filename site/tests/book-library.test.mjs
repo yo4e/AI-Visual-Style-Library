@@ -2,15 +2,15 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {styles,getStyles,benchmark,combinedPrompt,generationPrompt,findStyles} from '../src/style-data.js';
 const japanese=/[\u3040-\u9fff]/;
-test('60 distinct styles retain the original six and three ten-entry book groups',()=>{
- assert.equal(styles.length,60);assert.equal(new Set(styles.map(s=>s.slug )).size,60);
+test('64 distinct styles retain the original six and three ten-entry book groups',()=>{
+ assert.equal(styles.length,64);assert.equal(new Set(styles.map(s=>s.slug )).size,64);
  assert.deepEqual(styles.slice(0,6).map(s=>s.slug),['watercolor','risograph','gouache','ink-wash','pixel-art','35mm-film']);
  for(const family of ['anime','light-novel','literary'])assert.equal(findStyles({filters:{family}}).length,10);
- assert.equal(findStyles({filters:{family:'manga'}}).length,12);
+ assert.equal(findStyles({filters:{family:'manga'}}).length,16);
  assert.equal(findStyles({filters:{family:'photographic'}}).length,7);assert.equal(findStyles({filters:{family:'fiction'}}).length,5);
  assert.equal(findStyles({filters:{density:'airy'}}).length,19);
- assert.equal(findStyles({filters:{density:'rich'}}).length,15);
- assert.equal(new Set(styles.slice(6).map(s=>Object.values(s.characteristics).join('|') )).size,54);
+ assert.equal(findStyles({filters:{density:'rich'}}).length,17);
+ assert.equal(new Set(styles.slice(6).map(s=>Object.values(s.characteristics).join('|') )).size,58);
 });
 test('both display languages copy English techniques, vocabulary, and sample instructions',()=>{
  for(const locale of ['en','ja'])for(const style of getStyles(locale)){
@@ -67,5 +67,19 @@ test('suspense photos match frozen English instructions and actual reference-fre
   assert.equal(style.family,'photographic');assert.equal(style.stylePrompt,job.stylePrompt);
   assert.equal(combinedPrompt(style),job.prompt);assert.equal(submitted.actualSubmittedPrompt,job.prompt);
   assert.deepEqual(submitted.actualSubmittedReferences,[]);assert.equal(submitted.submittedPromptSha256,job.submittedPromptSha256);
+ }
+});
+
+test('approved manga options preserve the original frozen prompts and actual submission aliases',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const frozen=JSON.parse(await readFile(new URL('../provenance/manga-variant-options-prompts-before-generation.json',import.meta.url),'utf8'));
+ const actual=JSON.parse(await readFile(new URL('../provenance/manga-variant-options-generation-records.json',import.meta.url),'utf8'));
+ assert.equal(frozen.jobs.length,4);assert.equal(frozen.frozenAt,'2026-10-11T03:11:17.234Z');
+ for(const job of frozen.jobs){
+  const style=styles.find(s=>s.slug===job.slug),submitted=actual.find(j=>j.slug===job.slug);
+  assert.equal(style.stylePrompt,job.stylePrompt);assert.equal(combinedPrompt(style),job.prompt);
+  assert.equal(submitted.actualSubmittedPrompt,job.prompt);assert.equal(submitted.generationSlug,job.generationSlug);
+  assert.deepEqual(submitted.actualSubmittedReferences,[]);assert.equal(submitted.submittedPromptSha256,job.submittedPromptSha256);
+  assert.ok(styles.some(s=>s.slug===job.generationSlug));assert.ok(style.related.includes(job.generationSlug));
  }
 });

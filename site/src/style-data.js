@@ -1,3 +1,4 @@
+import {mangaVariantOptions} from './manga-variant-options.js';
 import {photoSuspenseStyles} from './photo-suspense-styles.js';
 import {mangaVariations} from './manga-variations.js';
 import {mangaStyles} from './manga-styles.js';
@@ -215,6 +216,7 @@ export const styles = [
  ...mangaStyles,
  ...mangaVariations,
  ...photoSuspenseStyles,
+ ...mangaVariantOptions,
 ];
 
 export function getStyles(locale='en') {
