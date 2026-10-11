@@ -105,3 +105,9 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - The user found the five adult illustrations insufficiently different and requested bold deformation and fewer elements. Preserve all 69 existing styles; add five clearly simplified design treatments as separate options. Shape simplification, symbolic faces, omitted clothing/background details, flat planes and open space must be visually evident, rather than merely new media or colors.
 - Freeze English prompts before generation, submit the exact saved text without references, compare actual outputs with the previous five, and revise/re-generate if they remain realistically detailed. Keep independent English prompt copy in both UI languages and existing comparison/filter behavior.
 - GitHub saving to a new Draft PR and production publishing to the existing Pages project are authorized for this addition. Do not merge this PR without separate permission. Keep author and work names out of public metadata and prompts.
+
+## User-reference adult cel animation (2026-10-11)
+
+- Add one animation treatment based on actual visual inspection of the supplied Library reference. Preserve all current 74 styles, assets and prompts. Use adult proportions, naturally drawn modest eyes, thin outlines, restrained cel shadows and quiet observed backgrounds; do not copy the reference characters, costumes, poster collage or typography.
+- Keep author and work names out of public metadata and generation prompts. Freeze English instructions before reference-free generation and submit exactly the saved sample text. Preserve separate style/scene blocks, all three copy actions, both languages, comparison and filters.
+- New Draft PR saving and production publication to the existing Pages project are authorized. Do not merge this PR without separate permission. The uploaded reference is analysis-only and remains outside the repository and deployment.
