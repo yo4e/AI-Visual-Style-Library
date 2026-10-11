@@ -873,3 +873,31 @@ Render the supplied subject and scene in the following visual style. Render as a
 ```
 
 **Watch for:** Avoid star-shaped eyes, signature eye emblems, idol costumes or accessories not specified, colored hair not requested, floating glitter, and gloss everywhere; these can obscure the technique.
+
+### Cinematic Mystery Photo
+
+![Cinematic Mystery Photo benchmark](site/public/images/photo-mystery.webp)
+
+Restrained cool color and layered light suggest unanswered questions without inventing a crime scene.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render as a photorealistic cinematic mystery still with restrained blue-gray color grading, natural human anatomy, visible skin texture, and plausible camera optics. Use directional sidelight from the existing daylight opening to illuminate one side of the subject while the canopy or existing overhead structure creates crisp layered shadows. Keep the shadow side legible with cool fill, neutral whites, restrained warm skin, and a muted warm accent from the supplied objects or clothing. Use a 50mm-lens perspective, moderate depth of field, fine film grain, and clean controlled contrast. Separate the focal subject from receding architectural lines; let small areas of withheld shadow suggest unanswered questions without inventing events. Respect the stated time of day and keep all named objects recognizable. Avoid comic lines, supernatural figures, crime props, added fog, heavy green color casts, crushed featureless blacks, and gratuitous violence. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
+```
+
+**Watch for:** Keep shadows readable and skin natural. Mystery should come from controlled light, not a dark overlay.
+
+### Uneasy Daylight Horror Photo
+
+![Uneasy Daylight Horror Photo benchmark](site/public/images/photo-horror.webp)
+
+Sickly daylight and sharply divided values create psychological unease while the supplied scene remains intact.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render as a photorealistic psychological-horror film still using uneasy daylight rather than changing the supplied scene to night. Keep real anatomy, visible skin pores, and plausible camera optics. Grade the existing daylight toward pale sickly cyan-green highlights with desaturated gray shadows and a subdued oxidized-red accent from supplied materials. Use a hard narrow side light and very little frontal fill: make strong shadow boundaries across the face and existing structure, with near-black pockets under the canopy but enough edge light to identify every named object. Let the exterior daylight remain unnaturally pale and bright in contrast to oppressive shadowed areas. Use coarse high-ISO film grain, slight halation around hard highlights, and restrained low-level chromatic fringing. Preserve the supplied expression, action, objects, and location; unease comes from light and color, not added creatures or horror props. Avoid illustration, beauty lighting, inviting amber glow, explicit injuries, blood, invented damage, and unrequested figures. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
+```
+
+**Watch for:** A bright benchmark may limit deep-shadow horror. Preserve recognizable objects rather than adding creatures or injuries.

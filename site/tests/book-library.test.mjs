@@ -2,15 +2,15 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {styles,getStyles,benchmark,combinedPrompt,generationPrompt,findStyles} from '../src/style-data.js';
 const japanese=/[\u3040-\u9fff]/;
-test('58 distinct styles retain the original six and three ten-entry book groups',()=>{
- assert.equal(styles.length,58);assert.equal(new Set(styles.map(s=>s.slug )).size,58);
+test('60 distinct styles retain the original six and three ten-entry book groups',()=>{
+ assert.equal(styles.length,60);assert.equal(new Set(styles.map(s=>s.slug )).size,60);
  assert.deepEqual(styles.slice(0,6).map(s=>s.slug),['watercolor','risograph','gouache','ink-wash','pixel-art','35mm-film']);
  for(const family of ['anime','light-novel','literary'])assert.equal(findStyles({filters:{family}}).length,10);
  assert.equal(findStyles({filters:{family:'manga'}}).length,12);
- for(const family of ['photographic','fiction'])assert.equal(findStyles({filters:{family}}).length,5);
+ assert.equal(findStyles({filters:{family:'photographic'}}).length,7);assert.equal(findStyles({filters:{family:'fiction'}}).length,5);
  assert.equal(findStyles({filters:{density:'airy'}}).length,19);
- assert.equal(findStyles({filters:{density:'rich'}}).length,14);
- assert.equal(new Set(styles.slice(6).map(s=>Object.values(s.characteristics).join('|') )).size,52);
+ assert.equal(findStyles({filters:{density:'rich'}}).length,15);
+ assert.equal(new Set(styles.slice(6).map(s=>Object.values(s.characteristics).join('|') )).size,54);
 });
 test('both display languages copy English techniques, vocabulary, and sample instructions',()=>{
  for(const locale of ['en','ja'])for(const style of getStyles(locale)){
@@ -55,4 +55,17 @@ test('four additional techniques use the exact English conditions saved before g
  const {readFile}=await import('node:fs/promises');const frozen=JSON.parse(await readFile(new URL('../provenance/manga-variations-prompts-before-generation.json',import.meta.url),'utf8'));assert.equal(frozen.jobs.length,4);
  const forbidden=/ハネバド|はねバド|がっこうぐらし|ヤニネコ|ヤニねこ|推しの子|hanebado|school.live|yanineko|oshi.no.ko/i;
  for(const job of frozen.jobs){const style=styles.find(s=>s.slug===job.slug);assert.equal(style.stylePrompt,job.stylePrompt);assert.equal(job.prompt,combinedPrompt(style));assert.equal(job.scenePrompt,benchmark.characterPrompt);assert.ok(!forbidden.test([style.name,style.definition,style.stylePrompt,style.translations.ja.name,style.translations.ja.definition].join(' ')));}
+});
+
+test('suspense photos match frozen English instructions and actual reference-free submissions',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const frozen=JSON.parse(await readFile(new URL('../provenance/photo-suspense-prompts-before-generation.json',import.meta.url),'utf8'));
+ const actual=JSON.parse(await readFile(new URL('../provenance/photo-suspense-generation-records.json',import.meta.url),'utf8'));
+ assert.deepEqual(frozen.jobs.map(j=>j.slug),['photo-mystery','photo-horror']);
+ for(const job of frozen.jobs){
+  const style=styles.find(s=>s.slug===job.slug),submitted=actual.find(j=>j.slug===job.slug);
+  assert.equal(style.family,'photographic');assert.equal(style.stylePrompt,job.stylePrompt);
+  assert.equal(combinedPrompt(style),job.prompt);assert.equal(submitted.actualSubmittedPrompt,job.prompt);
+  assert.deepEqual(submitted.actualSubmittedReferences,[]);assert.equal(submitted.submittedPromptSha256,job.submittedPromptSha256);
+ }
 });

@@ -77,3 +77,13 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 ## Support copy revision (2026-10-11)
 
 - The Japanese support sentence is exactly “開発者にコーヒーをおごってください”. Keep the existing English sentence and Ko-fi destination. The user confirmed normal access to the formal URL; do not clear DNS caches or perform administrator operations.
+
+## Suspense photos and manga review (2026-10-11)
+
+- The user authorized adding one photorealistic mystery and one photorealistic horror treatment to production, bringing the library to 60. Differentiate using light, color, and photographic behavior while preserving the supplied subject and scene. Freeze English prompts before generation and record actual outputs.
+- Review four manga improvement candidates once, moderately, without work or artist names in generation prompts or public titles. Keep these candidates outside the production repository until the user chooses replacements. Preserve all current 58 samples when adding the two photos.
+
+## Public repository presentation and license (2026-10-11)
+
+- Keep GitHub About in English, homepage https://avsl.4roz.com/, and relevant topics. README is English first with purpose, copy/compare usage, local development, deployment, sample provenance/variation, and a clickable Ko-fi coffee button.
+- The user selected MIT for project-owned code and prompt documentation. Preserve third-party notices, including copied Phosphor vectors and React runtime licenses. Do not claim that MIT establishes copyright, exclusive rights, or suitability of generated images. Keep README/LICENSE changes on Draft PR #4 until merge is separately requested.
