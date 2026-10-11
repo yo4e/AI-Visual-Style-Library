@@ -2,15 +2,15 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {styles,getStyles,benchmark,combinedPrompt,generationPrompt,findStyles} from '../src/style-data.js';
 const japanese=/[\u3040-\u9fff]/;
-test('69 distinct styles retain the original six and three ten-entry book groups',()=>{
- assert.equal(styles.length,69);assert.equal(new Set(styles.map(s=>s.slug )).size,69);
+test('74 distinct styles retain the original six and three ten-entry book groups',()=>{
+ assert.equal(styles.length,74);assert.equal(new Set(styles.map(s=>s.slug )).size,74);
  assert.deepEqual(styles.slice(0,6).map(s=>s.slug),['watercolor','risograph','gouache','ink-wash','pixel-art','35mm-film']);
  for(const family of ['anime','light-novel','literary'])assert.equal(findStyles({filters:{family}}).length,10);
  assert.equal(findStyles({filters:{family:'manga'}}).length,16);
- assert.equal(findStyles({filters:{family:'photographic'}}).length,7);assert.equal(findStyles({filters:{family:'fiction'}}).length,10);
- assert.equal(findStyles({filters:{density:'airy'}}).length,21);
+ assert.equal(findStyles({filters:{family:'photographic'}}).length,7);assert.equal(findStyles({filters:{family:'fiction'}}).length,15);
+ assert.equal(findStyles({filters:{density:'airy'}}).length,25);
  assert.equal(findStyles({filters:{density:'rich'}}).length,18);
- assert.equal(new Set(styles.slice(6).map(s=>Object.values(s.characteristics).join('|') )).size,63);
+ assert.equal(new Set(styles.slice(6).map(s=>Object.values(s.characteristics).join('|') )).size,68);
 });
 test('both display languages copy English techniques, vocabulary, and sample instructions',()=>{
  for(const locale of ['en','ja'])for(const style of getStyles(locale)){
@@ -35,8 +35,8 @@ test('the combined sample keeps style and scene independent and matches generati
 });
 test('filters survive locale changes and search accepts both languages',()=>{
  for(const locale of ['en','ja']){
-  assert.equal(findStyles({query:'breathing room',locale}).length,21);
-  assert.equal(findStyles({query:'抜け感',locale}).length,21);
+  assert.equal(findStyles({query:'breathing room',locale}).length,25);
+  assert.equal(findStyles({query:'抜け感',locale}).length,25);
   assert.ok(findStyles({query:'flat',locale}).some(s=>s.slug==='flat-anime'));
   assert.ok(findStyles({query:'フラット',locale}).some(s=>s.slug==='flat-anime'));
  }
@@ -96,6 +96,22 @@ test('adult editorial additions match frozen English prompts and reference-free 
   assert.equal(job.scenePrompt,benchmark.characterPrompt);assert.equal(combinedPrompt(style),job.prompt);
   assert.equal(submitted.actualSubmittedPrompt,job.prompt);assert.deepEqual(submitted.actualSubmittedReferences,[]);
   assert.equal(submitted.submittedPromptSha256,job.submittedPromptSha256);
+  assert.ok(!forbidden.test([style.name,style.definition,style.stylePrompt,style.translations.ja.name,style.translations.ja.definition].join(' ')));
+ }
+});
+
+test('bold design additions preserve saved English instructions and actual reference-free submissions',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const frozen=JSON.parse(await readFile(new URL('../provenance/bold-editorial-prompts-before-generation.json',import.meta.url),'utf8'));
+ const actual=JSON.parse(await readFile(new URL('../provenance/bold-editorial-generation-records.json',import.meta.url),'utf8'));
+ const forbidden=/半沢|有川|池井戸|阪急電車|県庁おもてなし|hanzawa|arikawa|ikeido/i;
+ assert.equal(frozen.jobs.length,5);assert.equal(actual.length,5);
+ for(const job of frozen.jobs){
+  const style=styles.find(s=>s.slug===job.slug),record=actual.find(r=>r.slug===job.slug);
+  assert.equal(job.stylePrompt,style.stylePrompt);assert.equal(job.scenePrompt,benchmark.characterPrompt);
+  assert.equal(job.prompt,combinedPrompt(style));assert.equal(record.actualSubmittedPrompt,job.prompt);
+  assert.equal(record.submittedPromptSha256,job.submittedPromptSha256);assert.deepEqual(record.actualSubmittedReferences,[]);
+  assert.ok(style.related.some(slug=>styles.slice(64,69).some(old=>old.slug===slug)));
   assert.ok(!forbidden.test([style.name,style.definition,style.stylePrompt,style.translations.ja.name,style.translations.ja.definition].join(' ')));
  }
 });

@@ -99,3 +99,9 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - The user authorized five additional nonphotographic treatments for human drama and workplace fiction, based on observation of published covers but described only through generic rendering traits. Do not name authors or works in public titles, descriptions, or English prompts; do not copy cover compositions or characters.
 - Preserve all 64 existing styles and assets; append five adult editorial illustrations. Keep natural adult faces, varied line/paint/texture choices, and two airy options. Freeze exact English prompts before reference-free generation, inspect actual outputs, and keep style and scene copy instructions independent in both languages.
 - The user explicitly approved GitHub saving and production publishing for this addition after local verification. Create a new Draft PR and use the existing Cloudflare Pages project. Do not merge without another request.
+
+## Bold editorial simplification (2026-10-11)
+
+- The user found the five adult illustrations insufficiently different and requested bold deformation and fewer elements. Preserve all 69 existing styles; add five clearly simplified design treatments as separate options. Shape simplification, symbolic faces, omitted clothing/background details, flat planes and open space must be visually evident, rather than merely new media or colors.
+- Freeze English prompts before generation, submit the exact saved text without references, compare actual outputs with the previous five, and revise/re-generate if they remain realistically detailed. Keep independent English prompt copy in both UI languages and existing comparison/filter behavior.
+- GitHub saving to a new Draft PR and production publishing to the existing Pages project are authorized for this addition. Do not merge this PR without separate permission. Keep author and work names out of public metadata and prompts.
