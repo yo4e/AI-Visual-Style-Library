@@ -1,3 +1,4 @@
+import {adultEverydayCelStyles} from './adult-everyday-cel.js';
 import {boldEditorialStyles} from './bold-editorial-styles.js';
 import {adultFictionStyles} from './adult-fiction-styles.js';
 import {mangaVariantOptions} from './manga-variant-options.js';
@@ -221,6 +222,7 @@ export const styles = [
  ...mangaVariantOptions,
  ...adultFictionStyles,
  ...boldEditorialStyles,
+ ...adultEverydayCelStyles,
 ];
 
 export function getStyles(locale='en') {

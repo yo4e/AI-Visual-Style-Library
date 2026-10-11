@@ -2,15 +2,15 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import {styles,getStyles,benchmark,combinedPrompt,generationPrompt,findStyles} from '../src/style-data.js';
 const japanese=/[\u3040-\u9fff]/;
-test('74 distinct styles retain the original six and three ten-entry book groups',()=>{
- assert.equal(styles.length,74);assert.equal(new Set(styles.map(s=>s.slug )).size,74);
+test('75 distinct styles retain the original six and earlier visual families',()=>{
+ assert.equal(styles.length,75);assert.equal(new Set(styles.map(s=>s.slug )).size,75);
  assert.deepEqual(styles.slice(0,6).map(s=>s.slug),['watercolor','risograph','gouache','ink-wash','pixel-art','35mm-film']);
- for(const family of ['anime','light-novel','literary'])assert.equal(findStyles({filters:{family}}).length,10);
+ for(const family of ['anime','light-novel','literary'])assert.equal(findStyles({filters:{family}}).length,family==='anime'?11:10);
  assert.equal(findStyles({filters:{family:'manga'}}).length,16);
  assert.equal(findStyles({filters:{family:'photographic'}}).length,7);assert.equal(findStyles({filters:{family:'fiction'}}).length,15);
  assert.equal(findStyles({filters:{density:'airy'}}).length,25);
  assert.equal(findStyles({filters:{density:'rich'}}).length,18);
- assert.equal(new Set(styles.slice(6).map(s=>Object.values(s.characteristics).join('|') )).size,68);
+ assert.equal(new Set(styles.slice(6).map(s=>Object.values(s.characteristics).join('|') )).size,69);
 });
 test('both display languages copy English techniques, vocabulary, and sample instructions',()=>{
  for(const locale of ['en','ja'])for(const style of getStyles(locale)){
@@ -114,4 +114,15 @@ test('bold design additions preserve saved English instructions and actual refer
   assert.ok(style.related.some(slug=>styles.slice(64,69).some(old=>old.slug===slug)));
   assert.ok(!forbidden.test([style.name,style.definition,style.stylePrompt,style.translations.ja.name,style.translations.ja.definition].join(' ')));
  }
+});
+
+test('adult everyday cel sample matches frozen instructions and an actual reference-free submission',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const frozen=JSON.parse(await readFile(new URL('../provenance/adult-everyday-cel-prompts-before-generation.json',import.meta.url),'utf8'));
+ const actual=JSON.parse(await readFile(new URL('../provenance/adult-everyday-cel-generation-records.json',import.meta.url),'utf8'));
+ assert.equal(frozen.jobs.length,1);assert.equal(actual.length,1);assert.equal(frozen.referenceUsedForAnalysisOnly,true);
+ const job=frozen.jobs[0],style=styles.find(s=>s.slug===job.slug),record=actual[0];
+ assert.equal(style.family,'anime');assert.equal(style.stylePrompt,job.stylePrompt);assert.equal(job.scenePrompt,benchmark.characterPrompt);
+ assert.equal(combinedPrompt(style),job.prompt);assert.equal(record.actualSubmittedPrompt,job.prompt);
+ assert.equal(record.submittedPromptSha256,job.submittedPromptSha256);assert.deepEqual(record.actualSubmittedReferences,[]);
 });
