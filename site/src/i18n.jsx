@@ -3,7 +3,7 @@ import {languageLabels} from "./locale-labels.js";
 export {languageLabels};
 const english = {
  'このサイトを応援':'Support this site',
- '役に立ったら、コーヒーを一杯おごってね。':'If you found this useful, buy me a coffee.',
+ '開発者にコーヒーをおごってください':'If you found this useful, buy me a coffee.',
  'コーヒーで応援':'Buy me a coffee',
  '共通の見本':'BENCHMARK',
  '絵柄ガイド':'STYLE FIELD GUIDE',

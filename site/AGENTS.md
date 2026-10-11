@@ -73,3 +73,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 ## Browser tab title (2026-10-11)
 
 - Keep the HTML title and runtime document.title exactly “AI Visual Style Library” in both languages, including after language changes and reloads. Preserve page text and SEO description. Publish to the existing Pages project and Draft PR #4 as authorized.
+
+## Support copy revision (2026-10-11)
+
+- The Japanese support sentence is exactly “開発者にコーヒーをおごってください”. Keep the existing English sentence and Ko-fi destination. The user confirmed normal access to the formal URL; do not clear DNS caches or perform administrator operations.
