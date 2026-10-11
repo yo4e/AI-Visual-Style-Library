@@ -146,11 +146,11 @@ function DetailModal({
             <h3>{t("絵柄と場面を、別々に。")}</h3>
             <p className="prompt-intro">{t("絵柄だけ、見本の場面だけ、または両方をコピーできます。指示は英語です。コピーして自分の画像生成AIで使ってください。")}</p>
             <div className="prompt-recipe prompt-recipe--style">
-              <div className="prompt-recipe-head"><span>{t("絵柄 · 被写体を自由に")}</span><button type="button" onClick={() => onCopy(style.stylePrompt, "絵柄プロンプトをコピーしました")}><Copy size={16} />{t("絵柄をコピー")}</button></div>
+              <div className="prompt-recipe-head"><span>{t("絵柄・タッチのプロンプト")}</span><button type="button" onClick={() => onCopy(style.stylePrompt, "絵柄プロンプトをコピーしました")}><Copy size={16} />{t("絵柄をコピー")}</button></div>
               <p lang="en">{style.stylePrompt}</p>
             </div>
             <div className="prompt-recipe prompt-recipe--scene">
-              <div className="prompt-recipe-head"><span>{t("見本の人物・場面・構図")}</span><button type="button" onClick={() => onCopy(benchmark.characterPrompt, "場面をコピーしました")}><Copy size={16} />{t("場面をコピー")}</button></div>
+              <div className="prompt-recipe-head"><span>{t("人物・場面・構図のプロンプト")}</span><button type="button" onClick={() => onCopy(benchmark.characterPrompt, "場面をコピーしました")}><Copy size={16} />{t("場面をコピー")}</button></div>
               <p lang="en">{benchmark.characterPrompt}</p>
             </div>
             <button className="combined-copy" type="button" onClick={() => onCopy(combinedPrompt(style), "合成プロンプトをコピーしました")}><Copy size={17} />{t("絵柄と場面を両方コピー")}</button>

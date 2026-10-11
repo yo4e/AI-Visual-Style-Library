@@ -45,3 +45,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Remove custom subject input and the portrait-cover checkbox. Keep visual style and benchmark subject/scene/composition instructions in two always-visible blocks. Clearly offer style-only, scene-only, and combined copy actions.
 - Explain in both languages that people copy instructions and use their own image-generation AI; this site does not generate images. Keep introductions and usage guidance general.
 - Preserve all 46 styles, the language toggle, comparison, and exact English sample-generation correspondence.
+
+- Label the two prompt blocks 「絵柄・タッチのプロンプト」 / “Style prompt” and 「人物・場面・構図のプロンプト」 / “Subject, scene & composition prompt”.
