@@ -6,6 +6,10 @@ A visual prompt library for choosing a drawing or photographic treatment, compar
 
 [![Buy me a coffee](docs/coffee-button.svg)](https://ko-fi.com/yo4e)
 
+![English interface showing the style grid, search, visual-family and detail-density filters, and comparison controls](docs/english-library.png)
+
+The English interface on the live site. Samples share one subject and scene so you can compare their visual treatments.
+
 ## Choose a look, then make it your own
 
 1. Browse **60 styles** or filter by visual family and detail density. Search for qualities such as fine lines, flat color, paper texture, or photography.
