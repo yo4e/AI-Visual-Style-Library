@@ -130,7 +130,10 @@ function DetailModal({
         <div className="detail-visual">
           <StyleImage style={style} alt={locale === "ja" ? `${style.name}で描いた駅の比較用見本` : `${style.name} benchmark example at a train platform`} />
           <div className="detail-image-foot">
-            <span>{t("共通の見本")} / {benchmark.id.toUpperCase()}</span>
+            <div className="benchmark-caption">
+              <span>{t("ベンチマーク")} / {benchmark.id.toUpperCase()}</span>
+              <span>{t("画像生成モデル")} / GPT Image 2</span>
+            </div>
             <div className="detail-steps">
               <button type="button" onClick={() => onNavigate(previous.slug)} aria-label={`${t("前の絵柄")}: ${previous.name}`}><ArrowLeft size={20} /></button>
               <span>{String(index + 1).padStart(2, "0")} / {String(styles.length).padStart(2, "0")}</span>
