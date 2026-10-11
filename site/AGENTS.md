@@ -60,3 +60,8 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Add four general drawing treatments, bringing the catalog to 58. Inspect official visual materials, then describe generic line, shadow, color, form, and detail traits rather than naming works or artists in public titles, descriptions, or prompts. Do not reproduce original characters, compositions, or signature eye symbols.
 - Freeze exact English prompts before generating new benchmark images. Preserve the previous 54 prompts and assets, both UI languages, two independent blocks, three copy actions, and comparison.
 - The user explicitly approved saving the four additions to existing Draft PR #4 and publishing to the existing Cloudflare project after validation; keep the PR unmerged.
+
+## Support link and domain (2026-10-11)
+
+- The user selected avsl.4roz.com as the formal URL and authorized adding only its DNS record and connecting the existing Pages project.
+- Add a quiet Ko-fi coffee link below the usage guide, https://ko-fi.com/yo4e, with natural Japanese/English support copy. Do not add advertising or change payment settings. The user authorized saving to Draft PR #4 and publishing.

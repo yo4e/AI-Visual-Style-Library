@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowLeft, ArrowRight, ArrowsDownUp, BookOpen, CaretDown, Check, Copy, MagnifyingGlass, Plus, SlidersHorizontal, X } from "@phosphor-icons/react";
+import { ArrowLeft, ArrowRight, ArrowsDownUp, BookOpen, CaretDown, Check, Coffee, Copy, MagnifyingGlass, Plus, SlidersHorizontal, X } from "@phosphor-icons/react";
 import { benchmark, combinedPrompt, filterDefinitions, findStyles, quickTraits, styles, getStyles } from "./style-data";
 import { LanguageToggle, useLanguage, languageLabels } from "./i18n.jsx";
 const knownSlugs = new Set(styles.map(style => style.slug));
@@ -331,6 +331,7 @@ export function App() {
           {results.length === 0 && <div className="empty-state"><h2>{t("該当する絵柄がありません")}</h2><p>{t("別の言葉や用途を試すか、条件をリセットしてください。")}</p><button className="primary-button" type="button" onClick={resetSearch}>{t("すべての絵柄を表示")}</button></div>}
         </section>
         <section className="guide-section page-shell" id="field-guide"><span className="eyebrow">{t("プロンプトの使い方")}</span><div><h2>{t("選んで、コピーして、生成する。")}</h2><p>{t("気になる絵柄を開き、絵柄だけ・見本の場面だけ・両方からコピーする内容を選びます。自分の画像生成AIに貼り付け、人物・場面・構図を自由に書き換えて使ってください。このサイトでは画像を生成しません。")}</p></div><a href="#explore">{t("絵柄を探す")}<ArrowRight size={18} /></a></section>
+        <section className="support-section page-shell" aria-label={t("このサイトを応援")}><p>{t("役に立ったら、コーヒーを一杯おごってね。")}</p><a className="coffee-button" href="https://ko-fi.com/yo4e" target="_blank" rel="noopener noreferrer"><Coffee size={20} aria-hidden="true" />{t("コーヒーで応援")}</a></section>
       </main>
       <footer className="site-footer" id="about"><div className="page-shell footer-inner"><span>AI Visual Style Library</span><p>{t("画像生成に使える絵柄と英語プロンプトのライブラリ。画像はAI生成の見本です。作家名に頼らず、線・塗り・質感で指定しています。")}</p><span>{t("絵柄ライブラリ ·")} {styles.length} {t("種類")}</span></div></footer>
 

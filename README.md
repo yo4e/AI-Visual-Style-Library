@@ -30,7 +30,9 @@ Research, information architecture, visual reference notes, application formats,
 
 ## Visual style prompt library: 58 styles
 
-Public Cloudflare Pages site: https://ai-visual-style-library.pages.dev/
+Formal URL: https://avsl.4roz.com/
+
+Cloudflare Pages fallback: https://ai-visual-style-library.pages.dev/
 
 The six original styles remain, with fifty-two additional styles: ten anime/manga, ten light-novel illustration styles, ten quiet literary treatments, five photographic looks, five general-fiction illustrations, and twelve distinct manga/comic treatments. English and Japanese explanations distinguish line, shading, and surface technique. Copy-ready style prompts and fixed composition instructions are always English. The density filter offers nineteen styles with intentional breathing room and fourteen rich treatments.
 
@@ -63,3 +65,7 @@ Eight manga/comic techniques use general descriptions of lines, shadow groups, p
 ### Four further drawing treatments
 
 Four techniques describe taut fine sketch drawing with translucent color, soft rounded forms with quiet cool shadows, scruffy everyday ink with muted color, and precise luminous focal color. Names and descriptions use general visual traits. Their exact English style and shared scene instructions are saved before generation in `site/provenance/manga-variations-prompts-before-generation.json`. To import these four only, pass the actual submissions file, this frozen record, and `src/manga-variations.js` to `scripts/import-manga-images.mjs`. Preserve the previous 54 image records and assets. Official reference images used for analysis are not bundled or supplied as generation references.
+
+### Optional support
+
+A quiet coffee button below the usage guide links to https://ko-fi.com/yo4e in a new tab. The invitation is localized in Japanese and English. No payment integration, advertising, or third-party embed is loaded by the library.
