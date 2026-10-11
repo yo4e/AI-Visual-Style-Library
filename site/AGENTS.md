@@ -93,3 +93,9 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - The user approved all four reviewed manga candidates as additional options, not replacements. Preserve the existing 60 records and images and append four clearly named variants, bringing the catalog to 64.
 - Reuse the exact English instructions frozen at 2026-10-11T03:11:17.234Z and the actual generated outputs. Catalog aliases and display names may change after review; preserve generationSlug and hashes to make the correspondence explicit. Do not change the prompts after generation.
 - PR #4 is merged. Create a new Draft PR from current main, push and publish the approved 64-style build. Do not merge the new PR without another request. Keep About description free of a catalog count.
+
+## Adult fiction illustrations (2026-10-11)
+
+- The user authorized five additional nonphotographic treatments for human drama and workplace fiction, based on observation of published covers but described only through generic rendering traits. Do not name authors or works in public titles, descriptions, or English prompts; do not copy cover compositions or characters.
+- Preserve all 64 existing styles and assets; append five adult editorial illustrations. Keep natural adult faces, varied line/paint/texture choices, and two airy options. Freeze exact English prompts before reference-free generation, inspect actual outputs, and keep style and scene copy instructions independent in both languages.
+- The user explicitly approved GitHub saving and production publishing for this addition after local verification. Create a new Draft PR and use the existing Cloudflare Pages project. Do not merge without another request.
