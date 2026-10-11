@@ -1027,3 +1027,73 @@ Render a carefully hand-stippled adult editorial illustration in deep navy and r
 ```
 
 **Watch for:** The sample shows fine navy dot values and rust color, but dots extend into the background more widely than requested. At small sizes, dense dots in hair merge into dark masses.
+
+### Bold Cutout Silhouettes
+
+![Bold Cutout Silhouettes benchmark](site/public/images/fiction-cutout-silhouette.webp)
+
+Cut edges and long-necked adult geometry replace observational anatomy and detailed penwork.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Build the illustration entirely from boldly simplified cut-paper-like silhouettes on clean ivory. Use rust red, deep charcoal and pale teal plus paper white, with no tonal gradients. Make the adult figure a long narrow head shape on an exaggerated thin neck, a large angular coat block, two mitten-shaped hands and a single black backpack shape. Let the nose be one notch in the profile and the upward-looking eye be one tiny brown dot; omit mouth, cheeks, lashes and all portrait modeling. Hair is one solid asymmetric shape with at most two projecting tips. There are no drawn interior contours. Use sharp cut edges and slightly irregular broad shapes, not physical paper shadows or fibrous collage texture. Keep at least half the total frame plain untouched ivory, including a continuous open band around the figure and above the train. The background is a handful of long horizontal and diagonal cut shapes, subordinate to the figure. Think abstract adult editorial graphic, not manga, scenic travel painting or realistic book-cover portrait. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.
+```
+
+**Watch for:** The sample clearly simplifies face, hands and architecture, though it uses a few more muted color planes than the three-color target.
+
+### Elastic Everyday Symbols
+
+![Elastic Everyday Symbols benchmark](site/public/images/fiction-elastic-symbols.webp)
+
+A small head, long neck and tube-like arms make the deformation visible; facial expression is conveyed by only a few marks.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Draw a playful but adult editorial character illustration with conspicuously elastic, deliberately disproportionate construction. Use a tiny rounded head, an exaggerated long curved neck, broad shoulders, an oversized simple coat, long bent tube-like forearms, and round mitten hands. The face has only two small brown dots, one short L-shaped nose and one tiny mouth dash; no lashes, cheek modeling or lifelike portrait. Hair is one casually curved mass with three outward tufts, without inner strands. Draw loose thin black contours with occasional open joins and wobble around these distorted shapes. Fill only selected isolated regions with flat rust red, muted teal, dark blue and pale yellow. White paper remains the majority of the frame; omit cast shadows, gradients, volume and surface texture. Clothing is a single unshaded color island, not a study of folds. Simplify existing environment into crooked minimal diagram-like symbols. Do not turn this into chibi anime with a large head, a realistic figure with bright paint, or a fully rendered cartoon background. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.
+```
+
+**Watch for:** The small head, long neck and round hands are visible; arm deformation is gentler than the tube-like construction requested.
+
+### Chunky Wax Shapes
+
+![Chunky Wax Shapes benchmark](site/public/images/fiction-chunky-wax-shapes.webp)
+
+Broad primitive shapes replace the original pastel sample’s small modeled strokes; wax breaks remain only inside large masses.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Make a radically simplified primitive editorial illustration drawn only with very broad wax crayon marks. The whole figure is assembled from a large rounded-square head, triangular nose, one tiny brown eye dot looking right, a single crescent hair block, a trapezoid coat and two stubby mitten hands. Exaggerate the coat width and reduce adult anatomy to bold block shapes; keep an adult attitude rather than realistic anatomy or a cute anime face. Use no more than five broad color masses: rust red, charcoal, cream, muted teal and warm ochre. Every mark is thick and blunt, visibly at least a finger-width relative to the figure; there are no fine strokes, hatching, outlines, small facial features or smoothly blended modeled skin. Leave broken wax coverage inside broad flat masses but do not use texture to recreate realistic detail. The map is a large pale zigzag shape. Background structures are just broad crayon bars over large unmarked cream areas. Concentrate visual weight in the figure while roughly half the picture remains clear paper. This is a bold shape design using wax marks, not a painterly realistic pastel portrait. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.
+```
+
+**Watch for:** The selected output shows blunt shape blocks and no modeled face; grain remains inside the large filled regions, so it is less empty than the line option.
+
+### Spare Continuous-Line Design
+
+![Spare Continuous-Line Design benchmark](site/public/images/fiction-spare-continuous-line.webp)
+
+Unfilled loops and absent fingers, folds, and window repetition are intentional; the scene remains a readable symbol.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render an extremely spare adult editorial line design on pure white. Use a few long continuous cobalt-blue monoline loops to suggest the figure with deliberate missing contour sections. The adult head is an elongated oval with a simple nose kink and one small brown eye dash looking right, no detailed mouth or eye anatomy. Hair is two broad sweeping loops and an unfilled oval gap, never a mesh of strands. Body and limbs are stylized long curves; hands are two small oval hooks touching the map, without fingers. Use at most about twenty substantial strokes for the entire image, counting background marks; do not sneak in short marks, distant hatching or micro-detail. All forms remain unfilled except one small flat rust-red patch on part of the coat and a thin pale teal train stripe. The rest of the coat, face and hair are blank white. Reduce background to a few incomplete straight marks; most of the train has no outline. Leave roughly three quarters of the frame clear white. This must read as a minimal continuous-line editorial drawing or pictogram, not a detailed ballpoint sketch, anatomical portrait, architectural sketch or blue pen rendering of a photograph. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.
+```
+
+**Watch for:** The sample omits realistic portrait and architectural detail, but contains more than the approximate twenty-stroke target.
+
+### Modular Shapes & Oversized Dots
+
+![Modular Shapes & Oversized Dots benchmark](site/public/images/fiction-modular-dot-design.webp)
+
+A few large dot accents replace the earlier image’s dense fine stippling; simplified modules replace portrait and architecture detail.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Design a radically reduced modern adult editorial graphic from modular flat silhouettes on ivory white. Use a circular adult head with an angular profile notch, one tiny brown eye dot aimed upward to the right and no other facial features. Hair is one solid navy semicircle. Give the figure a deliberately exaggerated long neck, a very broad trapezoid coat, skinny curved forearms and simple semicircle mitten hands. Use large rust-red and navy flat shapes with paper-white cutouts and a narrow pale teal stripe only for the specified train. At two or three selected overlaps, replace a shadow with a small cluster of conspicuously oversized navy dots, each approximately the size of the eye or larger; use no more than twenty-four shadow dots in the whole picture. No fine stippling, halftone screens, uniform texture, gradients, natural skin modeling or interior clothing detail. Keep the face a blank light circle with minimal symbol marks. Background is composed of at most six simple bars and rectangles with big open gaps; retain roughly two thirds of the frame as plain ivory. The purpose is a bold modular design with a few playful dot accents, not a detailed pointillist illustration or full-scene screenprint. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.
+```
+
+**Watch for:** The flat figure and background are strongly simplified. This sample overlaps the cutout option in silhouette language; its dot accents are few.
