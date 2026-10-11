@@ -65,3 +65,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - The user selected avsl.4roz.com as the formal URL and authorized adding only its DNS record and connecting the existing Pages project.
 - Add a quiet Ko-fi coffee link below the usage guide, https://ko-fi.com/yo4e, with natural Japanese/English support copy. Do not add advertising or change payment settings. The user authorized saving to Draft PR #4 and publishing.
+
+## Favicon (2026-10-11)
+
+- Reuse the header’s Phosphor BookOpen light vector and accent color for the favicon. Keep the same book design, with balanced square padding, SVG and 16/32px ICO fallbacks, and an Apple touch icon. The user authorized publishing this to the existing Pages project and Draft PR #4.
