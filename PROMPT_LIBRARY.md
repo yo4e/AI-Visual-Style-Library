@@ -901,3 +901,59 @@ Render as a photorealistic psychological-horror film still using uneasy daylight
 ```
 
 **Watch for:** A bright benchmark may limit deep-shadow horror. Preserve recognizable objects rather than adding creatures or injuries.
+
+### Taut Pen & Hatching Manga
+
+![Taut Pen & Hatching Manga benchmark](site/public/images/manga-taut-pen-hatching.webp)
+
+Angular manga construction and assertive pen pressure distinguish this from softly modeled illustration.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render as a Japanese manga color illustration whose drawing is visibly made with a flexible pen. Make the focal contours angular, taut, and strongly pressure-varied: sharp cheek and jaw turns, narrow almond eyes, articulated fingers, and long wedge-shaped hair locks when people appear. Preserve adult age and the specified expression, but simplify the face into a drawn manga construction rather than a realistic portrait. Keep assertive black linework visible through translucent local-color washes. Use short parallel hatching along form, a few hooked exploratory lines, white paper gaps, and concentrated dark accents at overlapping hair and cloth folds. Model the body and existing objects with drawn planes instead of smooth painterly volume. Keep background architecture economical and less detailed than the figure. Show energy through line pressure even in a still scene. Avoid photographic skin, uniformly thin polished outlines, soft all-over airbrush shading, unrelated action or props, and decorative collage. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
+```
+
+**Watch for:** If contours become uniformly thin or skin is realistically modeled, the intended taut drawing is weakened.
+
+### Round-Faced Matte Manga
+
+![Round-Faced Matte Manga benchmark](site/public/images/manga-rounded-matte.webp)
+
+Broad oval manga eyes, rounded cheeks, and minimal modeling make the soft construction readable.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render as a softly colored Japanese manga illustration with unmistakably rounded, simplified character construction. When people appear, draw broad oval manga eyes with substantial dark upper lashes and small ordinary catchlights, softly full cheeks, a tiny nose indicated by one short mark, a small mouth, and a gently rounded chin. Retain adult age, the supplied expression, and clothing. Use clean fine curved ink outlines and simplified round-ended hair clumps. Place pale matte local colors in broad mostly flat regions; use only a few light cool gray-violet shadow shapes beneath the hair and at clothing overlaps. Leave the face largely unshaded, with no realistic skin texture or sculptural portrait modeling. Draw the background with spare straight lines and large quiet color planes so the rounded face is the main visual signal. Keep the scene and physical objects intact. Avoid chibi bodies, glossy painting, dense hatching, dramatic black shadows, monsters, damage, and unrequested costumes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
+```
+
+**Watch for:** The adult face should remain rounded and simplified; dense shading can turn it back into a generic portrait.
+
+### Bold Scruffy Ink Comic
+
+![Bold Scruffy Ink Comic benchmark](site/public/images/manga-bold-scruffy-ink.webp)
+
+Blunt ink and compact graphic faces show rough comic drawing without adding dirt or clutter.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render as a deliberately rough Japanese everyday comic color illustration. Use visibly uneven medium-to-bold black pen contours with blunt hooks, broken joins, blunt hair tufts, and a few overshooting interior strokes. When people appear, simplify their adult face into compact angular cheeks, small half-lidded manga eyes compatible with the supplied gaze, one-mark nose, and an understated mouth; do not render a realistic portrait. Make the hair and a few overlapping cloth folds read as simple black ink masses, not thousands of fine strands. Fill broad areas with flat muted local colors, leaving white paper gaps and sparse coarse dry hatching in selected folds. Keep large quiet background shapes and lightly irregular architectural lines. Let the hand-drawn imperfections be visible at thumbnail size. Preserve the supplied pose, grooming, clean setting, and objects rather than adding mess. Avoid polished fine-line illustration, smooth gradients, painterly depth everywhere, animal features, cigarettes, and added clutter. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
+```
+
+**Watch for:** If it becomes a fine realistic sketch, the blunt uneven contour and flat comic color are missing.
+
+### Crisp Cel & Hair Highlights
+
+![Crisp Cel & Hair Highlights benchmark](site/public/images/manga-crisp-cel-highlights.webp)
+
+Graphic manga eyes and controlled jewel-like color concentrate brightness at the expression.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render as a crisp contemporary Japanese manga color illustration with precise graphic facial construction and concentrated jewel-like color. When people appear, draw large almond-shaped manga eyes with thick sharply tapered upper lash contours, clear multilayer iris rings, and two ordinary geometric light reflections; use a tiny nose and small precise mouth, retaining adult age and the specified expression. Draw hair as clean tapered ribbon groups, separated by sharply controlled fine ink lines and narrow cool-violet reflected highlights without changing its base color. Use saturated local colors for the supplied focal materials, crisp cel-shadow shapes, selective transparent color layering, and restrained pink reflected light on cheeks. Keep skin mostly matte and simplified rather than realistically modeled. Make eyes and selected hair reflections luminous, with quiet low-saturation background planes and sharply readable silhouettes. Avoid star-shaped pupils, emblem-like eye marks, floating glitter, unrequested costumes or hair colors, painterly line loss, and gloss over every surface. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
+```
+
+**Watch for:** Ordinary reflections should carry the brightness; avoid signature eye symbols and all-over gloss.

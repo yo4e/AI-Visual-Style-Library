@@ -12,14 +12,14 @@ The English interface on the live site. Samples share one subject and scene so y
 
 ## Choose a look, then make it your own
 
-1. Browse **60 styles** or filter by visual family and detail density. Search for qualities such as fine lines, flat color, paper texture, or photography.
+1. Browse **64 styles** or filter by visual family and detail density. Search for qualities such as fine lines, flat color, paper texture, or photography.
 2. Open a sample to read its line, shading, and texture traits. Select two to four styles to compare them on the same subject.
 3. Copy the **Style prompt** for your own subject, the **Subject, scene & composition prompt** used in the sample, or the combined instructions.
 4. Paste the instructions into your image-generation tool and adapt the subject or scene there.
 
 The site does not generate images. It offers English and Japanese explanations; copy-ready prompts remain English in both interfaces. The language choice is remembered locally, and `?lang=en` or `?lang=ja` overrides it.
 
-The catalog includes six original techniques, ten anime illustration treatments, ten light-novel treatments, ten quiet literary looks, seven photographic looks, five general-fiction illustration treatments, and twelve manga/comic treatments. The photographic collection includes cinematic mystery and uneasy daylight horror. Density choices include intentionally sparse drawing as well as rich detail.
+The catalog includes six original techniques, ten anime illustration treatments, ten light-novel treatments, ten quiet literary looks, seven photographic looks, five general-fiction illustration treatments, and sixteen manga/comic treatments. The photographic collection includes cinematic mystery and uneasy daylight horror. Four further manga variations explore stronger pen hatching, round-faced matte color, bold scruffy ink, and crisp cel shadows with hair highlights. Earlier looks remain available; variations can overlap rather than representing completely separate styles. Density choices include intentionally sparse drawing as well as rich detail.
 
 ## What the samples demonstrate
 
