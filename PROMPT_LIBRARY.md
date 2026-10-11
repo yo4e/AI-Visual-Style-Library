@@ -705,3 +705,115 @@ Render the supplied subject and scene in the following visual style. Render as a
 
 **Watch for:** Avoid anime eye detail, realistic volume, ornamental patterns, and unrelated symbols; these can obscure the technique.
 **Cover layout:** For a portrait cover, keep the upper 25% low in detail and place the subject and any face below the center. Typeset the title and author name afterward.
+
+### Dynamic Adventure Ink
+
+![Dynamic Adventure Ink benchmark](site/public/images/manga-dynamic-ink.webp)
+
+Energetic drawing built from angular contours and decisive ink shadows.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as energetic black-and-white adventure manga. Use angular pressure-varied pen strokes, pointed contour endings, and a few decisive solid-black shadows. Draw people with compact expressive facial features and slightly emphasized hands when present, while retaining recognizable adult proportions. Organize folds and structural edges into diagonal rhythms without changing the specified pose or scene. Keep faces and hands mostly white and simplify distant surfaces. Use sparse short hatching instead of smooth gray gradients. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid unrequested combat, weapons, explosions, excessive screentone, and color.
+```
+
+**Watch for:** Avoid unrequested combat, weapons, explosions, excessive screentone, and color; these can obscure the technique.
+
+### Round Slapstick Ink
+
+![Round Slapstick Ink benchmark](site/public/images/manga-round-slapstick.webp)
+
+Rubbery rounded forms and big expressions make a scene instantly readable.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a playful black-and-white slapstick comic. Use thick elastic curved outlines and simplified bulbous hands and objects. When people appear, give them rounded oversized heads, compact two-and-a-half to three-head-tall bodies, broad open expressions, and small dot-like facial details. Preserve their described age, clothing, and action rather than turning adults into children. Keep interiors mostly white, using tiny solid-black accents and almost no screen tones. Simplify the setting into a few rounded identifying shapes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid color fills, realistic anatomy, ornate eyes, extra joke props, and speech balloons.
+```
+
+**Watch for:** Avoid color fills, realistic anatomy, ornate eyes, extra joke props, and speech balloons; these can obscure the technique.
+
+### Lyrical Ornamental Manga
+
+![Lyrical Ornamental Manga benchmark](site/public/images/manga-lyrical-ornament.webp)
+
+Decorative line rhythm and luminous eyes create an elaborate lyrical mood.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as richly detailed black-and-white lyrical manga. Use very fine flowing pen lines, elongated graceful proportions when people appear, large luminous eyes built from precise nested ink shapes, and layered ribbons of hair linework. Describe clothing folds with feathered hatching and restrained pale dot-screen tones. Concentrate decorative line rhythms in existing hair, fabric, and scene surfaces; do not add flowers, stars, lace, or new accessories. Let focal highlights and selected background spaces remain white so the fine lines stay legible. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid color wash, heavy uniform outlines, unrequested decorative objects, and photographic shading.
+```
+
+**Watch for:** Avoid color wash, heavy uniform outlines, unrequested decorative objects, and photographic shading; these can obscure the technique.
+
+### Quiet Observational Manga
+
+![Quiet Observational Manga benchmark](site/public/images/manga-observational.webp)
+
+Natural proportions, small gestures, and selective detail give everyday scenes quiet weight.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as quiet observational black-and-white manga. Use natural adult proportions, small realistic eyes when people appear, and fine understated contours with slight hand-drawn irregularity. Observe posture, hand placement, and small folds carefully. Shade only selected overlaps with short parallel hatching and very light gray dot tones. Leave large paper-white areas untouched and omit nonessential background lines while retaining the specified setting. Avoid dramatic expression conventions; let small gestures carry the scene. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid large stylized eyes, action effects, dramatic black masses, global gray shading, and photographic rendering.
+```
+
+**Watch for:** Avoid large stylized eyes, action effects, dramatic black masses, global gray shading, and photographic rendering; these can obscure the technique.
+
+### Noir Brush Manga
+
+![Noir Brush Manga benchmark](site/public/images/manga-noir-brush.webp)
+
+Rugged ink and a few carved highlights give a scene graphic tension.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as gritty black-and-white noir manga with natural proportions. Use rugged brush-pen contours, dry-ink breaks, and large connected black shadow masses. Carve a few sharp white highlights out of dark hair, fabric, and architecture when those surfaces occur in the subject description. Use short abrasive hatching to join midtones to black, leaving the focal face and hands readable. Preserve the supplied place, action, and time of day; create tension through graphic values rather than adding crime or turning daylight into night. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid added violence, blood, weapons, night conversion, smooth gray gradients, and uniform noise.
+```
+
+**Watch for:** Avoid added violence, blood, weapons, night conversion, smooth gray gradients, and uniform noise; these can obscure the technique.
+
+### Geometric Everyday Comic
+
+![Geometric Everyday Comic benchmark](site/public/images/manga-geometric-comedy.webp)
+
+Deadpan expressions and economical geometry give ordinary situations a light comic rhythm.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a minimalist black-and-white everyday comic. Use even thin-to-medium outlines, angular geometric silhouettes, and economical straight or gently curved marks. When people appear, keep roughly five-head-tall simplified proportions, tiny facial features, and understated deadpan expressions rather than exaggerated reactions. Represent objects with a few clear planes. Keep almost every interior white, reserving small black shapes for necessary dark materials. Omit nonessential background marks and cast shadows; use spacing and overlaps to keep the specified scene readable. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid rounded chibi bodies, ornate eyes, textured hatching, dense dot tones, and added comic symbols.
+```
+
+**Watch for:** Avoid rounded chibi bodies, ornate eyes, textured hatching, dense dot tones, and added comic symbols; these can obscure the technique. This sample retains faint local color despite the black-and-white instruction. It is the actual generated output, not recolored; strict color constraints can vary between generations.
+
+### Directional Athletic Penwork
+
+![Directional Athletic Penwork benchmark](site/public/images/manga-directional-pen.webp)
+
+Long directional strokes emphasize body weight and movement without changing the action.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as black-and-white manga with fluid athletic penwork. Use long tapered strokes that follow body weight, cloth tension, and the perspective of specified objects. When people appear, use lean natural proportions, clear joint structure, and focused small-eyed expressions. Build selected shadows with grouped oblique hatching rather than large black pools or dot screens. Keep the supplied action exactly as described, even when it is quiet: suggest energy through line direction and contour rhythm, not through added running, sports equipment, or speed-effect backgrounds. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid unrequested sports actions or equipment, explosive effect lines, bulky exaggerated muscles, and smooth grayscale.
+```
+
+**Watch for:** Avoid unrequested sports actions or equipment, explosive effect lines, bulky exaggerated muscles, and smooth grayscale; these can obscure the technique.
+
+### Limited-Color Printed Comic
+
+![Limited-Color Printed Comic benchmark](site/public/images/manga-limited-color-print.webp)
+
+Bold brush drawing and a few visible color plates give a lively printed-comic finish.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a limited-color printed comic illustration. Use bold slightly uneven brush outlines, simplified expressive faces with readable adult proportions when present, and broad flat spot-color plates. Use black, warm red, muted yellow, and the white paper only; translate the supplied local colors into this palette without changing the objects. Shade through clearly visible coarse halftone dots in selected color areas. Allow subtle plate-registration drift at a few edges and slight ink coverage variation, while keeping focal facial details crisp. Preserve white highlight shapes and organize the background into broad planes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid full-spectrum color, soft airbrush gradients, photographic textures, fake aged stains, and generated lettering.
+```
+
+**Watch for:** Avoid full-spectrum color, soft airbrush gradients, photographic textures, fake aged stains, and generated lettering; these can obscure the technique.

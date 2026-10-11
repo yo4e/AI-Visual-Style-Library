@@ -2,7 +2,7 @@
 
 ## What was checked
 
-This release has 46 styles: the original six, thirty anime/light-novel/literary additions, five photographic looks, and five general-fiction illustration treatments.
+The current local catalog has 54 styles: the original six, thirty anime/light-novel/literary additions, five photographic looks, five general-fiction illustration treatments, and eight manga/comic techniques. The user approved publishing the manga extension after local validation.
 
 The original six English generation instructions already matched the current sample copy and their image hashes were retained. The thirty Japanese-generated additions are replaced by new outputs generated from their English copy-ready instructions. The ten new photographic/general-fiction styles also use their final English instructions.
 
@@ -21,3 +21,9 @@ The current local UI checks separately cover both display languages, always-visi
 ## Limits
 
 The tool does not expose its underlying model version, seed, or internal prompt revision. No identical-image, repeated-run, or cross-model guarantee is made. Alternate subjects were not tested in this final simplified workflow; replace the subject block to try your own scene while retaining the style block. Titles and author names should be typeset afterward.
+
+## Manga extension
+
+Eight manga/comic styles are added after the original 46. Their English technique prompts and complete benchmark inputs were saved in `site/provenance/manga-prompts-before-generation.json` before ImageGen was called. Each actual call uses that complete string with `transparent_background: false`, no image references, and no hidden scene or style additions. The importer checks saved text, actual submission, current copy text, and prompt hash before writing any asset. The original 46 manifest entries and assets are retained. One-output technique screening does not establish repeatability or cross-model reproduction.
+
+All eight selected outputs were screened visually for their broad line, proportion, value, and print-surface treatment. The geometric everyday comic retains some faint local color despite its black-and-white instruction; fine negative constraints are not a strict guarantee. The samples are actual submitted-prompt outputs, not retrofitted style descriptions.

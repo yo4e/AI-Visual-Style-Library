@@ -317,7 +317,7 @@ export function App() {
       <main>
         <section className="hero page-shell" aria-labelledby="page-title"><div className="hero-main">
           <h1 id="page-title">{t("作りたい画像に、合う絵柄を。")}</h1>
-          <p>{t("アニメ、イラスト、版画、絵画、写真表現など46種類。線・塗り・質感や、描き込みの密度から選べます。")}</p>
+          <p>{t("アニメ、イラスト、版画、絵画、写真表現など54種類。線・塗り・質感や、描き込みの密度から選べます。")}</p>
           <form className="search-form" onSubmit={submitSearch} role="search"><MagnifyingGlass size={24} aria-hidden="true" /><label className="sr-only" htmlFor="style-search">{t("名前・特徴で絵柄を検索")}</label><input id="style-search" ref={searchRef} value={searchText} onChange={event => setSearchText(event.target.value)} placeholder={t("例：フラット、純文学、抜け感")} /><button type="submit">{t("検索")}</button></form>
         </div><aside className="benchmark-note" aria-label={t("共通の見本について")}><span className="eyebrow">{t("同じ場面で比較")}</span><p>{t("同じ人物と駅の場面を、異なる絵柄で描いた見本です。絵柄の指示をコピーして、好きな被写体に使えます。")}</p><div>{t("赤いコートの女性が駅で地図を広げる場面")}.</div></aside></section>
 

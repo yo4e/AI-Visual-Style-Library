@@ -44,7 +44,7 @@ const english = {
  '比較する絵柄を2種類以上選んでください':'Choose at least two styles to compare',
  '絵柄を探す':'Explore styles',
  '作りたい画像に、合う絵柄を。':'Find the look for your image.',
- 'アニメ、イラスト、版画、絵画、写真表現など46種類。線・塗り・質感や、描き込みの密度から選べます。':'Explore 46 styles across anime, illustration, printmaking, painting, and photography. Choose by lines, shading, texture, or detail density.',
+ 'アニメ、イラスト、版画、絵画、写真表現など54種類。線・塗り・質感や、描き込みの密度から選べます。':'Explore 54 styles across anime, illustration, printmaking, painting, and photography. Choose by lines, shading, texture, or detail density.',
  '名前・特徴で絵柄を検索':'Search styles by name or visual quality',
  '例：フラット、純文学、抜け感':'Try flat, literary, or breathing room',
  '検索':'Search',
@@ -107,7 +107,7 @@ export function LanguageProvider({children}) {
   document.documentElement.lang=locale;
   document.title=locale==='ja'?'画像の絵柄を探す | AI Visual Style Library':'Find Your Visual Style | AI Visual Style Library';
   const description=document.querySelector('meta[name="description"]');
-  if(description)description.content=locale==='ja'?'画像生成に使える46種類の絵柄。コピー用プロンプトは英語、説明は日本語と英語で切替。':'Explore 46 visual styles for image generation. Compare samples and copy English prompts, with English and Japanese descriptions.';
+  if(description)description.content=locale==='ja'?'画像生成に使える54種類の絵柄。コピー用プロンプトは英語、説明は日本語と英語で切替。':'Explore 54 visual styles for image generation. Compare samples and copy English prompts, with English and Japanese descriptions.';
   try{localStorage.setItem('visual-style-language',locale)}catch{}
  },[locale]);
  function changeLanguage(next){setLocale(next);const url=new URL(window.location.href);if(url.searchParams.has('lang')){url.searchParams.set('lang',next);window.history.replaceState({},'',url.pathname+url.search+url.hash)}}

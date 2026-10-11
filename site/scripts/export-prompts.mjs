@@ -38,7 +38,7 @@ for (const style of styles) {
     "```",
     "",
     `**Watch for:** ${style.watchFor}`,
-    `**Cover layout:** ${style.coverAdvice}`,
+    ...(style.coverAdvice ? [`**Cover layout:** ${style.coverAdvice}`] : []),
     "",
   );
 }

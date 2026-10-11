@@ -28,6 +28,7 @@ for(const style of bookStyles){
  additions.push({slug:style.slug,imagePath:style.image,sourceFile:path.basename(sources[style.slug]),sourceSha256:hash(source),imageSha256:hash(image),imageWidth:meta.width,imageHeight:meta.height,imageBytes:image.length,webpQuality:quality,generatedOn:new Date().toISOString().slice(0,10),tool:'Codex ImageGen (built-in)',toolParameters:{transparent_background:false},promptLanguage:'en',submittedPrompt:prompt,submittedPromptSha256:hash(prompt)});
  console.log(style.slug+': '+meta.width+'x'+meta.height+', '+image.length+' bytes');style.imageStatus='ready';
 }
-manifest.images=[...original,...additions];manifest.generatedOn=new Date().toISOString().slice(0,10);manifest.promptLanguage='en';
+manifest.images=styles.map(style=>additions.find(entry=>entry.slug===style.slug)||original.find(entry=>entry.slug===style.slug));
+assert.ok(manifest.images.every(Boolean),'Missing existing manifest entry');manifest.generatedOn=new Date().toISOString().slice(0,10);manifest.promptLanguage='en';
 await writeFile(manifestPath,JSON.stringify(manifest,null,2)+'\n');
 await writeFile(new URL('../src/book-styles.js',import.meta.url),'export const bookStyles = '+JSON.stringify(bookStyles,null,2)+';\n');

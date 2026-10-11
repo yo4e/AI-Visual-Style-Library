@@ -6,7 +6,8 @@ export const languageLabels = {
       "literary": "Literary & quiet covers",
       "original": "Original six",
       "photographic": "Photographic & near-realistic",
-      "fiction": "General fiction illustration"
+      "fiction": "General fiction illustration",
+      "manga": "Manga & comic techniques"
     },
     "density": {
       "airy": "Breathing room",
@@ -21,7 +22,8 @@ export const languageLabels = {
       "literary": "純文学・静かな装丁",
       "original": "既存6種類",
       "photographic": "写真・実写寄り",
-      "fiction": "一般文芸・大衆文学"
+      "fiction": "一般文芸・大衆文学",
+      "manga": "漫画の表現"
     },
     "density": {
       "airy": "抜け感",

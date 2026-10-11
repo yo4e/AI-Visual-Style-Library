@@ -47,3 +47,10 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Preserve all 46 styles, the language toggle, comparison, and exact English sample-generation correspondence.
 
 - Label the two prompt blocks 「絵柄・タッチのプロンプト」 / “Style prompt” and 「人物・場面・構図のプロンプト」 / “Subject, scene & composition prompt”.
+
+## Manga extension (2026-10-11)
+
+- Add eight distinct manga/comic visual treatments to the existing 46. Use generic line, shadow, deformation, and density descriptions; never use magazine, work, or artist names in labels or generation prompts.
+- Finalize and save English prompts before generating images. Submit exactly the saved full-sample text, and preserve both independent instruction blocks and three copy actions in both languages.
+- Keep the original 46 prompts and images. This addition raises the catalog to 54; the earlier 46-style limit is superseded for this explicit request.
+- The user explicitly approved saving the manga extension to PR #4 and publishing it to Cloudflare. Keep the PR draft and unmerged. Explain the geometric comic sample’s faint color in both languages without recoloring it or changing the saved generation prompts.

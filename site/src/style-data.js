@@ -1,3 +1,4 @@
+import {mangaStyles} from './manga-styles.js';
 import { bookStyles } from "./book-styles.js";
 import {englishBookStyle} from "./book-style-english.js";
 import {languageLabels} from "./locale-labels.js";
@@ -209,6 +210,7 @@ export const styles = [
   translations:{ja:{name:style.name,short:style.short,definition:style.definition,characteristics:style.characteristics,watchFor:style.watchFor,coverAdvice:style.coverAdvice,vocabularyLabels:style.vocabulary}},
   keywords:[...style.keywords,englishBookStyle(style).name,...englishBookStyle(style).vocabulary,languageLabels.en.family[familyIds[style.family]],languageLabels.en.density[densityIds[style.density]]],
  })),
+ ...mangaStyles,
 ];
 
 export function getStyles(locale='en') {
@@ -216,7 +218,7 @@ export function getStyles(locale='en') {
 }
 export const filterDefinitions = [
  {key:'density',label:'描き込みの密度',values:['airy','balanced','rich']},
- {key:'family',label:'用途・系統',values:['anime','light-novel','literary','photographic','fiction','original']},
+ {key:'family',label:'用途・系統',values:['anime','light-novel','literary','photographic','fiction','manga','original']},
 ];
 export const quickTraits = ['フラット','ラノベ','純文学','線画','版画'];
 // Keep the exact submitted text separate from the current English copy-ready version.
