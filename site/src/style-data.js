@@ -1,3 +1,9 @@
+import {photoSuspenseStyles} from './photo-suspense-styles.js';
+import {mangaVariations} from './manga-variations.js';
+import {mangaStyles} from './manga-styles.js';
+import { bookStyles } from "./book-styles.js";
+import {englishBookStyle} from "./book-style-english.js";
+import {languageLabels} from "./locale-labels.js";
 export const benchmark = {
   id: "station-map-v3",
   label: "The station map",
@@ -9,7 +15,7 @@ export const benchmark = {
     "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
 };
 
-export const styles = [
+const originalStyles = [
   {
     slug: "watercolor",
     name: "Watercolor",
@@ -172,33 +178,67 @@ export function combinedPrompt(style) {
   return `Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\n${benchmark.characterPrompt}\n\nVISUAL STYLE\n${style.stylePrompt}`;
 }
 
-export const filterDefinitions = [
-  { key: "medium", label: "Medium", values: ["Paint", "Print", "Ink", "Digital", "Photo"] },
-  { key: "color", label: "Color", values: ["Muted", "Limited", "Monochrome", "Natural"] },
-  { key: "texture", label: "Texture", values: ["Paper grain", "Brushstrokes", "Pixels", "Film grain"] },
-  { key: "era", label: "Era", values: ["Timeless", "Contemporary", "Retro"] },
-  { key: "mood", label: "Mood", values: ["Dreamy", "Bold", "Quiet", "Nostalgic"] },
-  { key: "lineStyle", label: "Line style", values: ["Soft", "Bold", "Expressive", "Pixelated", "Natural"] },
+const existingNames = ['水彩','リソグラフ','ガッシュ','墨絵','ピクセルアート','35mm フィルム'];
+const existingDescriptions = [
+ ['透明な絵具・にじむ縁・紙の粒','紙の白を透かす水彩。柔らかな境界と絵具の溜まりが、軽やかな空気を作ります。','鉛筆のような細線','透明色を重ねる','にじみと紙の粒'],
+ ['二色の版・網点・版ずれ','少数の特色と不均一なインクで、手刷りのポスターのように描きます。','大胆な輪郭','二色の重なり','粗い網点と版ずれ'],
+ ['不透明な色・マット・筆跡','不透明な絵具の面と控えめな筆跡で、温かな手描きの形を作ります。','筆で作る縁','不透明な色面','マットな筆跡'],
+ ['墨の筆・灰色の洗い・余白','薄めた墨と残した白紙で、形と余韻を表します。','筆の強弱','濃淡の墨の洗い','吸水紙の縁'],
+ ['低解像度・限られた色・四角い粒','意図的に配置したピクセルの塊で、物語ゲームのように描きます。','階段状の輪郭','離散的な色段階','鮮明なピクセル'],
+ ['自然な粒子・淡い色・レンズ','自然光、レンズの焦点、フィルムの粒子で、観察した日常を写します。','レンズの焦点','自然光の明暗','細かいフィルム粒子'],
 ];
 
-export const quickTraits = ["grainy", "soft", "limited colors", "handmade", "retro"];
+const originalWatchJa = [
+ 'すべての輪郭が硬く不透明だと、水彩よりデジタル塗りに見えます。',
+ '均一なノイズを重ねるだけでは、インクのむらや二版の重なりを表せません。',
+ '強い光沢や透明な洗いは、アクリルや水彩に近く見えることがあります。',
+ '写真を白黒にするだけでは、筆の動きと残した紙の役割を表せません。',
+ 'ぼやけた低解像度画像ではなく、意図的に配置したピクセルの塊が重要です。',
+ '粒子の追加だけでは、レンズ・光・フィルムの色のふるまいは再現できません。',
+];
+const familyIds={'アニメ・漫画':'anime','ライトノベル':'light-novel','純文学・静かな装丁':'literary','写真・実写寄り':'photographic','一般文芸・大衆文学':'fiction'};
+const densityIds={'抜け感':'airy','ほどよい':'balanced','リッチ':'rich'};
+export const styles = [
+ ...originalStyles.map((style,i)=>({
+  ...style, family:'original', density:'balanced',
+  generationStylePrompt:style.stylePrompt,
+  coverAdvice:'For a portrait cover, request separate space for the title. Typeset the lettering afterward.',
+  translations:{ja:{name:existingNames[i],short:existingDescriptions[i][0],definition:existingDescriptions[i][1],characteristics:{'線':existingDescriptions[i][2],'塗り・陰影':existingDescriptions[i][3],'質感':existingDescriptions[i][4]},watchFor:originalWatchJa[i],coverAdvice:'縦長の表紙ではタイトル用の余白を別途指定してください。文字は生成後に組版します。',vocabularyLabels:[existingDescriptions[i][2],existingDescriptions[i][3],existingDescriptions[i][4]]}},
+  keywords:[...style.keywords,existingNames[i],'original','既存','装丁','表紙'],
+ })),
+ ...bookStyles.map(style=>({
+  ...style,...englishBookStyle(style),family:familyIds[style.family],density:densityIds[style.density],
+  generationStylePrompt:style.stylePrompt,
+  translations:{ja:{name:style.name,short:style.short,definition:style.definition,characteristics:style.characteristics,watchFor:style.watchFor,coverAdvice:style.coverAdvice,vocabularyLabels:style.vocabulary}},
+  keywords:[...style.keywords,englishBookStyle(style).name,...englishBookStyle(style).vocabulary,languageLabels.en.family[familyIds[style.family]],languageLabels.en.density[densityIds[style.density]]],
+ })),
+ ...mangaStyles,
+ ...mangaVariations,
+ ...photoSuspenseStyles,
+];
 
-export function findStyles({ query = "", filters = {}, sort = "relevant" }) {
-  const words = query.toLowerCase().replace(/[-–]/g, " ").trim().split(/\s+/).filter(Boolean);
-  const result = styles.filter((style) => {
-    if (Object.entries(filters).some(([key, value]) => value && style[key] !== value)) return false;
-    const haystack = [
-      style.name,
-      style.family,
-      style.short,
-      style.definition,
-      ...Object.values(style.characteristics),
-      ...style.vocabulary,
-      ...style.keywords,
-    ].join(" ").toLowerCase().replace(/[-–]/g, " ");
-    return words.every((word) => haystack.includes(word));
-  });
-  if (sort === "name-asc") result.sort((a, b) => a.name.localeCompare(b.name));
-  if (sort === "name-desc") result.sort((a, b) => b.name.localeCompare(a.name));
-  return result;
+export function getStyles(locale='en') {
+ return styles.map(style=>({...style,...(style.translations[locale]||{}),familyLabel:languageLabels[locale].family[style.family],densityLabel:languageLabels[locale].density[style.density],vocabularyLabels:style.translations[locale]?.vocabularyLabels||style.vocabulary}));
+}
+export const filterDefinitions = [
+ {key:'density',label:'描き込みの密度',values:['airy','balanced','rich']},
+ {key:'family',label:'用途・系統',values:['anime','light-novel','literary','photographic','fiction','manga','original']},
+];
+export const quickTraits = ['フラット','ラノベ','純文学','線画','版画'];
+// Keep the exact submitted text separate from the current English copy-ready version.
+export function generationPrompt(style) {
+ return combinedPrompt({...style,stylePrompt:style.generationStylePrompt || style.stylePrompt});
+}
+export function findStyles({ query = "", filters = {}, sort = "relevant",locale='en' }) {
+ const words=query.toLowerCase().replace(/[-–]/g,' ').trim().split(/\s+/).filter(Boolean);
+ const result=getStyles(locale).filter(style=>{
+  if(Object.entries(filters).some(([key,value])=>value&&style[key]!==value))return false;
+  const ja=style.translations.ja;
+  const canonical=styles.find(s=>s.slug===style.slug);
+  const haystack=[style.name,style.familyLabel,style.densityLabel,style.short,style.definition,...Object.values(style.characteristics),...style.vocabulary,...style.keywords,canonical.name,canonical.short,canonical.definition,ja.name,ja.short,ja.definition,...Object.values(ja.characteristics)].join(' ').toLowerCase().replace(/[-–]/g,' ');
+  return words.every(word=>haystack.includes(word));
+ });
+ if(sort==='name-asc')result.sort((a,b)=>a.name.localeCompare(b.name,locale));
+ if(sort==='name-desc')result.sort((a,b)=>b.name.localeCompare(a.name,locale));
+ return result;
 }

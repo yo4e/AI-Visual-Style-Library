@@ -10,7 +10,8 @@
     "sync:benchmark": "node scripts/sync-benchmark-images.mjs",
     "test:prompts": "node --test tests/benchmark-integrity.test.mjs",
     "preview": "vite preview",
-    "test:sites": "node --test tests/sites-worker.test.mjs"
+    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "test:library": "node --test tests/book-library.test.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
@@ -21,5 +22,6 @@
   },
   "devDependencies": {
     "sharp": "^0.35.4"
-  }
+  },
+  "license": "MIT"
 }

@@ -7,7 +7,7 @@ const sections = [
   "",
   "Use these as two independent pieces: a character and scene prompt for the gallery example, and a visual style prompt for the rendering treatment. To make your own image in a style, write your own subject description and paste only that style's prompt after it. To approach a gallery example, paste the shared character and scene prompt followed by its style prompt.",
   "",
-  "The gallery images were selected from outputs generated after submitting these combined prompt parts. The exact submitted text and each image checksum are recorded in [`site/benchmark-manifest.json`](site/benchmark-manifest.json). The image tool did not expose a seed or underlying model version, so the same prompt can produce a different composition on another run.",
+  "Copy-ready prompts are English in both display languages. Every current sample was generated with the same English technique and shared subject instructions available from its full-sample copy action. Earlier Japanese-generated samples have been replaced, and their records are archived in site/provenance/. The exact submitted text and each current image checksum are recorded in [`site/benchmark-manifest.json`](site/benchmark-manifest.json). The image tool did not expose a seed or underlying model version, so the same prompt can produce a different composition on another run.",
   "",
   "Text prompts target the visible technique, not an identical image. For a closer match to a gallery image, attach that image in ChatGPT as a visual reference and say to preserve its medium, mark making, palette, and texture while following your subject description. Keep the same image model and output shape when comparing results, then inspect repeated generations. [OpenAI's image prompting guide](https://developers.openai.com/api/docs/guides/image-prompting) describes reference-based edits and consistency checks.",
   "",
@@ -29,6 +29,8 @@ for (const style of styles) {
     "",
     `![${style.name} benchmark](site/public${style.image})`,
     "",
+    style.definition,
+    "",
     "Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.",
     "",
     "```text",
@@ -36,6 +38,7 @@ for (const style of styles) {
     "```",
     "",
     `**Watch for:** ${style.watchFor}`,
+    ...(style.coverAdvice ? [`**Cover layout:** ${style.coverAdvice}`] : []),
     "",
   );
 }
