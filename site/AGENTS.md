@@ -54,3 +54,9 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Finalize and save English prompts before generating images. Submit exactly the saved full-sample text, and preserve both independent instruction blocks and three copy actions in both languages.
 - Keep the original 46 prompts and images. This addition raises the catalog to 54; the earlier 46-style limit is superseded for this explicit request.
 - The user explicitly approved saving the manga extension to PR #4 and publishing it to Cloudflare. Keep the PR draft and unmerged. Explain the geometric comic sample’s faint color in both languages without recoloring it or changing the saved generation prompts.
+
+## Four further techniques (2026-10-11)
+
+- Add four general drawing treatments, bringing the catalog to 58. Inspect official visual materials, then describe generic line, shadow, color, form, and detail traits rather than naming works or artists in public titles, descriptions, or prompts. Do not reproduce original characters, compositions, or signature eye symbols.
+- Freeze exact English prompts before generating new benchmark images. Preserve the previous 54 prompts and assets, both UI languages, two independent blocks, three copy actions, and comparison.
+- The user explicitly approved saving the four additions to existing Draft PR #4 and publishing to the existing Cloudflare project after validation; keep the PR unmerged.

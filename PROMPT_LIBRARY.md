@@ -817,3 +817,59 @@ Render the supplied subject and scene in the following visual style. Render as a
 ```
 
 **Watch for:** Avoid full-spectrum color, soft airbrush gradients, photographic textures, fake aged stains, and generated lettering; these can obscure the technique.
+
+### Tensile Sketch Color
+
+![Tensile Sketch Color benchmark](site/public/images/manga-tensile-color.webp)
+
+Taut fine drawing and translucent color make body weight and material tension visible.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a finely drawn color manga illustration with taut sketch-like energy. Use slender pressure-varied pen contours, small exploratory overlaps, and short directional hatching that follows anatomy, stretched cloth, and object structure. When people appear, use lean believable adult proportions, articulated hands, narrow focused eyes, and expressive eyebrows. Lay translucent local color over the visible drawing, combining restrained cool shadow washes with a few warm saturated accents from existing materials. Keep white glints sharp and the focal drawing detailed; reduce distant contrast. Preserve the specified pose and quiet or active action exactly; show tension through marks rather than adding an athletic scene. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid mandatory sports equipment, exaggerated muscles, unrelated geometric decoration, smooth glossy skin, and generic speed effects.
+```
+
+**Watch for:** Avoid mandatory sports equipment, exaggerated muscles, unrelated geometric decoration, smooth glossy skin, and generic speed effects; these can obscure the technique.
+
+### Soft Forms, Quiet Shadows
+
+![Soft Forms, Quiet Shadows benchmark](site/public/images/manga-soft-shadow.webp)
+
+Approachable rounded figures contrast with restrained cool shadows and precise environmental edges.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a softly colored manga illustration with rounded approachable character forms and quiet environmental tension. Use fine gently curved outlines, compact but age-appropriate adult proportions when people appear, broad oval eyes with ordinary small catchlights, a small mouth, and simplified hair clumps. Paint with low-saturation local colors, gentle diffuse highlights, and restrained cool gray-violet shadow planes. Keep the character contours soft while drawing a few straight environmental edges clearly. Let small muted shadow areas provide a calm undertone; do not change the supplied scene into horror or add damage. Avoid strong gloss and noisy texture, and keep the background readable without equal detail everywhere. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid school uniforms or childlike ages not requested, zombies, broken windows, horror props, dramatic black masses, and excessive pastel glow.
+```
+
+**Watch for:** Avoid school uniforms or childlike ages not requested, zombies, broken windows, horror props, dramatic black masses, and excessive pastel glow; these can obscure the technique.
+
+### Scruffy Everyday Color
+
+![Scruffy Everyday Color benchmark](site/public/images/manga-scruffy-color.webp)
+
+Loose ink, understated expressions, and a little surface roughness give everyday scenes a lived-in comic feel.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a casually scruffy color comic. Use uneven fine-to-medium ink outlines with small hooks, quick hair tufts, and slightly imperfect interior lines. When people appear, use recognizable adult proportions with mild caricature, simple half-lidded eyes where compatible with the specified gaze, and understated expressions rather than exaggerated cute smiles. Model cloth and existing worn materials with sparse dry hatching and a few flat muted local-color layers. Leave small gaps in the drawing and let a little paper grain show through the color. Preserve the specified grooming, clothes, objects, and clean or worn setting; create a lived-in feeling through mark making rather than adding dirt or clutter. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid unrequested animal ears or tails, cigarettes, grime, garbage, childish proportions, glossy airbrush, and polished ornamental linework.
+```
+
+**Watch for:** Avoid unrequested animal ears or tails, cigarettes, grime, garbage, childish proportions, glossy airbrush, and polished ornamental linework; these can obscure the technique.
+
+### Clear Luminous Color
+
+![Clear Luminous Color benchmark](site/public/images/manga-clear-luminous.webp)
+
+Crisp facial drawing and concentrated luminous color bring the focal expression forward.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Render the supplied subject and scene in the following visual style. Render as a crisp luminous color manga illustration. Draw fine precise contours, sharply tapered individual hair groups, a small clearly defined nose and mouth, and large but age-appropriate expressive eyes when people appear. Build irises from concentric color values with ordinary round or rectangular light reflections; never use star-shaped pupils or emblem-like eye symbols. Use saturated local colors for existing focal materials, layered transparent hair color, and clean hard-to-soft cel shadow boundaries. Keep small luminous reflections in the eyes and selected hair strands while leaving skin and cloth mostly matte. Organize the specified background into quiet lower-saturation planes so the focal expression carries the brightness. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid star-shaped eyes, signature eye emblems, idol costumes or accessories not specified, colored hair not requested, floating glitter, and gloss everywhere.
+```
+
+**Watch for:** Avoid star-shaped eyes, signature eye emblems, idol costumes or accessories not specified, colored hair not requested, floating glitter, and gloss everywhere; these can obscure the technique.

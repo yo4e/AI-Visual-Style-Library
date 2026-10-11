@@ -1,3 +1,4 @@
+import {mangaVariations} from './manga-variations.js';
 import {mangaStyles} from './manga-styles.js';
 import { bookStyles } from "./book-styles.js";
 import {englishBookStyle} from "./book-style-english.js";
@@ -211,6 +212,7 @@ export const styles = [
   keywords:[...style.keywords,englishBookStyle(style).name,...englishBookStyle(style).vocabulary,languageLabels.en.family[familyIds[style.family]],languageLabels.en.density[densityIds[style.density]]],
  })),
  ...mangaStyles,
+ ...mangaVariations,
 ];
 
 export function getStyles(locale='en') {
