@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://avsl.4roz.com/sitemap.xml
