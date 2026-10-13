@@ -46,9 +46,12 @@ npm run build
 npm run test:prompts
 npm run test:library
 npm run test:sites
+npm run test:seo
 ```
 
 `npm run preview` serves the built app locally. Style data lives in [site/src/style-data.js](site/src/style-data.js) and its imported modules; UI translations live in [site/src/i18n.jsx](site/src/i18n.jsx).
+
+The crawl files live in `site/public/sitemap.xml` and `site/public/robots.txt`; Vite copies them into `dist/client` as static files. The sitemap currently contains only `https://avsl.4roz.com/`. Language (`?lang=ja/en`), style (`?style=…`), comparison queries, and section fragments are views of that same canonical page, not separate indexable pages. When real static pages with self canonicals are added, update the sitemap with their canonical URLs. `test:seo` compares the sitemap with the built indexable HTML pages and checks the robots reference and Sites asset handling. Omit `lastmod` unless an actual content modification date is available.
 
 ## Update samples and publish
 
