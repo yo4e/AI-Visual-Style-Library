@@ -110,8 +110,8 @@ export function LanguageProvider({children}) {
  useEffect(()=>{
   document.documentElement.lang=locale;
   document.title='AI Visual Style Library';
-  const description=document.querySelector('meta[name="description"]');
-  if(description)description.content=locale==='ja'?'画像生成に使える75種類の絵柄。コピー用プロンプトは英語、説明は日本語と英語で切替。':'Explore 75 visual styles for image generation. Compare samples and copy English prompts, with English and Japanese descriptions.';
+  const description=locale==='ja'?'水彩・漫画・写真など75種類の絵柄を見本で比較。絵柄と人物・場面・構図の英語プロンプトを別々にコピーして、自分の画像生成AIで使えます。説明は日本語・英語に対応。':'Compare 75 image-generation styles, from watercolor to manga and photography. Copy English style and scene prompts, with English and Japanese descriptions.';
+  document.querySelectorAll('meta[name="description"], meta[property="og:description"], meta[name="twitter:description"]').forEach(meta=>{meta.content=description});
   try{localStorage.setItem('visual-style-language',locale)}catch{}
  },[locale]);
  function changeLanguage(next){setLocale(next);const url=new URL(window.location.href);if(url.searchParams.has('lang')){url.searchParams.set('lang',next);window.history.replaceState({},'',url.pathname+url.search+url.hash)}}
