@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prepare-sites-build.mjs",
+    "build": "vite build && node scripts/build-localized-pages.mjs && node scripts/prepare-sites-build.mjs",
     "export:prompts": "node scripts/export-prompts.mjs",
     "sync:benchmark": "node scripts/sync-benchmark-images.mjs",
     "test:prompts": "node --test tests/benchmark-integrity.test.mjs",
     "preview": "vite preview",
     "test:sites": "node --test tests/sites-worker.test.mjs",
     "test:library": "node --test tests/book-library.test.mjs",
-    "test:seo": "node --test tests/seo-assets.test.mjs"
+    "test:seo": "node --test tests/seo-assets.test.mjs tests/localized-pages.test.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

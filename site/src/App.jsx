@@ -67,7 +67,7 @@ function StyleCard({
           <span>{selected ? t("選択済み") : t("比較")}</span>
         </button>
       </div>
-      <p className="card-short">{style.short}</p><div className="style-tags"><span>{style.familyLabel}</span><span>{style.densityLabel}</span></div>
+      <p className="card-short">{style.short}</p><a href={`/${locale}/styles/${style.slug}/`}>{locale === "ja" ? "絵柄とプロンプトのページ" : "Style & prompt page"}</a><div className="style-tags"><span>{style.familyLabel}</span><span>{style.densityLabel}</span></div>
     </article>;
 }
 function ModalFrame({

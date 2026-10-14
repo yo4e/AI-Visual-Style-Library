@@ -51,7 +51,7 @@ npm run test:seo
 
 `npm run preview` serves the built app locally. Style data lives in [site/src/style-data.js](site/src/style-data.js) and its imported modules; UI translations live in [site/src/i18n.jsx](site/src/i18n.jsx).
 
-The crawl files live in `site/public/sitemap.xml` and `site/public/robots.txt`; Vite copies them into `dist/client` as static files. The sitemap currently contains only `https://avsl.4roz.com/`. Language (`?lang=ja/en`), style (`?style=…`), comparison queries, and section fragments are views of that same canonical page, not separate indexable pages. When real static pages with self canonicals are added, update the sitemap with their canonical URLs. `test:seo` compares the sitemap with the built indexable HTML pages and checks the robots reference and Sites asset handling. Omit `lastmod` unless an actual content modification date is available.
+The build generates 75 style detail pages in each language at `/ja/styles/{slug}/` and `/en/styles/{slug}/`, plus two static catalogs. The sitemap is generated from those 152 pages and the existing root (153 URLs). The root title remains exactly AI Visual Style Library. Query-based search, detail overlays and comparison remain available at the root; generated pages link back to that interface for copying and comparison. `site/public/robots.txt` remains the crawl policy. `site/public/sitemap.xml` is the historical root-only seed and is replaced in the build. Run `npm run build` before `npm run test:seo`. The generated top-level 404.html opts Cloudflare Pages out of SPA fallback; verify 404 statuses on a Pages preview before production. Sites worker fallback behavior is unchanged.
 
 ## Update samples and publish
 
