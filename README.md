@@ -19,7 +19,9 @@ The English interface on the live site. Samples share one subject and scene so y
 
 The site does not generate images. It offers English and Japanese explanations; copy-ready prompts remain English in both interfaces. The language choice is remembered locally, and `?lang=en` or `?lang=ja` overrides it.
 
-The catalog includes six original techniques, eleven anime illustration treatments, ten light-novel treatments, ten quiet literary looks, seven photographic looks, fifteen general-fiction illustration treatments, and sixteen manga/comic treatments. The photographic collection includes cinematic mystery and uneasy daylight horror. Four further manga variations explore stronger pen hatching, round-faced matte color, bold scruffy ink, and crisp cel shadows with hair highlights. Five adult editorial treatments explore reportage spot ink, loose contours with flat color, broad oil pastel, blue ballpoint with a warm accent, and hand-stippled duotone. Five bold design variations use cutout silhouettes, stretched editorial symbols, chunky wax shapes, sparse continuous lines, and modular shapes with oversized dots to visibly reduce face, clothing, and background detail. An adult everyday cel-animation option adds natural proportions, fine outlines, restrained cel shadows, and observed everyday backgrounds. Earlier looks remain available; variations can overlap rather than representing completely separate styles. Density choices include intentionally sparse drawing as well as rich detail.
+The catalog covers watercolor and other original techniques, anime, manga/comics, light-novel illustration, literary illustration, photography, and general-fiction illustration. Filter by visual family or choose a detail density, from deliberately sparse drawing to rich detail. All 75 existing styles remain available; some visual treatments overlap.
+
+日本語でも絵柄の説明・検索・比較を利用できます。コピーするプロンプトは英語です。[日本語のライブラリ](https://avsl.4roz.com/?lang=ja)で絵柄を選び、自分の画像生成AIに貼り付けて使ってください。
 
 ## What the samples demonstrate
 
@@ -52,6 +54,10 @@ npm run test:seo
 `npm run preview` serves the built app locally. Style data lives in [site/src/style-data.js](site/src/style-data.js) and its imported modules; UI translations live in [site/src/i18n.jsx](site/src/i18n.jsx).
 
 The crawl files live in `site/public/sitemap.xml` and `site/public/robots.txt`; Vite copies them into `dist/client` as static files. The sitemap currently contains only `https://avsl.4roz.com/`. Language (`?lang=ja/en`), style (`?style=…`), comparison queries, and section fragments are views of that same canonical page, not separate indexable pages. When real static pages with self canonicals are added, update the sitemap with their canonical URLs. `test:seo` compares the sitemap with the built indexable HTML pages and checks the robots reference and Sites asset handling. Omit `lastmod` unless an actual content modification date is available.
+
+The page title stays **AI Visual Style Library** in both display languages. The initial HTML provides an English description and Open Graph/Twitter sharing metadata; switching languages updates the descriptions in the browser. This remains one query-based app, so it does not expose separate Japanese and English indexable pages. Metadata improves the description of the site; search rankings and traffic must be measured separately.
+
+The larger bilingual static-page prototype is preserved on [`archive/bilingual-static-seo-prototype`](https://github.com/yo4e/AI-Visual-Style-Library/tree/archive/bilingual-static-seo-prototype) for future evaluation. It is not part of the current app.
 
 ## Update samples and publish
 
