@@ -1,0 +1,480 @@
+{
+  "schemaVersion": 1,
+  "promptRevision": "station-reusable-style-v1",
+  "frozenAt": "2026-10-15T02:23:15.842Z",
+  "branch": "codex/young-man-benchmark-preparation",
+  "baseCommit": "3f5e417d5e52a5841d9633495a475f223c957429",
+  "benchmarkId": "station-map-v3",
+  "benchmarkVersion": "3.0",
+  "scene": {
+    "id": "station-map-v3",
+    "label": "The station map",
+    "description": "A woman in a red coat studies a folded map on a train platform. The subject, framing, and scene remain the same so the visual language can change.",
+    "alt": "a woman in a red coat studying a folded map on a train platform",
+    "version": "3.0",
+    "characterPrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible."
+  },
+  "scenePolicy": "Original station scene remains exactly unchanged. Only the ten staged rendering strings change. Scene identity/composition and rendering revision have separate identifiers.",
+  "existingStationManifestSha256": "5eb12c3bfe51352100306f5ce63833d95581f861d8c3337f1bd9d28da48cffcf",
+  "preservedYouthFrozenManifestSha256": "d0ca5125aa3c8bc251a58420a43c46bd3c9e9e18d103c14d2bbde01d329f4918",
+  "preservedYouthGenerationResultsSha256": "e8f3b666af95bf82cfd78e1e935aa97a9e1309da2abbcbf41b535fb18d337721",
+  "references": [],
+  "tool": "parent ImageGen, not yet submitted",
+  "model": null,
+  "seed": null,
+  "generationContract": "Submit each entries[].generationPrompt exactly as UTF-8 with transparent_background=false, without image references, extra instructions, prefixes or suffixes. Preserve each actual call and output hash. Do not regenerate unrelated styles. Do not revise prompts after seeing outputs. This frozen file records a generation plan, not a completed generation.",
+  "activationPolicy": "Staged source only. Keep legacy runtime station prompts paired with legacy images until these exact revised prompts have matching regenerated outputs. Then activate revised prompt/image pairs together. Never relabel a legacy image with a new prompt.",
+  "palettePolicy": "For limited-palette illustrations, drawing colors and paper ground govern local-color reinterpretation; do not add scene colors or scene objects to satisfy literal hues. Photos use grading of supplied materials rather than invented warm-colored props.",
+  "auditScope": {
+    "reviewedCatalogCount": 75,
+    "fixedStationReferentIndices": [
+      59,
+      60,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "changedCount": 10,
+    "unchangedCount": 65,
+    "distinction": "Conditional human rendering/anatomical stylization and generic background simplification are reusable technique instructions; fixed actor/object identity, gaze, pose, station geometry and required canopy light are not."
+  },
+  "unchangedStyles": [
+    {
+      "slug": "watercolor",
+      "stylePromptSha256": "22ee49705cad9533af04d1f20b404fc8714806191d43ac89a6a586af371e2b38"
+    },
+    {
+      "slug": "risograph",
+      "stylePromptSha256": "4d4f79e357f4af658b4493bbe6f513f5768ca1e30660cc7e66b4130c21f3c949"
+    },
+    {
+      "slug": "gouache",
+      "stylePromptSha256": "b7f85f29ed2f968ee9e4acfb74945d50873fa53bc095add7cace0fb25b312d21"
+    },
+    {
+      "slug": "ink-wash",
+      "stylePromptSha256": "8e2710229364c430fbbcf9b49d5666bbc1c2e464e0bda65662f9fa20a3d0f140"
+    },
+    {
+      "slug": "pixel-art",
+      "stylePromptSha256": "c41b0be7f5792624655937d5fbbd81e990d8a0d9f86fef0abead2c753ed95a7b"
+    },
+    {
+      "slug": "35mm-film",
+      "stylePromptSha256": "83798c56cb78e563714bdfce78abc6c6d0921e531f7fd65844915994fc175768"
+    },
+    {
+      "slug": "flat-anime",
+      "stylePromptSha256": "f8fe34a51ae815ed1e7247d86681b7a488b901fa6805a06ea75a016804964bfc"
+    },
+    {
+      "slug": "two-tone-cel",
+      "stylePromptSha256": "873e843fca17ab96e2318e3791e0f4eb15a9fd9796022c768593c1668f242deb"
+    },
+    {
+      "slug": "line-free-anime",
+      "stylePromptSha256": "4ea75fe18a4f8bfc9499407fcff93d303dd2ac497b034a72dd1c829244760f36"
+    },
+    {
+      "slug": "thick-line-pop",
+      "stylePromptSha256": "3bec606062a4ac40f4ab0f9415d9e6f7fba74fac37c0824c8aed0971b88d58ae"
+    },
+    {
+      "slug": "retro-cel",
+      "stylePromptSha256": "a8e7ac7e4cbac1f36cee0e1d6df44ba208899a113bbddf5292ce714c29dba3b8"
+    },
+    {
+      "slug": "manga-screentone",
+      "stylePromptSha256": "2ab7f6f1fa5e20d295b7aa575c5496a4385bf2b8cbdfc137a229dd5aa71aa8f7"
+    },
+    {
+      "slug": "shojo-delicate",
+      "stylePromptSha256": "8803a2d897e6bbcc317ac5cbe9bdff8d841e70d66ee7ad6c7cb6277144fcb322"
+    },
+    {
+      "slug": "chibi-editorial",
+      "stylePromptSha256": "9ac916e67bbb40a69298ba9a73c9e9d2d511aa9dbfa6fe9a50886924c6e207d7"
+    },
+    {
+      "slug": "anime-pencil",
+      "stylePromptSha256": "791f22d6000aa76765333c66ff356c0e23746dc4951ffe74c0f65b357d89267e"
+    },
+    {
+      "slug": "anime-background",
+      "stylePromptSha256": "9543990b382ce43f97718c1ed6abbc1e597f38d7f36e0606f3ca28df7a5a71e0"
+    },
+    {
+      "slug": "ln-clean",
+      "stylePromptSha256": "7415f64e7c92cd5657d6edc3a16a56c3c63248b675ec944db4d8c7e918764e27"
+    },
+    {
+      "slug": "ln-romantic",
+      "stylePromptSha256": "d0b9e9213bd9f11848210190a70fa8a3ed10def2996a5cddbd03b2af80a8fcf4"
+    },
+    {
+      "slug": "ln-action",
+      "stylePromptSha256": "0e5d93df359f81dfe9fe266aa31ea518fe4aaef86e138fdb38832d5878c785b7"
+    },
+    {
+      "slug": "ln-fantasy-paint",
+      "stylePromptSha256": "dd5248fe7dba553b55c47da363769e9ec9c7f7d4fee1bbeec9f803ee316f288c"
+    },
+    {
+      "slug": "ln-mystery",
+      "stylePromptSha256": "755ada8bbb6ccb0a632ed7f19f42e30d3a34b345314e292ce331896253707b4b"
+    },
+    {
+      "slug": "ln-scifi",
+      "stylePromptSha256": "24505d5e2389b5bb4f7047f34008d3b8d6f4b02d2b59ec9312fca18c817e6c39"
+    },
+    {
+      "slug": "ln-ink-color",
+      "stylePromptSha256": "c91181b861525454ff9b770c4dd1fc553a91d6d4df31dbefe761844e43fba893"
+    },
+    {
+      "slug": "ln-soft-pastel",
+      "stylePromptSha256": "b91c92a914346494708deb07925ee09eaca6874f6c12c812e00130ab427f114f"
+    },
+    {
+      "slug": "ln-jewel-light",
+      "stylePromptSha256": "425bb491d501adf1f653271e05a1afa208be4c218b1f50354b525f6820e5c412"
+    },
+    {
+      "slug": "ln-graphic-cover",
+      "stylePromptSha256": "0d31bcc5239da1fa059495b739cf53404be8ffabe16e5200e32bc1664742cc80"
+    },
+    {
+      "slug": "literary-line",
+      "stylePromptSha256": "bdc69513852ea6632e2770df694486a66f73d62445ef71509c5207d92086a560"
+    },
+    {
+      "slug": "literary-graphite",
+      "stylePromptSha256": "2a9fb50f5dcbc860355ff9e0213246604932517fb75ab8a5167990ba908b0bff"
+    },
+    {
+      "slug": "literary-etching",
+      "stylePromptSha256": "fd665ac5f33f45c4b9bf914f8fe1ca819af76f88f382af10dd23681f10dee660"
+    },
+    {
+      "slug": "literary-woodcut",
+      "stylePromptSha256": "ff77202d904fa9e7bc9eecee87b2ce9421dbc5dd4508edda8844e30c0e0581dd"
+    },
+    {
+      "slug": "literary-linocut",
+      "stylePromptSha256": "f4adc023e8feaf6cb585d3f8a1aa1896a1f3924d68175fc543e5f71ef180b7d3"
+    },
+    {
+      "slug": "literary-monotype",
+      "stylePromptSha256": "e3d623ecf54861a6c6c332a4523c1d6f0feb40fe9a66aeb5a10db23e4af9b3fa"
+    },
+    {
+      "slug": "literary-paper-collage",
+      "stylePromptSha256": "a5309b878a377d4166fc24130b94b53eb07c5c38b7dc0d09d5671eab2d4c3e9e"
+    },
+    {
+      "slug": "literary-oil",
+      "stylePromptSha256": "8d3de1205931ef3baa5e14ef5af47bfa775cb8babc79824a463673543a75e6e4"
+    },
+    {
+      "slug": "literary-charcoal",
+      "stylePromptSha256": "3a55993b73b5ffb0de6bfa7c8bd4b915e27b3614cfed68d60f344e723a4509f0"
+    },
+    {
+      "slug": "literary-drypoint",
+      "stylePromptSha256": "c1aa951ed5d398a456fc4ae8655264b407f4b9f2379a1447596965a0488cf87e"
+    },
+    {
+      "slug": "photo-natural-daylight",
+      "stylePromptSha256": "9ae16796de4410d724a8139c3e7506b2728cc1c7c5e176655b5c1e2c7d604673"
+    },
+    {
+      "slug": "photo-cinematic",
+      "stylePromptSha256": "133583a8865eab5ed035fc92528faebd010b87b940917200ecc16f4fc282d560"
+    },
+    {
+      "slug": "photo-medium-format",
+      "stylePromptSha256": "fd511aa6f81078f4af91b0f93e6ee05dd71762a0e80dd34e42105f908808004c"
+    },
+    {
+      "slug": "photo-high-key",
+      "stylePromptSha256": "d728a733cb1e8a21d7dacff4045cee473e2162a4811723c5938f2301bad53885"
+    },
+    {
+      "slug": "photo-monochrome-documentary",
+      "stylePromptSha256": "602f1f5aed8f8ff815df92474f994a86b6a0723afdc9dc03b33aed1ea8e21692"
+    },
+    {
+      "slug": "fiction-soft-realism",
+      "stylePromptSha256": "98995a20b2d6b2b67dd8dd701f01765e788d92bfe02ad1b788ea53d0a3fff1a2"
+    },
+    {
+      "slug": "fiction-travel-poster",
+      "stylePromptSha256": "2443c28d7412f4a4b7d5e12b25579578ba310a489b3614125638bf2a82a0007a"
+    },
+    {
+      "slug": "fiction-colored-pencil",
+      "stylePromptSha256": "bae027f0a665aa0e8e3a1633fb01f896690b57cc94234bab0075e5b72225d83e"
+    },
+    {
+      "slug": "fiction-editorial-acrylic",
+      "stylePromptSha256": "62a1956d2f50bac8f460fca2c34504daec75dfa48c4234374e36bf041bf1fa01"
+    },
+    {
+      "slug": "fiction-geometric-editorial",
+      "stylePromptSha256": "7cc73b3daf35c559013fae7225a62ff92e9cc48c01d90357dc6bc69bea06861f"
+    },
+    {
+      "slug": "manga-dynamic-ink",
+      "stylePromptSha256": "db3bb1c91061c2713d20e99bdf6988845aa06696206f3921c3e134a7332e9d61"
+    },
+    {
+      "slug": "manga-round-slapstick",
+      "stylePromptSha256": "10cde512cf519efb9894282a878eac939ae2a07bed896057db2ccc3906e0a410"
+    },
+    {
+      "slug": "manga-lyrical-ornament",
+      "stylePromptSha256": "670c23fc7f72f5a22b7705728d269ea2dc3724e93f09d8e1d0ec00cec6e3c016"
+    },
+    {
+      "slug": "manga-observational",
+      "stylePromptSha256": "3fc377a3a72b4357ec3e402b272c949efa6b5c5499fd472961c130cce07fee0b"
+    },
+    {
+      "slug": "manga-noir-brush",
+      "stylePromptSha256": "3a8d2f875b59401d1c0938df1bb8300d8f4610a5546b6e99f6ba8443b86fcca0"
+    },
+    {
+      "slug": "manga-geometric-comedy",
+      "stylePromptSha256": "1ad2c21fc35b329dd612c55071183eb7e9d058388073e673c83d20fb68355edf"
+    },
+    {
+      "slug": "manga-directional-pen",
+      "stylePromptSha256": "28dc55316044730548d2c37dbe6db1a5b833b9c1c44f3dcd60df96dc9b5a1391"
+    },
+    {
+      "slug": "manga-limited-color-print",
+      "stylePromptSha256": "9e8014535db7a3741474b962b6b1e8e2bb7f38c031e20f152421b6421d667970"
+    },
+    {
+      "slug": "manga-tensile-color",
+      "stylePromptSha256": "ff4072a8c0f82c0a80f5cbc8768239e4a8ccc97cbce0f0a74f8f6aefc3e6b385"
+    },
+    {
+      "slug": "manga-soft-shadow",
+      "stylePromptSha256": "87f142231c14d4adac9eeeede4bbcab29b67580c6103523e6b2e5101e00df807"
+    },
+    {
+      "slug": "manga-scruffy-color",
+      "stylePromptSha256": "630363a0a70623f95eda44e87400c86cd98efee476b251a9ba24b533be947a61"
+    },
+    {
+      "slug": "manga-clear-luminous",
+      "stylePromptSha256": "c66ecccd752136f8f05311a4b8e26b9fb99b1bb15ab8b89e31a043a3a9c95718"
+    },
+    {
+      "slug": "manga-taut-pen-hatching",
+      "stylePromptSha256": "87aa60e7ee2e0d1dd48ef81a08e8da15c4428481a696e737921d12325c4101a1"
+    },
+    {
+      "slug": "manga-rounded-matte",
+      "stylePromptSha256": "737a2ebbaba75e540d7ed180ed74e8f178186f913e9400471229ab3d7ffdf0c3"
+    },
+    {
+      "slug": "manga-bold-scruffy-ink",
+      "stylePromptSha256": "e57314a1e16e8ec145da555a53e8d820b2c4a04bca97d8e0a7fbe4765aa492e2"
+    },
+    {
+      "slug": "manga-crisp-cel-highlights",
+      "stylePromptSha256": "f29664c675caea52ad39f4db6293ded9e39890b51882861ef7311e8e2d3d162f"
+    },
+    {
+      "slug": "fiction-reportage-spot-ink",
+      "stylePromptSha256": "46a1d12a5d48460440df6275d60abed9c95dc70e06945077df5e1fbdb1648d35"
+    },
+    {
+      "slug": "fiction-looping-flat",
+      "stylePromptSha256": "b1eddcf87663b22a48ead7bc361b54f2cccd7a54787fb09b07adf3f1c7bb9521"
+    },
+    {
+      "slug": "anime-adult-everyday-cel",
+      "stylePromptSha256": "81a5d03d9f50965597c2de074cce12e14d3f22f7d193b4aeb7613e05c66f31d5"
+    }
+  ],
+  "entries": [
+    {
+      "catalogIndex": 59,
+      "slug": "photo-mystery",
+      "name": "Cinematic Mystery Photo",
+      "reason": "Remove dependence on a daylight opening, canopy and receding architecture while retaining motivated sidelight, layered shadows and photographic mystery grading.",
+      "previousStylePrompt": "Render as a photorealistic cinematic mystery still with restrained blue-gray color grading, natural human anatomy, visible skin texture, and plausible camera optics. Use directional sidelight from the existing daylight opening to illuminate one side of the subject while the canopy or existing overhead structure creates crisp layered shadows. Keep the shadow side legible with cool fill, neutral whites, restrained warm skin, and a muted warm accent from the supplied objects or clothing. Use a 50mm-lens perspective, moderate depth of field, fine film grain, and clean controlled contrast. Separate the focal subject from receding architectural lines; let small areas of withheld shadow suggest unanswered questions without inventing events. Respect the stated time of day and keep all named objects recognizable. Avoid comic lines, supernatural figures, crime props, added fog, heavy green color casts, crushed featureless blacks, and gratuitous violence. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.",
+      "previousStylePromptSha256": "f0041667e6e7d105de31db32aec844ce0a3ed0b84e9e9da94ff7b07825aa0bde",
+      "revisedStylePrompt": "Render as a photorealistic cinematic mystery still with restrained blue-gray color grading, natural human anatomy, visible skin texture, and plausible camera optics. Use directional sidelight motivated by light sources compatible with the supplied scene and time of day; create crisp layered shadows across existing forms. Keep shadowed areas legible with cool fill, neutral whites, restrained warm skin tones when people appear, and a muted warm accent drawn from supplied materials. Treat these colors as photographic grading rather than a requirement to add warm-colored objects. Use a 50mm-lens perspective, moderate depth of field, fine film grain, and clean controlled contrast. Separate the focal subject through light, contrast, and depth of field, while withheld shadow suggests unanswered questions without inventing events. Respect the supplied time of day and keep all named objects recognizable. Avoid comic lines, supernatural figures, crime props, added fog, heavy green color casts, crushed featureless blacks, and gratuitous violence. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "revisedStylePromptSha256": "e664715e12c1f3d9484adb7b4418b42098d1de0edcc3287ebc44c847a8ee9e36",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "scenePromptSha256": "c0e4acaec71c8b218a8b79f4fb323971e7edb77f90c5476f302fbe4fa8757a02",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender as a photorealistic cinematic mystery still with restrained blue-gray color grading, natural human anatomy, visible skin texture, and plausible camera optics. Use directional sidelight motivated by light sources compatible with the supplied scene and time of day; create crisp layered shadows across existing forms. Keep shadowed areas legible with cool fill, neutral whites, restrained warm skin tones when people appear, and a muted warm accent drawn from supplied materials. Treat these colors as photographic grading rather than a requirement to add warm-colored objects. Use a 50mm-lens perspective, moderate depth of field, fine film grain, and clean controlled contrast. Separate the focal subject through light, contrast, and depth of field, while withheld shadow suggests unanswered questions without inventing events. Respect the supplied time of day and keep all named objects recognizable. Avoid comic lines, supernatural figures, crime props, added fog, heavy green color casts, crushed featureless blacks, and gratuitous violence. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "generationPromptSha256": "eab09507ffa2efbcbe2bb390cdce6a75062814e18e8415ead6252a0a47f06ecd",
+      "statusAtFreeze": "not-sent",
+      "oldStationImagePath": "/images/photo-mystery.webp",
+      "expectedNewImagePath": "/images/station-reusable-v1/photo-mystery.webp"
+    },
+    {
+      "catalogIndex": 60,
+      "slug": "photo-horror",
+      "name": "Uneasy Daylight Horror Photo",
+      "reason": "Remove required daylight, canopy and structural shadow locations; preserve supplied time, uneasy available-light treatment and cyan-green/gray/oxidized-red photographic grading.",
+      "previousStylePrompt": "Render as a photorealistic psychological-horror film still using uneasy daylight rather than changing the supplied scene to night. Keep real anatomy, visible skin pores, and plausible camera optics. Grade the existing daylight toward pale sickly cyan-green highlights with desaturated gray shadows and a subdued oxidized-red accent from supplied materials. Use a hard narrow side light and very little frontal fill: make strong shadow boundaries across the face and existing structure, with near-black pockets under the canopy but enough edge light to identify every named object. Let the exterior daylight remain unnaturally pale and bright in contrast to oppressive shadowed areas. Use coarse high-ISO film grain, slight halation around hard highlights, and restrained low-level chromatic fringing. Preserve the supplied expression, action, objects, and location; unease comes from light and color, not added creatures or horror props. Avoid illustration, beauty lighting, inviting amber glow, explicit injuries, blood, invented damage, and unrequested figures. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.",
+      "previousStylePromptSha256": "4b2689666f0f3250bacbf8958487f4d84410d5e8d0a79dec816d9eec9aa44723",
+      "revisedStylePrompt": "Render as a photorealistic psychological-horror film still using uneasy light compatible with the supplied scene and time of day, without changing either. Keep real anatomy when people appear, visible skin pores where appropriate, and plausible camera optics. Grade available light toward pale sickly cyan-green highlights with desaturated gray shadows and a subdued oxidized-red accent drawn from supplied materials; treat this as color grading, not an instruction to add objects or preserve every literal local hue. Use a hard narrow side light motivated by the supplied scene and very little frontal fill. Create strong shadow boundaries and near-black pockets within existing forms, keeping enough edge light to identify every named object. Let illuminated areas appear unnaturally pale and bright against oppressive shadows. Use coarse high-ISO film grain, slight halation around hard highlights, and restrained low-level chromatic fringing. Preserve the supplied expression, action, objects, location, and composition; unease comes from light and color, not added creatures or horror props. Avoid illustration, beauty lighting, inviting amber glow, explicit injuries, blood, invented damage, and unrequested figures. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "revisedStylePromptSha256": "e48f43aa563fdfdfaf8ff86dbbf9e4d67cb2eea684e0e2ec2208b5dafb02b07c",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "scenePromptSha256": "c0e4acaec71c8b218a8b79f4fb323971e7edb77f90c5476f302fbe4fa8757a02",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender as a photorealistic psychological-horror film still using uneasy light compatible with the supplied scene and time of day, without changing either. Keep real anatomy when people appear, visible skin pores where appropriate, and plausible camera optics. Grade available light toward pale sickly cyan-green highlights with desaturated gray shadows and a subdued oxidized-red accent drawn from supplied materials; treat this as color grading, not an instruction to add objects or preserve every literal local hue. Use a hard narrow side light motivated by the supplied scene and very little frontal fill. Create strong shadow boundaries and near-black pockets within existing forms, keeping enough edge light to identify every named object. Let illuminated areas appear unnaturally pale and bright against oppressive shadows. Use coarse high-ISO film grain, slight halation around hard highlights, and restrained low-level chromatic fringing. Preserve the supplied expression, action, objects, location, and composition; unease comes from light and color, not added creatures or horror props. Avoid illustration, beauty lighting, inviting amber glow, explicit injuries, blood, invented damage, and unrequested figures. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "generationPromptSha256": "66346a2d1d5f489f076146cfb729eac774994610dd443953c8aad5dd4f624ed0",
+      "statusAtFreeze": "not-sent",
+      "oldStationImagePath": "/images/photo-horror.webp",
+      "expectedNewImagePath": "/images/station-reusable-v1/photo-horror.webp"
+    },
+    {
+      "catalogIndex": 67,
+      "slug": "fiction-oil-pastel",
+      "name": "Broad Oil-Pastel Narrative",
+      "reason": "Replace the required train with existing nonfocal forms; make age/expression conditional and explicitly resolve palette versus local-color conflict.",
+      "previousStylePrompt": "Render an original narrative illustration made with broad oil-pastel sticks on lightly textured cream paper. Keep people recognizably adult with natural facial proportions and a restrained expression, without anime construction or photographic skin. Build the image from chunky waxy strokes and flattened blocks of local color; show broken heavy pigment deposits, blunt stroke ends, and cream paper peeking through scumbled overlaps. Use warm rust, ochre, slate blue, muted teal, and soft cream in adjacent warm and cool planes. Model the focal face and hands with a few deliberate smaller pastel strokes, not smooth blending. Let hair, clothing, architecture, and the train remain broad simplified masses with visible stroke direction. Omit ink outlines, fine pencil hatching, thin translucent washes, fuzzy powder shading, and oil-paint canvas impasto. Keep large areas quiet and lightly marked, with concentrated pigment at the subject. Preserve scene legibility without filling every surface with texture. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.",
+      "previousStylePromptSha256": "9732e7bfa2564487a0cff9286bf366bdce43c267f73189e2c76ebf9b1faef26f",
+      "revisedStylePrompt": "Render the supplied subject as a narrative illustration made with broad oil-pastel sticks on lightly textured cream paper. When people appear, preserve their supplied age and expression while using natural facial proportions, without anime construction or photographic skin. Build the image from chunky waxy strokes and flattened blocks of color; show broken heavy pigment deposits, blunt stroke ends, and cream paper peeking through scumbled overlaps. Use warm rust, ochre, slate blue, muted teal, and soft cream in adjacent warm and cool planes. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Model focal details with a few deliberate smaller pastel strokes, not smooth blending. Keep existing nonfocal forms as broad simplified masses with visible stroke direction, without requiring any particular object or architecture. Omit ink outlines, fine pencil hatching, thin translucent washes, fuzzy powder shading, and oil-paint canvas impasto. Keep large areas quiet and lightly marked, with concentrated pigment at the supplied focal subject. Preserve legibility without filling every surface with texture. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "revisedStylePromptSha256": "f7c067bdd1832d5f9ba0702da4e371708d4f3515163d4113a252f8b0d409c25d",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "scenePromptSha256": "c0e4acaec71c8b218a8b79f4fb323971e7edb77f90c5476f302fbe4fa8757a02",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject as a narrative illustration made with broad oil-pastel sticks on lightly textured cream paper. When people appear, preserve their supplied age and expression while using natural facial proportions, without anime construction or photographic skin. Build the image from chunky waxy strokes and flattened blocks of color; show broken heavy pigment deposits, blunt stroke ends, and cream paper peeking through scumbled overlaps. Use warm rust, ochre, slate blue, muted teal, and soft cream in adjacent warm and cool planes. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Model focal details with a few deliberate smaller pastel strokes, not smooth blending. Keep existing nonfocal forms as broad simplified masses with visible stroke direction, without requiring any particular object or architecture. Omit ink outlines, fine pencil hatching, thin translucent washes, fuzzy powder shading, and oil-paint canvas impasto. Keep large areas quiet and lightly marked, with concentrated pigment at the supplied focal subject. Preserve legibility without filling every surface with texture. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "generationPromptSha256": "3d5dec00265bf02f612e6d1cf6d828d4fdde0502c215d70f992b2d4e1f432fe8",
+      "statusAtFreeze": "not-sent",
+      "oldStationImagePath": "/images/fiction-oil-pastel.webp",
+      "expectedNewImagePath": "/images/station-reusable-v1/fiction-oil-pastel.webp"
+    },
+    {
+      "catalogIndex": 68,
+      "slug": "fiction-ballpoint",
+      "name": "Blue Ballpoint & Warm Accent",
+      "reason": "Remove train-specific omitted detail and a mandatory clothing accent; keep cobalt ballpoint, sparse blue hatching and one flat rust-red accent with explicit palette precedence.",
+      "previousStylePrompt": "Render an observational adult editorial illustration drawn with a blue ballpoint pen on clean cream paper, with a small rust-red flat accent on the supplied warm-colored clothing. Use fine consistent cobalt-blue lines that overlap, loop, and accumulate at selected hair and cloth edges; show tiny pen-darkened nodes, not black flexible-nib pressure strokes. When people appear, retain adult natural facial proportions, small eyes, an articulated nose, and a quiet individual expression, avoiding manga anatomy. Build a few midtones from sparse short blue parallel strokes while leaving most skin, sky, and broad surfaces untouched paper. Keep the focal face and hands complete enough to read, but omit distant repeated architecture and train detail with deliberate gaps in the drawing. Warm color occupies only a limited area and is unshaded. Do not use graphite rubs, engraved crosshatching, ink wash, soft gradients, photorealistic skin, full-color rendering, or general blur. The result should feel intimate, precise in observation, and lightly unfinished. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.",
+      "previousStylePromptSha256": "8a4e8da1337bdc41738760033c73717b4d6c88fa0839b2f79f91a646927eef72",
+      "revisedStylePrompt": "Render the supplied subject as an observational editorial illustration drawn with a blue ballpoint pen on clean cream paper. Use fine consistent cobalt-blue lines that overlap, loop, and accumulate at selected existing edges; show tiny pen-darkened nodes, not black flexible-nib pressure strokes. When people appear, preserve the supplied age and expression while drawing natural facial proportions, small eyes, and an articulated nose, avoiding manga anatomy. Build a few midtones from sparse short blue parallel strokes while leaving most broad surfaces as untouched paper. Add one small flat rust-red accent to a selected part of the supplied focal subject; do not require a particular garment or object. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Keep focal identifying details complete enough to read, but omit distant repeated detail with deliberate gaps in the drawing. Warm color occupies only a limited area and is unshaded. Do not use graphite rubs, engraved crosshatching, ink wash, soft gradients, photorealistic skin, full-color rendering, or general blur. The result should feel intimate, precise in observation, and lightly unfinished. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "revisedStylePromptSha256": "7514813040682e8a8186140b3e9978db3d60c4b8672d57b6b8241f863114929c",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "scenePromptSha256": "c0e4acaec71c8b218a8b79f4fb323971e7edb77f90c5476f302fbe4fa8757a02",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject as an observational editorial illustration drawn with a blue ballpoint pen on clean cream paper. Use fine consistent cobalt-blue lines that overlap, loop, and accumulate at selected existing edges; show tiny pen-darkened nodes, not black flexible-nib pressure strokes. When people appear, preserve the supplied age and expression while drawing natural facial proportions, small eyes, and an articulated nose, avoiding manga anatomy. Build a few midtones from sparse short blue parallel strokes while leaving most broad surfaces as untouched paper. Add one small flat rust-red accent to a selected part of the supplied focal subject; do not require a particular garment or object. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Keep focal identifying details complete enough to read, but omit distant repeated detail with deliberate gaps in the drawing. Warm color occupies only a limited area and is unshaded. Do not use graphite rubs, engraved crosshatching, ink wash, soft gradients, photorealistic skin, full-color rendering, or general blur. The result should feel intimate, precise in observation, and lightly unfinished. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "generationPromptSha256": "89fbcf2b240edd29b866186562b654ace1ecce606a77d281fc08adf422386f2f",
+      "statusAtFreeze": "not-sent",
+      "oldStationImagePath": "/images/fiction-ballpoint.webp",
+      "expectedNewImagePath": "/images/station-reusable-v1/fiction-ballpoint.webp"
+    },
+    {
+      "catalogIndex": 69,
+      "slug": "fiction-stipple-duotone",
+      "name": "Stippled Duotone Illustration",
+      "reason": "Remove the required train stripe, keep navy/rust-red dots and the existing restrained pale-teal accent as a rendering color, without prescribing an accent object or geometry.",
+      "previousStylePrompt": "Render a carefully hand-stippled adult editorial illustration in deep navy and restrained rust red on warm cream paper. Describe people with natural adult proportions and small realistic drawn eyes, without anime simplification or photographic skin. Use clean economical navy contours and many tiny irregular hand-placed dots to build selected cheek, hair, fabric, and structural shadows; vary dot density rather than using crosshatching or airbrush gradients. Keep the dots visibly individual, nonuniform, and clustered along form rather than a mechanical halftone grid. Introduce restrained flat rust-red planes in the supplied warm-colored subject; use pale teal sparingly to preserve the supplied train stripe. Leave highlights and broad sky regions as clear cream paper. Concentrate fine dots at the figure and a few architectural overlaps, with simpler background planes to avoid uniform density. Avoid risograph registration drift, coarse screen-tone patterns, engraving lines, wood grain, decorative typography, and added motifs. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.",
+      "previousStylePromptSha256": "7bcfe748a0bd46f0966d88d7faa579a0e4fab03d7e91f079d48fa0a08674dde8",
+      "revisedStylePrompt": "Render the supplied subject as a carefully hand-stippled editorial illustration in deep navy and restrained rust red on warm cream paper, with pale teal used only sparingly. When people appear, preserve the supplied age and expression while using natural proportions and small realistic drawn eyes, without anime simplification or photographic skin. Use clean economical navy contours and many tiny irregular hand-placed dots to build selected form shadows; vary dot density rather than using crosshatching or airbrush gradients. Keep dots visibly individual, nonuniform, and clustered along form rather than a mechanical halftone grid. Introduce restrained flat rust-red planes and very small pale-teal accents only within existing forms. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Leave highlights and quiet surfaces as clear cream paper. Concentrate fine dots at the supplied focal subject and selected overlaps, with simpler secondary planes to avoid uniform density. Avoid risograph registration drift, coarse screen-tone patterns, engraving lines, wood grain, decorative typography, and added motifs. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "revisedStylePromptSha256": "dd233664443c949a1cf0faef1168458545d538fe135ad656880ae5f810d35076",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "scenePromptSha256": "c0e4acaec71c8b218a8b79f4fb323971e7edb77f90c5476f302fbe4fa8757a02",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject as a carefully hand-stippled editorial illustration in deep navy and restrained rust red on warm cream paper, with pale teal used only sparingly. When people appear, preserve the supplied age and expression while using natural proportions and small realistic drawn eyes, without anime simplification or photographic skin. Use clean economical navy contours and many tiny irregular hand-placed dots to build selected form shadows; vary dot density rather than using crosshatching or airbrush gradients. Keep dots visibly individual, nonuniform, and clustered along form rather than a mechanical halftone grid. Introduce restrained flat rust-red planes and very small pale-teal accents only within existing forms. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Leave highlights and quiet surfaces as clear cream paper. Concentrate fine dots at the supplied focal subject and selected overlaps, with simpler secondary planes to avoid uniform density. Avoid risograph registration drift, coarse screen-tone patterns, engraving lines, wood grain, decorative typography, and added motifs. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "generationPromptSha256": "77510d21315d4f95fbb415b11e7cdfa28e555d0b55c57f55b2554811a839734b",
+      "statusAtFreeze": "not-sent",
+      "oldStationImagePath": "/images/fiction-stipple-duotone.webp",
+      "expectedNewImagePath": "/images/station-reusable-v1/fiction-stipple-duotone.webp"
+    },
+    {
+      "catalogIndex": 70,
+      "slug": "fiction-cutout-silhouette",
+      "name": "Bold Cutout Silhouettes",
+      "reason": "Remove the fixed woman/map/train/backpack/canopy, gaze and station-derived polygon/band geometry. Retain angular cutout deformation, ivory gaps and the original palette.",
+      "previousStylePrompt": "Build the illustration entirely from boldly simplified cut-paper-like silhouettes on clean ivory. Use rust red, deep charcoal and pale teal plus paper white, with no tonal gradients. Make the adult figure a long narrow head shape on an exaggerated thin neck, a large angular coat block, two mitten-shaped hands and a single black backpack shape. Let the nose be one notch in the profile and the upward-looking eye be one tiny brown dot; omit mouth, cheeks, lashes and all portrait modeling. Hair is one solid asymmetric shape with at most two projecting tips. There are no drawn interior contours. Use sharp cut edges and slightly irregular broad shapes, not physical paper shadows or fibrous collage texture. Keep at least half the total frame plain untouched ivory, including a continuous open band around the figure and above the train. The background is a handful of long horizontal and diagonal cut shapes, subordinate to the figure. Think abstract adult editorial graphic, not manga, scenic travel painting or realistic book-cover portrait. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.",
+      "previousStylePromptSha256": "55c8eb1b523586aca46929c4b321729935e6e3662b227bb790794fbf65d51af6",
+      "revisedStylePrompt": "Build the supplied subject entirely from boldly simplified cut-paper-like silhouettes on clean ivory. Use rust red, deep charcoal, pale teal, and paper white, with no tonal gradients. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Reduce existing forms to bold angular color blocks with deliberately elongated, narrow, or compressed proportions. When people appear, retain the supplied age, expression, gaze, and pose while simplifying visible facial features to tiny notches and isolated marks and visible hands to mitten-like symbols. Simplify existing hair, clothing, and accessories into broad solid asymmetric masses without adding them or imposing a particular garment or accessory. There are no drawn interior contours. Use sharp cut edges and slightly irregular broad shapes, not physical paper shadows or fibrous collage texture. Leave at least half the image as untouched ivory through selective omission, without imposing a particular empty region or arrangement. Apply the same cut-shape language to the supplied background without changing its contents or arrangement. Think abstract editorial graphic rather than manga, scenic painting, or realistic portraiture. Omit seams, anatomical fingers, individual hair strands, realistic eyelids, tiny reflections, and all-over shading. Omission and deformation are essential, not low resolution or blur. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "revisedStylePromptSha256": "563e6ac02215aa8347d9f29ecacc6f44c6c55fb44ccf774c08ac8c181208df27",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "scenePromptSha256": "c0e4acaec71c8b218a8b79f4fb323971e7edb77f90c5476f302fbe4fa8757a02",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nBuild the supplied subject entirely from boldly simplified cut-paper-like silhouettes on clean ivory. Use rust red, deep charcoal, pale teal, and paper white, with no tonal gradients. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Reduce existing forms to bold angular color blocks with deliberately elongated, narrow, or compressed proportions. When people appear, retain the supplied age, expression, gaze, and pose while simplifying visible facial features to tiny notches and isolated marks and visible hands to mitten-like symbols. Simplify existing hair, clothing, and accessories into broad solid asymmetric masses without adding them or imposing a particular garment or accessory. There are no drawn interior contours. Use sharp cut edges and slightly irregular broad shapes, not physical paper shadows or fibrous collage texture. Leave at least half the image as untouched ivory through selective omission, without imposing a particular empty region or arrangement. Apply the same cut-shape language to the supplied background without changing its contents or arrangement. Think abstract editorial graphic rather than manga, scenic painting, or realistic portraiture. Omit seams, anatomical fingers, individual hair strands, realistic eyelids, tiny reflections, and all-over shading. Omission and deformation are essential, not low resolution or blur. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "generationPromptSha256": "f1bff54a6773dca157713dbb1abeb12529b9a40a64e78fdef988f74c84e1737c",
+      "statusAtFreeze": "not-sent",
+      "oldStationImagePath": "/images/fiction-cutout-silhouette.webp",
+      "expectedNewImagePath": "/images/station-reusable-v1/fiction-cutout-silhouette.webp"
+    },
+    {
+      "catalogIndex": 71,
+      "slug": "fiction-elastic-symbols",
+      "name": "Elastic Everyday Symbols",
+      "reason": "Remove fixed coat, female identity, map/train/shelter geometry and imposed gaze/placement. Retain elastic proportions, wobbling contours, four flat fill colors and open white paper.",
+      "previousStylePrompt": "Draw a playful but adult editorial character illustration with conspicuously elastic, deliberately disproportionate construction. Use a tiny rounded head, an exaggerated long curved neck, broad shoulders, an oversized simple coat, long bent tube-like forearms, and round mitten hands. The face has only two small brown dots, one short L-shaped nose and one tiny mouth dash; no lashes, cheek modeling or lifelike portrait. Hair is one casually curved mass with three outward tufts, without inner strands. Draw loose thin black contours with occasional open joins and wobble around these distorted shapes. Fill only selected isolated regions with flat rust red, muted teal, dark blue and pale yellow. White paper remains the majority of the frame; omit cast shadows, gradients, volume and surface texture. Clothing is a single unshaded color island, not a study of folds. Simplify existing environment into crooked minimal diagram-like symbols. Do not turn this into chibi anime with a large head, a realistic figure with bright paint, or a fully rendered cartoon background. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.",
+      "previousStylePromptSha256": "586d91dcf133ed995b96346ba6ca00b980cbe4b1fa94ca802fae44a908bd834a",
+      "revisedStylePrompt": "Render the supplied subject as a playful editorial illustration with conspicuously elastic, deliberately disproportionate construction. Stretch and compress existing forms into curved, rounded, and irregular shapes. When people appear, preserve the supplied age, expression, gaze, and pose while using a small rounded head, an exaggerated long curved neck, broad shoulders, tube-like limbs, and round mitten-like hands wherever visible. Reduce visible facial features to a few small dots, a short angular nose mark, and a tiny mouth dash; omit lashes and lifelike modeling. Simplify existing hair into a casually curved mass with a few outward tufts, without inventing hair or accessories. Draw loose thin black contours with occasional open joins and wobble. Fill selected isolated regions with flat rust red, muted teal, dark blue, and pale yellow. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. White paper remains the majority of the image; omit cast shadows, gradients, volume, surface texture, and interior clothing detail. Simplify the supplied environment with the same crooked, minimal diagram-like linework without imposing specific object shapes or structural layouts. Avoid chibi-like head enlargement, realistic anatomy with bright paint, and fully rendered backgrounds. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "revisedStylePromptSha256": "3c6175dbe7f443c62ba588c7b2885b97ad4b90f5b0249bc341a417f305f324f3",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "scenePromptSha256": "c0e4acaec71c8b218a8b79f4fb323971e7edb77f90c5476f302fbe4fa8757a02",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject as a playful editorial illustration with conspicuously elastic, deliberately disproportionate construction. Stretch and compress existing forms into curved, rounded, and irregular shapes. When people appear, preserve the supplied age, expression, gaze, and pose while using a small rounded head, an exaggerated long curved neck, broad shoulders, tube-like limbs, and round mitten-like hands wherever visible. Reduce visible facial features to a few small dots, a short angular nose mark, and a tiny mouth dash; omit lashes and lifelike modeling. Simplify existing hair into a casually curved mass with a few outward tufts, without inventing hair or accessories. Draw loose thin black contours with occasional open joins and wobble. Fill selected isolated regions with flat rust red, muted teal, dark blue, and pale yellow. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. White paper remains the majority of the image; omit cast shadows, gradients, volume, surface texture, and interior clothing detail. Simplify the supplied environment with the same crooked, minimal diagram-like linework without imposing specific object shapes or structural layouts. Avoid chibi-like head enlargement, realistic anatomy with bright paint, and fully rendered backgrounds. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "generationPromptSha256": "2174157cb545c9c0541678ca0cb6bd3a1a84bc3d68a2abe35d8a66aad770d21c",
+      "statusAtFreeze": "not-sent",
+      "oldStationImagePath": "/images/fiction-elastic-symbols.webp",
+      "expectedNewImagePath": "/images/station-reusable-v1/fiction-elastic-symbols.webp"
+    },
+    {
+      "catalogIndex": 72,
+      "slug": "fiction-chunky-wax-shapes",
+      "name": "Chunky Wax Shapes",
+      "reason": "Remove fixed coat/map and rightward gaze, plus railway polygon/band/support recipes. Retain broad wax sticks, primitive block deformation, five color masses and broken coverage.",
+      "previousStylePrompt": "Make a radically simplified primitive editorial illustration drawn only with very broad wax crayon marks. The whole figure is assembled from a large rounded-square head, triangular nose, one tiny brown eye dot looking right, a single crescent hair block, a trapezoid coat and two stubby mitten hands. Exaggerate the coat width and reduce adult anatomy to bold block shapes; keep an adult attitude rather than realistic anatomy or a cute anime face. Use no more than five broad color masses: rust red, charcoal, cream, muted teal and warm ochre. Every mark is thick and blunt, visibly at least a finger-width relative to the figure; there are no fine strokes, hatching, outlines, small facial features or smoothly blended modeled skin. Leave broken wax coverage inside broad flat masses but do not use texture to recreate realistic detail. The map is a large pale zigzag shape. Background structures are just broad crayon bars over large unmarked cream areas. Concentrate visual weight in the figure while roughly half the picture remains clear paper. This is a bold shape design using wax marks, not a painterly realistic pastel portrait. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.",
+      "previousStylePromptSha256": "985381939b81100c49485b15cfd8c6f86c99fc320ecbb079a0101d515333e0f3",
+      "revisedStylePrompt": "Render the supplied subject as a radically simplified primitive editorial illustration drawn only with very broad wax crayon marks. Assemble existing forms from bold rounded, triangular, angular, and block-like masses, exaggerating proportions without changing the supplied identity or action. When people appear, preserve the supplied age, expression, gaze, and pose while using a rounded-square head construction, minimal geometric facial marks, and stubby mitten-like hands wherever visible. Do not require particular clothing, handheld objects, or accessories. Use no more than five broad color masses: rust red, charcoal, cream, muted teal, and warm ochre. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Every mark is thick and blunt; there are no fine strokes, hatching, delicate outlines, small anatomical detail, or smoothly blended modeled skin. Leave broken wax coverage inside broad flat masses, but do not use texture to recreate realistic detail. Simplify existing background forms with the same broad blunt marks, leaving roughly half the image as unmarked cream through omission rather than a fixed layout. This is bold shape design using wax marks, not a painterly realistic pastel portrait. Omit seams, individual hair strands, tiny reflections, and all-over shading. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "revisedStylePromptSha256": "fad825da6e3ce1f925c83e5202f8cc2ca508ebfbda431f0067b60bdf1def2431",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "scenePromptSha256": "c0e4acaec71c8b218a8b79f4fb323971e7edb77f90c5476f302fbe4fa8757a02",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject as a radically simplified primitive editorial illustration drawn only with very broad wax crayon marks. Assemble existing forms from bold rounded, triangular, angular, and block-like masses, exaggerating proportions without changing the supplied identity or action. When people appear, preserve the supplied age, expression, gaze, and pose while using a rounded-square head construction, minimal geometric facial marks, and stubby mitten-like hands wherever visible. Do not require particular clothing, handheld objects, or accessories. Use no more than five broad color masses: rust red, charcoal, cream, muted teal, and warm ochre. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Every mark is thick and blunt; there are no fine strokes, hatching, delicate outlines, small anatomical detail, or smoothly blended modeled skin. Leave broken wax coverage inside broad flat masses, but do not use texture to recreate realistic detail. Simplify existing background forms with the same broad blunt marks, leaving roughly half the image as unmarked cream through omission rather than a fixed layout. This is bold shape design using wax marks, not a painterly realistic pastel portrait. Omit seams, individual hair strands, tiny reflections, and all-over shading. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "generationPromptSha256": "e90354f4dc5ddde9071cc846646066a4dd8dc4594dbedf9a3dc474f240ffffb2",
+      "statusAtFreeze": "not-sent",
+      "oldStationImagePath": "/images/fiction-chunky-wax-shapes.webp",
+      "expectedNewImagePath": "/images/station-reusable-v1/fiction-chunky-wax-shapes.webp"
+    },
+    {
+      "catalogIndex": 73,
+      "slug": "fiction-spare-continuous-line",
+      "name": "Spare Continuous-Line Design",
+      "reason": "Remove map contact, fixed coat patch/train stripe, rightward gaze and railway layout. Retain cobalt monoline, twenty-stroke budget, sparse rust-red/pale-teal accents and white ground.",
+      "previousStylePrompt": "Render an extremely spare adult editorial line design on pure white. Use a few long continuous cobalt-blue monoline loops to suggest the figure with deliberate missing contour sections. The adult head is an elongated oval with a simple nose kink and one small brown eye dash looking right, no detailed mouth or eye anatomy. Hair is two broad sweeping loops and an unfilled oval gap, never a mesh of strands. Body and limbs are stylized long curves; hands are two small oval hooks touching the map, without fingers. Use at most about twenty substantial strokes for the entire image, counting background marks; do not sneak in short marks, distant hatching or micro-detail. All forms remain unfilled except one small flat rust-red patch on part of the coat and a thin pale teal train stripe. The rest of the coat, face and hair are blank white. Reduce background to a few incomplete straight marks; most of the train has no outline. Leave roughly three quarters of the frame clear white. This must read as a minimal continuous-line editorial drawing or pictogram, not a detailed ballpoint sketch, anatomical portrait, architectural sketch or blue pen rendering of a photograph. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.",
+      "previousStylePromptSha256": "63342f4bd9197da18fd1c920aac8c0050d0d5ed1113aa492b31844a822b9f7a1",
+      "revisedStylePrompt": "Render the supplied subject as an extremely spare continuous-line editorial design on pure white. Use a few long continuous cobalt-blue monoline loops with deliberate missing contour sections. Stretch existing forms into elongated ovals and stylized curves without changing the supplied action or relative placement. When people appear, preserve the supplied age, expression, gaze, and pose; reduce visible facial features to a few kinks and dashes and visible hands to small oval hooks, without detailed anatomy. Simplify any existing hair into broad sweeping loops and unfilled gaps rather than strands. Use at most about twenty substantial strokes across the image, including secondary marks; omit short micro-marks, distant hatching, and fine detail. Keep all forms unfilled except one small flat rust-red accent and one very small pale-teal accent placed within existing forms. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Reduce secondary detail to a few incomplete marks, leaving roughly three quarters of the image white through omission without prescribing the shape or location of empty areas. This must read as minimal continuous-line drawing or pictogram-like line design, not detailed ballpoint sketching, anatomical portraiture, architectural drawing, or a photograph redrawn in blue. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "revisedStylePromptSha256": "4a9ce0e1c573be8a0e4f91a930492fdf8d0b8376c3c7d19dda15a71ce3b20ac0",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "scenePromptSha256": "c0e4acaec71c8b218a8b79f4fb323971e7edb77f90c5476f302fbe4fa8757a02",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject as an extremely spare continuous-line editorial design on pure white. Use a few long continuous cobalt-blue monoline loops with deliberate missing contour sections. Stretch existing forms into elongated ovals and stylized curves without changing the supplied action or relative placement. When people appear, preserve the supplied age, expression, gaze, and pose; reduce visible facial features to a few kinks and dashes and visible hands to small oval hooks, without detailed anatomy. Simplify any existing hair into broad sweeping loops and unfilled gaps rather than strands. Use at most about twenty substantial strokes across the image, including secondary marks; omit short micro-marks, distant hatching, and fine detail. Keep all forms unfilled except one small flat rust-red accent and one very small pale-teal accent placed within existing forms. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. Reduce secondary detail to a few incomplete marks, leaving roughly three quarters of the image white through omission without prescribing the shape or location of empty areas. This must read as minimal continuous-line drawing or pictogram-like line design, not detailed ballpoint sketching, anatomical portraiture, architectural drawing, or a photograph redrawn in blue. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "generationPromptSha256": "8f7503540c95b3cb24a9c4ccfa49489e651e32ad927fceaf5f093116a2feaf69",
+      "statusAtFreeze": "not-sent",
+      "oldStationImagePath": "/images/fiction-spare-continuous-line.webp",
+      "expectedNewImagePath": "/images/station-reusable-v1/fiction-spare-continuous-line.webp"
+    },
+    {
+      "catalogIndex": 74,
+      "slug": "fiction-modular-dot-design",
+      "name": "Modular Shapes & Oversized Dots",
+      "reason": "Remove fixed woman, coat/backpack, upward-right gaze, map and train-like bands/supports. Retain modular flat silhouettes, strong deformation, oversized navy dots and the 24-dot maximum.",
+      "previousStylePrompt": "Design a radically reduced modern adult editorial graphic from modular flat silhouettes on ivory white. Use a circular adult head with an angular profile notch, one tiny brown eye dot aimed upward to the right and no other facial features. Hair is one solid navy semicircle. Give the figure a deliberately exaggerated long neck, a very broad trapezoid coat, skinny curved forearms and simple semicircle mitten hands. Use large rust-red and navy flat shapes with paper-white cutouts and a narrow pale teal stripe only for the specified train. At two or three selected overlaps, replace a shadow with a small cluster of conspicuously oversized navy dots, each approximately the size of the eye or larger; use no more than twenty-four shadow dots in the whole picture. No fine stippling, halftone screens, uniform texture, gradients, natural skin modeling or interior clothing detail. Keep the face a blank light circle with minimal symbol marks. Background is composed of at most six simple bars and rectangles with big open gaps; retain roughly two thirds of the frame as plain ivory. The purpose is a bold modular design with a few playful dot accents, not a detailed pointillist illustration or full-scene screenprint. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.",
+      "previousStylePromptSha256": "86f6ec8ef39e3506fd2b5f4c1374f56854ab0bd345488c4af7f7bf9d3c9b80be",
+      "revisedStylePrompt": "Render the supplied subject as a radically reduced modular editorial graphic from flat silhouettes on ivory white. Construct existing forms from simple circular, semicircular, angular, and curved units with deliberate proportion distortion and paper-white cutouts. When people appear, preserve the supplied age, expression, gaze, and pose while reducing visible facial features to minimal dots and notches and visible hands to simple curved symbols. Do not prescribe particular clothing, accessories, handheld objects, or background structures. Use large rust-red and navy flat shapes with paper-white cutouts and very small pale-teal accents within existing forms. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. At two or three selected overlaps, replace a shadow with a small cluster of conspicuously oversized navy dots; use no more than twenty-four shadow dots in the whole image. No fine stippling, halftone screens, uniform texture, gradients, natural skin modeling, or interior clothing detail. Keep secondary forms simple and sparse, with roughly two thirds of the image left as plain ivory through omission rather than a fixed background arrangement. The purpose is bold modular design with a few playful dot accents, not detailed pointillism or an all-over screenprint. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "revisedStylePromptSha256": "c21b5c96505fdc9a4dc19331a8a8c4f1b8c51c0ded859faaaa9bef3351559a6d",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "scenePromptSha256": "c0e4acaec71c8b218a8b79f4fb323971e7edb77f90c5476f302fbe4fa8757a02",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject as a radically reduced modular editorial graphic from flat silhouettes on ivory white. Construct existing forms from simple circular, semicircular, angular, and curved units with deliberate proportion distortion and paper-white cutouts. When people appear, preserve the supplied age, expression, gaze, and pose while reducing visible facial features to minimal dots and notches and visible hands to simple curved symbols. Do not prescribe particular clothing, accessories, handheld objects, or background structures. Use large rust-red and navy flat shapes with paper-white cutouts and very small pale-teal accents within existing forms. The stated drawing colors and paper ground take precedence over literal colors in the separate scene description: reinterpret supplied local colors within this palette, without adding colors or changing the supplied objects. At two or three selected overlaps, replace a shadow with a small cluster of conspicuously oversized navy dots; use no more than twenty-four shadow dots in the whole image. No fine stippling, halftone screens, uniform texture, gradients, natural skin modeling, or interior clothing detail. Keep secondary forms simple and sparse, with roughly two thirds of the image left as plain ivory through omission rather than a fixed background arrangement. The purpose is bold modular design with a few playful dot accents, not detailed pointillism or an all-over screenprint. Follow the separate subject-and-scene description for people, age, expression, gaze, pose, clothing, objects, setting, and composition; do not invent or reposition them from this style instruction. No typography, logos, borders, or watermarks.",
+      "generationPromptSha256": "660db1fb04ad8fb13ef80f8a6b9023b4b082dcc519b291d7400de34f25fa7f9a",
+      "statusAtFreeze": "not-sent",
+      "oldStationImagePath": "/images/fiction-modular-dot-design.webp",
+      "expectedNewImagePath": "/images/station-reusable-v1/fiction-modular-dot-design.webp"
+    }
+  ]
+}

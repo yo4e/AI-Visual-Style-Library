@@ -1,0 +1,67 @@
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {readFile} from 'node:fs/promises';
+import test from 'node:test';
+import {benchmark, combinedPrompt, styles, historicalStyles, preColorReviewStyles} from '../src/style-data.js';
+import {relaxedSimplifiedAnimeStyles} from '../src/relaxed-simplified-anime.js';
+import {styleForScene, hasSceneSample} from '../src/scene-data.js';
+
+const sha = value => createHash('sha256').update(value).digest('hex');
+const bytes = await readFile(new URL('../provenance/relaxed-simplified-anime-v2-prompts-before-generation.json', import.meta.url));
+const frozen = JSON.parse(bytes);
+
+test('new anime sample preserves exact frozen independent instructions and all previous75 pairs', async () => {
+  assert.equal(relaxedSimplifiedAnimeStyles.length, 1);
+  const style = relaxedSimplifiedAnimeStyles[0], entry = frozen.entries[0];
+  assert.equal(style.slug, entry.slug);
+  assert.equal(style.stylePrompt, entry.stylePrompt);
+  assert.equal(style.generationStylePrompt, entry.stylePrompt);
+  assert.equal(sha(style.stylePrompt), entry.stylePromptSha256);
+  assert.equal(benchmark.characterPrompt, entry.scenePrompt);
+  assert.equal(sha(entry.scenePrompt), entry.scenePromptSha256);
+  assert.equal(combinedPrompt(style), entry.generationPrompt);
+  assert.equal(sha(entry.generationPrompt), entry.generationPromptSha256);
+  assert.equal(frozen.benchmarkId, benchmark.id);
+  assert.equal(frozen.benchmarkVersion, benchmark.version);
+  assert.deepEqual(frozen.references, []);
+  assert.equal(style.image, entry.expectedImagePath);
+  assert.equal(style.imageStatus, 'ready');
+  assert.equal(entry.statusAtFreeze, 'not-sent');
+  assert.equal(sha(bytes), (await readFile(new URL('../provenance/relaxed-simplified-anime-v2-prompts-before-generation.sha256', import.meta.url), 'utf8')).split(/\s/)[0]);
+  assert.equal(styles.length, 77);
+  assert.equal(historicalStyles.length, 75);
+  assert.equal(styles[75].slug, style.slug);
+  assert.equal(sha(JSON.stringify(preColorReviewStyles.slice(0,75).map(s => ({slug:s.slug, prompt:combinedPrompt(s), image:s.image})))), frozen.baseline.stationPairsSha256);
+  assert.equal(frozen.analysis.selectedMediaId, 'HU12_zKacAEkDcY');
+  assert.equal(frozen.analysis.detailedComparisonMediaId, 'HU12_bnaUAEPdq6');
+  const before = JSON.parse(await readFile(new URL('../provenance/benchmark-manifest-before-relaxed-simplified-anime.json', import.meta.url)));
+  const current = JSON.parse(await readFile(new URL('../benchmark-manifest.json', import.meta.url)));
+  const preColor = JSON.parse(await readFile(new URL('../provenance/benchmark-manifest-before-station-color-adoption.json', import.meta.url)));
+  assert.deepEqual(preColor.images.slice(0,75), before.images);
+  const actual = style.sampleRecord;
+  assert.deepEqual(actual, current.images.find(image => image.slug === style.slug));
+  assert.equal(actual.submittedPrompt, entry.generationPrompt);
+  assert.equal(actual.submittedPromptSha256, entry.generationPromptSha256);
+  assert.equal(actual.frozenManifestSha256, sha(bytes));
+  assert.equal(actual.sourceLibraryFileId, 'libfile_323f58d92c1c81918aa7040e5d34b415');
+  assert.equal(actual.sourceSha256, '70d75665dfd814ed3c2290d927fde62e42d533bc1a6bd6ec464f46e7e3f756b6');
+  assert.equal(actual.imageSha256, sha(await readFile(new URL('../public'+style.image, import.meta.url))));
+  assert.ok(Date.parse(actual.submittedAt) >= Date.parse(frozen.frozenAt));
+  assert.deepEqual(actual.references, []);
+  assert.equal(actual.toolParameters.transparent_background, false);
+  assert.equal(actual.model, null); assert.equal(actual.seed, null);
+  assert.equal(actual.submissionEvidence.kind, 'trusted-parent-handoff');
+});
+
+test('approved detailed output replaces the rejected scene only in active display', () => {
+  const style = styles[75], youth = styleForScene(style, 'young-man');
+  assert.equal(youth.image, '/images/young-man-full-body-detailed/anime-relaxed-simplified.webp');
+  assert.equal(youth.imageStatus, 'ready');
+  assert.notEqual(youth.sampleRecord.sourceSha256, 'e376dcfa51f89df0218104544e184feb8bb77eb524192910e6dd755ef91c9843');
+  assert.equal(youth.sampleModel, null);
+  assert.equal(youth.stylePrompt, style.stylePrompt);
+  assert.equal(youth.fullSamplePrompt, combinedPrompt(style, youth.sampleBenchmark));
+  assert.equal(hasSceneSample('young-man', style.slug), true);
+  assert.equal(hasSceneSample('station', style.slug), true);
+  assert.equal(hasSceneSample('station', 'unknown-style'), false);
+});

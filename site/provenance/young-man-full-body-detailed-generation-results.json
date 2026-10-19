@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "sunflowers-full-body-detailed-v1",
+  "benchmarkVersion": "1.0",
+  "images": [
+    {
+      "slug": "anime-relaxed-simplified",
+      "benchmarkId": "sunflowers-full-body-detailed-v1",
+      "benchmarkVersion": "1.0",
+      "imagePath": "/images/young-man-full-body-detailed/anime-relaxed-simplified.webp",
+      "sourceFile": "exec-fb0d7b12-ae09-4107-bc0f-52de3f039d53.png",
+      "sourceLibraryFileId": "libfile_665c2e7ac1a08191a13cacfe69a9c1e3",
+      "sourceFileId": "file_00000000c90081f7a03454545de7a89e",
+      "sourceSha256": "d946ea5b8bb741cccdb798cdb0beebfacfb37c5121e30b77ba0ac6b618f18883",
+      "sourceBytes": 2582306,
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "imageSha256": "f554266d1a8833ec21deec3075f3f69a8b6abdd7a77a81d01fa5f0e019fa1ff7",
+      "imageBytes": 120152,
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "conversion": {
+        "resizeWidth": 960,
+        "kernel": "lanczos3",
+        "format": "webp",
+        "quality": 86,
+        "crop": false,
+        "colorEdits": false
+      },
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. Show a young adult man with short, tousled dark brown hair, a mustard-yellow hooded raincoat, a light off-white top, dark loose trousers, light sneakers, and a black backpack. Frame him head to toe in a wide environmental view with a level horizon, seen from in front of the shelter. Place him in the left third, with his figure occupying about three quarters of the image height. Leave clear space above his hair and some pavement below his shoes. He stands upright, turned slightly to the right, looking toward the sea with a quiet expression. He holds a small paper-wrapped bouquet of sunflowers in one hand at waist height, the blossoms rising in front of his lower chest; his other hand rests in a raincoat pocket. Keep the entire bouquet and both feet visible. The glass-and-metal bus shelter occupies the left half, with its roof across the upper-left corner, vertical posts around him, and a wooden bench to his left. A round bus-stop sign and a narrow information board on one post stand just to his right, near the middle of the image; include no readable lettering. Leave the right half open to the sea and cloudy dawn sky. Keep the horizon near the middle of the image height, with distant low coastal hills and a low sun close to the far-right edge. A low stone seawall and simple railing follow the shore, while wet pavement with small reflections fills the foreground.\n\nVISUAL STYLE\nCreate a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.",
+      "submittedPromptSha256": "272bf9b11bba8f30b35d875879cd3e6453c31fe792e747e283e3cb95bb7d93d6",
+      "stylePromptSha256": "c0461e889da499d20f4f920df93b4345a07f3f1c2c1d7cc1601be1ff3531b08f",
+      "scenePromptSha256": "26bbe9b259679c9561cb875f96e35f959c80ddef0e21048576e3ece67125af5e",
+      "frozenManifestFile": "young-man-full-body-detailed-prompts-before-generation.json",
+      "frozenManifestSha256": "70d348b591312592497316a758801a4e2a6d3e33fea3e176a745b5084e03e646",
+      "importedAt": "2026-10-18T14:20:47.331Z",
+      "submittedAt": null,
+      "generatedAt": null,
+      "references": null,
+      "toolParameters": null,
+      "model": null,
+      "seed": null,
+      "submissionEvidence": {
+        "kind": "trusted-parent-handoff",
+        "declaredParts": "Parent reports the newly generated approved image uses this saved detailed full-body person/scene text together with unchanged normal anime-relaxed-simplified girl rendering text.",
+        "recordedCombinedText": "Canonical combination of those declared saved parts. Raw tool-call text and delimiter-level verification were not supplied.",
+        "unknownFields": "Exact generation timestamps, references and background parameter were not stated in this handoff; kept null rather than inferred."
+      },
+      "adoption": {
+        "status": "owner-approved-for-local-working-site",
+        "scope": "Only this one image. No additional generation or public deployment."
+      },
+      "supersedesActiveSample": {
+        "benchmarkId": "sunflowers-original-brief-v1",
+        "sourceSha256": "c933dc4881e49f86d6ebdf80f5aca1581951d9e0b6e3c382c4be01ef9d19445c",
+        "imagePath": "/images/young-man-original-brief/anime-relaxed-simplified.webp",
+        "historyRetained": true
+      },
+      "qualityNotes": {
+        "en": "The full figure, one-handed bouquet, pocket pose, left-side shelter and open sea on the right follow the detailed composition. Clouds and wet-ground reflections remain richly detailed. Layout stability across repeated generations has not been tested.",
+        "ja": "全身、片手の花束とポケット、左側のバス停・右側の海空という詳細化した構図に沿っています。雲や濡れた地面の反射は細かめです。複数回の生成で画角がどこまで安定するかは未検証です。"
+      }
+    }
+  ]
+}

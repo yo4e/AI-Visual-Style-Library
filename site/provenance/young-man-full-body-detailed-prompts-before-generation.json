@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "prepared-for-review-not-generated-not-active",
+  "frozenAt": "2026-10-18T06:53:39.482Z",
+  "benchmarkId": "sunflowers-full-body-detailed-v1",
+  "benchmarkVersion": "1.0",
+  "scene": {
+    "id": "sunflowers-full-body-detailed-v1",
+    "version": "1.0",
+    "label": "Sunflowers at the seaside — detailed full-body composition",
+    "alt": "a full-length young man with sunflowers in the left third beside a seaside bus shelter at dawn",
+    "characterPrompt": "Create one wide 16:9 landscape image, with no border or typography. Show a young adult man with short, tousled dark brown hair, a mustard-yellow hooded raincoat, a light off-white top, dark loose trousers, light sneakers, and a black backpack. Frame him head to toe in a wide environmental view with a level horizon, seen from in front of the shelter. Place him in the left third, with his figure occupying about three quarters of the image height. Leave clear space above his hair and some pavement below his shoes. He stands upright, turned slightly to the right, looking toward the sea with a quiet expression. He holds a small paper-wrapped bouquet of sunflowers in one hand at waist height, the blossoms rising in front of his lower chest; his other hand rests in a raincoat pocket. Keep the entire bouquet and both feet visible. The glass-and-metal bus shelter occupies the left half, with its roof across the upper-left corner, vertical posts around him, and a wooden bench to his left. A round bus-stop sign and a narrow information board on one post stand just to his right, near the middle of the image; include no readable lettering. Leave the right half open to the sea and cloudy dawn sky. Keep the horizon near the middle of the image height, with distant low coastal hills and a low sun close to the far-right edge. A low stone seawall and simple railing follow the shore, while wet pavement with small reflections fills the foreground."
+  },
+  "targetStyleId": "anime-relaxed-simplified",
+  "references": [],
+  "toolParameters": {
+    "transparent_background": false
+  },
+  "basis": {
+    "acceptedImageLibraryId": "libfile_e6b72cf2da248191969df22caa56b671",
+    "acceptedImageSourceSha256": "c933dc4881e49f86d6ebdf80f5aca1581951d9e0b6e3c382c4be01ef9d19445c",
+    "inspectedSourcePath": "evidence/phase18/received/exec-d3e48317-3a37-4a86-a6b2-eb142373a82f.png",
+    "preservedOriginalManifest": "young-man-original-brief-relaxed-simplified-prompts-before-generation.json",
+    "preservedOriginalManifestSha256": "2d0d181489993cefc9384981a5d1351082a90ae922cd06996acf582f1145a2f1",
+    "preservedOriginalScene": "Create a wide 16:9 image of a young man in a mustard-yellow raincoat holding a small bouquet of sunflowers at a seaside bus stop at dawn. Show the bus stop, sea, and cloudy sky clearly. No typography.",
+    "compositionRatios": "Approximate visual targets from the accepted image, not measured guarantees.",
+    "renderingPolicy": "Girl style string unchanged; this draft changes only independent person/scene/composition text."
+  },
+  "changes": [
+    {
+      "area": "framing",
+      "description": "Full body including shoes, figure in left third at about75% image height, clear headroom and pavement below feet; level horizon and front-of-shelter view."
+    },
+    {
+      "area": "pose and bouquet",
+      "description": "Standing upright, slight right turn/gaze, one hand at waist holding wrapped sunflower bouquet with flowers at lower chest, other hand in coat pocket; observed in accepted image."
+    },
+    {
+      "area": "visible appearance",
+      "description": "Short tousled dark hair, mustard hooded coat, off-white top, dark loose trousers, light sneakers and black backpack; no added character/prop."
+    },
+    {
+      "area": "scene layout",
+      "description": "Shelter/bench left, signpost just right of figure near center, open sea/sky on right, mid-height horizon and low sun far right, coast/railing/wet ground foreground."
+    },
+    {
+      "area": "rendering",
+      "description": "No rendering change; current normal girl style remains byte-identical. No lighthouse, extra people, buildings or new decorative elements added."
+    }
+  ],
+  "entries": [
+    {
+      "slug": "anime-relaxed-simplified",
+      "name": "Relaxed Simplified Anime",
+      "stylePrompt": "Create a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.",
+      "stylePromptSha256": "c0461e889da499d20f4f920df93b4345a07f3f1c2c1d7cc1601be1ff3531b08f",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. Show a young adult man with short, tousled dark brown hair, a mustard-yellow hooded raincoat, a light off-white top, dark loose trousers, light sneakers, and a black backpack. Frame him head to toe in a wide environmental view with a level horizon, seen from in front of the shelter. Place him in the left third, with his figure occupying about three quarters of the image height. Leave clear space above his hair and some pavement below his shoes. He stands upright, turned slightly to the right, looking toward the sea with a quiet expression. He holds a small paper-wrapped bouquet of sunflowers in one hand at waist height, the blossoms rising in front of his lower chest; his other hand rests in a raincoat pocket. Keep the entire bouquet and both feet visible. The glass-and-metal bus shelter occupies the left half, with its roof across the upper-left corner, vertical posts around him, and a wooden bench to his left. A round bus-stop sign and a narrow information board on one post stand just to his right, near the middle of the image; include no readable lettering. Leave the right half open to the sea and cloudy dawn sky. Keep the horizon near the middle of the image height, with distant low coastal hills and a low sun close to the far-right edge. A low stone seawall and simple railing follow the shore, while wet pavement with small reflections fills the foreground.",
+      "scenePromptSha256": "26bbe9b259679c9561cb875f96e35f959c80ddef0e21048576e3ece67125af5e",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. Show a young adult man with short, tousled dark brown hair, a mustard-yellow hooded raincoat, a light off-white top, dark loose trousers, light sneakers, and a black backpack. Frame him head to toe in a wide environmental view with a level horizon, seen from in front of the shelter. Place him in the left third, with his figure occupying about three quarters of the image height. Leave clear space above his hair and some pavement below his shoes. He stands upright, turned slightly to the right, looking toward the sea with a quiet expression. He holds a small paper-wrapped bouquet of sunflowers in one hand at waist height, the blossoms rising in front of his lower chest; his other hand rests in a raincoat pocket. Keep the entire bouquet and both feet visible. The glass-and-metal bus shelter occupies the left half, with its roof across the upper-left corner, vertical posts around him, and a wooden bench to his left. A round bus-stop sign and a narrow information board on one post stand just to his right, near the middle of the image; include no readable lettering. Leave the right half open to the sea and cloudy dawn sky. Keep the horizon near the middle of the image height, with distant low coastal hills and a low sun close to the far-right edge. A low stone seawall and simple railing follow the shore, while wet pavement with small reflections fills the foreground.\n\nVISUAL STYLE\nCreate a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.",
+      "generationPromptSha256": "272bf9b11bba8f30b35d875879cd3e6453c31fe792e747e283e3cb95bb7d93d6",
+      "statusAtFreeze": "not-sent"
+    }
+  ],
+  "generationContract": "This is a separately saved detailed composition candidate, not an active benchmark replacement. No image is generated by this executor. If used later, send generationPrompt exactly without reference images or added rendering instructions; preserve original short brief and existing image history. Any later wording edit must be saved as a new version before generation. No publication in this task."
+}

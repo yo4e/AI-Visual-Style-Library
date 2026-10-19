@@ -33,62 +33,62 @@ Render the subject as a hand-painted watercolor illustration with contemporary J
 
 ### Risograph
 
-![Risograph benchmark](site/public/images/risograph.webp)
+![Risograph benchmark](site/public/images/station-color-adopted/risograph.webp)
 
 A stencil printing process with a small ink palette, textured solids, and imperfect color registration.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render the subject as a two-color risograph print on warm off-white uncoated paper. Use only deep midnight-navy and warm coral-orange spot inks, plus the third dark tone formed where they overlap; let the paper supply the light areas. Reduce the image to bold graphic shapes and strong contours. If a person appears, keep their expression readable through simplified comic-like features. Build midtones from coarse halftone dots and irregular ink grain, with slight visible misregistration between the two plates and imperfect ink coverage. Avoid full-color gradients, clean vector flatness, photographic shading, and uniform digital-noise overlays.
+Render the subject as a two-color risograph print on warm off-white uncoated paper. Use exactly two printing inks throughout the image: ultramarine blue (#243C8F) and warm ochre (#C6953D). Use these same two inks for all contours, fills, shading, skin, hair, clothing, objects, and background. Translate the supplied local colors into these ink separations; the two-ink print treatment takes priority over literal object hues. Let their overlap form a darker tone, and let the unprinted off-white paper supply the light areas. Do not introduce a third ink or preserve an original scene color by adding another ink. Reduce the image to bold graphic shapes and strong contours. If a person appears, keep their expression readable through simplified comic-like features. Build midtones from coarse halftone dots and irregular ink grain, with slight visible misregistration between the two plates and imperfect ink coverage. Avoid full-color gradients, clean vector flatness, photographic shading, and uniform digital-noise overlays.
 ```
 
-**Watch for:** A uniform digital noise overlay is not a substitute for uneven ink and interacting color layers.
+**Watch for:** Ink grain, halftones and paper gaps should carry the print effect; this sample does not certify two printing plates.
 **Cover layout:** For a portrait cover, request separate space for the title. Typeset the lettering afterward.
 
 ### Gouache
 
-![Gouache benchmark](site/public/images/gouache.webp)
+![Gouache benchmark](site/public/images/station-color-adopted/gouache.webp)
 
 Opaque, matte color creates confident shapes with hand-painted transitions and softly visible brushwork.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render the subject as an opaque gouache illustration with the warmth of hand-painted Japanese animation background art. Use broad, confident matte color shapes, layered opaque paint, softly visible bristle marks, and edges shaped by the brush rather than heavy ink outlines. If a person appears, give them simplified expressive drawn features. Balance muted powder blues, warm stone neutrals, and one earthy red accent; let soft daylight separate foreground and distance. Preserve enough surface texture to feel painted on paper. Avoid transparent watercolor blooms, glossy acrylic shine, photorealistic skin, and perfectly smooth vector fills.
+Render the subject as an opaque gouache illustration with the warmth of hand-painted Japanese animation background art. Use broad, confident matte color shapes, layered opaque paint, softly visible bristle marks, and edges shaped by the brush rather than heavy ink outlines. If a person appears, give them simplified expressive drawn features. Balance muted warm and cool color masses derived from the supplied local hues, preserving the color identities of hair, clothing, and objects without requiring a red accent; let soft light consistent with the supplied scene and time of day separate foreground and distance. Preserve enough surface texture to feel painted on paper. Avoid transparent watercolor blooms, glossy acrylic shine, photorealistic skin, and perfectly smooth vector fills.
 ```
 
-**Watch for:** Excess shine or transparent washes can make the image look like acrylic or watercolor instead.
+**Watch for:** Look for opaque matte brushwork rather than transparent washes or glossy modeled surfaces.
 **Cover layout:** For a portrait cover, request separate space for the title. Typeset the lettering afterward.
 
 ### Ink Wash
 
-![Ink Wash benchmark](site/public/images/ink-wash.webp)
+![Ink Wash benchmark](site/public/images/station-color-adopted/ink-wash.webp)
 
 Diluted ink describes form through value, gesture, and the balance between marks and untouched paper.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render the subject as an expressive ink-wash illustration on absorbent off-white paper. Build almost the entire image from black ink diluted into soft gray tonal washes, reserved white paper, and a few energetic dark calligraphic marks. When a person appears, use delicate manga-inspired contour lines around the face and hands, with simplified expressive features. Permit a single muted rust-red accent on the main subject; reinterpret every other color specified in the subject description as grayscale, including clothing and background details. Let distant forms dissolve into wet washes while focal details remain legible. Avoid photographic grayscale, full-color watercolor, polished digital gradients, and uniformly heavy outlines.
+Render the subject as an expressive ink-wash illustration on absorbent off-white paper. Build almost the entire image from black ink diluted into soft gray tonal washes, reserved white paper, and a few energetic dark calligraphic marks. When a person appears, use delicate manga-inspired contour lines around the face and hands, with simplified expressive features. Use just one accent hue in addition to the black ink and gray washes: muted teal (#2A7776). Place it sparingly on one small existing region of the supplied main subject, such as part of a garment or an object already present, translating that region's original hue into this accent. Render all remaining areas, including skin, hair, other clothing, objects, and background, only with black ink, gray washes, and unpainted paper. Do not retain the original red coat, natural skin colors, blue sky, or teal train stripe as extra colored areas. Do not add an object to carry the accent. Let distant forms dissolve into wet washes while focal details remain legible. Avoid photographic grayscale, full-color watercolor, polished digital gradients, and uniformly heavy outlines.
 ```
 
-**Watch for:** Pure grayscale with photographic shading misses the expressive role of brush marks and open paper.
+**Watch for:** Check the size and location of the single accent; colored areas can spread beyond the requested focal region.
 **Cover layout:** For a portrait cover, request separate space for the title. Typeset the lettering afterward.
 
 ### Pixel Art
 
-![Pixel Art benchmark](site/public/images/pixel-art.webp)
+![Pixel Art benchmark](site/public/images/station-color-adopted/pixel-art.webp)
 
-Shapes are deliberately designed on a small pixel grid, using clusters of flat color rather than smooth gradients.
+Forms are organized into deliberate pixel clusters and discrete shade steps. This version requests remapping into an explicit 16-color palette; the selected output does not meet an exact 16-color limit.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render the subject as carefully authored 2D pixel art for a narrative adventure game. Design on a low-resolution pixel grid, roughly 320 by 180 logical pixels for a wide scene, then display it with crisp nearest-neighbor enlargement. Use a limited palette of navy, slate blue, warm cream, peach, and rust red. Build forms from intentional square pixel clusters, stepped contours, flat color bands, and discrete shade changes; use readable anime-inspired sprite features if people appear. Keep the background architecture legible without fine photographic detail. Avoid blur, antialiasing, smooth gradients, vector outlines, and a merely downsampled photograph.
+Render the subject as carefully authored 2D pixel art for a narrative adventure game. Design on a low-resolution pixel grid, roughly 320 by 180 logical pixels for a wide scene, then display it with crisp nearest-neighbor enlargement. Recolor the entire image into this single explicitly fixed sixteen-color palette: #1B1B2F, #3D2D42, #5B4B62, #7B6D7D, #B7A9A0, #F1E4C8, #FFFFFF, #4A2D24, #8C4A3A, #C66A4A, #E0A66B, #EEC68F, #283B5A, #4B718A, #4C8B83, #C2AF57. Every pixel, including outlines, skin, hair, clothing, map, train, sky, highlights, and shadows, must use one of these sixteen RGB colors at full opacity. Remap all supplied local colors to suitable colors within this palette; do not add colors to preserve literal scene hues. Use only discrete palette steps and intentional pixel clusters, with no antialiasing, alpha blending, smooth gradients, extra texture shades, or colors introduced between palette entries. Build forms from intentional square pixel clusters, stepped contours, flat color bands, and discrete shade changes; use readable anime-inspired sprite features if people appear. Keep the supplied background legible without fine photographic detail. Avoid blur, antialiasing, smooth gradients, vector outlines, and a merely downsampled photograph.
 ```
 
-**Watch for:** A blurry low-resolution picture is not pixel art; every cluster should look intentional.
+**Watch for:** A palette named in a prompt does not guarantee an exact pixel color count or a strict logical grid.
 **Cover layout:** For a portrait cover, request separate space for the title. Typeset the lettering afterward.
 
 ### 35mm Film
@@ -588,14 +588,14 @@ Render the supplied subject and scene in the following visual style. Render as a
 
 ### Medium-Format Editorial Photo
 
-![Medium-Format Editorial Photo benchmark](site/public/images/photo-medium-format.webp)
+![Medium-Format Editorial Photo benchmark](site/public/images/station-reusable-v3/photo-medium-format.webp)
 
 Subtle material detail and broad tonal range for a refined photographic cover.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render the supplied subject and scene in the following visual style. Render as a medium-format editorial photograph with a normal portrait lens perspective. Preserve smooth tonal transitions, detailed natural skin and fabric when present, and believable reflected light. Use a calm observational pose already specified by the scene. Keep the focal area crisp and the background gently separated without extreme blur. Use restrained, true-to-material color. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid plastic skin, excessive sharpening, artificial glow, and shallow focus that hides the setting.
+Render the supplied subject and scene in the following visual style. Render as a medium-format editorial photograph with a normal portrait lens perspective. Preserve smooth tonal transitions, detailed natural skin and fabric when present, and believable reflected light. Preserve the supplied pose, action, and expression; convey an observational quality through light and camera treatment. Keep the focal area crisp and the background gently separated without extreme blur. Use restrained, true-to-material color. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid plastic skin, excessive sharpening, artificial glow, and shallow focus that hides the setting.
 ```
 
 **Watch for:** Avoid plastic skin, excessive sharpening, artificial glow, and shallow focus that hides the setting; these can obscure the technique.
@@ -678,14 +678,14 @@ Render the supplied subject and scene in the following visual style. Render as a
 
 ### Fiction: Narrative Acrylic
 
-![Fiction: Narrative Acrylic benchmark](site/public/images/fiction-editorial-acrylic.webp)
+![Fiction: Narrative Acrylic benchmark](site/public/images/station-reusable-v3/fiction-editorial-acrylic.webp)
 
 A lively painted scene with tactile marks and focused narrative detail.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render the supplied subject and scene in the following visual style. Render as a narrative acrylic illustration with natural human proportions and believable environmental shapes. Use layered opaque paint, broad visible brushstrokes, and small sharper touches at the focal subject. Distinguish sunlight and shade with large value groups. Let background brushwork remain loose while keeping the story action clear. Use controlled material texture instead of uniform detail. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid anime facial conventions, polished photographic rendering, thick paint everywhere, and equal detail in every corner.
+Render the supplied subject and scene in the following visual style. Render as a narrative acrylic illustration with natural human proportions and believable environmental shapes. Use layered opaque paint, broad visible brushstrokes, and small sharper touches at the focal subject. Distinguish lit and shadowed areas with large value groups, following the light sources and time of day specified by the scene. Let background brushwork remain loose while keeping the story action clear. Use controlled material texture instead of uniform detail. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, or watermarks. Avoid anime facial conventions, polished photographic rendering, thick paint everywhere, and equal detail in every corner.
 ```
 
 **Watch for:** Avoid anime facial conventions, polished photographic rendering, thick paint everywhere, and equal detail in every corner; these can obscure the technique.
@@ -804,19 +804,19 @@ Render the supplied subject and scene in the following visual style. Render as b
 
 **Watch for:** Avoid unrequested sports actions or equipment, explosive effect lines, bulky exaggerated muscles, and smooth grayscale; these can obscure the technique.
 
-### Limited-Color Printed Comic
+### Two-Ink Printed Comic
 
-![Limited-Color Printed Comic benchmark](site/public/images/manga-limited-color-print.webp)
+![Two-Ink Printed Comic benchmark](site/public/images/station-color-adopted/manga-limited-color-print.webp)
 
-Bold brush drawing and a few visible color plates give a lively printed-comic finish.
+Bold brush contours, near-black and vermilion spot inks, halftone coverage and paper gaps create a two-ink printed comic treatment.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render the supplied subject and scene in the following visual style. Render as a limited-color printed comic illustration. Use bold slightly uneven brush outlines, simplified expressive faces with readable adult proportions when present, and broad flat spot-color plates. Use black, warm red, muted yellow, and the white paper only; translate the supplied local colors into this palette without changing the objects. Shade through clearly visible coarse halftone dots in selected color areas. Allow subtle plate-registration drift at a few edges and slight ink coverage variation, while keeping focal facial details crisp. Preserve white highlight shapes and organize the background into broad planes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid full-spectrum color, soft airbrush gradients, photographic textures, fake aged stains, and generated lettering.
+Render the supplied subject and scene in the following visual style. Render as a limited-color printed comic illustration. Use bold slightly uneven brush outlines, simplified expressive faces with readable adult proportions when present, and broad flat spot-color plates. Use exactly two printing inks: near-black (#23232B) and vermilion red (#C7573F), with unprinted white paper. Near-black counts as one of the two inks and must also be used for every drawn outline; add no separate outline color. Translate all supplied local colors, including skin, hair, clothing, and background objects, into these two inks while preserving the shapes and identities of the objects. Make lighter tones through halftone coverage and paper gaps, not additional ink colors. The two-ink print treatment takes priority over literal scene hues. Do not add a yellow, blue, teal, or skin-colored ink. Shade through clearly visible coarse halftone dots in selected color areas. Allow subtle plate-registration drift at a few edges and slight ink coverage variation, while keeping focal facial details crisp. Preserve white highlight shapes and organize the background into broad planes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid full-spectrum color, soft airbrush gradients, photographic textures, fake aged stains, and generated lettering.
 ```
 
-**Watch for:** Avoid full-spectrum color, soft airbrush gradients, photographic textures, fake aged stains, and generated lettering; these can obscure the technique.
+**Watch for:** Check broad spot-color planes, halftones and limited-ink appearance rather than treating RGB counts as ink counts.
 
 ### Tensile Sketch Color
 
@@ -876,31 +876,31 @@ Render the supplied subject and scene in the following visual style. Render as a
 
 ### Cinematic Mystery Photo
 
-![Cinematic Mystery Photo benchmark](site/public/images/photo-mystery.webp)
+![Cinematic Mystery Photo benchmark](site/public/images/station-reusable-v3/photo-mystery.webp)
 
 Restrained cool color and layered light suggest unanswered questions without inventing a crime scene.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render as a photorealistic cinematic mystery still with restrained blue-gray color grading, natural human anatomy, visible skin texture, and plausible camera optics. Use directional sidelight from the existing daylight opening to illuminate one side of the subject while the canopy or existing overhead structure creates crisp layered shadows. Keep the shadow side legible with cool fill, neutral whites, restrained warm skin, and a muted warm accent from the supplied objects or clothing. Use a 50mm-lens perspective, moderate depth of field, fine film grain, and clean controlled contrast. Separate the focal subject from receding architectural lines; let small areas of withheld shadow suggest unanswered questions without inventing events. Respect the stated time of day and keep all named objects recognizable. Avoid comic lines, supernatural figures, crime props, added fog, heavy green color casts, crushed featureless blacks, and gratuitous violence. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
+Render as a photorealistic cinematic mystery still with restrained blue-gray color grading, natural human anatomy, visible skin texture, and plausible camera optics. Use directional sidelight motivated by the light sources described or implied by the supplied scene and time of day, creating crisp layered shadows across existing forms. Keep the shadow side legible with cool fill, neutral whites, restrained warm skin, and a muted warm accent from the supplied objects or clothing. Use a 50mm-lens perspective, moderate depth of field, fine film grain, and clean controlled contrast. Separate the focal subject from the supplied background through light, contrast, and depth; let small areas of withheld shadow suggest unanswered questions without inventing events. Respect the stated time of day and keep all named objects recognizable. Avoid comic lines, supernatural figures, crime props, added fog, heavy green color casts, crushed featureless blacks, and gratuitous violence. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
 ```
 
 **Watch for:** Keep shadows readable and skin natural. Mystery should come from controlled light, not a dark overlay.
 
 ### Uneasy Daylight Horror Photo
 
-![Uneasy Daylight Horror Photo benchmark](site/public/images/photo-horror.webp)
+![Uneasy Daylight Horror Photo benchmark](site/public/images/station-color-adopted/photo-horror.webp)
 
 Sickly daylight and sharply divided values create psychological unease while the supplied scene remains intact.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render as a photorealistic psychological-horror film still using uneasy daylight rather than changing the supplied scene to night. Keep real anatomy, visible skin pores, and plausible camera optics. Grade the existing daylight toward pale sickly cyan-green highlights with desaturated gray shadows and a subdued oxidized-red accent from supplied materials. Use a hard narrow side light and very little frontal fill: make strong shadow boundaries across the face and existing structure, with near-black pockets under the canopy but enough edge light to identify every named object. Let the exterior daylight remain unnaturally pale and bright in contrast to oppressive shadowed areas. Use coarse high-ISO film grain, slight halation around hard highlights, and restrained low-level chromatic fringing. Preserve the supplied expression, action, objects, and location; unease comes from light and color, not added creatures or horror props. Avoid illustration, beauty lighting, inviting amber glow, explicit injuries, blood, invented damage, and unrequested figures. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
+Render as a photorealistic psychological-horror film still using uneasy available light without changing the supplied scene or time of day. Keep real anatomy, visible skin pores, and plausible camera optics. Grade the supplied scene's existing light toward pale sickly cyan-green highlights with desaturated gray shadows. Preserve the underlying supplied color identities of skin, hair, clothing, and objects through this lighting and grading; do not introduce a red accent into materials that were not specified as red. Use a hard narrow side light and very little frontal fill: make strong shadow boundaries across the supplied subject and existing forms, with near-black pockets in naturally shadowed areas but enough edge light to identify every named object. Let illuminated areas remain unnaturally pale and bright in contrast to oppressive shadowed areas. Use coarse high-ISO film grain, slight halation around hard highlights, and restrained low-level chromatic fringing. Preserve the supplied expression, action, objects, and location; unease comes from light and color, not added creatures or horror props. Avoid illustration, beauty lighting, inviting amber glow, explicit injuries, blood, invented damage, and unrequested figures. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
 ```
 
-**Watch for:** A bright benchmark may limit deep-shadow horror. Preserve recognizable objects rather than adding creatures or injuries.
+**Watch for:** The cold grade and hard shadows can obscure local colors and fine object detail.
 
 ### Taut Pen & Hatching Manga
 
@@ -932,17 +932,17 @@ Render as a softly colored Japanese manga illustration with unmistakably rounded
 
 ### Bold Scruffy Ink Comic
 
-![Bold Scruffy Ink Comic benchmark](site/public/images/manga-bold-scruffy-ink.webp)
+![Bold Scruffy Ink Comic benchmark](site/public/images/station-color-adopted/manga-bold-scruffy-ink.webp)
 
 Blunt ink and compact graphic faces show rough comic drawing without adding dirt or clutter.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render as a deliberately rough Japanese everyday comic color illustration. Use visibly uneven medium-to-bold black pen contours with blunt hooks, broken joins, blunt hair tufts, and a few overshooting interior strokes. When people appear, simplify their adult face into compact angular cheeks, small half-lidded manga eyes compatible with the supplied gaze, one-mark nose, and an understated mouth; do not render a realistic portrait. Make the hair and a few overlapping cloth folds read as simple black ink masses, not thousands of fine strands. Fill broad areas with flat muted local colors, leaving white paper gaps and sparse coarse dry hatching in selected folds. Keep large quiet background shapes and lightly irregular architectural lines. Let the hand-drawn imperfections be visible at thumbnail size. Preserve the supplied pose, grooming, clean setting, and objects rather than adding mess. Avoid polished fine-line illustration, smooth gradients, painterly depth everywhere, animal features, cigarettes, and added clutter. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
+Render as a deliberately rough Japanese everyday comic color illustration. Use visibly uneven medium-to-bold black pen contours with blunt hooks, broken joins, blunt hair tufts, and a few overshooting interior strokes. When people appear, simplify their adult face into compact angular cheeks, small half-lidded manga eyes compatible with the supplied gaze, one-mark nose, and an understated mouth; do not render a realistic portrait. Group the hair into a few broad, simple masses in its supplied local color, not thousands of fine strands. Preserve light or colored hair rather than filling the whole hair shape with black ink. Reserve sparse black ink masses for the deepest overlaps and cloth-fold shadows. Fill broad areas with flat muted local colors, leaving white paper gaps and sparse coarse dry hatching in selected folds. Keep large quiet background shapes and lightly irregular architectural lines. Let the hand-drawn imperfections be visible at thumbnail size. Preserve the supplied pose, grooming, clean setting, and objects rather than adding mess. Avoid polished fine-line illustration, smooth gradients, painterly depth everywhere, animal features, cigarettes, and added clutter. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks.
 ```
 
-**Watch for:** If it becomes a fine realistic sketch, the blunt uneven contour and flat comic color are missing.
+**Watch for:** Check rough contours and broad hair masses; fine strands and background detail can overwhelm the ink economy.
 
 ### Crisp Cel & Hair Highlights
 
@@ -960,143 +960,143 @@ Render as a crisp contemporary Japanese manga color illustration with precise gr
 
 ### Reportage Ink & Spot Color
 
-![Reportage Ink & Spot Color benchmark](site/public/images/fiction-reportage-spot-ink.webp)
+![Reportage Ink & Spot Color benchmark](site/public/images/station-color-adopted/fiction-reportage-spot-ink.webp)
 
 A restrained documentary illustration for everyday human drama, with an adult figure and readable architecture rather than manga construction.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render a hand-drawn documentary editorial illustration. When people appear, use natural adult proportions, small anatomically plausible eyes, an understated mouth, and an individual readable expression rather than anime or manga facial construction. Draw with a dry steel nib: fine slightly broken contours, a few uneven short marks, and selective near-black solid shapes at overlaps. Make most surfaces unshaded ivory paper; use a restrained rust-red accent from the supplied subject and very pale cool gray only where needed to separate planes. Describe architecture with economical straight pen lines, omitting repeated distant detail. Keep the focal face and hands legible, with broad open paper areas elsewhere. The drawing should feel observed, serious, and humane. Avoid all-over crosshatching, engraved line density, woodcut carving, screen-tone dots, photographic modeling, and decorative poster silhouettes. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
+Render a hand-drawn documentary editorial illustration. When people appear, use natural adult proportions, small anatomically plausible eyes, an understated mouth, and an individual readable expression rather than anime or manga facial construction. Draw with a dry steel nib: fine slightly broken contours, a few uneven short marks, and selective near-black solid shapes at overlaps. Make most surfaces unshaded ivory paper; use a restrained color accent selected from the supplied local hue of the area receiving it, and very pale cool gray only where needed to separate planes. Preserve that accent's hue identity; do not recolor another object to create an accent. Describe architecture with economical straight pen lines, omitting repeated distant detail. Keep the focal face and hands legible, with broad open paper areas elsewhere. The drawing should feel observed, serious, and humane. Avoid all-over crosshatching, engraved line density, woodcut carving, screen-tone dots, photographic modeling, and decorative poster silhouettes. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
 ```
 
-**Watch for:** The selected sample leaves pale surfaces and sky open, but background architecture and map markings are more detailed, and the warm accent larger, than the sparse prompt requests. This is one illustration result, not a guaranteed density level.
+**Watch for:** Check open paper and economical pen marks; broad color coverage can weaken the sparse reportage look.
 
 ### Loose Contours & Flat Color
 
-![Loose Contours & Flat Color benchmark](site/public/images/fiction-looping-flat.webp)
+![Loose Contours & Flat Color benchmark](site/public/images/station-color-adopted/fiction-looping-flat.webp)
 
 An approachable everyday illustration with mature faces, irregular contours, and lively flat paint; a different construction from rounded manga eyes.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render a lively hand-drawn everyday editorial illustration for an adult audience. Use a loose medium-fine dark brown contour that meanders gently, occasionally loops, and sometimes doubles back around hair, cuffs, and existing objects. Keep adult faces naturally proportioned with small eyes, a clearly drawn nose, modest mouth, and subtle asymmetry; do not use anime eyes or chibi bodies. Fill existing forms with bright but restrained opaque matte color patches: rust red, muted teal, buttery cream, and slate blue, while retaining supplied local colors. Paint slightly uneven edges and allow tiny paper gaps between line and color. Use almost no volume shading: a few small flat shadows at overlaps, no gradients or polished skin. Simplify distant structures into broad readable planes. Keep hair and cloth as casually outlined shapes, not decorative strands or hatching. Leave quiet sky and surface areas free of repeated detail. Avoid geometrically perfect vector shapes, glossy cel highlights, thick comic outlines, and dense decorative collage. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
+Render a lively hand-drawn everyday editorial illustration for an adult audience. Use a loose medium-fine dark brown contour that meanders gently, occasionally loops, and sometimes doubles back around hair, cuffs, and existing objects. Keep adult faces naturally proportioned with small eyes, a clearly drawn nose, modest mouth, and subtle asymmetry; do not use anime eyes or chibi bodies. Fill existing forms with bright but restrained opaque matte patches of their supplied local colors. Preserve the hue identities of hair, clothing, and objects while simplifying shade variations; do not substitute a fixed palette. Paint slightly uneven edges and allow tiny paper gaps between line and color. Use almost no volume shading: a few small flat shadows at overlaps, no gradients or polished skin. Simplify distant structures into broad readable planes. Keep hair and cloth as casually outlined shapes, not decorative strands or hatching. Leave quiet sky and surface areas free of repeated detail. Avoid geometrically perfect vector shapes, glossy cel highlights, thick comic outlines, and dense decorative collage. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
 ```
 
-**Watch for:** This selected sample shows flat color and hand-drawn edges, but its contours are more controlled and its background shadows stronger than the loosely looping, minimally shaded prompt requests.
+**Watch for:** Check loose contour loops and flat paint; modeled shadows and dense detail can make the result more conventional.
 
 ### Broad Oil-Pastel Narrative
 
-![Broad Oil-Pastel Narrative benchmark](site/public/images/fiction-oil-pastel.webp)
+![Broad Oil-Pastel Narrative benchmark](site/public/images/station-color-adopted/fiction-oil-pastel.webp)
 
 Broad oil-pastel marks convey human presence through warm and cool planes; the coarse waxy strokes differ from fine colored-pencil or powder pastel.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render an original narrative illustration made with broad oil-pastel sticks on lightly textured cream paper. Keep people recognizably adult with natural facial proportions and a restrained expression, without anime construction or photographic skin. Build the image from chunky waxy strokes and flattened blocks of local color; show broken heavy pigment deposits, blunt stroke ends, and cream paper peeking through scumbled overlaps. Use warm rust, ochre, slate blue, muted teal, and soft cream in adjacent warm and cool planes. Model the focal face and hands with a few deliberate smaller pastel strokes, not smooth blending. Let hair, clothing, architecture, and the train remain broad simplified masses with visible stroke direction. Omit ink outlines, fine pencil hatching, thin translucent washes, fuzzy powder shading, and oil-paint canvas impasto. Keep large areas quiet and lightly marked, with concentrated pigment at the subject. Preserve scene legibility without filling every surface with texture. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
+Render the supplied subject as a hand-drawn oil-pastel illustration on lightly textured cream paper. Build forms with broad waxy strokes, blunt edges, broken pigment deposits, and paper showing through scumbled overlaps. Use a small, muted set of colors derived from the supplied local hues, preserving the color identities of skin, hair, clothing, objects, and surroundings. Simplify each into broad color masses and a few value steps rather than replacing its hue with a fixed palette. Keep focal details readable with a few smaller strokes, while simplifying other areas into broad color masses. When people appear, use natural drawn proportions and preserve their supplied age and expression. Avoid smooth digital blending, fine ink outlines, photographic skin, and dense texture everywhere. Follow the separate scene description for all people, objects, setting, pose, and composition.
 ```
 
-**Watch for:** Small fingers and map markings are simplified; waxy pigment should remain visible rather than becoming smooth paint.
+**Watch for:** Look for broad wax deposits and broken paper coverage rather than smooth digital blending.
 
-### Blue Ballpoint & Warm Accent
+### Blue Ballpoint & Color Accent
 
-![Blue Ballpoint & Warm Accent benchmark](site/public/images/fiction-ballpoint.webp)
+![Blue Ballpoint & Color Accent benchmark](site/public/images/station-color-adopted/fiction-ballpoint.webp)
 
-A notebook-like observational treatment with cobalt ballpoint marks and a small warm color accent, suited to intimate everyday narratives.
+Cobalt ballpoint lines and a small accent selected from the supplied local hue create a notebook-like observational drawing.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render an observational adult editorial illustration drawn with a blue ballpoint pen on clean cream paper, with a small rust-red flat accent on the supplied warm-colored clothing. Use fine consistent cobalt-blue lines that overlap, loop, and accumulate at selected hair and cloth edges; show tiny pen-darkened nodes, not black flexible-nib pressure strokes. When people appear, retain adult natural facial proportions, small eyes, an articulated nose, and a quiet individual expression, avoiding manga anatomy. Build a few midtones from sparse short blue parallel strokes while leaving most skin, sky, and broad surfaces untouched paper. Keep the focal face and hands complete enough to read, but omit distant repeated architecture and train detail with deliberate gaps in the drawing. Warm color occupies only a limited area and is unshaded. Do not use graphite rubs, engraved crosshatching, ink wash, soft gradients, photorealistic skin, full-color rendering, or general blur. The result should feel intimate, precise in observation, and lightly unfinished. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
+Render the supplied subject as a blue-ballpoint editorial drawing on clean cream paper. Use fine cobalt-blue lines with small loops, overlapping strokes, and occasional darkened pen nodes. Build light shading with sparse short parallel strokes, leaving most surfaces as bare paper. Add one small unshaded color accent using the supplied local hue of the area receiving it, without recoloring another object. Keep the cobalt-blue pen marks as drawing ink, not a replacement for an object's stated surface color; other forms may remain unfilled paper as deliberate line-drawing omissions. Keep focal details legible and omit repeated minor details with deliberate gaps. When people appear, use natural drawn proportions and preserve their supplied age and expression. Avoid ink wash, graphite smudging, smooth gradients, and photorealism. Follow the separate scene description for all people, objects, setting, pose, and composition.
 ```
 
-**Watch for:** The selected sample leaves pale surfaces and sky open, but background architecture and map markings are more detailed, and the warm accent larger, than the sparse prompt requests. This is one illustration result, not a guaranteed density level.
+**Watch for:** Blue marks are drawing ink; the intended small accent can expand across larger areas in the output.
 
 ### Stippled Duotone Illustration
 
-![Stippled Duotone Illustration benchmark](site/public/images/fiction-stipple-duotone.webp)
+![Stippled Duotone Illustration benchmark](site/public/images/station-color-adopted/fiction-stipple-duotone.webp)
 
 A sober graphic illustration for social drama, using hand-stippled value rather than mechanical risograph screens or manga hatching.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render a carefully hand-stippled adult editorial illustration in deep navy and restrained rust red on warm cream paper. Describe people with natural adult proportions and small realistic drawn eyes, without anime simplification or photographic skin. Use clean economical navy contours and many tiny irregular hand-placed dots to build selected cheek, hair, fabric, and structural shadows; vary dot density rather than using crosshatching or airbrush gradients. Keep the dots visibly individual, nonuniform, and clustered along form rather than a mechanical halftone grid. Introduce restrained flat rust-red planes in the supplied warm-colored subject; use pale teal sparingly to preserve the supplied train stripe. Leave highlights and broad sky regions as clear cream paper. Concentrate fine dots at the figure and a few architectural overlaps, with simpler background planes to avoid uniform density. Avoid risograph registration drift, coarse screen-tone patterns, engraving lines, wood grain, decorative typography, and added motifs. Keep the supplied subject, age, expression, clothing, objects, and setting from the independent scene instruction. Do not add narrative props, decorative motifs, text, logos, borders, or watermarks.
+Render the supplied subject as a hand-stippled editorial illustration on warm cream paper. Use economical navy contours and tiny irregular navy dots to build selected shadows, varying dot density along form. Keep dots visibly separate and hand-placed rather than arranged in a regular halftone grid. Use one restrained flat accent hue selected from the supplied local colors, only on areas specified with that hue. Leave other surfaces as uncolored paper rather than remapping them to a fixed accent palette. Keep navy as the contour and stippling ink, not a mandatory flat surface color for supplied objects. Leave highlights and quiet surfaces as untouched cream paper. When people appear, use natural drawn proportions and preserve their supplied age and expression. Avoid airbrush shading, crosshatching, mechanical screen tones, and uniform dot coverage. Follow the separate scene description for all people, objects, setting, pose, and composition.
 ```
 
-**Watch for:** The sample shows fine navy dot values and rust color, but dots extend into the background more widely than requested. At small sizes, dense dots in hair merge into dark masses.
+**Watch for:** Check separated hand-placed dots and accent count; dense dots or extra hues can weaken the duotone treatment.
 
 ### Bold Cutout Silhouettes
 
-![Bold Cutout Silhouettes benchmark](site/public/images/fiction-cutout-silhouette.webp)
+![Bold Cutout Silhouettes benchmark](site/public/images/station-color-adopted/fiction-cutout-silhouette.webp)
 
-Cut edges and long-necked adult geometry replace observational anatomy and detailed penwork.
+Bold angular silhouettes and flat limited colors simplify the supplied subject without fixing its anatomy, objects or setting.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Build the illustration entirely from boldly simplified cut-paper-like silhouettes on clean ivory. Use rust red, deep charcoal and pale teal plus paper white, with no tonal gradients. Make the adult figure a long narrow head shape on an exaggerated thin neck, a large angular coat block, two mitten-shaped hands and a single black backpack shape. Let the nose be one notch in the profile and the upward-looking eye be one tiny brown dot; omit mouth, cheeks, lashes and all portrait modeling. Hair is one solid asymmetric shape with at most two projecting tips. There are no drawn interior contours. Use sharp cut edges and slightly irregular broad shapes, not physical paper shadows or fibrous collage texture. Keep at least half the total frame plain untouched ivory, including a continuous open band around the figure and above the train. The background is a handful of long horizontal and diagonal cut shapes, subordinate to the figure. Think abstract adult editorial graphic, not manga, scenic travel painting or realistic book-cover portrait. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.
+Render the supplied subject as a bold cut-paper-style illustration on clean ivory. Reduce forms to large flat silhouettes with sharp cut edges, slight hand-cut irregularities, and strong angular simplification. Use a compact set of flat colors drawn from the supplied local hues, preserving the color identities of hair, clothing, and objects. Simplify shades within each hue family instead of translating objects into a fixed palette; use paper white for intentionally unpainted space and highlights. Leave generous untouched paper and omit small interior details. When people appear, simplify their features into a few readable marks while preserving the supplied age, expression, and action. Use no drawn interior contours, gradients, realistic volume, paper-layer shadows, or fibrous collage texture. Follow the separate scene description for all people, objects, setting, pose, and composition.
 ```
 
-**Watch for:** The sample clearly simplifies face, hands and architecture, though it uses a few more muted color planes than the three-color target.
+**Watch for:** Cut-like edges and flat planes should dominate; modeled shadows and paper texture may still appear.
 
 ### Elastic Everyday Symbols
 
-![Elastic Everyday Symbols benchmark](site/public/images/fiction-elastic-symbols.webp)
+![Elastic Everyday Symbols benchmark](site/public/images/station-color-adopted/fiction-elastic-symbols.webp)
 
-A small head, long neck and tube-like arms make the deformation visible; facial expression is conveyed by only a few marks.
+Loose thin contours, elastic proportions and flat color islands give supplied forms a playful editorial treatment.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Draw a playful but adult editorial character illustration with conspicuously elastic, deliberately disproportionate construction. Use a tiny rounded head, an exaggerated long curved neck, broad shoulders, an oversized simple coat, long bent tube-like forearms, and round mitten hands. The face has only two small brown dots, one short L-shaped nose and one tiny mouth dash; no lashes, cheek modeling or lifelike portrait. Hair is one casually curved mass with three outward tufts, without inner strands. Draw loose thin black contours with occasional open joins and wobble around these distorted shapes. Fill only selected isolated regions with flat rust red, muted teal, dark blue and pale yellow. White paper remains the majority of the frame; omit cast shadows, gradients, volume and surface texture. Clothing is a single unshaded color island, not a study of folds. Simplify existing environment into crooked minimal diagram-like symbols. Do not turn this into chibi anime with a large head, a realistic figure with bright paint, or a fully rendered cartoon background. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.
+Render the supplied subject as a playful editorial illustration with elastic, deliberately exaggerated proportions. Draw loose thin black contours with occasional gaps, wobbles, and overlapping marks. Use rounded and curved forms with very few interior details. Fill selected areas with a small set of flat colors drawn from their supplied local hues. Preserve each colored area's hue identity while simplifying its shade variations; leave other areas as unpainted paper instead of assigning a fixed palette. Leave generous white paper and use almost no shading. When people appear, use simple expressive features while preserving their supplied age, expression, gaze, and action. Avoid realistic anatomy, glossy paint, gradients, and crowded detail. Follow the separate scene description for all people, objects, setting, pose, and composition.
 ```
 
-**Watch for:** The small head, long neck and round hands are visible; arm deformation is gentler than the tube-like construction requested.
+**Watch for:** Check visible proportion exaggeration; conventional anatomy can weaken the elastic shapes.
 
 ### Chunky Wax Shapes
 
-![Chunky Wax Shapes benchmark](site/public/images/fiction-chunky-wax-shapes.webp)
+![Chunky Wax Shapes benchmark](site/public/images/station-color-adopted/fiction-chunky-wax-shapes.webp)
 
-Broad primitive shapes replace the original pastel sample’s small modeled strokes; wax breaks remain only inside large masses.
+Broad blunt wax marks and broken color masses simplify existing forms while keeping the paper visible.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Make a radically simplified primitive editorial illustration drawn only with very broad wax crayon marks. The whole figure is assembled from a large rounded-square head, triangular nose, one tiny brown eye dot looking right, a single crescent hair block, a trapezoid coat and two stubby mitten hands. Exaggerate the coat width and reduce adult anatomy to bold block shapes; keep an adult attitude rather than realistic anatomy or a cute anime face. Use no more than five broad color masses: rust red, charcoal, cream, muted teal and warm ochre. Every mark is thick and blunt, visibly at least a finger-width relative to the figure; there are no fine strokes, hatching, outlines, small facial features or smoothly blended modeled skin. Leave broken wax coverage inside broad flat masses but do not use texture to recreate realistic detail. The map is a large pale zigzag shape. Background structures are just broad crayon bars over large unmarked cream areas. Concentrate visual weight in the figure while roughly half the picture remains clear paper. This is a bold shape design using wax marks, not a painterly realistic pastel portrait. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.
+Render the supplied subject as a boldly simplified wax-crayon illustration on cream paper. Build forms from broad blunt marks and chunky geometric color masses, with broken wax coverage showing the paper underneath. Exaggerate proportions and omit small details rather than rendering them realistically. Use a small set of wax colors selected from the supplied local hues, preserving the color identities of hair, clothing, and objects. Reduce shade variations into chunky color masses rather than replacing those hues with a fixed palette. When people appear, use minimal readable features and preserve their supplied age, expression, and action. Leave substantial unmarked paper. Avoid fine outlines, hatching, smooth blending, photographic detail, and decorative texture overlays. Follow the separate scene description for all people, objects, setting, pose, and composition.
 ```
 
-**Watch for:** The selected output shows blunt shape blocks and no modeled face; grain remains inside the large filled regions, so it is less empty than the line option.
+**Watch for:** Check blunt marks and broad masses, and whether softened colors still retain their intended hue families.
 
 ### Spare Continuous-Line Design
 
-![Spare Continuous-Line Design benchmark](site/public/images/fiction-spare-continuous-line.webp)
+![Spare Continuous-Line Design benchmark](site/public/images/station-color-adopted/fiction-spare-continuous-line.webp)
 
-Unfilled loops and absent fingers, folds, and window repetition are intentional; the scene remains a readable symbol.
+Long monoline curves, deliberate breaks and mostly unfilled forms suggest the supplied subject with sparse marks.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Render an extremely spare adult editorial line design on pure white. Use a few long continuous cobalt-blue monoline loops to suggest the figure with deliberate missing contour sections. The adult head is an elongated oval with a simple nose kink and one small brown eye dash looking right, no detailed mouth or eye anatomy. Hair is two broad sweeping loops and an unfilled oval gap, never a mesh of strands. Body and limbs are stylized long curves; hands are two small oval hooks touching the map, without fingers. Use at most about twenty substantial strokes for the entire image, counting background marks; do not sneak in short marks, distant hatching or micro-detail. All forms remain unfilled except one small flat rust-red patch on part of the coat and a thin pale teal train stripe. The rest of the coat, face and hair are blank white. Reduce background to a few incomplete straight marks; most of the train has no outline. Leave roughly three quarters of the frame clear white. This must read as a minimal continuous-line editorial drawing or pictogram, not a detailed ballpoint sketch, anatomical portrait, architectural sketch or blue pen rendering of a photograph. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.
+Render the supplied subject as a spare continuous-line illustration on pure white. Use a few long cobalt-blue monoline curves with deliberate breaks and very few interior marks. Keep forms mostly unfilled, adding at most two small flat color accents drawn from the supplied local hues of the areas receiving them. Preserve those hue identities without recoloring other objects. Treat the cobalt-blue curves as drawing ink; leave other surfaces as uncolored paper rather than translating their stated colors into blue fills. Suggest identifying details with simple loops, kinks, and short marks, leaving most of the paper untouched. When people appear, preserve their supplied age, expression, gaze, and action with minimal readable features. Avoid hatching, realistic shading, detailed anatomy, and photographic rendering. Follow the separate scene description for all people, objects, setting, pose, and composition.
 ```
 
-**Watch for:** The sample omits realistic portrait and architectural detail, but contains more than the approximate twenty-stroke target.
+**Watch for:** Open paper and a few long curves should dominate; accent areas can become broader than intended.
 
 ### Modular Shapes & Oversized Dots
 
-![Modular Shapes & Oversized Dots benchmark](site/public/images/fiction-modular-dot-design.webp)
+![Modular Shapes & Oversized Dots benchmark](site/public/images/station-color-adopted/fiction-modular-dot-design.webp)
 
-A few large dot accents replace the earlier image’s dense fine stippling; simplified modules replace portrait and architecture detail.
+Simple geometric forms, flat colors and a few large dot clusters create a modular graphic treatment of the supplied subject.
 
 Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
 
 ```text
-Design a radically reduced modern adult editorial graphic from modular flat silhouettes on ivory white. Use a circular adult head with an angular profile notch, one tiny brown eye dot aimed upward to the right and no other facial features. Hair is one solid navy semicircle. Give the figure a deliberately exaggerated long neck, a very broad trapezoid coat, skinny curved forearms and simple semicircle mitten hands. Use large rust-red and navy flat shapes with paper-white cutouts and a narrow pale teal stripe only for the specified train. At two or three selected overlaps, replace a shadow with a small cluster of conspicuously oversized navy dots, each approximately the size of the eye or larger; use no more than twenty-four shadow dots in the whole picture. No fine stippling, halftone screens, uniform texture, gradients, natural skin modeling or interior clothing detail. Keep the face a blank light circle with minimal symbol marks. Background is composed of at most six simple bars and rectangles with big open gaps; retain roughly two thirds of the frame as plain ivory. The purpose is a bold modular design with a few playful dot accents, not a detailed pointillist illustration or full-scene screenprint. Treat the separate scene description as a list of semantic elements to depict, never as a request for realistic rendering or detailed portraiture. Its woman, map, backpack, canopy, distant commuters and white train with teal stripe must remain recognizable, but radically simplify their shapes. Depict the adult woman looking up to the right and holding the open map with both simplified hands; keep the same broad placement and view. Show the map as a plain folded polygon with at most three broad abstract route marks, no street network. Show the train as one long flat white or paper-white band with its teal stripe and no more than three simple window marks; omit roof equipment, wheels, rails, bolts, cables, signs and repeated window detail. Reduce the canopy to one diagonal and two supports, and the distant people to at most two tiny marks. No clothing seams, buttons, anatomical fingers, individual hair strands, skin modeling, realistic eyelids, tiny reflections, scenic foliage or all-over shading. Omission and deformation are essential, not low resolution or blur. Keep supplied clothing and objects as recognizable simplified symbols; add no props, text, logos, borders or watermarks.
+Render the supplied subject as a bold modular editorial graphic on ivory paper. Build flat silhouettes from simple geometric forms with exaggerated proportions, clean edges, and paper-white cutouts. Use a small set of flat colors drawn from the supplied local hues, preserving the color identities of hair, clothing, and objects while reducing shade variations. Treat navy as the ink of the shadow dots, not a compulsory flat surface color for objects. Replace a few shadow areas with small clusters of conspicuously large navy dots. Keep other surfaces flat and unshaded, with generous open paper and little interior detail. When people appear, use minimal readable features while preserving their supplied age, expression, gaze, and action. Avoid fine stippling, regular halftones, gradients, realistic volume, and uniform texture. Follow the separate scene description for all people, objects, setting, pose, and composition.
 ```
 
-**Watch for:** The flat figure and background are strongly simplified. This sample overlaps the cutout option in silhouette language; its dot accents are few.
+**Watch for:** Check simplified geometric forms and selected large dot clusters rather than repeated dense rows.
 
 ### Adult Everyday Cel Animation
 
@@ -1111,3 +1111,32 @@ Render the supplied subject as a subdued hand-drawn 2D animation illustration wi
 ```
 
 **Watch for:** The selected sample has rounder eyes and softer distant-background edges than the analyzed reference, with a few subtle gradients beyond the mostly flat cel request. Fine contours and discrete neck/coat shadows remain visible.
+
+### Relaxed Simplified Anime
+
+![Relaxed Simplified Anime benchmark](site/public/images/anime-relaxed-simplified.webp)
+
+Moderate figure stylization and broad, readable shapes reduce visual detail while keeping distinctive clothing, posture and silhouette recognizable.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Create a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.
+```
+
+**Watch for:** Keep distinctive design cues while reducing hair subdivisions, clothing folds, shadows, and surface detail. Simplification should preserve the requested colors and readable setting rather than turn the figure into chibi or erase the background.
+
+### Relaxed Simplified Anime — Pastel
+
+![Relaxed Simplified Anime — Pastel benchmark](site/public/images/anime-relaxed-simplified-pastel.webp)
+
+The relaxed simplified anime treatment with an added pastel-toned color instruction. Broad hair locks and economical cel shadows remain the shared rendering approach.
+
+Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.
+
+```text
+Create a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.
+Use a pastel-toned color treatment.
+```
+
+**Watch for:** Pastel tone adjusts the overall color treatment without requiring a specific hue for clothing, hair, objects, or surroundings. The difference from the standard variant can be subtle and varies between generations.

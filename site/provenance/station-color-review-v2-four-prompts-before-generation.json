@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "station-color-review-v2-four",
+  "ownerDirection": "Slack1792390051.650419: risograph/comic two colors; ink wash plus one accent; pixel art may remap into8 or16 colors.",
+  "paletteStatus": "provisional-executor-proposal-not-owner-final-color-choice",
+  "entries": [
+    {
+      "catalogIndex": 2,
+      "slug": "risograph",
+      "mediumRuleJa": "2インク刷り。紙白とインクの重なりによる暗い調子は、追加のインクとして数えません。",
+      "paletteJa": "仮案：群青 #243C8F ＋ 黄土 #C6953D、無着色の紙。具体色は本人の確定指定ではありません。",
+      "palette": [
+        "#243C8F",
+        "#C6953D"
+      ],
+      "edits": [
+        [
+          "Use only deep midnight-navy and warm coral-orange spot inks, plus the third dark tone formed where they overlap; let the paper supply the light areas.",
+          "Use exactly two printing inks throughout the image: ultramarine blue (#243C8F) and warm ochre (#C6953D). Use these same two inks for all contours, fills, shading, skin, hair, clothing, objects, and background. Translate the supplied local colors into these ink separations; the two-ink print treatment takes priority over literal object hues. Let their overlap form a darker tone, and let the unprinted off-white paper supply the light areas. Do not introduce a third ink or preserve an original scene color by adding another ink."
+        ]
+      ],
+      "id": "risograph-medium-v2",
+      "basis": "Preserved original medium prompt with only explicit medium/palette instructions revised; prior subject/scene generalization retained.",
+      "paletteStatus": "provisional-executor-proposal-not-owner-final-color-choice",
+      "stylePrompt": "Render the subject as a two-color risograph print on warm off-white uncoated paper. Use exactly two printing inks throughout the image: ultramarine blue (#243C8F) and warm ochre (#C6953D). Use these same two inks for all contours, fills, shading, skin, hair, clothing, objects, and background. Translate the supplied local colors into these ink separations; the two-ink print treatment takes priority over literal object hues. Let their overlap form a darker tone, and let the unprinted off-white paper supply the light areas. Do not introduce a third ink or preserve an original scene color by adding another ink. Reduce the image to bold graphic shapes and strong contours. If a person appears, keep their expression readable through simplified comic-like features. Build midtones from coarse halftone dots and irregular ink grain, with slight visible misregistration between the two plates and imperfect ink coverage. Avoid full-color gradients, clean vector flatness, photographic shading, and uniform digital-noise overlays.",
+      "stylePromptSha256": "d97553a984b369f1241ffe191a131fcfea6c35879e21ed70d68fc3db484361d1",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "sceneId": "station-map-v3",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the subject as a two-color risograph print on warm off-white uncoated paper. Use exactly two printing inks throughout the image: ultramarine blue (#243C8F) and warm ochre (#C6953D). Use these same two inks for all contours, fills, shading, skin, hair, clothing, objects, and background. Translate the supplied local colors into these ink separations; the two-ink print treatment takes priority over literal object hues. Let their overlap form a darker tone, and let the unprinted off-white paper supply the light areas. Do not introduce a third ink or preserve an original scene color by adding another ink. Reduce the image to bold graphic shapes and strong contours. If a person appears, keep their expression readable through simplified comic-like features. Build midtones from coarse halftone dots and irregular ink grain, with slight visible misregistration between the two plates and imperfect ink coverage. Avoid full-color gradients, clean vector flatness, photographic shading, and uniform digital-noise overlays.",
+      "generationPromptSha256": "1492c2df1d83600a5cdadc8547a16582793c157aa1346bb26b55ed6c5e42fce1",
+      "priorV1": {
+        "stylePrompt": "Render the subject as a small-palette risograph print on warm off-white uncoated paper. Choose a compact set of spot inks from the supplied local color families of the subject and scene. Preserve the specified hue identities of hair, clothing, and objects wherever color is printed; simplify shade steps within those hue families rather than replacing them with a fixed ink palette. Let ink overlaps create darker tones and the paper supply the light areas. Reduce the image to bold graphic shapes and strong contours. If a person appears, keep their expression readable through simplified comic-like features. Build midtones from coarse halftone dots and irregular ink grain, with slight visible misregistration between the color plates and imperfect ink coverage. Avoid full-color gradients, clean vector flatness, photographic shading, and uniform digital-noise overlays.",
+        "generationPromptSha256": "a793bfb4e711ec906211dcc81632d99f60d1d62be865c62ee676572145c9ee6b",
+        "imageFile": "samples/risograph-station.png",
+        "imageSha256": "6142a4fd34dcf6287fbc60cb5ede7a51cc87f6dfaebd26131323bbcc866b0cf7"
+      },
+      "status": "prepared-not-generated",
+      "references": [],
+      "transparent_background": false
+    },
+    {
+      "catalogIndex": 54,
+      "slug": "manga-limited-color-print",
+      "mediumRuleJa": "輪郭の黒も含めた2インク刷り。白は紙、濃淡は網点の面積率で表します。",
+      "paletteJa": "仮案：墨に近い黒 #23232B ＋ 朱赤 #C7573F、白紙。具体色は本人の確定指定ではありません。",
+      "palette": [
+        "#23232B",
+        "#C7573F"
+      ],
+      "edits": [
+        [
+          "Use black, warm red, muted yellow, and the white paper only; translate the supplied local colors into this palette without changing the objects.",
+          "Use exactly two printing inks: near-black (#23232B) and vermilion red (#C7573F), with unprinted white paper. Near-black counts as one of the two inks and must also be used for every drawn outline; add no separate outline color. Translate all supplied local colors, including skin, hair, clothing, and background objects, into these two inks while preserving the shapes and identities of the objects. Make lighter tones through halftone coverage and paper gaps, not additional ink colors. The two-ink print treatment takes priority over literal scene hues. Do not add a yellow, blue, teal, or skin-colored ink."
+        ]
+      ],
+      "id": "manga-limited-color-print-medium-v2",
+      "basis": "Preserved original medium prompt with only explicit medium/palette instructions revised; prior subject/scene generalization retained.",
+      "paletteStatus": "provisional-executor-proposal-not-owner-final-color-choice",
+      "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a limited-color printed comic illustration. Use bold slightly uneven brush outlines, simplified expressive faces with readable adult proportions when present, and broad flat spot-color plates. Use exactly two printing inks: near-black (#23232B) and vermilion red (#C7573F), with unprinted white paper. Near-black counts as one of the two inks and must also be used for every drawn outline; add no separate outline color. Translate all supplied local colors, including skin, hair, clothing, and background objects, into these two inks while preserving the shapes and identities of the objects. Make lighter tones through halftone coverage and paper gaps, not additional ink colors. The two-ink print treatment takes priority over literal scene hues. Do not add a yellow, blue, teal, or skin-colored ink. Shade through clearly visible coarse halftone dots in selected color areas. Allow subtle plate-registration drift at a few edges and slight ink coverage variation, while keeping focal facial details crisp. Preserve white highlight shapes and organize the background into broad planes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid full-spectrum color, soft airbrush gradients, photographic textures, fake aged stains, and generated lettering.",
+      "stylePromptSha256": "8577935bb032b49103473db898fc8ecd8db61a6bafbfeec19fcf1ec7367a4e25",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "sceneId": "station-map-v3",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the supplied subject and scene in the following visual style. Render as a limited-color printed comic illustration. Use bold slightly uneven brush outlines, simplified expressive faces with readable adult proportions when present, and broad flat spot-color plates. Use exactly two printing inks: near-black (#23232B) and vermilion red (#C7573F), with unprinted white paper. Near-black counts as one of the two inks and must also be used for every drawn outline; add no separate outline color. Translate all supplied local colors, including skin, hair, clothing, and background objects, into these two inks while preserving the shapes and identities of the objects. Make lighter tones through halftone coverage and paper gaps, not additional ink colors. The two-ink print treatment takes priority over literal scene hues. Do not add a yellow, blue, teal, or skin-colored ink. Shade through clearly visible coarse halftone dots in selected color areas. Allow subtle plate-registration drift at a few edges and slight ink coverage variation, while keeping focal facial details crisp. Preserve white highlight shapes and organize the background into broad planes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid full-spectrum color, soft airbrush gradients, photographic textures, fake aged stains, and generated lettering.",
+      "generationPromptSha256": "ff079ee92c8db6963979d1972b36f27238102ade52f76290e9f99da34618ffd8",
+      "priorV1": {
+        "stylePrompt": "Render the supplied subject and scene in the following visual style. Render as a limited-color printed comic illustration. Use bold slightly uneven brush outlines, simplified expressive faces with readable adult proportions when present, and broad flat spot-color plates. Use black drawing ink, white paper, and a small set of flat spot colors selected from the supplied local hues. Preserve the specified hue identities of hair, clothing, and objects in colored areas; reduce shade steps and repeated color variations rather than forcing all objects into a fixed red-and-yellow palette. Shade through clearly visible coarse halftone dots in selected color areas. Allow subtle plate-registration drift at a few edges and slight ink coverage variation, while keeping focal facial details crisp. Preserve white highlight shapes and organize the background into broad planes. Follow the separate subject-and-scene description for people, clothing, objects, and setting; do not add them from this style instruction. Do not render text, logos, speech balloons, panel borders, or watermarks. Avoid full-spectrum color, soft airbrush gradients, photographic textures, fake aged stains, and generated lettering.",
+        "generationPromptSha256": "2750a5233c9e7321894bcb3204a7ccef2cfa5f3362b740807194de6efa443433",
+        "imageFile": "samples/manga-limited-color-print-station.png",
+        "imageSha256": "7abc3b2e1a1f219472e1f511be04a45020ce21388dd36628185f32f7bf0c3c13"
+      },
+      "status": "prepared-not-generated",
+      "references": [],
+      "transparent_background": false
+    },
+    {
+      "catalogIndex": 4,
+      "slug": "ink-wash",
+      "mediumRuleJa": "墨・灰色のにじみ・紙白を主体にし、アクセントだけ1つの色相へ置換します。",
+      "paletteJa": "仮案：墨 ＋ 青緑 #2A7776 のアクセント1色、白に近い紙。青緑は本人の確定指定ではありません。",
+      "palette": [
+        "#000000",
+        "#2A7776"
+      ],
+      "edits": [
+        [
+          "Permit a single muted rust-red accent on the main subject; reinterpret every other color specified in the subject description as grayscale, including clothing and background details.",
+          "Use just one accent hue in addition to the black ink and gray washes: muted teal (#2A7776). Place it sparingly on one small existing region of the supplied main subject, such as part of a garment or an object already present, translating that region's original hue into this accent. Render all remaining areas, including skin, hair, other clothing, objects, and background, only with black ink, gray washes, and unpainted paper. Do not retain the original red coat, natural skin colors, blue sky, or teal train stripe as extra colored areas. Do not add an object to carry the accent."
+        ]
+      ],
+      "id": "ink-wash-medium-v2",
+      "basis": "Preserved original medium prompt with only explicit medium/palette instructions revised; prior subject/scene generalization retained.",
+      "paletteStatus": "provisional-executor-proposal-not-owner-final-color-choice",
+      "stylePrompt": "Render the subject as an expressive ink-wash illustration on absorbent off-white paper. Build almost the entire image from black ink diluted into soft gray tonal washes, reserved white paper, and a few energetic dark calligraphic marks. When a person appears, use delicate manga-inspired contour lines around the face and hands, with simplified expressive features. Use just one accent hue in addition to the black ink and gray washes: muted teal (#2A7776). Place it sparingly on one small existing region of the supplied main subject, such as part of a garment or an object already present, translating that region's original hue into this accent. Render all remaining areas, including skin, hair, other clothing, objects, and background, only with black ink, gray washes, and unpainted paper. Do not retain the original red coat, natural skin colors, blue sky, or teal train stripe as extra colored areas. Do not add an object to carry the accent. Let distant forms dissolve into wet washes while focal details remain legible. Avoid photographic grayscale, full-color watercolor, polished digital gradients, and uniformly heavy outlines.",
+      "stylePromptSha256": "d684a2939dab2da14cbdd1006c97c621a8b928f8b76b8c3b7346e7c9e3c574ba",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "sceneId": "station-map-v3",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the subject as an expressive ink-wash illustration on absorbent off-white paper. Build almost the entire image from black ink diluted into soft gray tonal washes, reserved white paper, and a few energetic dark calligraphic marks. When a person appears, use delicate manga-inspired contour lines around the face and hands, with simplified expressive features. Use just one accent hue in addition to the black ink and gray washes: muted teal (#2A7776). Place it sparingly on one small existing region of the supplied main subject, such as part of a garment or an object already present, translating that region's original hue into this accent. Render all remaining areas, including skin, hair, other clothing, objects, and background, only with black ink, gray washes, and unpainted paper. Do not retain the original red coat, natural skin colors, blue sky, or teal train stripe as extra colored areas. Do not add an object to carry the accent. Let distant forms dissolve into wet washes while focal details remain legible. Avoid photographic grayscale, full-color watercolor, polished digital gradients, and uniformly heavy outlines.",
+      "generationPromptSha256": "d83f288c44b022b6e30333cb87dbf04c19017058c0d0a37f137c1597498ae0df",
+      "priorV1": {
+        "stylePrompt": "Render the subject as an expressive ink-wash illustration on absorbent off-white paper. Build almost the entire image from black ink diluted into soft gray tonal washes, reserved white paper, and a few energetic dark calligraphic marks. When a person appears, use delicate manga-inspired contour lines around the face and hands, with simplified expressive features. Permit a single muted color accent only on an area specified as colored in the separate scene description, using that area's supplied hue without introducing a new hue. Render the remaining areas as grayscale, including clothing and background details, as part of the ink-wash medium. Let distant forms dissolve into wet washes while focal details remain legible. Avoid photographic grayscale, full-color watercolor, polished digital gradients, and uniformly heavy outlines.",
+        "generationPromptSha256": "5f04cc4fbc3a5a181d8e4eef1dd5b41c6e1ccf9afa219dc831ed2cb97d1cec2c",
+        "imageFile": "samples/ink-wash-station.png",
+        "imageSha256": "2bc026faf556b9a41415a6b8397d675a95c209ea50c6a083c9b7af83df642cf5"
+      },
+      "status": "prepared-not-generated",
+      "references": [],
+      "transparent_background": false
+    },
+    {
+      "catalogIndex": 5,
+      "slug": "pixel-art",
+      "mediumRuleJa": "まず明示16色への再配色を試します。紙色・輪郭・ハイライトも16色に含め、アルファ混色や追加色を使わない指示です。",
+      "paletteJa": "仮案のカスタム16色。8色か16色かの最終選択と、16色の具体色は未確定です。",
+      "palette": [
+        "#1B1B2F",
+        "#3D2D42",
+        "#5B4B62",
+        "#7B6D7D",
+        "#B7A9A0",
+        "#F1E4C8",
+        "#FFFFFF",
+        "#4A2D24",
+        "#8C4A3A",
+        "#C66A4A",
+        "#E0A66B",
+        "#EEC68F",
+        "#283B5A",
+        "#4B718A",
+        "#4C8B83",
+        "#C2AF57"
+      ],
+      "edits": [
+        [
+          "Use a limited palette of navy, slate blue, warm cream, peach, and rust red. Translate all local colors specified in the separate scene description into this palette without changing the identities of people or objects; do not add colors to match literal scene hues.",
+          "Recolor the entire image into this single explicitly fixed sixteen-color palette: #1B1B2F, #3D2D42, #5B4B62, #7B6D7D, #B7A9A0, #F1E4C8, #FFFFFF, #4A2D24, #8C4A3A, #C66A4A, #E0A66B, #EEC68F, #283B5A, #4B718A, #4C8B83, #C2AF57. Every pixel, including outlines, skin, hair, clothing, map, train, sky, highlights, and shadows, must use one of these sixteen RGB colors at full opacity. Remap all supplied local colors to suitable colors within this palette; do not add colors to preserve literal scene hues. Use only discrete palette steps and intentional pixel clusters, with no antialiasing, alpha blending, smooth gradients, extra texture shades, or colors introduced between palette entries."
+        ]
+      ],
+      "id": "pixel-art-medium-v2",
+      "basis": "Preserved original medium prompt with only explicit medium/palette instructions revised; prior subject/scene generalization retained.",
+      "paletteStatus": "provisional-executor-proposal-not-owner-final-color-choice",
+      "stylePrompt": "Render the subject as carefully authored 2D pixel art for a narrative adventure game. Design on a low-resolution pixel grid, roughly 320 by 180 logical pixels for a wide scene, then display it with crisp nearest-neighbor enlargement. Recolor the entire image into this single explicitly fixed sixteen-color palette: #1B1B2F, #3D2D42, #5B4B62, #7B6D7D, #B7A9A0, #F1E4C8, #FFFFFF, #4A2D24, #8C4A3A, #C66A4A, #E0A66B, #EEC68F, #283B5A, #4B718A, #4C8B83, #C2AF57. Every pixel, including outlines, skin, hair, clothing, map, train, sky, highlights, and shadows, must use one of these sixteen RGB colors at full opacity. Remap all supplied local colors to suitable colors within this palette; do not add colors to preserve literal scene hues. Use only discrete palette steps and intentional pixel clusters, with no antialiasing, alpha blending, smooth gradients, extra texture shades, or colors introduced between palette entries. Build forms from intentional square pixel clusters, stepped contours, flat color bands, and discrete shade changes; use readable anime-inspired sprite features if people appear. Keep the supplied background legible without fine photographic detail. Avoid blur, antialiasing, smooth gradients, vector outlines, and a merely downsampled photograph.",
+      "stylePromptSha256": "cab594d72e5bbdd9f45b042813088065907132c933c986dd137a652848b910b5",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "sceneId": "station-map-v3",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nRender the subject as carefully authored 2D pixel art for a narrative adventure game. Design on a low-resolution pixel grid, roughly 320 by 180 logical pixels for a wide scene, then display it with crisp nearest-neighbor enlargement. Recolor the entire image into this single explicitly fixed sixteen-color palette: #1B1B2F, #3D2D42, #5B4B62, #7B6D7D, #B7A9A0, #F1E4C8, #FFFFFF, #4A2D24, #8C4A3A, #C66A4A, #E0A66B, #EEC68F, #283B5A, #4B718A, #4C8B83, #C2AF57. Every pixel, including outlines, skin, hair, clothing, map, train, sky, highlights, and shadows, must use one of these sixteen RGB colors at full opacity. Remap all supplied local colors to suitable colors within this palette; do not add colors to preserve literal scene hues. Use only discrete palette steps and intentional pixel clusters, with no antialiasing, alpha blending, smooth gradients, extra texture shades, or colors introduced between palette entries. Build forms from intentional square pixel clusters, stepped contours, flat color bands, and discrete shade changes; use readable anime-inspired sprite features if people appear. Keep the supplied background legible without fine photographic detail. Avoid blur, antialiasing, smooth gradients, vector outlines, and a merely downsampled photograph.",
+      "generationPromptSha256": "fd266675adb66d3cf6cab74d0dd5022cee8fca47b55664f65e328e1ddcf0f0a6",
+      "priorV1": {
+        "stylePrompt": "Render the subject as carefully authored 2D pixel art for a narrative adventure game. Design on a low-resolution pixel grid, roughly 320 by 180 logical pixels for a wide scene, then display it with crisp nearest-neighbor enlargement. Use a compact palette built from the supplied local color families of skin, hair, clothing, objects, and surroundings. Preserve those hue identities, limiting the number of shades within each hue family rather than remapping them to a fixed palette. Build forms from intentional square pixel clusters, stepped contours, flat color bands, and discrete shade changes; use readable anime-inspired sprite features if people appear. Keep the supplied background legible without fine photographic detail. Avoid blur, antialiasing, smooth gradients, vector outlines, and a merely downsampled photograph.",
+        "generationPromptSha256": "76204b33134020c914b6c7933c1dfc223f4c1707bd163b80b71e462a56add980",
+        "imageFile": "samples/pixel-art-station.png",
+        "imageSha256": "b5e8ae52aee63a2d95da79ba22b1a8884f8ebc521f972f769a41aeab5c06e108"
+      },
+      "status": "prepared-not-generated",
+      "references": [],
+      "transparent_background": false
+    }
+  ],
+  "status": "prepared-not-generated-not-active-not-published",
+  "frozenAt": "2026-10-19T06:13:55.908Z",
+  "sourceV1ManifestSha256": "604000e06ec406b62f7e5a0048ad4a3003c4f1d8093459f8ab5ee053345246c2",
+  "scene": {
+    "id": "station-map-v3",
+    "label": "The station map",
+    "description": "A woman in a red coat studies a folded map on a train platform. The subject, framing, and scene remain the same so the visual language can change.",
+    "alt": "a woman in a red coat studying a folded map on a train platform",
+    "version": "3.0",
+    "characterPrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible."
+  }
+}

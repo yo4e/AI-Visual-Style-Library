@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "trialVersion": "3",
+  "trialId": "anime-relaxed-simplified-pastel-v3",
+  "trialOnly": true,
+  "catalogAdoption": "awaiting-owner-decision",
+  "publication": "not-authorized",
+  "archiveOnly": true,
+  "tool": "image_gen",
+  "references": [],
+  "toolParameters": {
+    "transparent_background": false
+  },
+  "model": null,
+  "seed": null,
+  "generatedTimeReported": "2026-10-18 10:17 JST",
+  "timePrecision": "minute; exact submission/completion timestamps not supplied",
+  "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nCreate a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.\nUse a pastel-toned color treatment.",
+  "submittedPromptSha256": "ed0505651266c124e61e383e8e00df1a16d445fcad44bbf65b077710f70aff60",
+  "frozenManifest": "relaxed-simplified-anime-pastel-v3-trial-prompts.json",
+  "frozenManifestSha256": "b1827d3df2cf175d2caf35ad59d0fcc3c6f2041a1ecf714055addd4225cad542",
+  "submissionEvidence": {
+    "kind": "trusted-parent-handoff",
+    "sourceThreadId": "01a139f8-1f4a-7319-9db6-3ea3f5dfb005",
+    "statement": "Parent confirms one built-in generation using unchanged V2 full prompt plus one LF and Use a pastel-toned color treatment., no references, opaque background. Parent delivered the sample in Slack; owner adoption decision pending. Raw call log not transferred."
+  },
+  "output": {
+    "libraryFileId": "libfile_2f543ce204808191ad13be2285fd291c",
+    "sourceFile": "exec-3870d25c-027f-4815-bf0a-e21bd64ad876.png",
+    "localArchivePath": "evidence/phase11/received/exec-3870d25c-027f-4815-bf0a-e21bd64ad876.png",
+    "sourceSha256": "6e24a8b394ddcef13b9f13f42f597c2e7418fe5591a88e05c946c339d96de348",
+    "sourceBytes": 1966168,
+    "width": 1672,
+    "height": 941,
+    "format": "png",
+    "unchangedOriginal": true,
+    "derivativeCreated": false
+  },
+  "comparisonBaseline": {
+    "trialVersion": "2",
+    "libraryFileId": "libfile_323f58d92c1c81918aa7040e5d34b415",
+    "sourceSha256": "70d75665dfd814ed3c2290d927fde62e42d533bc1a6bd6ec464f46e7e3f756b6",
+    "catalogStatus": "retained-active"
+  }
+}
