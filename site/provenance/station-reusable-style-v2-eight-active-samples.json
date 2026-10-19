@@ -1,0 +1,87 @@
+{
+  "revision": "station-reusable-style-v2-eight",
+  "benchmarkId": "station-map-v3",
+  "benchmarkVersion": "3.0",
+  "images": [
+    {
+      "slug": "fiction-oil-pastel",
+      "imagePath": "/images/station-reusable-v2/fiction-oil-pastel.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Woman, map, platform and white train with teal stripe are visible. Fine detail and dense texture across the frame are stronger than the style prompt's broad simplification and restrained-texture preference.",
+        "ja": "広い面で省略する指定に対して、細部と画面全体の質感は密になっています。"
+      },
+      "submittedPromptSha256": "c3c2620a2b7f1e8f4af3dffe4dbb3e3fe705c9aa60961701223086b8b9b0939b"
+    },
+    {
+      "slug": "fiction-ballpoint",
+      "imagePath": "/images/station-reusable-v2/fiction-ballpoint.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Woman, map, platform and train remain visible, with the requested upward-right gaze. Linework and hatching are much denser than requested; the rust-red accent fills most of the coat rather than remaining small and unshaded. The map's lower center reaches the frame edge, so the entire unfolded map is not cleanly visible.",
+        "ja": "線とハッチングが指定より密で、赤錆色の差し色も広い範囲を占めています。地図の下端は画面外にかかっています。"
+      },
+      "submittedPromptSha256": "cbcdfca7f7274ab93f4710dd03160e3315686fbe547553b7f0b3c0578f691327"
+    },
+    {
+      "slug": "fiction-stipple-duotone",
+      "imagePath": "/images/station-reusable-v2/fiction-stipple-duotone.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Woman, map, platform and train remain recognizable with the requested gaze and palette. Stippling is much more widespread and dense than the requested selected-shadow restraint; teal coverage is larger than a very small accent. The map's lowest central point is clipped at the lower edge.",
+        "ja": "点描が画面全体に広がり、青緑の面積も指定より大きくなっています。地図の下端は画面外にかかっています。"
+      },
+      "submittedPromptSha256": "498e268fd27e7c894f95a0e297d90ec3f3f3b8eeaf06aec786161d058ebaa68e"
+    },
+    {
+      "slug": "fiction-cutout-silhouette",
+      "imagePath": "/images/station-reusable-v2/fiction-cutout-silhouette.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Woman, both hands and full map, platform and train are visible. Angular cut-paper simplification is clear, but subtle surface texture/shading and flesh tones extend beyond the strictly flat four-color specification.",
+        "ja": "切り紙風の角張った省略は見られますが、微かな質感・陰影や肌色が限定パレットの指定を超えています。"
+      },
+      "submittedPromptSha256": "915f949ba8fb3bf954f63db86f9ad4380c6c0cd49cf524cc71566f596be71355"
+    },
+    {
+      "slug": "fiction-elastic-symbols",
+      "imagePath": "/images/station-reusable-v2/fiction-elastic-symbols.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Woman, map, platform and train are clearly readable with the requested pose and gaze. Result is a polished cartoon with mostly natural proportions, rather than deliberately elastic/exaggerated editorial forms. Interior detail and painted shading are more extensive than requested; the map's central lower point touches the image edge.",
+        "ja": "自然な体形に近い漫画的な仕上がりで、指定した弾力的なデフォルメや細部の省略は控えめです。地図の下端が画面の縁に接しています。"
+      },
+      "submittedPromptSha256": "ac30b6744774bf60f78ba06b1708f714b707d2a8a18e78827f16ba8dd06c92c5"
+    },
+    {
+      "slug": "fiction-chunky-wax-shapes",
+      "imagePath": "/images/station-reusable-v2/fiction-chunky-wax-shapes.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Woman, map, platform and train are legible; broad broken wax marks and cream ground are visible. Proportions are mostly natural rather than exaggerated, with more representational detail than the specified chunky geometric simplification. The map's central lower point meets the frame edge.",
+        "ja": "太い蝋の描線と紙地は見られますが、体形は自然寄りで、幾何学的な省略より細部が多めです。地図の下端が画面の縁に接しています。"
+      },
+      "submittedPromptSha256": "1b55642cd7f1e02d62eb356cb663f97581de77728fcb8c6ab4865b3726b7bc25"
+    },
+    {
+      "slug": "fiction-spare-continuous-line",
+      "imagePath": "/images/station-reusable-v2/fiction-spare-continuous-line.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Woman, full map, platform and train are visible; blue monoline and white ground dominate. The drawing has many separate contours and repeated background details, not only a few long sparse continuous curves. Rust-red and pale-teal accents cover larger areas than the requested small accents.",
+        "ja": "少数の長い連続線という指定に対して独立した輪郭と背景の反復が多く、赤・青緑の差し色も広めです。"
+      },
+      "submittedPromptSha256": "f428ea4e175f1a2e5fb3de5aa1118400216a4495639c9f426c5b1c2fbc924457"
+    },
+    {
+      "slug": "fiction-modular-dot-design",
+      "imagePath": "/images/station-reusable-v2/fiction-modular-dot-design.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Woman, map, platform and train are readable in flat graphic forms. Forms retain largely natural proportions and substantial detail rather than strongly exaggerated modular simplification. Large dots appear as long regular rows on the platform, rather than small clusters replacing selected shadow areas. The map's central lower point reaches the frame edge; pale teal is more extensive than a small accent.",
+        "ja": "自然な比率と細部が残り、大きな点は影の小さな集まりより、規則的な長い列として現れています。地図の下端が画面の縁に接し、青緑も広めです。"
+      },
+      "submittedPromptSha256": "a940aa3dae09c0a41893e569410273f2b46222e2542656b4f549639581d22ed8"
+    }
+  ]
+}

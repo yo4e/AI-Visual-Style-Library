@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-10-18T01:04:47.455Z",
+  "baseCommit": "3f5e417d5e52a5841d9633495a475f223c957429",
+  "benchmarkId": "station-map-v3",
+  "benchmarkVersion": "3.0",
+  "references": [],
+  "referenceUsedForAnalysisOnly": true,
+  "generationContract": "Submit entries[].generationPrompt exactly as saved with no added instructions and no image references. Save actual call text, submission time, result and source SHA-256. Do not alter frozen prompts to fit an output. Parent performs ImageGen; this executor does not generate.",
+  "entries": [
+    {
+      "order": 76,
+      "slug": "anime-relaxed-simplified",
+      "name": "Relaxed Simplified Anime",
+      "stylePrompt": "Create a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.",
+      "stylePromptSha256": "c0461e889da499d20f4f920df93b4345a07f3f1c2c1d7cc1601be1ff3531b08f",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.",
+      "scenePromptSha256": "c0e4acaec71c8b218a8b79f4fb323971e7edb77f90c5476f302fbe4fa8757a02",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nCreate a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.",
+      "generationPromptSha256": "a895391311907042b4b958b794327d5fb488b71a5609e31e92ce26146179c16a",
+      "expectedImagePath": "/images/anime-relaxed-simplified.webp",
+      "statusAtFreeze": "not-sent"
+    }
+  ],
+  "baseline": {
+    "count": 75,
+    "stationPairsSha256": "605153fade6230ec5c42373bc0ae38e9935e46aeaea60b1ee7e482d979c9cf23"
+  },
+  "analysis": {
+    "selectedMediaId": "HU12_zKacAEkDcY",
+    "selectedSourceSha256": "226939c3ea4da8d3cff61ea2ca8ac591e2d7a56fada0e3a978155d86a6501ab9",
+    "detailedComparisonMediaId": "HU12_bnaUAEPdq6",
+    "detailedSourceSha256": "8763f76ed4b12f605e07c41ff1e10e7faca29e42153f2871659fffb838f26068",
+    "comparison": "Selected image groups hair into broad locks, omits bracelets/chains and many costume details, reduces garment folds and material highlights, and uses broader flatter shading. Detailed comparison has many fine strands, layered jewelry, dense folds and glossy reflections. Both have three figures, the same busy neon setting, and 1024×1536 source dimensions. Relative simplification is clear; do not describe the entire reference as sparse or its background as blank.",
+    "textOnlyRequirement": "Approximately 5.5–6 heads tall is from post prompt text, not image measurement.",
+    "colorPolicy": "Preserve supplied local color identities. Softened saturation/contrast is acceptable; no fixed hair, clothing, object or reference palette."
+  },
+  "promptVersion": "2",
+  "supersedes": {
+    "file": "relaxed-simplified-anime-prompts-before-generation.json",
+    "reason": "Clarify that simplification centers on subject rendering while the requested background structure remains legible; neither version has been sent for generation."
+  }
+}

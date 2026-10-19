@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-10-18T02:23:35.888Z",
+  "generationScope": "one normal-variant youth sample only; parent performs fresh reference-free generation",
+  "selection": {
+    "slug": "anime-relaxed-simplified",
+    "name": "Relaxed Simplified Anime",
+    "nameJa": "ゆるく省略したアニメ",
+    "catalogIndex": 76,
+    "orderWithinLatestTwoStyles": 1,
+    "reason": "The request follows adoption/publication of normal then pastel. First refers to normal anime variant; the older full-catalog first style watercolor already has a youth sample and is not changed by this handoff."
+  },
+  "benchmarkId": "sunflowers-bus-stop-v1",
+  "benchmarkVersion": "1.0",
+  "scene": {
+    "id": "sunflowers-bus-stop-v1",
+    "version": "1.0",
+    "label": "Sunflowers at the seaside bus stop",
+    "alt": "a young man in a mustard-yellow raincoat holding sunflowers at a seaside bus stop at dawn",
+    "characterPrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian man with tousled dark brown hair and brown eyes wears a mustard-yellow hooded raincoat over a white knit sweater and a black backpack. He holds a small bouquet of sunflowers in both hands at chest level, with the entire bouquet visible near the lower edge. Frame him from the waist up in a medium close-up, slightly left of center: his head, torso, and bouquet should fill most of the left half of the image. His body is turned three-quarters to the right, and he looks toward the right with a quiet, thoughtful expression. He stands at a glass-sided seaside bus stop at dawn. The shelter roof and glass supports recede diagonally from the upper left, with a simple bench behind him. The sea remains clearly visible across the right half of the background beyond a low coastal railing; a small distant lighthouse stands near the far-right horizon. A low dawn sun and a cloudy sky appear above the sea. Keep the man, bouquet, bus stop, and sea all clearly visible."
+  },
+  "scenePromptSha256": "b0cce962e1f985ecf739abb5f45f17c6f3f5db46d7e4036d53d0c5639902a6f1",
+  "references": [],
+  "toolParameters": {
+    "transparent_background": false
+  },
+  "girlStylePromptSha256": "c0461e889da499d20f4f920df93b4345a07f3f1c2c1d7cc1601be1ff3531b08f",
+  "baseYouthFrozenManifestSha256": "d0ca5125aa3c8bc251a58420a43c46bd3c9e9e18d103c14d2bbde01d329f4918",
+  "existingYouthResultsSha256": "e8f3b666af95bf82cfd78e1e935aa97a9e1309da2abbcbf41b535fb18d337721",
+  "generationContract": "Submit entries[0].generationPrompt exactly, no added instructions and no references. Record actual text, submission time, output PNG and SHA-256; leave model/seed unknown if not returned. Never reuse girl/station or existing youth images. No pastel or other-style generation authorized here. Keep original youth75 frozen entries and six actual records unchanged; new output will be imported separately after receipt. No publication in this task.",
+  "historicalReference": {
+    "libraryFileId": "libfile_c31d0e4f304881919b495428212c873f",
+    "sourceSha256": "9d6e0c44ecca9bf76cb4da233ad61ecb061b2cc3df5d7149141b771510e09c02",
+    "usage": "Scene-selector thumbnail only. Historical shorter dawn brief, not a generated result for this controlled scene version."
+  },
+  "entries": [
+    {
+      "slug": "anime-relaxed-simplified",
+      "name": "Relaxed Simplified Anime",
+      "stylePrompt": "Create a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.",
+      "stylePromptSha256": "c0461e889da499d20f4f920df93b4345a07f3f1c2c1d7cc1601be1ff3531b08f",
+      "scenePrompt": "Create one wide 16:9 landscape image, with no border or typography. A young adult East Asian man with tousled dark brown hair and brown eyes wears a mustard-yellow hooded raincoat over a white knit sweater and a black backpack. He holds a small bouquet of sunflowers in both hands at chest level, with the entire bouquet visible near the lower edge. Frame him from the waist up in a medium close-up, slightly left of center: his head, torso, and bouquet should fill most of the left half of the image. His body is turned three-quarters to the right, and he looks toward the right with a quiet, thoughtful expression. He stands at a glass-sided seaside bus stop at dawn. The shelter roof and glass supports recede diagonally from the upper left, with a simple bench behind him. The sea remains clearly visible across the right half of the background beyond a low coastal railing; a small distant lighthouse stands near the far-right horizon. A low dawn sun and a cloudy sky appear above the sea. Keep the man, bouquet, bus stop, and sea all clearly visible.",
+      "scenePromptSha256": "b0cce962e1f985ecf739abb5f45f17c6f3f5db46d7e4036d53d0c5639902a6f1",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian man with tousled dark brown hair and brown eyes wears a mustard-yellow hooded raincoat over a white knit sweater and a black backpack. He holds a small bouquet of sunflowers in both hands at chest level, with the entire bouquet visible near the lower edge. Frame him from the waist up in a medium close-up, slightly left of center: his head, torso, and bouquet should fill most of the left half of the image. His body is turned three-quarters to the right, and he looks toward the right with a quiet, thoughtful expression. He stands at a glass-sided seaside bus stop at dawn. The shelter roof and glass supports recede diagonally from the upper left, with a simple bench behind him. The sea remains clearly visible across the right half of the background beyond a low coastal railing; a small distant lighthouse stands near the far-right horizon. A low dawn sun and a cloudy sky appear above the sea. Keep the man, bouquet, bus stop, and sea all clearly visible.\n\nVISUAL STYLE\nCreate a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.",
+      "generationPromptSha256": "3c469230fc80e444b1b245eb114790d7a583b18f77877c422526dd686dfbe713",
+      "expectedImagePath": "/images/young-man/anime-relaxed-simplified.webp",
+      "statusAtFreeze": "not-sent"
+    }
+  ]
+}

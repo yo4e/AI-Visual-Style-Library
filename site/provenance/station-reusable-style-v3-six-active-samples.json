@@ -1,0 +1,67 @@
+{
+  "revision": "station-reusable-style-v3-six-followup",
+  "benchmarkId": "station-map-v3",
+  "benchmarkVersion": "3.0",
+  "images": [
+    {
+      "slug": "gouache",
+      "imagePath": "/images/station-reusable-v3/gouache.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Opaque matte brushwork, simplified expressive face, warm neutrals and sunlit station scene are visible. Woman, hands, map, platform and train are recognizable; the map's bottom edge is clipped at the center/right. Fine background and map detail is abundant, though it remains painted rather than photographic.",
+        "ja": "不透明な筆跡とマットな色面は見られますが、地図の中央から右の下端が切れています。背景と地図の細部も多めです。"
+      },
+      "submittedPromptSha256": "58286fee3cadbcc01982c20274738b11b8d7e5eb673e2990669aeda89dc6f390"
+    },
+    {
+      "slug": "pixel-art",
+      "imagePath": "/images/station-reusable-v3/pixel-art.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Pixel-like stepped contours and block shading with anime-inspired features are clear; station objects remain readable. Train stripe retains a teal/cyan appearance rather than being translated entirely into the named navy/slate palette. A strict 320-by-180 logical grid and nearest-neighbor enlargement are not verified by visual inspection; some areas appear smoother than hard discrete pixel bands. The map's lowest central fold reaches the lower image edge.",
+        "ja": "階段状の輪郭とブロック状の陰影は見られますが、列車の帯には指定パレット外の青緑が残っています。厳密な320×180の論理グリッドと最近傍拡大は目視で確認できず、一部の階調は滑らかです。地図の下端が画面に接しています。"
+      },
+      "submittedPromptSha256": "a09292f27e3340c11b60a7bdc3002849c8ee788d23148f2b7a364f915298b202"
+    },
+    {
+      "slug": "photo-medium-format",
+      "imagePath": "/images/station-reusable-v3/photo-medium-format.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Photographic skin, fabric and reflected daylight are convincing; pose, expression and station remain recognizable. Background is softly separated without losing the train and platform. Train body reads silver-gray rather than distinctly white; the map's central lower tip is clipped at the frame edge.",
+        "ja": "肌・布・反射光の写真表現は見られます。列車は白より銀灰色に見え、地図の中央の下端が切れています。"
+      },
+      "submittedPromptSha256": "bee03a88fe037885478c968303a43c4a586c7acd27bee7104c403dc1dda4315c"
+    },
+    {
+      "slug": "fiction-editorial-acrylic",
+      "imagePath": "/images/station-reusable-v3/fiction-editorial-acrylic.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Natural proportions and narrative action are retained, with visible opaque brushwork and sunlit value groups. Paint texture is quite dense throughout the frame, including background, rather than being selectively restrained. The map's lower right edge is clipped at the frame bottom.",
+        "ja": "不透明な筆跡と自然な比率は見られますが、背景も含め質感が全体に密です。地図の右下が画面の下端で切れています。"
+      },
+      "submittedPromptSha256": "1f73327809259171e78b64ee6dbe1772b9a0fbd5d68c4eb19a3da39f0e7d1a2c"
+    },
+    {
+      "slug": "photo-mystery",
+      "imagePath": "/images/station-reusable-v3/photo-mystery.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Photorealistic daylight station scene, full map, natural skin and a restrained cool background are preserved. No added mystery props or events are visible; train and platform remain legible. The mystery mood and layered-shadow treatment are subtle, visually close to ordinary editorial photography; train body appears silver-gray rather than distinctly white.",
+        "ja": "追加の事件や小道具はなく、場面は保たれています。謎めいた雰囲気と重なる影は控えめで、通常の観察写真に近い見本です。列車は白より銀灰色に見えます。"
+      },
+      "submittedPromptSha256": "69f0292d15fad7023f61e15cf5186b06746d47cd47a9a7ac4ae3cb2b42b3a4bd"
+    },
+    {
+      "slug": "photo-horror",
+      "imagePath": "/images/station-reusable-v3/photo-horror.webp",
+      "model": null,
+      "qualityNotes": {
+        "en": "Cyan-green daylight grading, deep shadows, pale sidelight, subdued red coat and photographic grain produce a visibly uneasy mood. Woman, full map, platform and train remain recognizable; daylight is retained and no creatures, injuries or horror props appear. The platform surface looks wet/glossy, a detail not specified by the scene; the shaded train body reads dark silver-gray rather than white. Expression appears somewhat more apprehensive than merely curious, but retains the requested upward-right gaze.",
+        "ja": "青緑の色調と深い影は見られます。場面に指定のない濡れたような床の光沢があり、陰の列車は暗い銀灰色に見えます。表情は指定よりやや不安げです。"
+      },
+      "submittedPromptSha256": "b1b800ff4312ede61bbf767a1a6835430fc7d2c725387da73b704425a191f5ca"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "sunflowers-original-brief-v1",
+  "benchmarkVersion": "1.0",
+  "images": [
+    {
+      "slug": "anime-relaxed-simplified",
+      "benchmarkId": "sunflowers-original-brief-v1",
+      "benchmarkVersion": "1.0",
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate a wide 16:9 image of a young man in a mustard-yellow raincoat holding a small bouquet of sunflowers at a seaside bus stop at dawn. Show the bus stop, sea, and cloudy sky clearly. No typography.\n\nVISUAL STYLE\nCreate a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.",
+      "submittedPromptSha256": "c0bece1875e32172d7fbf00f4beb969de69f5d8201e016455aecaa12b3ef2817",
+      "submittedAt": "2026-10-18T03:15:18Z",
+      "generatedAt": "2026-10-18T03:15:46Z",
+      "sourceSha256": "c933dc4881e49f86d6ebdf80f5aca1581951d9e0b6e3c382c4be01ef9d19445c",
+      "sourceBytes": 2345830,
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "sourceLibraryFileId": "libfile_e6b72cf2da248191969df22caa56b671",
+      "sourceFileId": "file_00000000dfc08211beb693a2dc761d8a",
+      "tool": "image_gen",
+      "references": [],
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "model": null,
+      "seed": null,
+      "submissionEvidence": {
+        "kind": "trusted-parent-handoff",
+        "sourceThreadId": "01a139f8-1f4a-7319-9db6-3ea3f5dfb005",
+        "statement": "Parent confirms new generation with exact corrected combined prompt SHA c0bece1875e32172d7fbf00f4beb969de69f5d8201e016455aecaa12b3ef2817, no references and opaque background. Time window reported; raw tool-call log not transferred."
+      },
+      "qualityNotes": {
+        "en": "The new image uses the recovered short scene exactly and the same rendering prompt as the girl sample. It shows a wide view and one hand in a pocket, although neither was explicitly required. Fine clouds, reflections and timetable-like markings remain despite the simplified/no-typography instructions.",
+        "ja": "保存されていた短い場面文と、女の子と同一の絵柄文で生成した見本です。原文に明記のない引きの構図と片手ポケットも見られます。省略・文字なしの指定に対して、雲や反射、時刻表のような細かな描写は残っています。"
+      },
+      "sourceFile": "exec-d3e48317-3a37-4a86-a6b2-eb142373a82f.png",
+      "imagePath": "/images/young-man-original-brief/anime-relaxed-simplified.webp",
+      "imageSha256": "c90a37faafb06cadae4ff106797913ca42733aad6f0333bf3cf697254ec9fa38",
+      "imageBytes": 97514,
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "frozenManifestFile": "young-man-original-brief-relaxed-simplified-prompts-before-generation.json",
+      "frozenManifestSha256": "2d0d181489993cefc9384981a5d1351082a90ae922cd06996acf582f1145a2f1",
+      "conversion": {
+        "resizeWidth": 960,
+        "kernel": "lanczos3",
+        "format": "webp",
+        "quality": 86,
+        "crop": false,
+        "colorEdits": false
+      }
+    }
+  ]
+}

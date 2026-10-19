@@ -8,6 +8,15 @@ import {mangaStyles} from './manga-styles.js';
 import { bookStyles } from "./book-styles.js";
 import {englishBookStyle} from "./book-style-english.js";
 import {languageLabels} from "./locale-labels.js";
+import {stationReusableStyleMetadataV2} from "./station-reusable-style-metadata-v2.js";
+import {stationReusableStyleRevisionsV2} from "./station-reusable-style-revisions-v2.js";
+import stationReplacements from "../provenance/station-reusable-style-v2-eight-active-samples.json" with { type: "json" };
+import {stationReusableStyleFollowupV3} from "./station-reusable-style-followup-v3.js";
+import stationFollowups from "../provenance/station-reusable-style-v3-six-active-samples.json" with { type: "json" };
+import {relaxedSimplifiedAnimeStyles} from './relaxed-simplified-anime.js';
+import {relaxedSimplifiedAnimePastelStyles} from './relaxed-simplified-anime-pastel.js';
+import adoptedColorSamples from '../provenance/station-color-adoption-active-samples.json' with { type: 'json' };
+import {stationColorAdoptionMetadata} from './station-color-adoption-metadata.js';
 export const benchmark = {
   id: "station-map-v3",
   label: "The station map",
@@ -178,8 +187,8 @@ const originalStyles = [
   },
 ];
 
-export function combinedPrompt(style) {
-  return `Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\n${benchmark.characterPrompt}\n\nVISUAL STYLE\n${style.stylePrompt}`;
+export function combinedPrompt(style, scene = benchmark) {
+  return `Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\n${scene.characterPrompt}\n\nVISUAL STYLE\n${style.stylePrompt}`;
 }
 
 const existingNames = ['水彩','リソグラフ','ガッシュ','墨絵','ピクセルアート','35mm フィルム'];
@@ -202,7 +211,9 @@ const originalWatchJa = [
 ];
 const familyIds={'アニメ・漫画':'anime','ライトノベル':'light-novel','純文学・静かな装丁':'literary','写真・実写寄り':'photographic','一般文芸・大衆文学':'fiction'};
 const densityIds={'抜け感':'airy','ほどよい':'balanced','リッチ':'rich'};
-export const styles = [
+// Original prompt/image pairs remain available for historical generation records
+// and the already-frozen youth v1.0 work.
+export const historicalStyles = [
  ...originalStyles.map((style,i)=>({
   ...style, family:'original', density:'balanced',
   generationStylePrompt:style.stylePrompt,
@@ -225,12 +236,34 @@ export const styles = [
  ...adultEverydayCelStyles,
 ];
 
+export const preColorReviewStyles = [...historicalStyles.map(style => {
+ const sample = stationReplacements.images.find(sample => sample.slug === style.slug) || stationFollowups.images.find(sample => sample.slug === style.slug);
+ if (!sample) return style;
+ const stylePrompt = stationReusableStyleRevisionsV2[style.slug] || stationReusableStyleFollowupV3[style.slug];
+ const metadata = stationReusableStyleMetadataV2[style.slug] || {};
+ const {ja, ...englishMetadata} = metadata;
+ return {...style, ...englishMetadata, translations:{...style.translations, ja:{...style.translations.ja, ...ja}}, stylePrompt, generationStylePrompt:stylePrompt, image:sample.imagePath, sampleRecord:sample, sampleModel:sample.model};
+}), ...relaxedSimplifiedAnimeStyles, ...relaxedSimplifiedAnimePastelStyles];
+
+// Keep the previous prompt/image pairs available for immutable generation history.
+export const techniqueFamilies = {watercolor: 'painting', risograph: 'printmaking', gouache: 'painting', 'ink-wash': 'ink-drawing', 'pixel-art': 'pixel-art', '35mm-film': 'photographic'};
+export const styles = preColorReviewStyles.map(style => {
+ const sample = adoptedColorSamples.images.find(sample => sample.slug === style.slug);
+ const family = techniqueFamilies[style.slug] || style.family;
+ if (!sample) return family === style.family ? style : {...style, family};
+ const metadata = stationColorAdoptionMetadata[style.slug];
+ return {...style, ...metadata.en, family,
+  translations: {...style.translations, ja: {...style.translations.ja, ...metadata.ja}},
+  stylePrompt: sample.stylePrompt, generationStylePrompt: sample.stylePrompt,
+  image: sample.imagePath, imageStatus: 'ready', sampleRecord: sample, sampleModel: sample.model};
+});
+
 export function getStyles(locale='en') {
  return styles.map(style=>({...style,...(style.translations[locale]||{}),familyLabel:languageLabels[locale].family[style.family],densityLabel:languageLabels[locale].density[style.density],vocabularyLabels:style.translations[locale]?.vocabularyLabels||style.vocabulary}));
 }
 export const filterDefinitions = [
  {key:'density',label:'描き込みの密度',values:['airy','balanced','rich']},
- {key:'family',label:'用途・系統',values:['anime','light-novel','literary','photographic','fiction','manga','original']},
+ {key:'family',label:'用途・系統',values:['painting','printmaking','ink-drawing','pixel-art','anime','light-novel','literary','photographic','fiction','manga']},
 ];
 export const quickTraits = ['フラット','ラノベ','純文学','線画','版画'];
 // Keep the exact submitted text separate from the current English copy-ready version.

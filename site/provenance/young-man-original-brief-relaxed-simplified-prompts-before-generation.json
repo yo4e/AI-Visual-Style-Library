@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "frozenAt": "2026-10-18T03:13:44.741Z",
+  "benchmarkId": "sunflowers-original-brief-v1",
+  "benchmarkVersion": "1.0",
+  "scene": {
+    "id": "sunflowers-original-brief-v1",
+    "version": "1.0",
+    "label": "Sunflowers at the seaside — original brief",
+    "alt": "a young man in a mustard-yellow raincoat holding sunflowers at a seaside bus stop at dawn",
+    "characterPrompt": "Create a wide 16:9 image of a young man in a mustard-yellow raincoat holding a small bouquet of sunflowers at a seaside bus stop at dawn. Show the bus stop, sea, and cloudy sky clearly. No typography."
+  },
+  "references": [],
+  "toolParameters": {
+    "transparent_background": false
+  },
+  "targetStyleId": "anime-relaxed-simplified",
+  "sourceVerification": {
+    "originalSourceRecord": "/Users/yo4e/Codex/2026-10-11/task/future-work/sunflower-source-record.json",
+    "recordCreatedJst": "2026-10-12T08:56:19.931203+09:00",
+    "originalGenerationCompletedUtc": "2026-09-23T06:44:39.925Z",
+    "originalImageLibraryId": "libfile_c31d0e4f304881919b495428212c873f",
+    "originalImageSha256": "9d6e0c44ecca9bf76cb4da233ad61ecb061b2cc3df5d7149141b771510e09c02",
+    "originalFullWatercolorPromptSha256": "9a211e6232087a997da56fa0b98176252bcdd885e7f2bc8dbd27898dc4f124a1",
+    "originalSceneCopiedExactly": true,
+    "sourceSlackUrl": "https://w1770415140-3ik617062.slack.com/archives/C0C89AGSGE5/p1791763576288029?thread_ts=1791672823.525489&cid=C0C89AGSGE5",
+    "sourceSlackTimestamp": "1791763576.288029",
+    "explicitOriginalSaveRequestFound": false,
+    "sourceNote": "Actual2026-09-23 completed generation log revisedPrompt equals saved original record; original image visibly has wider framing/one hand pocket but the recovered original text does not explicitly require either. No such words were added. Original watercolor rendering paragraph is replaced by the exact current normal anime girl rendering paragraph."
+  },
+  "supersedesForThisRequest": {
+    "file": "young-man-relaxed-simplified-prompts-before-generation.json",
+    "reason": "The earlier job used the later waist-up/both-hands scene. Its result is retained historically and excluded from comparison."
+  },
+  "generationContract": "Parent generates one fresh opaque reference-free image using entries[0].generationPrompt exactly. No added words, references, pocket/framing clauses, or palette changes. Record actual full text/time/sourcePNG/hash. This is a separate original-brief benchmark; do not relabel older SUNFLOWERS-BUS-STOP-V1 images as matching it. No automatic publication.",
+  "entries": [
+    {
+      "slug": "anime-relaxed-simplified",
+      "name": "Relaxed Simplified Anime",
+      "stylePrompt": "Create a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.",
+      "stylePromptSha256": "c0461e889da499d20f4f920df93b4345a07f3f1c2c1d7cc1601be1ff3531b08f",
+      "scenePrompt": "Create a wide 16:9 image of a young man in a mustard-yellow raincoat holding a small bouquet of sunflowers at a seaside bus stop at dawn. Show the bus stop, sea, and cloudy sky clearly. No typography.",
+      "scenePromptSha256": "36254621ad615d0acb3c01dcc50533ac2533c7e06ebbe49b8aefe72272d19ac9",
+      "generationPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate a wide 16:9 image of a young man in a mustard-yellow raincoat holding a small bouquet of sunflowers at a seaside bus stop at dawn. Show the bus stop, sea, and cloudy sky clearly. No typography.\n\nVISUAL STYLE\nCreate a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.",
+      "generationPromptSha256": "c0bece1875e32172d7fbf00f4beb969de69f5d8201e016455aecaa12b3ef2817",
+      "statusAtFreeze": "not-sent",
+      "expectedImagePath": "/images/young-man-original-brief/anime-relaxed-simplified.webp"
+    }
+  ]
+}

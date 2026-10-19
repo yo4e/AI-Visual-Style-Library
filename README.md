@@ -12,14 +12,14 @@ The English interface on the live site. Samples share one subject and scene so y
 
 ## Choose a look, then make it your own
 
-1. Browse **75 styles** or filter by visual family and detail density. Search for qualities such as fine lines, flat color, paper texture, or photography.
+1. Browse **77 styles** or filter by visual family and detail density. Search for qualities such as fine lines, flat color, paper texture, or photography.
 2. Open a sample to read its line, shading, and texture traits. Select two to four styles to compare them on the same subject.
 3. Copy the **Style prompt** for your own subject, the **Subject, scene & composition prompt** used in the sample, or the combined instructions.
 4. Paste the instructions into your image-generation tool and adapt the subject or scene there.
 
 The site does not generate images. It offers English and Japanese explanations; copy-ready prompts remain English in both interfaces. The language choice is remembered locally, and `?lang=en` or `?lang=ja` overrides it.
 
-The catalog covers watercolor and other original techniques, anime, manga/comics, light-novel illustration, literary illustration, photography, and general-fiction illustration. Filter by visual family or choose a detail density, from deliberately sparse drawing to rich detail. All 75 existing styles remain available; some visual treatments overlap.
+The catalog covers watercolor and other original techniques, anime, manga/comics, light-novel illustration, literary illustration, photography, and general-fiction illustration. Filter by visual family or choose a detail density, from deliberately sparse drawing to rich detail. All 77 styles remain available; some visual treatments overlap.
 
 日本語でも絵柄の説明・検索・比較を利用できます。コピーするプロンプトは英語です。[日本語のライブラリ](https://avsl.4roz.com/?lang=ja)で絵柄を選び、自分の画像生成AIに貼り付けて使ってください。
 

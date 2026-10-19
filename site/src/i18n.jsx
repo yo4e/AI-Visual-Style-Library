@@ -2,6 +2,22 @@ import {createContext, useContext, useEffect, useState} from 'react';
 import {languageLabels} from "./locale-labels.js";
 export {languageLabels};
 const english = {
+ 'この見本について':'About this sample',
+ '種類の見本を生成済み':'style samples generated',
+ '生成用の場面':'Scene prepared for generation',
+ '人物・場面・全身構図を詳しく指定した青年の見本です。絵柄は女の子版と同じです。':'This young-man sample uses detailed instructions for the person, setting and full-body composition. Its rendering prompt is identical to the girl version.',
+ 'この場面の見本は未生成です。現在の英語プロンプトを表示しています。':'This scene sample has not been generated. The current English prompts are shown here.',
+ 'この画風の文には駅の人物・物体の指定が含まれています。元の画風文をそのまま保持しています。':'This style prompt includes station-specific subject or object instructions. Its original wording is preserved.',
+
+ '見本の場面を選ぶ':'Choose the sample scene',
+ '駅で地図を広げる女性':'Woman reading a map at the station',
+ '夜明けの海辺でひまわりを持つ青年':'Young man with sunflowers by the sea at dawn',
+ '青年の場面は、既存の水彩見本1枚を表示しています。':'This scene shows one existing watercolor sample of the young man.',
+ '黄色いコートの青年が、夜明けの海辺のバス停でひまわりを持つ場面':'A young man in a yellow coat holds sunflowers at a seaside bus stop at dawn',
+ '青年の場面の見本':'Young man scene sample',
+ '黄色いコートの青年が、夜明けの海辺のバス停でひまわりを持つ水彩画':'Watercolor of a young man in a yellow coat holding sunflowers at a seaside bus stop at dawn',
+ '既存の水彩見本 · 1枚。ほかの絵柄の見本は未生成です。':'One existing watercolor sample. Other styles have not been generated for this scene.',
+
  'このサイトを応援':'Support this site',
  '開発者にコーヒーをおごってください':'If you found this useful, buy me a coffee.',
  'コーヒーで応援':'Buy me a coffee',
@@ -48,7 +64,7 @@ const english = {
  '比較する絵柄を2種類以上選んでください':'Choose at least two styles to compare',
  '絵柄を探す':'Explore styles',
  '作りたい画像に、合う絵柄を。':'Find the look for your image.',
- 'アニメ、イラスト、版画、絵画、写真表現など75種類。線・塗り・質感や、描き込みの密度から選べます。':'Explore 75 styles across anime, illustration, printmaking, painting, and photography. Choose by lines, shading, texture, or detail density.',
+ 'アニメ、イラスト、版画、絵画、写真表現など77種類。線・塗り・質感や、描き込みの密度から選べます。':'Explore 77 styles across anime, illustration, printmaking, painting, and photography. Choose by lines, shading, texture, or detail density.',
  '名前・特徴で絵柄を検索':'Search styles by name or visual quality',
  '例：フラット、純文学、抜け感':'Try flat, literary, or breathing room',
  '検索':'Search',
@@ -110,7 +126,7 @@ export function LanguageProvider({children}) {
  useEffect(()=>{
   document.documentElement.lang=locale;
   document.title='AI Visual Style Library';
-  const description=locale==='ja'?'水彩・漫画・写真など75種類の絵柄を見本で比較。絵柄と人物・場面・構図の英語プロンプトを別々にコピーして、自分の画像生成AIで使えます。説明は日本語・英語に対応。':'Compare 75 image-generation styles, from watercolor to manga and photography. Copy English style and scene prompts, with English and Japanese descriptions.';
+  const description=locale==='ja'?'水彩・漫画・写真など77種類の絵柄を見本で比較。絵柄と人物・場面・構図の英語プロンプトを別々にコピーして、自分の画像生成AIで使えます。説明は日本語・英語に対応。':'Compare 77 image-generation styles, from watercolor to manga and photography. Copy English style and scene prompts, with English and Japanese descriptions.';
   document.querySelectorAll('meta[name="description"], meta[property="og:description"], meta[name="twitter:description"]').forEach(meta=>{meta.content=description});
   try{localStorage.setItem('visual-style-language',locale)}catch{}
  },[locale]);

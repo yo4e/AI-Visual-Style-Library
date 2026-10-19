@@ -1,16 +1,16 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import {styles,getStyles,benchmark,combinedPrompt,generationPrompt,findStyles} from '../src/style-data.js';
+import {styles,historicalStyles,getStyles,benchmark,combinedPrompt,generationPrompt,findStyles} from '../src/style-data.js';
 const japanese=/[\u3040-\u9fff]/;
-test('75 distinct styles retain the original six and earlier visual families',()=>{
- assert.equal(styles.length,75);assert.equal(new Set(styles.map(s=>s.slug )).size,75);
+test('77 distinct styles retain the original six and earlier visual families',()=>{
+ assert.equal(styles.length,77);assert.equal(new Set(styles.map(s=>s.slug )).size,77);
  assert.deepEqual(styles.slice(0,6).map(s=>s.slug),['watercolor','risograph','gouache','ink-wash','pixel-art','35mm-film']);
- for(const family of ['anime','light-novel','literary'])assert.equal(findStyles({filters:{family}}).length,family==='anime'?11:10);
+ for(const family of ['anime','light-novel','literary'])assert.equal(findStyles({filters:{family}}).length,family==='anime'?13:10);
  assert.equal(findStyles({filters:{family:'manga'}}).length,16);
- assert.equal(findStyles({filters:{family:'photographic'}}).length,7);assert.equal(findStyles({filters:{family:'fiction'}}).length,15);
- assert.equal(findStyles({filters:{density:'airy'}}).length,25);
+ assert.equal(findStyles({filters:{family:'photographic'}}).length,8);assert.equal(findStyles({filters:{family:'fiction'}}).length,15);
+ assert.equal(findStyles({filters:{density:'airy'}}).length,27);
  assert.equal(findStyles({filters:{density:'rich'}}).length,18);
- assert.equal(new Set(styles.slice(6).map(s=>Object.values(s.characteristics).join('|') )).size,69);
+ assert.equal(new Set(styles.slice(6).map(s=>Object.values(s.characteristics).join('|') )).size,71);
 });
 test('both display languages copy English techniques, vocabulary, and sample instructions',()=>{
  for(const locale of ['en','ja'])for(const style of getStyles(locale)){
@@ -35,17 +35,17 @@ test('the combined sample keeps style and scene independent and matches generati
 });
 test('filters survive locale changes and search accepts both languages',()=>{
  for(const locale of ['en','ja']){
-  assert.equal(findStyles({query:'breathing room',locale}).length,25);
-  assert.equal(findStyles({query:'抜け感',locale}).length,25);
+  assert.equal(findStyles({query:'breathing room',locale}).length,27);
+  assert.equal(findStyles({query:'抜け感',locale}).length,27);
   assert.ok(findStyles({query:'flat',locale}).some(s=>s.slug==='flat-anime'));
   assert.ok(findStyles({query:'フラット',locale}).some(s=>s.slug==='flat-anime'));
  }
 });
 
-test('manga prompts were fixed before generation and use general visual traits',async()=>{
+test('historical manga prompts were fixed before generation and use general visual traits',async()=>{
  const {readFile}=await import('node:fs/promises');
  const frozen=JSON.parse(await readFile(new URL('../provenance/manga-prompts-before-generation.json',import.meta.url),'utf8'));
- const manga=styles.filter(s=>frozen.jobs.some(j=>j.slug===s.slug));assert.equal(frozen.jobs.length,8);
+ const manga=historicalStyles.filter(s=>frozen.jobs.some(j=>j.slug===s.slug));assert.equal(frozen.jobs.length,8);
  const forbidden=/jump|corocoro|nakayoshi|afternoon|ジャンプ|コロコロ|なかよし|アフタヌーン/i;
  assert.equal(new Set(manga.map(s=>s.stylePrompt)).size,8);
  for(const style of manga){const job=frozen.jobs.find(j=>j.slug===style.slug);assert.equal(job.stylePrompt,style.stylePrompt);assert.equal(job.scenePrompt,benchmark.characterPrompt);assert.equal(job.prompt,combinedPrompt(style));assert.ok(!forbidden.test(style.name+style.translations.ja.name+style.stylePrompt));assert.ok(!japanese.test(style.stylePrompt));}
@@ -57,26 +57,26 @@ test('four additional techniques use the exact English conditions saved before g
  for(const job of frozen.jobs){const style=styles.find(s=>s.slug===job.slug);assert.equal(style.stylePrompt,job.stylePrompt);assert.equal(job.prompt,combinedPrompt(style));assert.equal(job.scenePrompt,benchmark.characterPrompt);assert.ok(!forbidden.test([style.name,style.definition,style.stylePrompt,style.translations.ja.name,style.translations.ja.definition].join(' ')));}
 });
 
-test('suspense photos match frozen English instructions and actual reference-free submissions',async()=>{
+test('historical suspense photos match frozen English instructions and actual reference-free submissions',async()=>{
  const {readFile}=await import('node:fs/promises');
  const frozen=JSON.parse(await readFile(new URL('../provenance/photo-suspense-prompts-before-generation.json',import.meta.url),'utf8'));
  const actual=JSON.parse(await readFile(new URL('../provenance/photo-suspense-generation-records.json',import.meta.url),'utf8'));
  assert.deepEqual(frozen.jobs.map(j=>j.slug),['photo-mystery','photo-horror']);
  for(const job of frozen.jobs){
-  const style=styles.find(s=>s.slug===job.slug),submitted=actual.find(j=>j.slug===job.slug);
+  const style=historicalStyles.find(s=>s.slug===job.slug),submitted=actual.find(j=>j.slug===job.slug);
   assert.equal(style.family,'photographic');assert.equal(style.stylePrompt,job.stylePrompt);
   assert.equal(combinedPrompt(style),job.prompt);assert.equal(submitted.actualSubmittedPrompt,job.prompt);
   assert.deepEqual(submitted.actualSubmittedReferences,[]);assert.equal(submitted.submittedPromptSha256,job.submittedPromptSha256);
  }
 });
 
-test('approved manga options preserve the original frozen prompts and actual submission aliases',async()=>{
+test('historical approved manga options preserve the original frozen prompts and actual submission aliases',async()=>{
  const {readFile}=await import('node:fs/promises');
  const frozen=JSON.parse(await readFile(new URL('../provenance/manga-variant-options-prompts-before-generation.json',import.meta.url),'utf8'));
  const actual=JSON.parse(await readFile(new URL('../provenance/manga-variant-options-generation-records.json',import.meta.url),'utf8'));
  assert.equal(frozen.jobs.length,4);assert.equal(frozen.frozenAt,'2026-10-11T03:11:17.234Z');
  for(const job of frozen.jobs){
-  const style=styles.find(s=>s.slug===job.slug),submitted=actual.find(j=>j.slug===job.slug);
+  const style=historicalStyles.find(s=>s.slug===job.slug),submitted=actual.find(j=>j.slug===job.slug);
   assert.equal(style.stylePrompt,job.stylePrompt);assert.equal(combinedPrompt(style),job.prompt);
   assert.equal(submitted.actualSubmittedPrompt,job.prompt);assert.equal(submitted.generationSlug,job.generationSlug);
   assert.deepEqual(submitted.actualSubmittedReferences,[]);assert.equal(submitted.submittedPromptSha256,job.submittedPromptSha256);
@@ -84,14 +84,14 @@ test('approved manga options preserve the original frozen prompts and actual sub
  }
 });
 
-test('adult editorial additions match frozen English prompts and reference-free actual submissions',async()=>{
+test('historical adult editorial additions match frozen English prompts and reference-free actual submissions',async()=>{
  const {readFile}=await import('node:fs/promises');
  const frozen=JSON.parse(await readFile(new URL('../provenance/adult-fiction-prompts-before-generation.json',import.meta.url),'utf8'));
  const actual=JSON.parse(await readFile(new URL('../provenance/adult-fiction-generation-records.json',import.meta.url),'utf8'));
  const forbidden=/半沢|有川|池井戸|阪急電車|県庁おもてなし|hanzawa|arikawa|ikeido/i;
  assert.equal(frozen.jobs.length,5);assert.equal(actual.length,5);
  for(const job of frozen.jobs){
-  const style=styles.find(s=>s.slug===job.slug),submitted=actual.find(j=>j.slug===job.slug);
+  const style=historicalStyles.find(s=>s.slug===job.slug),submitted=actual.find(j=>j.slug===job.slug);
   assert.equal(style.family,'fiction');assert.equal(style.stylePrompt,job.stylePrompt);
   assert.equal(job.scenePrompt,benchmark.characterPrompt);assert.equal(combinedPrompt(style),job.prompt);
   assert.equal(submitted.actualSubmittedPrompt,job.prompt);assert.deepEqual(submitted.actualSubmittedReferences,[]);
@@ -100,14 +100,14 @@ test('adult editorial additions match frozen English prompts and reference-free 
  }
 });
 
-test('bold design additions preserve saved English instructions and actual reference-free submissions',async()=>{
+test('historical bold design additions preserve saved English instructions and actual reference-free submissions',async()=>{
  const {readFile}=await import('node:fs/promises');
  const frozen=JSON.parse(await readFile(new URL('../provenance/bold-editorial-prompts-before-generation.json',import.meta.url),'utf8'));
  const actual=JSON.parse(await readFile(new URL('../provenance/bold-editorial-generation-records.json',import.meta.url),'utf8'));
  const forbidden=/半沢|有川|池井戸|阪急電車|県庁おもてなし|hanzawa|arikawa|ikeido/i;
  assert.equal(frozen.jobs.length,5);assert.equal(actual.length,5);
  for(const job of frozen.jobs){
-  const style=styles.find(s=>s.slug===job.slug),record=actual.find(r=>r.slug===job.slug);
+  const style=historicalStyles.find(s=>s.slug===job.slug),record=actual.find(r=>r.slug===job.slug);
   assert.equal(job.stylePrompt,style.stylePrompt);assert.equal(job.scenePrompt,benchmark.characterPrompt);
   assert.equal(job.prompt,combinedPrompt(style));assert.equal(record.actualSubmittedPrompt,job.prompt);
   assert.equal(record.submittedPromptSha256,job.submittedPromptSha256);assert.deepEqual(record.actualSubmittedReferences,[]);

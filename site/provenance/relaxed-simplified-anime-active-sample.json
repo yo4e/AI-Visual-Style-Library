@@ -1,0 +1,47 @@
+{
+  "slug": "anime-relaxed-simplified",
+  "benchmarkId": "station-map-v3",
+  "benchmarkVersion": "3.0",
+  "imagePath": "/images/anime-relaxed-simplified.webp",
+  "sourceFile": "exec-018297cd-17fc-4752-a434-9387766b60c4.png",
+  "sourceLibraryFileId": "libfile_323f58d92c1c81918aa7040e5d34b415",
+  "sourceSha256": "70d75665dfd814ed3c2290d927fde62e42d533bc1a6bd6ec464f46e7e3f756b6",
+  "sourceBytes": 2033714,
+  "sourceWidth": 1672,
+  "sourceHeight": 941,
+  "imageSha256": "97e47c0a7df634ac9e47adeaf35b853458bc77c99f844c67e8dfd4b0eb97c413",
+  "imageWidth": 960,
+  "imageHeight": 540,
+  "imageBytes": 77396,
+  "webpQuality": 86,
+  "conversion": {
+    "resizeWidth": 960,
+    "kernel": "lanczos3",
+    "format": "webp",
+    "crop": false,
+    "colorEdits": false
+  },
+  "generatedOn": "2026-10-18",
+  "tool": "image_gen",
+  "toolParameters": {
+    "transparent_background": false
+  },
+  "model": null,
+  "seed": null,
+  "references": [],
+  "submittedAt": "2026-10-18T01:06:59Z",
+  "completedAt": "2026-10-18T01:07:38Z",
+  "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nCreate a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.",
+  "submittedPromptSha256": "a895391311907042b4b958b794327d5fb488b71a5609e31e92ce26146179c16a",
+  "frozenManifestSha256": "f92106a2ca12266528afa27643c8b3d5f8ee7cffd303c2bab7dce70ea5eb8a31",
+  "promptFrozenAt": "2026-10-18T01:04:47.455Z",
+  "submissionEvidence": {
+    "kind": "trusted-parent-handoff",
+    "sourceThreadId": "01a139f8-1f4a-7319-9db6-3ea3f5dfb005",
+    "statement": "Parent confirmed one built-in generation using the full saved V2 generationPrompt, no added text, no image references and opaque background. Raw tool-call log was not transferred; submitted text/time fields are based on that trusted handoff."
+  },
+  "qualityNotes": {
+    "en": "Broad hair locks and restrained cel shadows are visible, and the requested colors remain recognizable. The figure is closer to calm conventional anime than strong deformation; the map and station background retain considerable detail. The waist-up crop does not establish a full-body 5.5–6-head proportion.",
+    "ja": "大きな髪の束と控えめなセル影が見られ、指定色も保たれています。強いデフォルメより落ち着いた通常のアニメに近く、地図と駅の背景は細かめです。上半身の構図なので、全身の5.5〜6頭身は検証できません。"
+  }
+}

@@ -34,3 +34,22 @@
 
 .support-section{display:flex;align-items:center;gap:18px;padding-bottom:42px}.support-section p{margin:0;color:#5d656b;font-size:14px;line-height:1.7}.coffee-button{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:10px 15px;border:1px solid var(--line);border-radius:5px;text-decoration:none;color:var(--accent-dark);background:#fff;font-size:13px;font-weight:600;white-space:nowrap}.coffee-button:hover{background:#faf0ec;border-color:var(--accent)}.coffee-button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}@media(max-width:580px){.support-section{flex-direction:column;align-items:flex-start;gap:12px;padding-bottom:30px}}
 .benchmark-caption{display:flex;flex-direction:column;gap:7px;min-width:0;line-height:1.6;letter-spacing:0;text-transform:none}.detail-image-foot{flex-wrap:wrap;align-items:flex-start}.detail-steps{flex-shrink:0}
+
+/* Compact scene choices stay visible at mobile widths. */
+.benchmark-note>.scene-selector{display:flex;gap:8px;max-width:none;margin:12px 0;padding:0;border:0}
+.scene-thumbnail{display:block;flex:0 0 auto;width:76px;min-height:46px;padding:3px;border:2px solid transparent;border-radius:5px;background:transparent}
+.scene-thumbnail img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:1px}
+.scene-thumbnail[aria-pressed=true]{border-color:var(--accent-dark)}
+.scene-thumbnail:hover{background:#edf1ec}
+.scene-thumbnail:focus-visible{outline:2px solid var(--accent-dark);outline-offset:3px}
+.scene-preview{max-width:900px;margin:0 auto;padding-top:20px;border-top:1px solid var(--line)}
+.scene-preview>img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+.scene-preview figcaption{margin-top:12px;color:var(--muted);font-size:13px;line-height:1.6}
+.header-actions button:disabled,.search-form button:disabled,.search-form input:disabled{opacity:.5;cursor:default}
+
+.card-compare:disabled,.detail-actions .primary-button:disabled{opacity:.5;cursor:default}
+.detail-visual>.sample-pending{flex:0 0 auto}
+.scene-style-note{font-size:12px;line-height:1.6;color:#795641}
+.scene-progress{display:block;margin:0 0 10px;color:var(--muted);font:12px/1.5 var(--sans)}
+.sample-observation{padding:10px 12px;background:#f7f5ef;color:#5f574c;font-size:12px;line-height:1.7}
+.compare-column>.sample-observation{min-height:0;font-size:12px}

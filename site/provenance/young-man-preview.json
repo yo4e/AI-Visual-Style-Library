@@ -1,0 +1,23 @@
+{
+  "sourceSha256": "9d6e0c44ecca9bf76cb4da233ad61ecb061b2cc3df5d7149141b771510e09c02",
+  "generatedAt": "2026-09-23T06:44:39.925Z",
+  "sourceThread": "01a0cc90-aab0-7fc3-9fc1-eb5063543feb",
+  "scenePrompt": "Create a wide 16:9 image of a young man in a mustard-yellow raincoat holding a small bouquet of sunflowers at a seaside bus stop at dawn. Show the bus stop, sea, and cloudy sky clearly. No typography.",
+  "stylePromptFromExecutedRead": "Render the subject as a hand-painted watercolor illustration with contemporary Japanese animation-inspired drawing when people appear: simplified expressive faces and very fine pencil-like contours, never photorealistic skin. Layer transparent pigment over visible cold-press paper. Let pale powder-blue and warm beige washes bleed and pool softly in the background while retaining crisp, delicate detail at the focal face and hands. Leave luminous paper-white highlights and use one richer warm accent from the subject. The result should feel airy and visibly painted with water. Avoid realistic portrait rendering, opaque digital paint, thick black outlines, and smooth computer gradients.",
+  "submittedPrompt": "Create a wide 16:9 image of a young man in a mustard-yellow raincoat holding a small bouquet of sunflowers at a seaside bus stop at dawn. Show the bus stop, sea, and cloudy sky clearly. No typography.\n\nRender the subject as a hand-painted watercolor illustration with contemporary Japanese animation-inspired drawing when people appear: simplified expressive faces and very fine pencil-like contours, never photorealistic skin. Layer transparent pigment over visible cold-press paper. Let pale powder-blue and warm beige washes bleed and pool softly in the background while retaining crisp, delicate detail at the focal face and hands. Leave luminous paper-white highlights and use one richer warm accent from the subject. The result should feel airy and visibly painted with water. Avoid realistic portrait rendering, opaque digital paint, thick black outlines, and smooth computer gradients.",
+  "note": "Original alternative-subject watercolor sample; not an existing station-map catalog benchmark.",
+  "libraryFileId": "libfile_c31d0e4f304881919b495428212c873f",
+  "usage": "One existing original for the scene-selector prototype; no new generation and no 75-style youth benchmark.",
+  "model": null,
+  "seed": null,
+  "assets": [
+    {
+      "path": "/images/scenes/young-man-sunflowers.webp",
+      "sha256": "6e7bae1e2e8f144177bc82e6b5379a3aea588ec3bce6ed1e4357c02a054d4dbd"
+    },
+    {
+      "path": "/images/scenes/young-man-sunflowers-thumb.webp",
+      "sha256": "e09f23dcf18d1671b00c635d91359977e1252b0a679df9d6e12b173cfcd13020"
+    }
+  ]
+}

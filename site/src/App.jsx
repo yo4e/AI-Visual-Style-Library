@@ -2,15 +2,19 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, ArrowsDownUp, BookOpen, CaretDown, Check, Coffee, Copy, MagnifyingGlass, Plus, SlidersHorizontal, X } from "@phosphor-icons/react";
 import { benchmark, combinedPrompt, filterDefinitions, findStyles, quickTraits, styles, getStyles } from "./style-data";
 import { LanguageToggle, useLanguage, languageLabels } from "./i18n.jsx";
+import { hasSceneSample, styleForScene } from "./scene-data.js";
 const knownSlugs = new Set(styles.map(style => style.slug));
 const initialParams = new URLSearchParams(window.location.search);
-const initialCompare = (initialParams.get("compare") || "").split(",").filter(slug => knownSlugs.has(slug)).slice(0, 4);
+const initialScene = initialParams.get("scene") === "young-man" ? "young-man" : "station";
+const initialCompare = (initialParams.get("compare") || "").split(",").filter(slug => knownSlugs.has(slug) && hasSceneSample(initialScene, slug)).slice(0, 4);
 const initialDetail = knownSlugs.has(initialParams.get("style")) ? initialParams.get("style") : null;
 function syncUrl({
+  scene,
   detail,
   compare
 }) {
   const url = new URL(window.location.href);
+  if (scene === "young-man") url.searchParams.set("scene", scene);else url.searchParams.delete("scene");
   if (detail) url.searchParams.set("style", detail);else url.searchParams.delete("style");
   if (compare?.length >= 2) url.searchParams.set("compare", compare.join(","));else url.searchParams.delete("compare");
   window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
@@ -39,7 +43,7 @@ function FilterSelect({
       <span className="sr-only">{t(definition.label)}</span>
       <select value={value || ""} onChange={event => onChange(definition.key, event.target.value)}>
         <option value="">{t(definition.label)}</option>
-        {definition.values.map(option => <option key={option} value={option}>{languageLabels[locale][definition.key][option]}</option>)}
+        {definition.values.filter(option => languageLabels[locale][definition.key][option]).map(option => <option key={option} value={option}>{languageLabels[locale][definition.key][option]}</option>)}
       </select>
       <CaretDown size={14} weight="bold" aria-hidden="true" />
     </label>;
@@ -57,17 +61,17 @@ function StyleCard({
   } = useLanguage();
   return <article className="style-card">
       <button className="style-image-button" type="button" onClick={() => onOpen(style.slug)} aria-label={`${t("詳しく見る")}: ${style.name}`}>
-        <StyleImage style={style} alt={locale === "ja" ? `${style.name}で描いた、赤いコートの女性が駅で地図を見る場面` : `${style.name} interpretation of ${benchmark.alt}`} loading={eager ? "eager" : "lazy"} />
+        <StyleImage style={style} alt={`${style.name}: ${style.sampleBenchmark.alt}`} loading={eager ? "eager" : "lazy"} />
         <span className="image-open-label">{t("詳しく見る")}<ArrowRight size={16} aria-hidden="true" /></span>
       </button>
       <div className="card-heading-row">
         <button className="card-title" type="button" onClick={() => onOpen(style.slug)}>{style.name}</button>
-        <button className={`card-compare ${selected ? "is-selected" : ""}`} type="button" aria-pressed={selected} onClick={() => onCompare(style.slug)} aria-label={`${selected ? t("比較から削除") : t("比較へ追加")}: ${style.name}`}>
+        <button className={`card-compare ${selected ? "is-selected" : ""}`} type="button" disabled={style.imageStatus === "pending"} aria-pressed={selected} onClick={() => onCompare(style.slug)} aria-label={`${selected ? t("比較から削除") : t("比較へ追加")}: ${style.name}`}>
           {selected ? <Check size={16} weight="bold" aria-hidden="true" /> : <Plus size={16} aria-hidden="true" />}
           <span>{selected ? t("選択済み") : t("比較")}</span>
         </button>
       </div>
-      <p className="card-short">{style.short}</p><div className="style-tags"><span>{style.familyLabel}</span><span>{style.densityLabel}</span></div>
+      <p className="card-short">{style.short}</p><div className="style-tags">{style.familyLabel && <span>{style.familyLabel}</span>}<span>{style.densityLabel}</span></div>
     </article>;
 }
 function ModalFrame({
@@ -128,11 +132,11 @@ function DetailModal({
   return <ModalFrame label={`${style.name}: ${t("詳細")}`} onClose={onClose} wide>
       <div className="detail-layout">
         <div className="detail-visual">
-          <StyleImage style={style} alt={locale === "ja" ? `${style.name}で描いた駅の比較用見本` : `${style.name} benchmark example at a train platform`} />
+          <StyleImage style={style} alt={`${style.name}: ${style.sampleBenchmark.alt}`} />
           <div className="detail-image-foot">
             <div className="benchmark-caption">
-              <span>{t("ベンチマーク")} / {benchmark.id.toUpperCase()}</span>
-              <span>{t("画像生成モデル")} / GPT Image 2</span>
+              <span>{t(style.imageStatus === "pending" ? "生成用の場面" : "ベンチマーク")} / {t(style.sampleBenchmark.id === benchmark.id ? "駅で地図を広げる女性" : "夜明けの海辺でひまわりを持つ青年")} · {style.sampleBenchmark.id.toUpperCase()}</span>
+              {style.sampleModel && <span>{t("画像生成モデル")} / {style.sampleModel}</span>}
             </div>
             <div className="detail-steps">
               <button type="button" onClick={() => onNavigate(previous.slug)} aria-label={`${t("前の絵柄")}: ${previous.name}`}><ArrowLeft size={20} /></button>
@@ -142,7 +146,7 @@ function DetailModal({
           </div>
         </div>
         <div className="detail-copy">
-          <div className="modal-topline"><LanguageToggle /><span>{t("絵柄ガイド")} / {style.familyLabel.toUpperCase()}</span><button type="button" onClick={onClose} data-modal-close aria-label={t("詳細を閉じる")}><X size={22} /></button></div>
+          <div className="modal-topline"><LanguageToggle /><span>{t("絵柄ガイド")}{style.familyLabel && ` / ${style.familyLabel.toUpperCase()}`}</span><button type="button" onClick={onClose} data-modal-close aria-label={t("詳細を閉じる")}><X size={22} /></button></div>
           <h2>{style.name}</h2>
           <p className="detail-definition">{style.definition}</p>
           <section className="prompt-recipes" aria-label={t("コピーできる画像プロンプト")}>
@@ -153,10 +157,10 @@ function DetailModal({
               <p lang="en">{style.stylePrompt}</p>
             </div>
             <div className="prompt-recipe prompt-recipe--scene">
-              <div className="prompt-recipe-head"><span>{t("人物・場面・構図のプロンプト")}</span><button type="button" onClick={() => onCopy(benchmark.characterPrompt, "場面をコピーしました")}><Copy size={16} />{t("場面をコピー")}</button></div>
-              <p lang="en">{benchmark.characterPrompt}</p>
+              <div className="prompt-recipe-head"><span>{t("人物・場面・構図のプロンプト")}</span><button type="button" onClick={() => onCopy(style.sampleBenchmark.characterPrompt, "場面をコピーしました")}><Copy size={16} />{t("場面をコピー")}</button></div>
+              <p lang="en">{style.sampleBenchmark.characterPrompt}</p>
             </div>
-            <button className="combined-copy" type="button" onClick={() => onCopy(combinedPrompt(style), "合成プロンプトをコピーしました")}><Copy size={17} />{t("絵柄と場面を両方コピー")}</button>
+            <button className="combined-copy" type="button" onClick={() => onCopy(combinedPrompt(style, style.sampleBenchmark), "合成プロンプトをコピーしました")}><Copy size={17} />{t("絵柄と場面を両方コピー")}</button>
           </section>
           <div className="trait-list" aria-label={t("絵柄の特徴")}>
             {Object.entries(style.characteristics).map(([label, value]) => <div className="trait-row" key={label}><span>{label}</span><p>{value}</p></div>)}
@@ -165,10 +169,12 @@ function DetailModal({
           <div className="vocab-chips">{style.vocabularyLabels.map(term => <span key={term}>{term}</span>)}</div>
           <p className="watch-for"><strong>{t("注意点")}</strong> {style.watchFor}</p>
           <div className="detail-actions">
-            <button className="primary-button" type="button" onClick={() => onCompare(style.slug)}>{isCompared ? <Check size={18} /> : <Plus size={18} />}{isCompared ? t("比較に追加済み") : t("比較に追加")}</button>
+            <button className="primary-button" disabled={style.imageStatus === "pending"} type="button" onClick={() => onCompare(style.slug)}>{isCompared ? <Check size={18} /> : <Plus size={18} />}{isCompared ? t("比較に追加済み") : t("比較に追加")}</button>
             <button className="text-button" type="button" onClick={onClose}>{t("一覧へ戻る")}<ArrowRight size={17} /></button>
           </div>
-          <p className="provenance">{t("見本は表示した2つの英語プロンプトで生成しています。")}</p>
+          {style.sceneSpecificStyle && <p className="scene-style-note">{t("この画風の文には駅の人物・物体の指定が含まれています。元の画風文をそのまま保持しています。")}</p>}
+          <p className="provenance">{t(style.imageStatus === "pending" ? "この場面の見本は未生成です。現在の英語プロンプトを表示しています。" : "見本は表示した2つの英語プロンプトで生成しています。")}</p>
+          {style.sampleRecord?.qualityNotes && <p className="sample-observation"><strong>{t("この見本について")}</strong> {style.sampleRecord.qualityNotes[locale]}</p>}
         </div>
       </div>
     </ModalFrame>;
@@ -194,6 +200,7 @@ function CompareModal({
             <StyleImage style={style} alt={locale === "ja" ? `${style.name}で描いた共通場面の見本` : `${style.name} interpretation of the shared benchmark subject`} />
             <div className="compare-column-title"><h3>{style.name}</h3><button type="button" onClick={() => onRemove(style.slug)} aria-label={`${t("比較から削除")}: ${style.name}`}><X size={17} /></button></div>
             <p>{style.definition}</p>
+            {style.sampleRecord?.qualityNotes && <p className="sample-observation"><strong>{t("この見本について")}</strong> {style.sampleRecord.qualityNotes[locale]}</p>}
             <dl>{Object.entries(style.characteristics).map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
             <button className="copy-vocab" type="button" onClick={() => onCopy(style.stylePrompt, "絵柄プロンプトをコピーしました")}><Copy size={18} />{t("絵柄をコピー")}</button>
           </article>)}
@@ -208,31 +215,38 @@ export function App() {
     t
   } = useLanguage();
   const searchRef = useRef(null);
+  const [scene, setScene] = useState(initialScene);
+  const isStation = scene === "station";
   const [searchText, setSearchText] = useState("");
   const [submittedQuery, setSubmittedQuery] = useState("");
   const [filters, setFilters] = useState({});
   const [sort, setSort] = useState("relevant");
   const [moreOpen, setMoreOpen] = useState(false);
-  const [compareIds, setCompareIds] = useState(initialCompare);
+  const [compareByScene, setCompareByScene] = useState({ station: [], "young-man": [], [initialScene]: initialCompare });
+  const compareIds = compareByScene[scene];
+  function setCompareIds(update) {
+    setCompareByScene(current => ({ ...current, [scene]: typeof update === "function" ? update(current[scene]) : update }));
+  }
   const [detailSlug, setDetailSlug] = useState(initialDetail);
   const [compareOpen, setCompareOpen] = useState(initialCompare.length >= 2);
   const [toast, setToast] = useState("");
-  const library = useMemo(() => getStyles(locale), [locale]);
+  const library = useMemo(() => getStyles(locale).map(style => styleForScene(style, scene)), [locale, scene]);
   const results = useMemo(() => findStyles({
     query: submittedQuery,
     filters,
     sort,
     locale
-  }), [submittedQuery, filters, sort, locale]);
-  const selected = compareIds.map(slug => library.find(style => style.slug === slug)).filter(Boolean);
+  }).map(style => styleForScene(style, scene)), [submittedQuery, filters, sort, locale, scene]);
+  const selected = compareIds.map(slug => library.find(style => style.slug === slug)).filter(style => style && style.imageStatus !== "pending");
   const detail = library.find(style => style.slug === detailSlug);
   const activeFilters = Object.values(filters).filter(Boolean).length + (submittedQuery ? 1 : 0);
   useEffect(() => {
     syncUrl({
+      scene,
       detail: detailSlug,
       compare: compareOpen ? compareIds : []
     });
-  }, [detailSlug, compareOpen, compareIds]);
+  }, [scene, detailSlug, compareOpen, compareIds]);
   useEffect(() => {
     if (!detail && !compareOpen) return undefined;
     const previous = document.body.style.overflow;
@@ -262,6 +276,11 @@ export function App() {
       block: "start"
     });
   }
+  function selectScene(nextScene) {
+    setScene(nextScene);
+    setDetailSlug(null);
+    setCompareOpen(false);
+  }
   function changeFilter(key, value) {
     setFilters(current => ({
       ...current,
@@ -280,6 +299,7 @@ export function App() {
     setSubmittedQuery(next);
   }
   function toggleCompare(slug) {
+    if (!hasSceneSample(scene, slug)) return;
     setCompareIds(current => {
       if (current.includes(slug)) return current.filter(item => item !== slug);
       if (current.length >= 4) {
@@ -308,7 +328,7 @@ export function App() {
               top: 0,
               behavior: "smooth"
             });
-          }} aria-label={t("検索欄に移動")}><MagnifyingGlass size={21} /></button><button className="header-compare" type="button" onClick={() => compareIds.length >= 2 ? setCompareOpen(true) : setToast("比較する絵柄を2種類以上選んでください")}>{t("比較")}{compareIds.length ? ` (${compareIds.length})` : ""}</button><button className="header-cta" type="button" onClick={() => {
+          }} aria-label={t("検索欄に移動")}><MagnifyingGlass size={21} /></button><button className="header-compare" disabled={!isStation && library.filter(style => style.imageStatus !== "pending").length < 2} type="button" onClick={() => compareIds.length >= 2 ? setCompareOpen(true) : setToast("比較する絵柄を2種類以上選んでください")}>{t("比較")}{compareIds.length ? ` (${compareIds.length})` : ""}</button><button className="header-cta" type="button" onClick={() => {
             searchRef.current?.focus();
             window.scrollTo({
               top: 0,
@@ -320,9 +340,18 @@ export function App() {
       <main>
         <section className="hero page-shell" aria-labelledby="page-title"><div className="hero-main">
           <h1 id="page-title">{t("作りたい画像に、合う絵柄を。")}</h1>
-          <p>{t("アニメ、イラスト、版画、絵画、写真表現など75種類。線・塗り・質感や、描き込みの密度から選べます。")}</p>
+          <p>{t("アニメ、イラスト、版画、絵画、写真表現など77種類。線・塗り・質感や、描き込みの密度から選べます。")}</p>
           <form className="search-form" onSubmit={submitSearch} role="search"><MagnifyingGlass size={24} aria-hidden="true" /><label className="sr-only" htmlFor="style-search">{t("名前・特徴で絵柄を検索")}</label><input id="style-search" ref={searchRef} value={searchText} onChange={event => setSearchText(event.target.value)} placeholder={t("例：フラット、純文学、抜け感")} /><button type="submit">{t("検索")}</button></form>
-        </div><aside className="benchmark-note" aria-label={t("共通の見本について")}><span className="eyebrow">{t("同じ場面で比較")}</span><p>{t("同じ人物と駅の場面を、異なる絵柄で描いた見本です。絵柄の指示をコピーして、好きな被写体に使えます。")}</p><div>{t("赤いコートの女性が駅で地図を広げる場面")}.</div></aside></section>
+        </div><aside className="benchmark-note" aria-label={t("共通の見本について")}>
+          <span className="eyebrow">{t("同じ場面で比較")}</span>
+          <p>{t(isStation ? "同じ人物と駅の場面を、異なる絵柄で描いた見本です。絵柄の指示をコピーして、好きな被写体に使えます。" : "人物・場面・全身構図を詳しく指定した青年の見本です。絵柄は女の子版と同じです。")}</p>
+          {!isStation && <small className="scene-progress" aria-live="polite">{library.filter(style => style.imageStatus !== "pending").length} / {styles.length} {t("種類の見本を生成済み")}</small>}
+          <div className="scene-selector" role="group" aria-label={t("見本の場面を選ぶ")}>
+            <button type="button" className="scene-thumbnail" aria-label={t("駅で地図を広げる女性")} aria-pressed={isStation} onClick={() => selectScene("station")}><img src="/images/scenes/station-thumb.webp" alt="" width="192" height="108" /></button>
+            <button type="button" className="scene-thumbnail" aria-label={t("夜明けの海辺でひまわりを持つ青年")} aria-pressed={!isStation} onClick={() => selectScene("young-man")}><img src="/images/scenes/young-man-sunflowers-thumb.webp" alt="" width="192" height="108" /></button>
+          </div>
+          <div className="scene-description" aria-live="polite">{t(isStation ? "赤いコートの女性が駅で地図を広げる場面" : "黄色いコートの青年が、夜明けの海辺のバス停でひまわりを持つ場面")}</div>
+        </aside></section>
 
         <section className="explore-section page-shell" id="explore" aria-label={t("絵柄一覧")}><div className="filters-bar">
           <div className="filter-group"><span className="filters-label">{t("絵柄を絞り込む")}</span>{filterDefinitions.map(definition => <FilterSelect key={definition.key} definition={definition} value={filters[definition.key]} onChange={changeFilter} />)}<button className={`more-filters ${moreOpen ? "is-open" : ""}`} type="button" onClick={() => setMoreOpen(open => !open)} aria-expanded={moreOpen}><SlidersHorizontal size={19} />{t("キーワード")}</button></div>

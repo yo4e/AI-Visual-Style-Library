@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "benchmarkId": "sunflowers-full-body-detailed-v1",
+  "benchmarkVersion": "1.0",
+  "images": [
+    {
+      "slug": "watercolor",
+      "benchmarkId": "sunflowers-full-body-detailed-v1",
+      "benchmarkVersion": "1.0",
+      "imagePath": "/images/young-man-full-body-detailed/watercolor.webp",
+      "sourceFile": "exec-0c03e9ca-43e7-4999-995d-055c06b03913.png",
+      "sourceSha256": "a1c90b41780e251ffdd49a3217aa8f365156373130ce0697b054fab6cc65f2cd",
+      "sourceBytes": 3177034,
+      "sourceWidth": 1672,
+      "sourceHeight": 941,
+      "imageSha256": "45db3761ffb12c6df584231d79024f34066151b95957c70376f645f5d25595a3",
+      "imageBytes": 162702,
+      "imageWidth": 960,
+      "imageHeight": 540,
+      "conversion": {
+        "resizeWidth": 960,
+        "kernel": "lanczos3",
+        "format": "webp",
+        "quality": 86,
+        "crop": false,
+        "colorEdits": false
+      },
+      "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. Show a young adult man with short, tousled dark brown hair, a mustard-yellow hooded raincoat, a light off-white top, dark loose trousers, light sneakers, and a black backpack. Frame him head to toe in a wide environmental view with a level horizon, seen from in front of the shelter. Place him in the left third, with his figure occupying about three quarters of the image height. Leave clear space above his hair and some pavement below his shoes. He stands upright, turned slightly to the right, looking toward the sea with a quiet expression. He holds a small paper-wrapped bouquet of sunflowers in one hand at waist height, the blossoms rising in front of his lower chest; his other hand rests in a raincoat pocket. Keep the entire bouquet and both feet visible. The glass-and-metal bus shelter occupies the left half, with its roof across the upper-left corner, vertical posts around him, and a wooden bench to his left. A round bus-stop sign and a narrow information board on one post stand just to his right, near the middle of the image; include no readable lettering. Leave the right half open to the sea and cloudy dawn sky. Keep the horizon near the middle of the image height, with distant low coastal hills and a low sun close to the far-right edge. A low stone seawall and simple railing follow the shore, while wet pavement with small reflections fills the foreground.\n\nVISUAL STYLE\nRender the subject as a hand-painted watercolor illustration with contemporary Japanese animation-inspired drawing when people appear: simplified expressive faces and very fine pencil-like contours, never photorealistic skin. Layer transparent pigment over visible cold-press paper. Let pale powder-blue and warm beige washes bleed and pool softly in the background while retaining crisp, delicate detail at the focal face and hands. Leave luminous paper-white highlights and use one richer warm accent from the subject. The result should feel airy and visibly painted with water. Avoid realistic portrait rendering, opaque digital paint, thick black outlines, and smooth computer gradients.",
+      "submittedPromptSha256": "71e19a6e139e005c69132362e2dea155beb57754d00e8ed4d81ae24afe4974a1",
+      "stylePromptSha256": "22ee49705cad9533af04d1f20b404fc8714806191d43ac89a6a586af371e2b38",
+      "scenePromptSha256": "26bbe9b259679c9561cb875f96e35f959c80ddef0e21048576e3ece67125af5e",
+      "frozenManifestFile": "young-man-detailed-watercolor-prompts-before-generation.json",
+      "frozenManifestSha256": "af4d9bb740da5325064ad948549ae94f4b955d6b996a56e9a57b9eca14511ead",
+      "submittedAt": "2026-10-19 07:38:05 UTC",
+      "completedAt": "2026-10-19 07:38:59 UTC",
+      "model": null,
+      "seed": null,
+      "references": [],
+      "toolParameters": {
+        "transparent_background": false
+      },
+      "submissionEvidence": {
+        "kind": "actual-built-in-imagegen-call",
+        "sceneSource": "Owner text1792393173.554459 preserved verbatim; exact equality with detailed scene verified before submission.",
+        "girlStyleExactlyEqual": true
+      },
+      "scope": "Owner-requested one local watercolor sample and comparison preview. No production publication.",
+      "qualityNotes": {
+        "en": "Transparent watercolor-like washes, broken pigment and paper highlights are visible. The full figure, one-handed bouquet and pocket pose, left shelter and open sea on the right follow the supplied composition. Clouds, stonework and reflections remain detailed; repeatability has not been tested.",
+        "ja": "水彩のにじみ、途切れた顔料と紙白が見えます。全身、片手の花束とポケット、左のバス停・右の海という指定に沿っています。雲や石壁・反射は細かめです。複数回生成での再現性は未検証です。"
+      }
+    }
+  ]
+}

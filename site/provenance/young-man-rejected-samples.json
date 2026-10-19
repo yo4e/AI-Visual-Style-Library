@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-18T03:12:45.466Z",
+  "samples": [
+    {
+      "slug": "anime-relaxed-simplified",
+      "sourceSha256": "e376dcfa51f89df0218104544e184feb8bb77eb524192910e6dd755ef91c9843",
+      "reason": "User correction: generated with later waist-up/both-hands SUNFLOWERS-BUS-STOP-V1, not the originally saved scene associated with the wider one-hand-in-pocket source image. Retain generation history but exclude this sample from display/comparison."
+    }
+  ]
+}

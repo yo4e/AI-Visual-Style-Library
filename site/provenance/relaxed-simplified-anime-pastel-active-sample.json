@@ -1,0 +1,52 @@
+{
+  "slug": "anime-relaxed-simplified-pastel",
+  "benchmarkId": "station-map-v3",
+  "benchmarkVersion": "3.0",
+  "imagePath": "/images/anime-relaxed-simplified-pastel.webp",
+  "sourceFile": "exec-3870d25c-027f-4815-bf0a-e21bd64ad876.png",
+  "sourceLibraryFileId": "libfile_2f543ce204808191ad13be2285fd291c",
+  "sourceSha256": "6e24a8b394ddcef13b9f13f42f597c2e7418fe5591a88e05c946c339d96de348",
+  "sourceBytes": 1966168,
+  "sourceWidth": 1672,
+  "sourceHeight": 941,
+  "imageSha256": "f7df242533684239620d00458c00e16e496cb2449309b796862afdb13582dadf",
+  "imageWidth": 960,
+  "imageHeight": 540,
+  "imageBytes": 67894,
+  "webpQuality": 86,
+  "conversion": {
+    "resizeWidth": 960,
+    "kernel": "lanczos3",
+    "format": "webp",
+    "crop": false,
+    "colorEdits": false
+  },
+  "generatedOn": "2026-10-18",
+  "generatedTimeReported": "2026-10-18 10:17 JST",
+  "timePrecision": "minute; exact submission/completion timestamps not supplied",
+  "tool": "image_gen",
+  "toolParameters": {
+    "transparent_background": false
+  },
+  "model": null,
+  "seed": null,
+  "references": [],
+  "submittedPrompt": "Create one image using these two independent instructions.\n\nCHARACTER AND SCENE\nCreate one wide 16:9 landscape image, with no border or typography. A young adult East Asian woman with shoulder-length dark brown hair blowing gently to the left and expressive brown eyes wears a rust-red hooded coat and a black backpack. She holds an unfolded paper map in both hands at chest level, with the entire map visible near the lower edge. Frame her from the waist up in a medium close-up, slightly left of center: her head, torso, and map should fill most of the left half of the image. Her body is turned three-quarters to the right, and she looks up toward the right with a curious, slightly uncertain expression. She stands on a sunlit outdoor commuter-train platform. A long white commuter train with a muted teal stripe remains clearly visible across the right half of the background. The platform canopy and columns recede diagonally from the upper left; a few indistinct commuters stand far behind her. Keep the woman, map, platform, and train all clearly visible.\n\nVISUAL STYLE\nCreate a relaxed, simplified anime-and-manga illustration with moderate stylization rather than chibi proportions. For human figures, aim for approximately 5.5 to 6 heads tall while preserving the supplied age and identity. Use clean, economical contour lines and clear, rounded shapes. Group hair into broad, readable locks instead of drawing individual strands. Simplify clothing into large shapes and flat color areas, with only a few essential folds and details. Use restrained cel shading and broad shadow shapes instead of intricate rendering or glossy material effects. Keep the subject recognizable through its hairstyle, clothing design, posture, and silhouette. Preserve the supplied local colors of skin, hair, clothing, objects, and surroundings; soften saturation and contrast without replacing their color identities or imposing a fixed palette. Reduce visual noise without losing distinctive features. For nonhuman subjects, use the same broad, readable forms and restrained surface detail. Keep the requested background structure, objects, and environmental cues legible; do not replace the scene with a blank backdrop. Follow the separate subject, scene, and composition instructions. Avoid photorealism, highly polished ornate rendering, intricate costume textures, and super-deformed or chibi anatomy.\nUse a pastel-toned color treatment.",
+  "submittedPromptSha256": "ed0505651266c124e61e383e8e00df1a16d445fcad44bbf65b077710f70aff60",
+  "frozenManifestSha256": "b1827d3df2cf175d2caf35ad59d0fcc3c6f2041a1ecf714055addd4225cad542",
+  "promptSavedLocallyAt": "2026-10-18T01:17:31.473Z",
+  "submissionEvidence": {
+    "kind": "trusted-parent-handoff",
+    "sourceThreadId": "01a139f8-1f4a-7319-9db6-3ea3f5dfb005",
+    "statement": "Parent confirms one built-in generation using unchanged V2 full prompt plus one LF and Use a pastel-toned color treatment., no references, opaque background. Parent delivered the sample in Slack; owner adoption decision pending. Raw call log not transferred."
+  },
+  "adoptionEvidence": {
+    "kind": "trusted-owner-instruction",
+    "slackMessage": "1792286492.343879",
+    "instruction": "Keep both normal and pastel as separate styles; audit separation of style from sample subject/scene. Local addition only, no publishing authorization."
+  },
+  "qualityNotes": {
+    "en": "This selected pastel sample has softer warm color and contrast, while clothing retains its rust-red identity and the train remains white and teal. It closely resembles the standard variant; the map and background remain detailed, and a strong pastel effect is not guaranteed. The waist-up crop cannot establish full-body head proportions.",
+    "ja": "この見本は暖かな柔らかい色調と明暗で、コートの赤茶色や列車の白・ティールは保たれています。通常版に近い見た目で、地図と背景も細かく、強いパステル感が必ず出るわけではありません。上半身の構図のため全身の頭身は検証できません。"
+  }
+}
