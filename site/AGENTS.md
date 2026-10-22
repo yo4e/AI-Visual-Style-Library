@@ -252,3 +252,10 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - The owner completed review and approved committing and pushing the integrated result to codex/young-man-benchmark-preparation. This supersedes the earlier local-only/no-push restriction for this branch save. Preserve all approved active images, exact prompt parts, titles, tags, benchmarks and required immutable provenance/history. The owner explicitly accepted faint color remaining in some samples; no further recoloring or regeneration is requested.
 - Check the actual GitHub branch/PR and latest tree before saving, preserve unrelated local changes, exclude credentials and build/runtime artifacts, and verify the saved remote tree. Keep the existing local origin configuration intact; use a separately verified GitHub destination. No merge, production publication or deployment is authorized. Use background commands only.
+
+## Local consistency touch-up review (2026-10-22)
+
+- Review against main203f763, with no new generation, push, merge or production publication authorized. The owner accepted faint color in the selected outputs. Preserve all image bytes, generation records, style/scene prompt text, titles, technique tags and benchmark IDs.
+- Keep generic technique advice separate from observations of a particular sample. Historical faint-color and reference-comparison observations for manga-geometric-comedy and anime-adult-everyday-cel belong to their station samples; youth uses its own generation-record observations in detail and comparison. The station-object words in ink-wash and pixel-art are examples inside color restrictions; explain them accurately without rewriting the frozen prompts.
+
+- The owner subsequently approved committing these reviewed touch-ups, pushing a dedicated branch and creating a PR through CI verification. This supersedes the local-only/no-push restriction for the reviewed note/explanation changes. Preserve images, generation prompts, titles and tags. Do not merge or publish production; inspect any automatic deployment effects. Keep background-only verification, and leave Slack reporting to the parent task.

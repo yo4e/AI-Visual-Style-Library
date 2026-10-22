@@ -172,9 +172,9 @@ function DetailModal({
             <button className="primary-button" disabled={style.imageStatus === "pending"} type="button" onClick={() => onCompare(style.slug)}>{isCompared ? <Check size={18} /> : <Plus size={18} />}{isCompared ? t("比較に追加済み") : t("比較に追加")}</button>
             <button className="text-button" type="button" onClick={onClose}>{t("一覧へ戻る")}<ArrowRight size={17} /></button>
           </div>
-          {style.sceneSpecificStyle && <p className="scene-style-note">{t("この画風の文には駅の人物・物体の指定が含まれています。元の画風文をそのまま保持しています。")}</p>}
+          {style.sceneSpecificStyle && <p className="scene-style-note">{t("この絵柄文の色制約には、駅の見本の物体名が例として残っています。自分の場面に合わせて内容を確認してください。生成時の文をそのまま表示しています。")}</p>}
           <p className="provenance">{t(style.imageStatus === "pending" ? "この場面の見本は未生成です。現在の英語プロンプトを表示しています。" : "見本は表示した2つの英語プロンプトで生成しています。")}</p>
-          {style.sampleRecord?.qualityNotes && <p className="sample-observation"><strong>{t("この見本について")}</strong> {style.sampleRecord.qualityNotes[locale]}</p>}
+          {style.sampleNotes && <p className="sample-observation"><strong>{t("この見本について")}</strong> {style.sampleNotes[locale]}</p>}
         </div>
       </div>
     </ModalFrame>;
@@ -200,7 +200,7 @@ function CompareModal({
             <StyleImage style={style} alt={locale === "ja" ? `${style.name}で描いた共通場面の見本` : `${style.name} interpretation of the shared benchmark subject`} />
             <div className="compare-column-title"><h3>{style.name}</h3><button type="button" onClick={() => onRemove(style.slug)} aria-label={`${t("比較から削除")}: ${style.name}`}><X size={17} /></button></div>
             <p>{style.definition}</p>
-            {style.sampleRecord?.qualityNotes && <p className="sample-observation"><strong>{t("この見本について")}</strong> {style.sampleRecord.qualityNotes[locale]}</p>}
+            {style.sampleNotes && <p className="sample-observation"><strong>{t("この見本について")}</strong> {style.sampleNotes[locale]}</p>}
             <dl>{Object.entries(style.characteristics).map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
             <button className="copy-vocab" type="button" onClick={() => onCopy(style.stylePrompt, "絵柄プロンプトをコピーしました")}><Copy size={18} />{t("絵柄をコピー")}</button>
           </article>)}
