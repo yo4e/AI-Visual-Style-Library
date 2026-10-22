@@ -1,5 +1,6 @@
 import { writeFile } from "node:fs/promises";
 import { benchmark, styles } from "../src/style-data.js";
+import { styleForScene } from "../src/scene-data.js";
 
 const output = new URL("../../PROMPT_LIBRARY.md", import.meta.url);
 const sections = [
@@ -31,13 +32,16 @@ for (const style of styles) {
     "",
     style.definition,
     "",
-    "Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.",
+    styleForScene(style, "young-man").sceneSpecificStyle
+      ? "Copy this section by itself after your own subject description. Station-object names remain as examples within its color constraints; check those examples against your own scene. The saved generation wording below is unchanged."
+      : "Copy this section by itself after your own subject description. It intentionally does not describe the gallery character or train platform.",
     "",
     "```text",
     style.stylePrompt,
     "```",
     "",
     `**Watch for:** ${style.watchFor}`,
+    ...(style.sampleNotes ? [`**About this station sample:** ${style.sampleNotes.en}`] : []),
     ...(style.coverAdvice ? [`**Cover layout:** ${style.coverAdvice}`] : []),
     "",
   );

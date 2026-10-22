@@ -23,7 +23,7 @@ export function hasSceneSample(scene, slug) {
 
 export function styleForScene(style, scene = "station") {
   const sampleBenchmark = sceneBenchmarks[scene] || benchmark;
-  if (scene !== "young-man") return { ...style, sampleBenchmark, sampleModel: style.sampleRecord ? style.sampleModel : "GPT Image 2" };
+  if (scene !== "young-man") return { ...style, sampleBenchmark, sampleModel: style.sampleRecord ? style.sampleModel : "GPT Image 2", sampleNotes: style.sampleRecord?.qualityNotes || style.sampleNotes || null };
   const sample = youthSamples.get(style.slug);
   // The approved detailed scene uses the girl's rendering text unchanged.
   // Original-brief and expanded outputs remain in their separate histories.
@@ -34,6 +34,7 @@ export function styleForScene(style, scene = "station") {
     imageStatus: sample ? "ready" : "pending",
     sampleModel: sample?.model || null,
     sampleRecord: sample || null,
+    sampleNotes: sample?.qualityNotes || null,
     fullSamplePrompt: combinedPrompt(style, sampleBenchmark),
     sceneSpecificStyle: /\b(?:woman|map|train|commuters)\b/i.test(style.stylePrompt),
   };
