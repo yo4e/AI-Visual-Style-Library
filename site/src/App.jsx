@@ -136,7 +136,7 @@ function DetailModal({
           <div className="detail-image-foot">
             <div className="benchmark-caption">
               <span>{t(style.imageStatus === "pending" ? "生成用の場面" : "ベンチマーク")} / {t(style.sampleBenchmark.id === benchmark.id ? "駅で地図を広げる女性" : "夜明けの海辺でひまわりを持つ青年")} · {style.sampleBenchmark.id.toUpperCase()}</span>
-              {style.sampleModel && <span>{t("画像生成モデル")} / {style.sampleModel}</span>}
+              {style.imageStatus !== "pending" && <span>{t("画像生成モデル")} / {style.sampleModel || "GPT Image 2"}</span>}
             </div>
             <div className="detail-steps">
               <button type="button" onClick={() => onNavigate(previous.slug)} aria-label={`${t("前の絵柄")}: ${previous.name}`}><ArrowLeft size={20} /></button>
@@ -344,8 +344,7 @@ export function App() {
           <form className="search-form" onSubmit={submitSearch} role="search"><MagnifyingGlass size={24} aria-hidden="true" /><label className="sr-only" htmlFor="style-search">{t("名前・特徴で絵柄を検索")}</label><input id="style-search" ref={searchRef} value={searchText} onChange={event => setSearchText(event.target.value)} placeholder={t("例：フラット、純文学、抜け感")} /><button type="submit">{t("検索")}</button></form>
         </div><aside className="benchmark-note" aria-label={t("共通の見本について")}>
           <span className="eyebrow">{t("同じ場面で比較")}</span>
-          <p>{t(isStation ? "同じ人物と駅の場面を、異なる絵柄で描いた見本です。絵柄の指示をコピーして、好きな被写体に使えます。" : "人物・場面・全身構図を詳しく指定した青年の見本です。絵柄は女の子版と同じです。")}</p>
-          {!isStation && <small className="scene-progress" aria-live="polite">{library.filter(style => style.imageStatus !== "pending").length} / {styles.length} {t("種類の見本を生成済み")}</small>}
+          <p>{t("同じ人物と駅の場面を、異なる絵柄で描いた見本です。絵柄の指示をコピーして、好きな被写体に使えます。")}</p>
           <div className="scene-selector" role="group" aria-label={t("見本の場面を選ぶ")}>
             <button type="button" className="scene-thumbnail" aria-label={t("駅で地図を広げる女性")} aria-pressed={isStation} onClick={() => selectScene("station")}><img src="/images/scenes/station-thumb.webp" alt="" width="192" height="108" /></button>
             <button type="button" className="scene-thumbnail" aria-label={t("夜明けの海辺でひまわりを持つ青年")} aria-pressed={!isStation} onClick={() => selectScene("young-man")}><img src="/images/scenes/young-man-sunflowers-thumb.webp" alt="" width="192" height="108" /></button>

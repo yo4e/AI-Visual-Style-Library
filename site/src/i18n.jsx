@@ -3,9 +3,7 @@ import {languageLabels} from "./locale-labels.js";
 export {languageLabels};
 const english = {
  'この見本について':'About this sample',
- '種類の見本を生成済み':'style samples generated',
  '生成用の場面':'Scene prepared for generation',
- '人物・場面・全身構図を詳しく指定した青年の見本です。絵柄は女の子版と同じです。':'This young-man sample uses detailed instructions for the person, setting and full-body composition. Its rendering prompt is identical to the girl version.',
  'この場面の見本は未生成です。現在の英語プロンプトを表示しています。':'This scene sample has not been generated. The current English prompts are shown here.',
  'この絵柄文の色制約には、駅の見本の物体名が例として残っています。自分の場面に合わせて内容を確認してください。生成時の文をそのまま表示しています。':'This style prompt retains station-object names as examples within its color constraints. Check those examples against your own scene. The original generation wording is preserved.',
 
